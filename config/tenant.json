@@ -3,9 +3,10 @@
   "name": "TransferNow",
   "brand": "Fiserv",
   "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Fiserv_Logo.jpg",
-  "solution": ["Bank",
-  "Credit Union",
-  "Large Financial Institution"],
+ "solution": [
+		"financial-institutions",
+		"fintech"
+	],
   "brandDescription": "Transfer Now description",
   "apiVersions1": [
       {
