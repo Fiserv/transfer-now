@@ -29,85 +29,48 @@
 ################################################################################
 
 header:
-  productDescription: To onboard properly into the Developer Studio as a new tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.
-getStarted: /docs/getting-started.md
+  productionDescription: Enhance your digital payment and transfer offerings, drive revenue and strengthen relationships by offering the flexibility to transfer funds to and from accounts at different Financial Institution (FI) with TransferNow. The Fiserv ePayments TransferNow product enables a FI to offer secure inter-institution funds transfer services. With TransferNow, customers can transfer money between accounts and debit cards.
+  getStarted: /docs/getting-started.md
 benefits:
-  - title: Transform Customer Experiences
-    description: Pre-certified integrations to value added solutions and third-party providers that power next-generation commerce experiences.
-  - title: Accelerate Revenue
-    description: Intelligent orchestration layer that reduces code complexity and operational costs.
-  - title: Optimize Commerce
-    description: Backoffice automation with a modern set of tools and APIs.
-guides:
-  - title: Setup a tenant
-    description: Fiserv Products within the Fiserv portfolio that are showcased through the studio are known as tenants. Tenants standup a tenant server that will serve all the content through the studio for developers visiting the Fiserv Developer Studio.
-    link: docs/getting-started/setup-tenant/setup-tenant.md
-  - title: Preview and Publish
-    description: This quick start guide will provide you with the necessary steps to get you from API Specification to ready-to-preview/publish API Documentation in 10 minutes flat.
-    link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
-  - title: Using Markdown
-    description: Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
-    link: docs/resources/markdown-support.md
+  - title: NOW Network
+    description: NOW is an acronym for “Network for Our World,” and Fiserv recently introduced the NOW Gateway RTP Network, which can receive credit transfers from RTP.
+  - title: Unmatched Presence
+    description: Enable customers to move money to and from checking, savings and money market accounts at nearly every U.S.-based financial institution.
+  - title: Optimized Operations
+    description: Handle all aspects of ACH Processing with ease, including expectations, resubmissions, and inquiries; features five daily ACH submissions and the latest ACH deadline in the industry.
 featuredFeatures:
-  - title: Documentation 1
-    groupName: Guides
+  - title: Multiple Transfer Speeds 
+    groupName: 
+    description: Give customers multiple transfer speed options from Standard ACH, and Next Day, to Next Day Good Funds or Instant.
     featured: true
-    description: Step by step documentation to setup and market your product.
     relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address
-  - title: Documentation 1
-    groupName: Howto
+     - link: docs/fund-transfer/FT-freq.md
+       title:
+  - title: Real Time Speed using Instant Transfer
+    groupName: Account Verification
+    description: NOW® Network from Fiserv lets your accountholders transfer money between two instant-enabled accounts at different financial institutions in real-time or by the next day. This removes the credit risk related to ACH-based, next-day services.
     featured: true
-    description: Step by step documentation to setup and market your product.
     relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address
-  - title: Documentation 2
-    groupName: Guides
-    description: Step by step documentation to setup and market your product.
+     - link: docs/acc-to-acc-transfer/Account-Verify/Instant-Verify.md
+       title: Instant Verification
+  - title: Multiple Account Verification
+    groupName: Manage Account
+    description: Fiserv offers several advanced alternatives to help you protect against online banking fraud. With Multifactor Authentication from Fiserv, you can enhance online security and maintain compliance with banking regulations without devoting significant resources.
+    featured: true
     relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address
-  - title: Documentation 3
-    groupName: Guides
-    description: Step by step documentation to setup and market your product.
+     - link: docs/acc-to-acc-transfer/manage-Acc.md
+       title: Account Verification
+  - title: Responsive Web Design 
+    groupName: Responsive Web Design
+    description: Having an interactive, innovative website is key to meeting customer expectations and keeping them interested in your brand. With Web Design Services, Fiserv offers flexible, responsive design for financial institutions delivering outstanding results for desktop, tablet and mobile users, ensuring a consistent brand experience across all devices. Benefits of our services include more mobile traffic, lower maintenance needs, faster webpages and an overall improved online experience.
+    featured: false
     relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address
-  - title: Documentation 2
-    groupName: Howto
-    description: Step by step documentation to setup and market your product.
+     - link: docs/resp-webdesign.md
+       title: Responsive Web Design
+  - title: Industry-Leading Security
+    groupName: Industry-Leading Security
+    description: Leverage Fiserv best -of-breed, powerful risk management tools.
+    featured: false
     relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address
-  - title: Documentation 3
-    groupName: Howto
-    description: Step by step documentation to setup and market your product.
-    relatedDocs:
-      - link: docs/getting-started/setup-tenant/setup-tenant.md
-        title: Tenant setup
-    relatedAPIs:
-      - type: post
-        path: /address
-        title: Add Address
+     - link: /docs/getting-started.md
+       title: Industry-Leading Security
