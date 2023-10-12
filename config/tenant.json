@@ -8,7 +8,7 @@
 		"fintech"
 	],
   "brandDescription": "Transfer Now brand description",
-  "apiVersions12": [
+  "apiVersions": [
       {
         "version": "1.0.0",
         "versionType": "major",
