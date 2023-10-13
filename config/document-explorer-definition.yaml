@@ -42,7 +42,7 @@
     - title: Adding an Account
       link: docs/acc-to-acc-transfer/adding-Acc.md
     - title: Deleting Accounts
-      link: docs/acc-to-acc-transfer/delete-Acc.md
+      url: https://qa-ft.onefiserv.net/jsp/backoffice/queryQA.jsp#end
     - title: Manage Accounts
       link: docs/acc-to-acc-transfer/manage-Acc.md
     - title: Account Verification
