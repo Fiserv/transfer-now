@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transfer Funds</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="fdl-bootstrap/css/fdl-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-drawer.css" rel="stylesheet" />
+    <link href="assets/css/jquery_ui.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" /> 
+    <link href="assets/css/mobile_frame.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body>
+		
+		<div class="bank_frame">
+		    <div class="bank_header">
+		        <div class="header_section">
+		            <div class="bank_top_menu">
+		                <ul>
+		                    <li><a href="javascript:void(0);" class="active" title="Mobile"><img src="assets/images/messsage.jpg" width="28" height="23" border="0" 
+
+		/>mobile</a><span> | </span></li>
+		                    <li><a href="javascript:void(0);" title="Approvals">approvals (1)</a> <span> | </span></li>
+		                    <li><a href="javascript:void(0);" title="Activity">activity</a> <span> | </span></li>
+		                    <li><a href="javascript:void(0);" title="Settings">settings</a> <span> | </span></li>
+		                    <li><a href="javascript:void(0);" title="Log Out">log out</a></li>
+		                </ul>
+		            </div>
+		            <div class="bank_logo">
+		                <a href="javascript:void(0);" title="MyFinanacial Logo"><img src="assets/images/myfinancial.jpg" width="272" height="58" border="0" alt="My 
+
+		Financial, Inc" title="My Financial, Inc"/></a>
+		            </div>
+		        </div>            
+		    </div>
+		    <div class="clearfix"></div>
+		    <div class="mobmenu">
+		        <ul class="menu">
+		            <li><a href="javascript:void(0);" title="Accounts">Accounts</a></li>
+		            <li><a href="transfer_funds.html" class="active" title="Transfers">Transfers</a></li>
+		            <li><a href="javascript:void(0);" title="Wires">Wires</a></li>
+		            <li><a href="javascript:void(0);" title="Pay Bills">Pay Bills</a></li>
+		            <li><a href="javascript:void(0);" title="Send with Zelle">Send with Zelle<sup>&reg;</sup></a></li>
+		            <li><a href="javascript:void(0);" title="Trends">Trends</a></li>
+		            <li><a href="javascript:void(0);" title="Inovice and Payments">Invoice and Payments</a></li>
+		        </ul>
+		    </div>
+		    <div id="ust">
+		      <div id="menuac"> <span></span> </div>
+		    </div>
+		</div>
+    <div class="container">
+        <a href="#content" class="sr-only sr-only-focusable" id="top">Skip to Content</a>
+        <header class="navbar navbar-default navbar-ext">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-haspopup="true" aria-controls="navbar" aria-label="Navigation" aria-expanded="false">
+                    <i class="material-icons" aria-hidden="true">apps</i>
+                    Menu
+                </button>
+                <span class="navbar-brand selected mt15">
+                    Transfer Funds
+                </span>
+            </div>
+            
+            
+           <div class="header-one bankLogoSection"> 
+                <div class="bank-name col-xs-9 col-md-10">MyFinancial Bank</div>
+                <div class="signout col-xs-3 col-md-2"><a href="javascript:void(0);" title="Sign Out">Sign Out</a></div> 
+            </div>
+            
+					
+              
+              
+            <nav class="navbar-collapse collapse" id="navbar" aria-expanded="false" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="transfer_funds.html" title="Transfer Funds" class="selected">Transfer Funds</a></li>
+                    <li><a href="activity.html" title="Activity">Activity</a></li>
+                    <li><a href="preferences.html" title="Preferences" >Preferences</a></li>
+                    <li><a href="help.html" title="Help" >Help</a></li>
+                </ul>	
+            </nav>
+
+        </header>
+        <section id="content" role="main">
+            <h1 class="mb20">Verification Needed</h1>
+            <div class="tips-wrapper">
+                <div class="alert alert-dismissible alert-info hide-tip">
+                    <i class="material-icons" aria-hidden="true">info</i>
+                    <span class="sr-only">info</span>
+                    <p>For security, We need to verify your identity before we can complete your transfer.</p>
+                </div>
+            </div>
+            <p><strong>Time remaining: <span id="counter">90</span> seconds</strong></p>
+             <form id="kba" method="get" action="transfer_funds_confirm.html">
+                	<input type="hidden"  id="transferFund" name="transferType" />
+                 	<input type="hidden"  id="from" name="from" />
+                    <input type="hidden"  id="to" name="to" />                                 
+                    <input type="hidden"  id="send_on" name="sendOn" />
+                    <input type="hidden"  id="end_on" name="endOn" />
+                    <input type="hidden"  id="end_on_text" name="endOnText" /> 
+                    <input type="hidden"  id="frequency" name="frequency" />  
+                    <input type="hidden"  id="duration" name="duration" /> 
+                    <input type="hidden"  id="total_amt" name="amount" />
+                    <input type="hidden"  id="no_transfer" name="noOfTransfers" />
+                    <input type="hidden"  id="specifiedAmount" name="totalAmount" />                  
+                    <input type="hidden"  id="delivery" name="deliverySpeed" />                   
+                    <input type="hidden"  id="email_id" name="recipientEmail" />
+                    <input type="hidden"  id="personal_msg" name="personalMsg" />
+                    <input type="hidden"  id="memo_msg" name="memo" />
+                    <input type="hidden"  id="feesAmount" name="fees" />
+                    <input type="hidden"  id="totalTransferAmount" name="finalAmount" />                   
+                  
+            <fieldset class="form-fieldset mt20" id="firstQuestion">
+				<legend>Which of the following addresses have you ever been associated with? </legend>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="radio">
+                            <input type="radio" id="deliveryone" name="kbaQ1" value="13825 Tewkesbury Ct" aria-invalid="false">
+                            <label for="deliveryone"><span>13825 Tewkesbury Ct</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliverytwo" name="kbaQ1" value="2635 Lyncrest Dr" aria-invalid="false">
+                            <label for="deliverytwo"><span>2635 Lyncrest Dr</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliverythree" name="kbaQ1" value="26705 E 68th Ave" aria-invalid="false">
+                            <label for="deliverythree"><span>26705 E 68th Ave</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryfour" name="kbaQ1" value="4430 Laven Way" aria-invalid="false">
+                            <label for="deliveryfour"><span>4430 Laven Way</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryfive" name="kbaQ1" value="I have never been associated with any of these addresses" aria-invalid="false">
+                            <label for="deliveryfive"><span>I have never been associated with any of these addresses</span></label>
+                        </div>
+                    </div>
+                </div>
+                </fieldset>
+            <fieldset class="form-fieldset mt20" id="secondQuestion">
+				<legend>Which of the following street addresses in 'Santa Fe' have you ever lived at or been associated with? </legend>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="radio">
+                            <input type="radio" id="deliverysix" name="kbaQ2" value="14 Monterey Rd" aria-invalid="false">
+                            <label for="deliverysix"><span>14 Monterey Rd</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryseven" name="kbaQ2" value="15 Calle Electra" aria-invalid="false">
+                            <label for="deliveryseven"><span>15 Calle Electra</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryeight" name="kbaQ2" value="207 W Alicante Rd" aria-invalid="false">
+                            <label for="deliveryeight"><span>207 W Alicante Rd</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliverynine" name="kbaQ2" value="8 Calle San Acacia" aria-invalid="false">
+                            <label for="deliverynine"><span>8 Calle San Acacia</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryten" name="kbaQ2" value="Either 1) None of the above or 2) I have never lived or owned property in this city" aria-invalid="false">
+                            <label for="deliveryten"><span>Either 1) None of the above or 2) I have never lived or owned property in this city</span></label>
+                        </div>
+                    </div>
+                </div>
+                </fieldset>
+            <fieldset class="form-fieldset mt20" id="thirdQuestion">
+				<legend>In which of the following counties have you ever lived or owned property?</legend>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="radio">
+                            <input type="radio" id="deliveryeleven" name="kbaQ3" value="Clinton, Iowa" aria-invalid="false">
+                            <label for="deliveryeleven"><span>Clinton, Iowa</span></label>
+                        </div>
+                       
+                        <div class="radio">
+                            <input type="radio" id="deliverytwelve" name="kbaQ3" value="Jefferson, Alabama" aria-invalid="false">
+                            <label for="deliverytwelve"><span>Jefferson, Alabama</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliverythirteen" name="kbaQ3" value="Limestone, Alabama" aria-invalid="false">
+                            <label for="deliverythirteen"><span>Limestone, Alabama</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryfourteen" name="kbaQ3" value="McHenry, Illinois" aria-invalid="false">
+                            <label for="deliveryfourteen"><span>McHenry, Illinois</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryfifteen" name="kbaQ3" value="I have never lived or owned property in any of these countries" aria-invalid="false">
+                            <label for="deliveryfifteen"><span>I have never lived or owned property in any of these countries</span></label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+           <!-- <fieldset class="form-fieldset mt20" id="fourthQuestion">
+				<legend>Which of the following people have you known? </legend>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <div class="radio">
+                            <input type="radio" id="deliverysixteen" name="kbaQ4" value="Clinton, Iowa" aria-invalid="false">
+                            <label for="deliverysixteen"><span>Clinton, Iowa</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryseventeen" name="kbaQ4" value="Jefferson, Alabama" aria-invalid="false">
+                            <label for="deliveryseventeen"><span>Jefferson, Alabama</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliveryeighteen" name="kbaQ4" value="Limestone, Alabama" aria-invalid="false">
+                            <label for="deliveryeighteen"><span>Limestone, Alabama</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliverynineteen" name="kbaQ4" value="McHenry, Illinois" aria-invalid="false">
+                            <label for="deliverynineteen"><span>McHenry, Illinois</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="deliverytwenty" name="kbaQ4" value="I have never lived or owned property in any of these countries" aria-invalid="false">
+                            <label for="deliverytwenty"><span>I have never lived or owned property in any of these countries</span></label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>-->
+            </form>
+                <div class="custom-btn">
+                    <button type="button" class="btn btn-secondary mr10" title="Cancel" id="kbaCancel">Cancel</button>
+                    <button type="button" class="btn btn-primary" title="Continue" id="kbaNext">Continue</button>
+                </div>
+
+
+		</section>
+        
+        <footer class="footer footerSection">
+            <div id="footerHeader" class="container footer-wrapper">
+                <div class="text-center pb10">
+                    <span><a href="javascript:void(0);" title="Terms of Services">Terms of Services</a></span>
+                    <span>| <a href="javascript:void(0);" title="Privacy Policy">Privacy Policy</a></span>
+<span>| <a href="javascript:void(0);" title="Security Policy">Security Policy</a></span>
+                </div>
+                <div class="text-center"><small>Copyright © <span id="currYear"></span> Fiserv Inc. All rights reserved</small></div>
+            </div>    
+        </footer>
+
+    </div>
+	
+	<!-- Loader Starts -->
+    
+    <div id="pageLoader" style="display:none;">
+        <div id="loader-fade"></div>
+        <div id="loading-spinner">
+            <div class="spinner-icon" aria-label="loading..."></div>
+        </div>
+    </div>
+    
+    <!-- Loader Ends -->
+	
+    <!--FDL JS-->
+    <script src="fdl-bootstrap/js/jquery.min.js" type="text/javascript"></script>
+    <script src="fdl-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/drawer.js" type="text/javascript"></script>    
+    <script src="assets/js/app.js" type="text/javascript"></script>
+    <script>
+
+	/*********************************************************
+	*	 Getting URL parameters & values using jquery		 *
+	*********************************************************/
+			
+	$.extend({
+		getUrlVars: function(){
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			for(var i = 0; i < hashes.length; i++){
+				hash = hashes[i].split('=');
+				vars.push(hash[0]);
+				vars[hash[0]] = hash[1];
+			}
+			return vars;
+		},
+		getUrlVar: function(name){
+			return $.getUrlVars()[name];
+		}
+	});
+	var allVars = $.getUrlVars();
+</script>
+	<script>
+    $(document).ready(function(){	
+				
+		/*************************************************************************************************
+		* 	  Getting URL parameters & values using jquery and storing it in the hidden input fields,    * 
+		* 		 On Submitting the form, values will be passed to the next page using GET Method.	     *	
+		*									 															 *
+		* Reference : http://jquery-howto.blogspot.in/2009/09/get-url-parameters-values-with-jquery.html *
+		*************************************************************************************************/
+
+		var transfer = encodeURI($.getUrlVar('transferType')).replace(/\+/g, " ");			
+		
+		var freq = encodeURI($.getUrlVar('frequency')).replace(/\+/g, " ");	
+		
+		var delvry = encodeURI($.getUrlVar('deliverySpeed')).replace(/\+/g, " ").replace('%2540', '@').replace('%2528','(').replace('%2529',')').replace(/\+/g,' ').replace(/\%20/g," ");							
+		
+		var duration = encodeURI($.getUrlVar('duration')).replace(/\+/g, " ");	
+		
+		var from = encodeURI($.getUrlVar('from')).replace('%2528','(').replace('%2529',')').replace(/\+/g,' ').replace(/\%20/g," ").replace(/\ %2524/g," $").replace(/\%252C/g,",");					
+		//$('#fromAccount').html(from);
+		
+		var to = encodeURI($.getUrlVar('to')).replace('%2540', '@').replace('%2528','(').replace('%2529',')').replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%2524/g,"$").replace(/\%252C/g,",");				
+		//$('#toAccount').html(to);
+		
+		var amount = encodeURI($.getUrlVar('amount')).replace(/\+/g, " ").replace(/\%2524/g,"$");			
+		//$('#transferAmount').html(amount);						
+		
+		var start = encodeURI($.getUrlVar('sendOn')).replace(/\+/g, " ").replace(/\%252C/g, ",").replace(/\%252F/g ,'/'); 	
+		//$('#startDate, #startingDate').html(start);
+			
+		var end = encodeURI($.getUrlVar('endOn')).replace(/\+/g, " ").replace(/\%252C/g, ",").replace(/\%252F/g ,'/').replace('%2528','(').replace('%2529',')');				
+		//$('#endingDate').html(end);
+		
+		var ending_text = encodeURI($.getUrlVar('endOnText')).replace('%2540', '@').replace('%2528','(').replace('%2529',')').replace(/\+/g,' ').replace(/\%20/g," ");					
+		//$('#deliverySpeedText').html(ending_text);
+		
+		var email = encodeURI($.getUrlVar('recipientEmail')).replace(/\+/g, " ").replace(/\%2540/g, "@");		
+		//$('#NotifymailId').html(email);
+		
+		var msg = encodeURI($.getUrlVar('personalMsg')).replace(/\+/g, " ").replace(/\%252C/g, ",").replace(/\%253F/g,"!").replace(/\%2521/g,"?").replace(/\%250D%250A/g," ").replace(/\%2527/g, "'").replace(/\%2540/g, "@");
+		//$('#personalMessage').html(msg);
+		            
+        var memo = encodeURI($.getUrlVar('memo')).replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%253F/g,"!").replace(/\%2521/g,"?").replace(/\%250D%250A/g," ").replace(/\%2527/g, "'").replace(/\%2540/g, "@");		
+		//$('#memoMsg').html(memo);	
+		
+		var fee = encodeURI($.getUrlVar('fees')).replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%2524/g,"$");	
+		//$('#fees').html(fee);
+		
+		var final_amt = encodeURI($.getUrlVar('finalAmount')).replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%2524/g,"$").replace(/\%24/g,"$");
+		$('#finalAmount').html(final_amt);
+				
+		
+		var total_amt = encodeURI($.getUrlVar('totalAmount')).replace(/\+/g, " ").replace(/\%252C/g, ",");						
+		var no_transfer = encodeURI($.getUrlVar('noOfTransfers')).replace(/\+/g, " ").replace(/\%252C/g, ",");						
+		var rec_email = encodeURI($.getUrlVar('chooseRecipientEmail')).replace(/\+/g, " ").replace(/\%252C/g, ",");	
+	 
+	 	/*   Passing the values to the next page */	
+		
+		$('#transferFund').val(transfer);
+		$('#total_amt').val(amount);
+		$('#from').val(from);
+		$('#to').val(to);		
+		$('#send_on').val(start);
+		$('#end_on').val(end);
+		$('#end_on_text').val(ending_text);
+		$('#frequency').val(freq);
+		$('#delivery').val(delvry);
+		$('#duration').val(duration);
+		$('#specifiedAmount').val(total_amt);
+		$('#no_transfer').val(no_transfer);
+		$('#email_id').val(email);
+		$('#personal_msg').val(msg);
+		$('#memo_msg').val(memo);
+		$('#feesAmount').val(fee);
+		$('#totalTransferAmount').val(final_amt);		 			
+		
+		/*	Validation for radio button	 */				
+		
+		$('#kbaNext').on('click', function() {
+			var flag = true;		
+			$('#firstQuestion, #secondQuestion, #thirdQuestion, #fourthQuestion').each(function() {
+				if ($(this).find(':radio:checked').length == 0) {
+					flag = false;
+					return false;
+				}
+			});	
+			if (flag){	
+				$("#pageLoader").show();	
+					setTimeout(function() {			  
+						$("#kba").submit();	
+						$("#pageLoader").hide();
+				}, 300);								
+			} else {
+				return true;		
+			}
+		});	
+			
+		
+		$("#kbaCancel").click(function(){
+			$("#pageLoader").show();	
+				setTimeout(function() {			  
+					window.location.href="transfer_funds.html";
+					$("#pageLoader").hide();
+			}, 300);
+		
+		});		
+		
+		
+		/* 		Timer - Reference : https://www.phptpoint.com/how-to-create-a-countdown-timer-in-jquery/   	*/
+				
+		var c=90;
+        var t;
+        timedCount();
+ 
+        function timedCount()
+		{ 
+        	var seconds = c;
+        	var result = (seconds  < 10 ? "0" + seconds : seconds);
+        	$('#counter').html(result);
+            if(c == 0 ) { 
+				c = 0;           
+				window.location.href="transfer_funds.html";
+			}
+            c = c - 1;
+            t = setTimeout(function()
+			{timedCount()}, 1000);
+		}
+		
+		
+		$('#menuac').click(function(e){	
+			$('#menuac').toggleClass('acik');
+			$('.mobmenu').toggleClass('mobmenu-acik');
+		});
+	 });
+    </script>   
+</body>
+</html>

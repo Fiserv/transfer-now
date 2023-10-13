@@ -1,0 +1,47 @@
+#accordion .ui-widget-content{ background:#fff;}
+#accordion.ui-accordion .ui-accordion-content{ padding:10px 20px !important; height:auto !important;}
+#accordion.ui-accordion .ui-accordion-header{padding:6px 6px 6px 36px !important; font-size:16px;color:#fff; background:#3097ff; border:1px solid #3097ff; margin-top:8px !important;}
+#accordion.ui-accordion .ui-accordion-header:hover, #accordion.ui-accordion .ui-accordion-header.ui-state-active{ background:#1f8cfb; color:#fff;}
+#accordion.ui-accordion .ui-accordion-header:hover .ui-icon, #accordion.ui-accordion .ui-accordion-header.ui-state-active .ui-icon{background-image:url(../images/ui-icons_ffffff_256x240.png);}
+.ui-widget-content{ border:1px solid #cfcfcf}
+#accordion h4{ font-size:15px; color:#5ac42e; margin:10px 0 15px; font-weight:bold;}
+#accordion ul{ float:left;}
+#accordion ul li{ float:left; width:100%; list-style:disc; margin-left:20px; font-size:14px; line-height:21px;}
+#accordion ul li ul li{ width:95%; list-style:circle;}
+.separtor{ border-top:1px dotted #654b9f; width:100%; float:left; margin:20px 0 10px;}
+#accordion .ui-state-hover, #accordion .ui-state-focus{ font-weight:normal;}
+.links{ width:100%;  padding:20px 20px 0px 0;}
+.links a{ text-decoration:none; margin-bottom:8px; display:inline-block; font-size:12px; font-weight:bold; color:#3097ff;}
+.links a:hover{ text-decoration:underline;}
+.sitemap_links{ font-size:15px; font-weight:bold; color:#4a3709;}
+.ui-state-default .ui-icon{background-image:url(../images/ui-icons_ffffff_256x240.png);}
+
+body{ background:#f6fafe;}
+.content{ min-height:700px;}
+.heading{ font-size:20px; font-weight:bold; color:#333; padding:30px 0 20px; }
+.zellelogo{ margin:20px 0 20px 20px;}
+header{ border-bottom:1px dotted #b2b2b2;}
+.page .content{ max-width:960px;}
+.leftside{ width:66%; float:left; padding:0px 0px 0px 20px !important;}
+.rightside{ width:30%; float: left; padding-left:40px; margin-top:80px;}
+.dottedline{ border-bottom:1px dotted #A8A8A8; width:100%; margin:10px 0 5px; float:left;}
+.sepline{ border-bottom:1px dotted #A8A8A8; width:75%; margin:15px 0 15px; float:left;}
+.ui-corner-all{ border-radius:6px;}
+.footer_section{ max-width:960px; margin:0px auto; padding:10px 0;overflow:hidden;}
+.footer_section .footer{ float:left; width:82%; }
+.footer_section .footerlogos, .footer_section .footerlogos img{ float:left;}
+.footer {padding: 0 20px;font-size: 11px;color: #333;text-decoration: none;}
+.footer a {padding-right: 2px;color: #333;text-decoration:none;}
+.footer a:hover {color: #3097ff;}
+.sender{ font-size:15px; margin-bottom:15px; color:#4a3709;}
+.clear30{ margin-top:30px;}
+.clearfix{ clear:both;}
+
+@media screen and (max-width: 700px) {
+	.leftside{ width:96%;}
+	.rightside{ width:96%; margin-top:30px; padding-left:20px;}	
+	.footer_section .footer{ width:100%;}
+	.footer_section .footerlogos{ float:right; padding-right:20px; margin-top:15px;}
+	.content{ min-height:540px;}
+	.clear30{ margin-top:20px;}
+}

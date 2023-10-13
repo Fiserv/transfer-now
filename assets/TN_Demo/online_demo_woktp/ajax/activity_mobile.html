@@ -1,0 +1,1081 @@
+<script src="assets/js/activity.js" type="text/javascript"></script>
+<script src="assets/js/moment.min.js" type="text/javascript"></script> 
+<script>
+	$('#popover').popover({
+        html: true,
+        title: function () {
+            return $("#popover-head").html();
+        },
+        content: function () {
+            return $("#popover-content").html();
+        }
+    }).on('shown.bs.popover', function () {				
+		
+		$('#Date_from').datepicker({
+			minDate: '-6m',	
+			maxDate: '+12m',	
+			defaultDate: '-6m',		
+			dateFormat: 'mm/dd/yy',	
+			dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+			showOtherMonths: true,
+			//changeYear: true,	
+			onSelect: function (selected) {
+				var dt = new Date(selected);					
+				dt.setDate(dt.getDate() + 1);
+				$("#Date_to").datepicker("option", "minDate", dt);
+				var start = $(this).datepicker('getDate'); 
+				$("#startDate").val(start);						
+			}								
+		});	
+		
+		$("#Date_from").datepicker().datepicker("setDate", "-6m");
+		
+		$('.glyphicon-calendar.from').click(function() {
+			$("#Date_from").focus();
+		});
+		
+		$("#Date_to").datepicker({ 
+			dateFormat: 'mm/dd/yy',	
+			dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+			showOtherMonths: true,
+			minDate: '-6m',
+			maxDate: '+12m',
+			defaultDate: '+12m',	
+			//changeYear: true,
+			onSelect: function (selected) {
+				var dt = new Date(selected);
+				dt.setDate(dt.getDate() - 1);
+				$("#Date_from").datepicker("option", "maxDate", dt);
+				var end = $(this).datepicker('getDate'); 
+				$("#endDate").val(end);															
+			}
+		});	
+		
+		$("#Date_to").datepicker().datepicker("setDate", "+12m");
+		
+		$('.glyphicon-calendar.to').click(function() {
+			$("#Date_to").focus();
+		});	
+		
+		$("#cancelFilter, #applyFilter").click(function(){
+			$('#popover').popover('hide');
+		});	
+		
+		$("#clearFilter").click(function(){
+			alert("asdf");
+		});						
+				
+	});
+		
+</script>	
+<div class="activity-mobile activity-table mt15" id="activityMobile">
+<div class="Mobfilter-bar pl20">
+    <button class="btn btn-secondary icon-before" id="popover" data-placement="bottom"> <i class="material-icons" aria-hidden="true">&#xE145;</i> Filter & Sort</button>
+    <div id="popover-head"></div>
+    <form method="get" action="" id="mobileFliter">
+    	<div id="popover-content" class="hide">    	
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="sortBy">Sort by</label>
+                    <div class="fdl-select">
+						<input type="hidden" id="resultsortBy"/>
+                        <select id="sortBy" class="form-control" aria-invalid="false">
+                            <option>Send On Ascending</option>
+                            <option>Send On Descending</option>
+                            <option>To Ascending</option>
+                            <option>To Descending</option>
+                            <option>Status Ascending</option>
+                            <option>Status Descending</option>
+                            <option>Amount Ascending</option>
+                            <option>Amount Descending</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <label for="displayBy">Display</label>
+                    <div class="fdl-select">
+						<input type="hidden" id="resultdisplayBy"/>
+                        <select id="displayBy" class="form-control" aria-invalid="false">
+                            <option value="all">All Transfers</option>
+                            <option value="on hold">On Hold</option>
+                            <option value="complete">Completed</option>
+                            <option value="stopped">Stopped</option>
+                            <option value="declined">Declined</option>
+                            <option value="failed">Failed</option>
+                            <option value="rejected">Rejected</option>
+                            <option value="pending">Pending</option>
+                            <option value="cancelled">Cancelled</option>
+                            <option value="in process">In Process</option>
+                            <option value="Recurring Transfers">Recurring Transfers</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-xs-6 pr5">
+                    <label for="Date_from">From</label>
+                    <div class="inner-addon right-addon fdl-ng-date-picker-open-button">
+                        <i class="glyphicon glyphicon-calendar from" aria-label="Pick a from date from calendar"></i>						
+                        <input type="text" id="Date_from" placeholder="MM/DD/YYYY" class="form-control" aria-invalid="false">
+                        <input type="hidden" id="startDate" />
+						
+                    </div>
+                </div>
+                <div class="col-xs-6 pl5">
+                    <label for="Date_to">To</label>
+                    <div class="inner-addon right-addon fdl-ng-date-picker-open-button">
+                        <i class="glyphicon glyphicon-calendar to" aria-label="Pick a to date from calendar"></i>						
+                        <input type="text" id="Date_to" placeholder="MM/DD/YYYY" class="form-control" aria-invalid="false">
+                        <input type="hidden" id="endDate" />
+                    </div>
+                </div>
+           
+            </div>
+            <p><a href="javascript:void(0);" id="clearFilter">Clear filter and show all</a></p>  
+            <div class="col-md-12 row">
+                <button type="button" class="btn btn-primary pull-right" id="applyFilter" title="Apply">Apply<span class="sr-only">Filter</span></button>
+                <button type="button" class="btn btn-secondary pull-left" id="cancelFilter" title="Cancel">Cancel<span class="sr-only">Filter</span></button>
+            </div>
+        </div>
+    </form> 
+    <dl class="review-list mt0 mb10">
+        <dt>Sorted</dt>
+        <dd id="sortedBy">Amount Ascending</dd>
+        <dt>Showing </dt>
+        <dd id="showing">All Transfers</dd>
+        <dt>From </dt>
+        <dd class="pr15 pull-left" id="fromDate">10/03/2012</dd>
+        <dt>To </dt>
+        <dd id="toDate">07/05/2017</dd>
+
+    </dl>
+
+    <div class="form-group moreinfo ">
+        <button class="btn moreInfo btn-link p0">
+            <span class="collapsed">
+                Clear filter
+            </span>
+
+        </button>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="activity-table">
+    <div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+            <dd id="pendingSendOnStandard">07/14/2017</dd>
+            <dt>From </dt>            
+            <dd>Chase Bank, Checking, xxxx2345</dd>
+            <dt>To </dt>
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+            <dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+            <dd class="ml30">Pending</dd>
+            <dt>Total </dt>
+            <dd>$20.00</dd>
+        </dl>
+        <div id="KnowMore" class="collapse" role="region" aria-labelledby="info">
+            <dl class="review-list">
+                <dt>From</dt>
+				<dd>Chase Bank, Checking, xxxx2345</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>098678543</dd>
+				<dt>Deliver</dt>
+				<dd id="pendingDeliverOnStandard">09/07/2017</dd>
+				<dt>Speed</dt>
+				<dd>Standard</dd>
+            </dl>
+            <dl class="review-list">
+            	<dt>Transfer Amount </dt>
+				<dd>$20.00</dd>
+                <dt>Fees </dt>
+				<dd>Free</dd>
+				<dt>Total </dt>
+				<dd>$20.00</dd>
+				<dt>Memo </dt>
+				<dd>For Birthday</dd>
+            </dl>
+            <div class="row">
+                <div class="col-md-12">                    
+					 <button type="button" class="btn btn-secondary btn-block" title="Cancel Transfer" id="cancelPendingTransfer">Cancel Transfer<span class="sr-only"> Cancel Transfer</span></button>
+				</div>
+            </div>
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--<div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+            <dd><span id="recurringSendDate">07/14/2017</span><span class="icon"><i class="material-icons light-grey" aria-hidden="true"></i><span class="sr-only">Recurring</span></span></dd>
+            <dt>From </dt>
+            <dd>Jack Milagro, SunTrust, Checking, xxxx2929</dd>            
+            <dt>To </dt>
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+            <dd>Jack Milagro, SunTrust, Checking, xxxx2929</dd>
+            <dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+            <dd class="ml30">Pending</dd>
+            <dt>Total </dt>
+            <dd>$25.00</dd>
+        </dl>
+        <div id="KnowMore1" class="collapse" role="region" aria-labelledby="info1">
+            <dl class="review-list">
+                <dt>From</dt>
+				<dd>Jack Milagro, SunTrust, Checking, xxxx2929</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>678876456</dd>
+				<dt>Deliver</dt>
+				<dd id="recurringDeliverDate">09/04/2017</dd>
+				<dt>Speed</dt>
+				<dd>Standard</dd>
+				<dt>A Notification was sent to </dt>
+				<dd>jack.milagro@suntrust.com</dd>
+				<dt>Personal Message </dt>
+				<dd>For tuition payment</dd>
+            </dl>
+            <dl class="review-list">
+                <dt>Frequency </dt>
+				<dd>Day 30 of every month</dd>
+				<dt>Duration </dt>
+				<dd>Untill I Cancel</dd>
+				<dt>Transfer Sent </dt>
+				<dd>0</dd>
+				<dt>Transfer Remaining </dt>
+				<dd>Unlimited</dd>
+				<dt>Transfer Amount Sent </dt>
+				<dd>$0.00</dd>
+				<dt>Transfer Amount Remaining</dt>
+				<dd>Unlimited</dd>
+            </dl>
+			 <dl class="review-list">
+             	<dt>Transfer Amount </dt>
+				<dd>$25.00</dd>
+                <dt>Fees </dt>
+				<dd>Free</dd>
+				<dt>Total </dt>
+				<dd>$25.00</dd>
+				<dt>Memo </dt>
+				<dd>For tuition payment</dd>
+            </dl>
+            <div class="row">
+                <div class="col-md-12">                   
+					<button type="button" class="btn btn-secondary btn-block" title="Cancel Transfer" id="recurringCancelJack">Cancel Transfer<span class="sr-only"> Cancel Transfer</span></button>
+                    <button type="button" class="btn btn-primary btn-block" title="Edit" id="recurringEditTransferJack">Edit<span class="sr-only"> Edit Transfer</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore1"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info1">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>-->
+    
+    <div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+            <dd><span id="recurringSendDate">07/14/2017</span><span class="icon"><i class="material-icons light-grey" aria-hidden="true"></i><span class="sr-only">Recurring</span></span></dd>
+            <dt>From </dt>
+            <dd>TD Bank, Checking, xxxx5432</dd>            
+            <dt>To </dt>
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+            <dd>Jack Milagro, SunTrust, Checking, xxxx2929</dd>
+            <dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+            <dd class="ml30">Pending</dd>
+            <dt>Total </dt>
+            <dd>$25.00</dd>
+        </dl>
+        <div id="KnowMore1" class="collapse" role="region" aria-labelledby="info1">
+            <dl class="review-list">
+                <dt>From</dt>
+				<dd>TD Bank, Checking, xxxx5432</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>678876456</dd>
+				<dt>Deliver</dt>
+				<dd id="recurringDeliverDate">09/04/2017</dd>
+				<dt>Speed</dt>
+				<dd>Standard</dd>
+				<!--<dt>A Notification was sent to </dt>
+				<dd>jack.milagro@suntrust.com</dd>
+				<dt>Personal Message </dt>
+				<dd>For tuition payment</dd>-->
+            </dl>
+            <dl class="review-list">
+                <dt>Frequency </dt>
+				<dd>Day 30 of every month</dd>
+				<dt>Duration </dt>
+				<dd>Up to $250.00</dd>
+				<dt>Transfer Sent </dt>
+				<dd>0</dd>
+				<dt>Transfer Remaining </dt>
+				<dd>25.00</dd>
+				<dt>Transfer Amount Sent </dt>
+				<dd>$0.00</dd>
+				<dt>Transfer Amount Remaining</dt>
+				<dd>25.00</dd>
+            </dl>
+			 <dl class="review-list">
+             	<dt>Transfer Amount </dt>
+				<dd>$25.00</dd>
+                <dt>Fees </dt>
+				<dd>Free</dd>
+				<dt>Total </dt>
+				<dd>$25.00</dd>
+				<dt>Memo </dt>
+				<dd>For tuition payment</dd>
+            </dl>
+            <div class="row">
+                <div class="col-md-12">                   
+					<button type="button" class="btn btn-secondary btn-block" title="Cancel Transfer" id="recurringCancelTD">Cancel Transfer<span class="sr-only"> Cancel Transfer</span></button>
+                    <button type="button" class="btn btn-primary btn-block" title="Edit" id="recurringEditTransferTDBtn">Edit<span class="sr-only"> Edit Transfer</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore1"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info1">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+    <div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+			<dd id="rejectedDate">07/14/2017</dd>
+			<dt>From </dt>
+			<dd>E*Trade, Brokerage, xxxx6789</dd>
+			<dt>To </dt>			
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+			<dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+			<dd class="ml30"><a href="javascript:void(0);" title="Rejected" id="rejectedTransfer">Rejected</a></dd>
+			<dt>Total </dt>
+			<dd>$50.00</dd>
+		</dl>
+        <div id="KnowMore2" class="collapse" role="region" aria-labelledby="info2">
+            <dl class="review-list">
+                <dt>From</dt>
+				<dd>E*Trade, Brokerage, xxxx6789</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>098861543</dd>                                                        
+				<dt>Speed</dt>
+				<dd>Next-Day</dd>
+            </dl>
+            <dl class="review-list">
+            	<dt>Transfer Amount </dt>
+				<dd>$50.00</dd>
+                <dt>Fees </dt>
+				<dd>$3.00</dd>
+				<dt>Total </dt>
+				<dd>$53.00</dd>
+				<dt>Memo </dt>
+				<dd>For Purchase</dd>
+            </dl>            
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore2"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info2">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+			<dd id="inProcessSendDate">07/14/2017</dd>
+			<dt>From </dt>
+			<dd>Chase Bank, Checking, xxxx2345</dd>
+			<dt>To </dt>			
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+			<dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+			<dd class="ml30">In Process</dd>
+			<dt>Total </dt>
+			<dd>$75.56</dd>
+        </dl>
+        <div id="KnowMore3" class="collapse" role="region" aria-labelledby="info3">
+            <dl class="review-list  ">
+                <dt>From</dt>
+				<dd>Chase Bank, Checking, xxxx2345</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>098625899</dd>
+				<dt>Deliver</dt>
+				<dd id="inProcessDeliverDate">09/06/2017</dd>
+				<dt>Speed</dt>
+				<dd>Standard</dd>
+            </dl>
+            <dl class="review-list">
+            	<dt>Transfer Amount </dt>
+				<dd>$75.56</dd>
+                <dt>Fees </dt>
+				<dd>Free</dd>
+				<dt>Total </dt>
+				<dd>$75.56</dd>
+				<dt>Memo </dt>
+				<dd>For Rent</dd>
+            </dl>
+           <!-- <div class="row">
+                <div class="col-md-12">
+					<button type="button" class="btn btn-secondary btn-block" id="stopTransfer">Stop Transfer<span class="sr-only">Stop Transfer</span></button>                                                   
+                </div>
+            </div>-->
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore3"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info3">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+			<dd class="completedDate">07/14/2017</dd>
+			<dt>From </dt>
+			<dd>TD Bank, Checking, xxxx5432</dd>
+			<dt>To </dt>			
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+			<dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+			<dd class="ml30">Completed</dd>
+			<dt>Total </dt>
+			<dd>$10.00</dd>
+        </dl>
+        <div id="KnowMore4" class="collapse" role="region" aria-labelledby="info4">
+            <dl class="review-list">
+                <dt>From</dt>
+				<dd>TD Bank, Checking, xxxx5432</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>098678793</dd>
+				<dt>Deliver</dt>
+				<dd class="completedDate">07/14/2017</dd>
+				<dt>Speed</dt>
+				<dd>Instant</dd>
+            </dl>
+            <dl class="review-list">
+            	<dt>Transfer Amount </dt>
+				<dd>$10.00</dd>
+                <dt>Fees </dt>
+				<dd>$5.00</dd>
+				<dt>Total </dt>
+				<dd>$15.00</dd>
+				<dt>Memo </dt>
+				<dd>For Food expenses</dd>
+            </dl>            
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore4"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info4">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+			<dd id="pendingSendFutureDate">07/14/2017</dd>
+			<dt>From </dt>
+			<dd>E*Trade, Brokerage, xxxx6789</dd>
+			<dt>To </dt>			
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+			<dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+			<dd class="ml30">Pending</dd>
+			<dt>Total </dt>
+			<dd>$12.00</dd>
+        </dl>
+        <div id="KnowMore5" class="collapse" role="region" aria-labelledby="info5">
+            <dl class="review-list">
+                <dt>From</dt>
+				<dd>E*Trade, Brokerage, xxxx6789</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>098684293</dd>
+				<dt>Deliver</dt>
+				<dd id="pendingDeliverFutureDate">09/21/2017</dd>
+				<dt>Speed</dt>
+				<dd>Next-Day</dd>
+            </dl>
+            <dl class="review-list">
+            	<dt>Transfer Amount </dt>
+				<dd>$12.00</dd>
+                <dt>Fees </dt>
+				<dd>$3.00</dd>
+				<dt>Total </dt>
+				<dd>$15.00</dd>
+				<dt>Memo </dt>
+				<dd>For Dress</dd>
+            </dl>
+            <div class="row">
+                <div class="col-md-12">                    
+					<button type="button" class="btn btn-secondary btn-block" title="Cancel Transfer" id="cancelTransferFuture">Cancel Transfer<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                    <button type="button" class="btn btn-primary btn-block" title="Edit" id="editTransferFuture">Edit<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                </div>
+            </div>
+        </div>
+       <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore5"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info5">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+     
+    <!-- Cancelled Transfer	 -->
+   
+    <div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+			<dd class="completedDate">07/14/2017</dd>
+			<dt>From </dt>
+			<dd>Chase Bank, Checking, xxxx2345</dd>
+			<dt>To </dt>			
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+			<dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+			<dd class="ml30">Cancelled</dd>
+			<dt>Total </dt>
+			<dd>$20.00</dd>
+        </dl>
+        <div id="KnowMore6" class="collapse" role="region" aria-labelledby="info4">
+            <dl class="review-list">
+                <dt>From</dt>
+				<dd>Chase Bank, Checking, xxxx2345</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>098678793</dd>
+				
+				<dt>Speed</dt>
+				<dd>Standard</dd>
+            </dl>
+            <dl class="review-list">
+            	<dt>Transfer Amount </dt>
+				<dd>$20.00</dd>
+                <dt>Fees </dt>
+				<dd>Free</dd>
+				<dt>Total </dt>
+				<dd>$20.00</dd>				
+            </dl>            
+        </div>
+        
+          <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore6"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info3">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+    
+     <!-- On Hold Transfer	 -->
+   
+    <div class="col-md-12 blocks">
+        <dl class="review-list">
+            <dt>Send </dt>
+			<dd class="completedDate">07/14/2017</dd>
+			<dt>From </dt>
+			<dd>Chase Bank, Checking, xxxx2345</dd>
+			<dt>To </dt>			
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+			<dt><span class="inline-block">Status</span><a href="javascript:void(0);" data-toggle="modal" data-target="#ActivityIcon"><span class="icon" title="What do the Different Statuses Mean?"><i class="material-icons info-blue" aria-hidden="true">&#xE88E;</i><span class="sr-only">info</span></span></a></dt>
+			<dd class="ml30">On Hold</dd>
+			<dt>Total </dt>
+			<dd>$20.00</dd>
+        </dl>
+        <div id="KnowMore7" class="collapse" role="region" aria-labelledby="info4">
+            <dl class="review-list">
+                <dt>From</dt>
+				<dd>Chase Bank, Checking, xxxx2345</dd>
+				<dt>To</dt>
+				<dd>MyFinancial, Checking, xxxx1234</dd>
+				<dt>Reference #</dt>
+				<dd>098670323</dd>
+				
+				<dt>Speed</dt>
+				<dd>Standard</dd>
+            </dl>
+            <dl class="review-list">
+            	<dt>Transfer Amount </dt>
+				<dd>$20.00</dd>
+                <dt>Fees </dt>
+				<dd>Free</dd>
+				<dt>Total </dt>
+				<dd>$25.00</dd>	
+                <dt>Memo </dt>
+				<dd>For School Fees</dd>				
+            </dl>  
+             <div class="row">
+            <div class="col-md-12">                    
+                <button type="button" class="btn btn-secondary btn-block" title="Cancel Transfer" id="cancelHoldTransfer">Cancel Transfer<span class="sr-only"> Cancel Transfer</span></button>                                                   
+            </div>
+        </div>          
+        </div>
+        
+          <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore7"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info3">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>                
+    </div>
+   
+    
+    <!-- <div class="col-md-12 blocks">
+        <dl class="review-list  ">
+            <dt>Send </dt>
+            <dd>07/14/2017<span class="icon"><i class="material-icons light-grey" aria-hidden="true"></i><span class="sr-only">Recurring</span></span></dd>
+            <dt>To </dt>
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+            <dt>From </dt>
+            <dd>XYZ Debit</dd>
+            <dt><span class="inline-block">Status</span><span class="icon"><i class="material-icons info-blue" aria-hidden="true"></i><span class="sr-only">More info about Status</span></span></dt>
+            <dd class="ml30">Pending</dd>
+            <dt>Total </dt>
+            <dd>$555.55</dd>
+        </dl>
+        <div id="KnowMore6" class="collapse" role="region" aria-labelledby="info6">
+            <dl class="review-list  ">
+                <dt>Reference #</dt>
+                <dd>098678543</dd>
+                <dt>Originator </dt>
+                <dd>Test Originator</dd>
+                <dt>Deliver</dt>
+                <dd>07/14/2017</dd>
+                <dt>Speed</dt>
+                <dd>Instant</dd>
+            </dl>
+            <dl class="review-list  ">
+            	<dt>Transfer Amount </dt>
+				<dd>$555.55</dd>
+                <dt>Fees </dt>
+                <dd>Free</dd>
+                <dt>Total </dt>
+                <dd>$550.55</dd>
+                <dt>Memo </dt>
+                <dd>For tution payment</dd>
+            </dl>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block">Edit<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                    <button type="button" class="btn btn-secondary btn-block">Cancel Transfer<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore6"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info6">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only"> About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12 blocks">
+        <dl class="review-list  ">
+            <dt>Send </dt>
+            <dd>07/14/2017<span class="icon"><i class="material-icons light-grey" aria-hidden="true"></i><span class="sr-only">Recurring</span></span></dd>
+            <dt>To </dt>
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+            <dt>From </dt>
+            <dd>XYZ Debit</dd>
+            <dt><span class="inline-block">Status</span><span class="icon"><i class="material-icons info-blue" aria-hidden="true"></i><span class="sr-only">More info about Status</span></span></dt>
+            <dd class="ml30">Pending</dd>
+            <dt>Total </dt>
+            <dd>$555.55</dd>
+        </dl>
+        <div id="KnowMore7" class="collapse" role="region" aria-labelledby="info7">
+            <dl class="review-list  ">
+                <dt>Reference #</dt>
+                <dd>098678543</dd>
+                <dt>Originator </dt>
+                <dd>Test Originator</dd>
+                <dt>Deliver</dt>
+                <dd>07/14/2017</dd>
+                <dt>Speed</dt>
+                <dd>Instant</dd>
+            </dl>
+            <dl class="review-list  ">
+            	<dt>Transfer Amount </dt>
+				<dd>$550.55</dd>
+                <dt>Fees </dt>
+                <dd>Free</dd>
+                <dt>Total </dt>
+                <dd>$550.55</dd>
+                <dt>Memo </dt>
+                <dd>For tution payment</dd>
+            </dl>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block">Edit<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                    <button type="button" class="btn btn-secondary btn-block">Cancel Transfer<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore7"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info7">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12 blocks">
+        <dl class="review-list  ">
+            <dt>Send </dt>
+            <dd>07/14/2017<span class="icon"><i class="material-icons light-grey" aria-hidden="true"></i><span class="sr-only">Recurring</span></span></dd>
+            <dt>To </dt>
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+            <dt>From </dt>
+            <dd>XYZ Debit</dd>
+            <dt><span class="inline-block">Status</span><span class="icon"><i class="material-icons info-blue" aria-hidden="true"></i><span class="sr-only">More info about Status</span></span></dt>
+            <dd class="ml30">Pending</dd>
+            <dt>Total </dt>
+            <dd>$555.55</dd>
+        </dl>
+        <div id="KnowMore8" class="collapse" role="region" aria-labelledby="info8">
+            <dl class="review-list  ">
+                <dt>Reference #</dt>
+                <dd>098678543</dd>
+                <dt>Originator </dt>
+                <dd>Test Originator</dd>
+                <dt>Deliver</dt>
+                <dd>07/14/2017</dd>
+                <dt>Speed</dt>
+                <dd>Instant</dd>
+            </dl>
+            <dl class="review-list  ">
+            	<dt>Transfer Amount </dt>
+				<dd>$555.55</dd>
+                <dt>Fees </dt>
+                <dd>Free</dd>
+                <dt>Total </dt>
+                <dd>$550.55</dd>
+                <dt>Memo </dt>
+                <dd>For tution payment</dd>
+            </dl>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block">Edit<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                    <button type="button" class="btn btn-secondary btn-block">Cancel Transfer<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore8"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info8">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-md-12 blocks">
+        <dl class="review-list  ">
+            <dt>Send </dt>
+            <dd>07/14/2017<span class="icon"><i class="material-icons light-grey" aria-hidden="true"></i><span class="sr-only">Recurring</span></span></dd>
+            <dt>To </dt>
+            <dd>MyFinancial, Checking, xxxx1234</dd>
+            <dt>From </dt>
+            <dd>XYZ Debit</dd>
+            <dt><span class="inline-block">Status</span><span class="icon"><i class="material-icons info-blue" aria-hidden="true"></i><span class="sr-only">More info about Status</span></span></dt>
+            <dd class="ml30">Pending</dd>
+            <dt>Total </dt>
+            <dd>$555.55</dd>
+        </dl>
+        <div id="KnowMore9" class="collapse" role="region" aria-labelledby="info9">
+            <dl class="review-list  ">
+                <dt>Reference #</dt>
+                <dd>098678543</dd>
+                <dt>Originator </dt>
+                <dd>Test Originator</dd>
+                <dt>Deliver</dt>
+                <dd>07/14/2017</dd>
+                <dt>Speed</dt>
+                <dd>Instant</dd>
+            </dl>
+            <dl class="review-list  ">
+            	<dt>Transfer Amount </dt>
+				<dd>$555.55</dd>
+                <dt>Fees </dt>
+                <dd>Free</dd>
+                <dt>Total </dt>
+                <dd>$550.55</dd>
+                <dt>Memo </dt>
+                <dd>For tution payment</dd>
+            </dl>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-block">Edit<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                    <button type="button" class="btn btn-secondary btn-block">Cancel Transfer<span class="sr-only"> from ABC Checking to XYZ Saving on 7/14/2017</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-group moreinfo">
+            <button data-parent="activityMobile" data-target="#KnowMore9"
+                    class="btn moreInfo btn-link pull-right"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    id="info9">
+                <span class="collapsed">
+                    More info <i class="material-icons" aria-hidden="true">&#xE5CC;</i>
+                </span>
+                <span class="expanded">
+                    Less Info <i class="material-icons" aria-hidden="true">&#xE5CE;</i>
+                </span>
+                <span class="sr-only">About Transfer from ABC Checking XYZ Saving on 7/14/2017</span>
+            </button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>	-->
+</div>
+<div class="popmoneymsg">
+<p>You can view 6 months of past transactions and all your future-dated scheduled transactions in Activity.</p>                 
+<nav role="navigation">
+    <ul class="pagination">
+        <li class="first">
+            <a href="javascript:void(0);">
+                <span><i class="material-icons" aria-hidden="true"></i>First</span>
+            </a>
+        </li>
+        <li><a href="javascript:void(0);" class="previous"><i class="material-icons" aria-hidden="true"></i><span class="sr-only">Previous</span></a></li>
+        <li class="active"><a href="javascript:void(0);"><span class="sr-only">Page</span> 1</a></li>
+        <li><a href="javascript:void(0);"><span class="sr-only">Page</span> 2</a></li>
+        <li><a href="javascript:void(0);" class="next"><i class="material-icons" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+        <li class="last">
+            <a href="javascript:void(0);">
+                <span>Last <i class="material-icons" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<p>To view payments you made using Popmoney, go to <a href="javascript:void(0);">Popmoney Activity</a></p>   
+</div>
+
+<script>
+	$(document).ready(function(){						
+		
+		
+		
+		$(document).on('change','#sortBy', '#displayBy', function () {
+			$('#resultsortBy').val($('#sortBy option:selected').val());
+		});
+		
+		$(document).on('change','#displayBy', function () {
+			$('#resultdisplayBy').val($('#displayBy option:selected').val());
+		});
+		
+		$(document).on("click", "#applyFilter", function () {
+			
+			var inputval = $("#resultdisplayBy").val()
+			$("#showing").text();
+			return false;
+		});
+
+		/*$("#applyFilter").click(function(){			
+			$("#sortedBy").text($("#resultsortBy").text());
+			$("#showing").text($("#resultdisplayBy").text());
+			$("#fromDate").text($("#startDate").text());
+			$("#toDate").text($("#endDate").text());		
+		});*/
+		
+		/*	setting date in the table	*/  
+		
+		
+		/****************************************************************************
+		*	 			Moment.js for calender calculation for weekdays 			*
+		*																			*
+		*	Reference  : http://momentjs.com/docs/#/displaying/format/				*
+		*	Reference : http://jsfiddle.net/dain/5xrr79h0/  						*
+		****************************************************************************/
+		
+		moment.fn.addWorkdays = function (days) {
+			var increment = days / Math.abs(days);
+			var date = this.clone().add(Math.floor(Math.abs(days) / 5) * 7 * increment, 'days');
+			var remaining = days % 5;
+			while(remaining != 0) {
+			  date.add(increment, 'days');
+			  if(date.isoWeekday() !== 6 && date.isoWeekday() !== 7)
+				remaining -= increment;
+			}
+			return date;
+		};
+		
+		var start= $.datepicker.formatDate('mm/dd/yy', new Date());
+		start = moment(start);			
+		var zeroday = start.addWorkdays(0).format('MM/DD/YYYY');
+		var oneday = start.addWorkdays(1).format('MM/DD/YYYY');
+		var twoday = start.addWorkdays(2).format('MM/DD/YYYY');
+		var threedays = start.addWorkdays(3).format('MM/DD/YYYY');
+		var fivedays = start.addWorkdays(5).format('MM/DD/YYYY');
+		var eightdays = start.addWorkdays(8).format('MM/DD/YYYY');
+		var tendays = start.addWorkdays(10).format('MM/DD/YYYY');
+		var elevendays = start.addWorkdays(11).format('MM/DD/YYYY');
+		//var onemonth = start.addWorkdays(29).format('MM/DD/YYYY');					
+		var onemonth = moment(start).add(1,'months').format('MM/DD/YYYY');
+		
+		
+		var onedayminus = start.addWorkdays(-1).format('MM/DD/YYYY');
+		var threedaysminus = start.addWorkdays(-3).format('MM/DD/YYYY');
+		var sevendaysminus = start.addWorkdays(-7).format('MM/DD/YYYY');
+		//var onemonthminus = start.addWorkdays(-29).format('MM/DD/YYYY');
+		var onemonthminus = moment(start).subtract(1,'months').format('MM/DD/YYYY');
+		
+		var onemonthplu3 = moment(onemonth).add(3,'days').format('MM/DD/YYYY');
+		
+		$("#rejectedDate").text(sevendaysminus);   // setting date for rejected transfer
+		$(".completedDate").text(threedaysminus);   // setting date for completed transfer
+		
+		$("#pendingSendOnStandard, #holdSendOnStandard").text(zeroday);		// setting date for pending, hold transfer(standard) - send Date
+		$("#pendingDeliverOnStandard, #holdDeliverOnStandard").text(threedays); // setting date for pending, hold transfer(standard) - Deliver Date		
+		
+		$("#inProcessSendDate").text(onedayminus);	// setting date for pending transfer(standard) - send Date
+		$("#inProcessDeliverDate").text(twoday); 	// setting date for pending transfer(standard) - Deliver Date
+		
+		$("#pendingSendFutureDate").text(tendays);		// setting date for pending transfer(Next-Day) - send Date
+		$("#pendingDeliverFutureDate").text(elevendays); // setting date for pending transfer(Next-Day) - Deliver Date
+		
+		$("#recurringSendDate").text(fivedays);			// setting date for recurring transfer(standard) - send Date
+		$("#recurringDeliverDate").text(eightdays); 	// setting date for recurring transfer(standard) - Deliver Date
+		
+		$("#fromDate").text(onemonthminus);		// setting date for pending transfer(standard) - send Date
+		$("#toDate").text(onemonth); // setting date for pending transfer(standard) - Deliver Date
+		
+		$(".sendDateOther").text(onemonth);		// setting date for my other account
+		$(".deliverDateOther").text(onemonthplu3); // setting date for my other account		
+			
+
+	}); 
+
+</script>

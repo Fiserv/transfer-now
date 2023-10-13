@@ -1,0 +1,568 @@
+<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="assets/js/app.js" type="text/javascript"></script>
+<div class="drawer-contents col-xs-12 col-sm-12 col-md-10 pt20 pl20 pr20">
+            <div class="drawer-controls">
+                <a href="#addNewAccount" id="close-dw" role="button" data-toggle="drawer" aria-controls="addNewAccount" class="btn btn-navigation close" aria-label="Close" title="Close" aria-expanded="true"><span aria-hidden="true"><strong>×</strong></span></a>
+            </div>
+            <h2 id="addExternalAcctHeading">Add External Account</h2>
+            
+            <div class="row form-group" id="legalDebitTxt">                                
+                 <div class="col-xs-12 col-sm-12 col-md-12 mt10">
+                <p>
+                   We'll instantly make two small deposits to the bank account for your debit card so you can verify it right away.
+                </p>
+            </div>                 
+            </div>
+            
+            <form id="addExternal" method="get">
+                <div class="row form-group pt10">
+                    <div class="col-xs-12 col-sm-8 col-md-7">
+                        <label for="accountType">Account Type</label>
+                        <div class="fdl-select">
+                            <select id="accountType" class="form-control" aria-required="true" aria-invalid="false" name="accountType">
+                                <option value="" disabled selected>Please Select</option>
+                                <option value="Checking">Checking</option>
+                                <option value="Savings">Savings</option>
+                                <option value="Money Market Checking">Money Market Checking</option>
+                                <option value="Money Market Savings">Money Market Savings</option>
+                                <option value="Brokerage">Brokerage</option>
+                                <option value="Business Checking">Business Checking</option>
+                                <option value="Business Savings">Business Savings</option>
+                                <!--<option value="Debit Card">Debit Card</option>-->
+                            </select>
+                        </div>
+                    </div>
+                </div>     
+                
+               	<div class="row form-group" id="brokerageDropdown">
+                
+                <!--  <p class="mb15">Choose the brokerage where your account is eld from the dropdown menu. 
+              	Then, enter your brokerage account number.</p>	-->
+                    
+                <div class="col-xs-12 col-sm-8 col-md-7">
+                    <label for="brokerageAccount">Brokerage Account</label>
+                     <select id="brokerageAccount" class="form-control" required="" aria-invalid="false" name="brokerageAccount">
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="1">Ameriprise Financial Brokerage</option>
+                        <option value="2">Charles Schwab Brokerage</option>
+                        <option value="3">E*trade Brokerage</option>
+                        <option value="4">Fidelity Brokerage</option>
+                        <option value="5">Merrill lynch</option>
+                        <option value="6">Money Bank</option>
+                        <option value="7">Morgan Stanley</option>
+                        <option value="8">Principal Funds Money Market</option>
+                        <option value="9">Scotttrade Brokerage</option>
+                        <option value="10">Smith Barney Brokerage</option>
+                        <option value="11">TD ameritrade</option>
+                        <option value="12">U.S.Bank</option>
+                     </select>
+                     
+                 <p class="mb0 mt5"><small>(Select a Brokerage Account.)</small></p>
+                </div>
+                </div>
+                
+                <div class="row form-group" id="businessName">
+                    <div class="col-xs-12 col-sm-8 col-md-7">
+                        <label for="nickName">Business Name</label>
+                        <input type="text" id="businessName" placeholder="" class="form-control" aria-invalid="false" name="businessName">
+                    </div>                   
+                </div>
+                
+                <div class="row form-group" id="accountNickName">
+                    <div class="col-xs-12 col-sm-8 col-md-7">
+                        <label for="nickName">Account Nickname (Optional)</label>                                             
+                        <a href="javascript:void(0);" class="alert-info" data-toggle="tooltip" data-placement="bottom" data-original-title="Nicknames help you identify accounts easily. Nicknames you create in Mobile TN won't change nicknames you use at other banks or credit unions.">
+                     	   <i class="material-icons" aria-hidden="true">info <span class="sr-only">info</span></i>
+                        </a>
+                        <input type="text" id="nickName" placeholder="" class="form-control" aria-invalid="false" name="nickName">
+                    </div>
+                </div>
+             
+                
+                <div id="cardSection">
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <label for="cardNo">Card Number</label>
+                            <input type="text" id="cardNo" placeholder="" class="form-control" aria-invalid="false" name="cardNo" maxlength="16"/>
+                            <div class="text-right mt5">
+                                <img src="assets/images/master-card.png" class="text-right" alt="Master Card" aria-hidden="true" id="masterImage">
+                                <img src="assets/images/visa.png" class="text-right" alt="visa Card" aria-hidden="true" id="visaImage">
+                            </div>
+                        </div>        
+                    </div>
+                    
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <label>Expiration</label>
+                            <div class="fdl-select">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <select id="expiremonth" class="form-control" aria-required="true" aria-invalid="false" name="expiremonth">
+                                            <option value="" selected="selected" class="">Month</option>
+                                            <option label="Jan" value="Jan">Jan</option>
+                                            <option label="Feb" value="Feb">Feb</option>
+                                            <option label="Mar" value="Mar">Mar</option>
+                                            <option label="Apr" value="Apr">Apr</option>
+                                            <option label="May" value="May">May</option>
+                                            <option label="Jun" value="Jun">Jun</option>
+                                            <option label="Jul" value="Jul">Jul</option>
+                                            <option label="Aug" value="Aug">Aug</option>
+                                            <option label="Sep" value="Sep">Sep</option>
+                                            <option label="Oct" value="Oct">Oct</option>
+                                            <option label="Nov" value="Nov">Nov</option>
+                                            <option label="Dec" value="Dec">Dec</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select id="expireyear" class="form-control" aria-required="true" aria-invalid="false" name="expireyear">
+                                              <option value="" selected="selected" class="">Year</option>
+                                              <option label="2018" value="2018">2018</option>
+                                              <option label="2019" value="2019">2019</option>
+                                              <option label="2020" value="2020">2020</option>
+                                              <option label="2021" value="2021">2021</option>
+                                              <option label="2022" value="2022">2022</option>
+                                              <option label="2023" value="2023">2023</option>
+                                              <option label="2024" value="2024">2024</option>
+                                              <option label="2025" value="2025">2025</option>
+                                              <option label="2026" value="2026">2026</option>
+                                              <option label="2027" value="2027">2027</option>
+                                              <option label="2028" value="2028">2028</option>
+                                              <option label="2029" value="2029">2029</option>
+                                              <option label="2030" value="2030">2030</option>                                              
+                                           </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <!--cvv number-->
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-6 col-md-5">
+                            <div class="row">
+                                <div class="col-xs-8 col-sm-8 col-md-8">
+                                    <label for="cvvNo">CVV</label>
+                                    <input type="password" id="cvvNo" placeholder=" " maxlength="3" class="form-control" aria-invalid="false" name="cvvNo" />
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-10">
+                        	<p> <span class="bold600">Your Address </span> <br> Make sure the address for your debit card matches this one:<br>
+                            KARA AANEMONE<br>9384 POODLE LN <br>KAILAU, HI 96734</p>
+                            <!--<p><span class="bold600">Cardholder Billing Address</span><br />Jane Doe<br />123 Main Street <br />Columbus, OH 43205 </p>-->
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div id="brokerageAccountNumber">
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-8 col-md-7">
+                            <label for="enterAccount">Brokerage Account Number</label>
+                            <input type="text" id="enterAccount" placeholder="Enter Brokerage Account Number" class="form-control" aria-invalid="false" name="enterAccount" maxlength="18" required>                             
+                        </div>  
+                        <p class="form-group col-xs-12 col-sm-10 col-md-10 mb0 mt5"><small id="brokerageText">(Select online account number.)</small></p>                      
+                    </div> 		
+                        
+                    <div class="row form-group" id="brokerageReenterAccount">
+                        <div class="col-xs-12 col-sm-8 col-md-7">
+                            <label for="reEnterAccount">Re-enter Brokerage Account Number</label>
+                            <input type="text" id="reEnterAccount" placeholder="Re-enter Brokerage Account Number" class="form-control" aria-invalid="false" name="reEnterAccount" maxlength="18"required>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                 <div id="brokerageAccNickName">
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-8 col-md-7">
+                            <label for="brokerageAcountNickName">Brokerage Account Nickname</label>
+                            <input type="text" id="brokerageAcountNickName" placeholder="Brokerage Account Nickname" class="form-control" aria-invalid="false" name="brokerageAcountNickName" required>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <fieldset class="form-fieldset mt20" id="writeCheck">
+                    <legend>Can you write checks on your account?</legend>
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <div class="radio">
+                                <input type="radio" id="radioAccountOne" value="checkoption" aria-invalid="false" name="radioAccount" checked>
+                                <label for="radioAccountOne"><span>Yes</span></label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="radioAccountTwo" value="checkoption" aria-invalid="false" name="radioAccount">
+                                <label for="radioAccountTwo"><span>No (If No, only transfers into Charles Schewab Brokerage Accounts are allowed)</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset> 
+               
+                  
+                <div class="show-mobile sr-only">
+                    Sample check that depicts the location of the routing and account number. Contact your financial institution for additional help with your routing and account number.
+                </div>
+                
+                <div class="row form-group hide-mobile" id="checkLeaf">
+                    <div class="col-xs-12 col-sm-10 col-md-10 pt20">
+                        <img src="assets/images/rout_acct_no.png" class="img-responsive" alt="Sample check that depicts the location of the routing and account number. Contact your financial institution for additional help with your routing and account number.">
+                    </div>
+                </div>
+                
+                <div class="row form-group hide-mobile" id="checkingNumberLeaf">
+                    <div class="col-xs-12 col-sm-10 col-md-10 pt20">
+                        <img src="assets/images/rout_acct_no_brokerage.png" class="img-responsive" alt="Sample check that depicts the location of the routing and account number. Contact your financial institution for additional help with your routing and account number.">
+                    </div>
+                </div>
+                
+                <div id="routingSection">
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-5 col-md-5 form-min-480">
+                            <label for="routNo">Routing Number</label>
+                            <input type="text" id="routNo" placeholder="Enter bank’s routing number" class="form-control" aria-invalid="false" name="routing" maxlength="9">
+                            <small class="pull-right" id="bankName">Fiserv Bank (Multi Login Parameter)</small>
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-5 col-md-5 form-min-480">
+                            <label for="acctNo">Account Number</label>
+                            <input type="text" id="acctNo" placeholder="Enter bank’s account number" class="form-control " aria-invalid="false" name="accountNumber" maxlength="9">
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="form-group col-xs-12 col-sm-5 col-md-5 col-md-offset-5 col-sm-offset-5 col-sm-offset-4  form-min-480 pull-right-480">
+                            <label for="reAcctNo">Re-enter Account Number</label>
+                            <input type="text" id="reAcctNo" placeholder="Re-enter bank’s account number" class="form-control" aria-invalid="false" name="reAccountNumber"  maxlength="9"> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="clearfix"></div>
+                <div id="checkNumber">
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-5 col-md-5 mb5">
+                            <label for="checkingNumber">Checking Number</label>
+                            <input type="text" id="checkingNumber" placeholder="Enter Checking Number" class="form-control" aria-invalid="false" name="checkingNumber" maxlength="10">                           
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-5 col-md-5 mb5">
+                            <label for="ReEntercheckingNumber">Re-enter Checking Number</label>
+                            <input type="text" id="ReEntercheckingNumber" placeholder="Re-enter Checking Number" class="form-control" aria-invalid="false" name="ReEntercheckingNumber" maxlength="10">
+                        </div>
+                         <p class="form-group col-xs-12 col-sm-10 col-md-10"><small id="checkingNumberText"></small></p>
+                    </div>
+                </div>
+         </form>   
+            <div class="custom-btn">
+                <button type="button" class="btn btn-secondary mr15" title="Cancel" id="addAccountCancel">Cancel</button>
+                <button type="button" class="btn btn-primary" title="Next" id="addAccountNext">Next</button>                
+            </div>
+            <div class="row form-group">
+                <div class="col-xs-12 col-sm-10 col-md-10 mt20" id="legalTxt">
+                    <small>
+                        Legal: By clicking "Next" you understand that we may verify your external
+                        account/identity using commercially-available databases containing information from public
+                        records, other financial institutions and consumer reporting agencies.
+                    </small>
+                </div>
+                
+                <!--<div class="col-xs-12 col-sm-10 col-md-10 mt20" id="legalDebitTxt">
+                    <small>
+                       We'll verify your debit card by making two small deposits into the bank account linked with your debit card.
+                    </small>
+                </div>-->
+                
+            </div>
+        </div>
+        
+        <div id="pageLoader" style="display:none;">
+        	<div id="loader-fade"></div>
+        	<div id="loading-spinner">
+				<div class="spinner-icon" aria-label="loading..."></div>
+    		</div>
+        </div>        
+<script>
+	$(document).ready(function(){
+		
+		/* Validation */
+		
+			$('#addExternal').validate({
+				onsubmit: true,
+				rules: {	
+					accountType: { required:true },						
+					businessName: "required",					
+					cardNo: {
+						 required:true,
+						 minlength : 16,
+						 maxlength : 16,
+					 },	
+					cvvNo: {
+						 required:true,
+						 minlength : 3,
+						 maxlength : 3,
+					 },			
+					enterAccount: {
+						required: true,
+						minlength : 3,
+						maxlength : 18,
+                    	//equalTo: "#reEnterAccount"
+					},	
+					reEnterAccount: {
+						required: true,
+						minlength : 3,
+						maxlength : 18,
+                    	equalTo: "#enterAccount"
+					},	
+					brokerageAcountNickName: "required",
+					radioAccount: "required",
+					routing:  {
+						required: true,                    	
+						minlength : 9,
+						maxlength : 9,
+					},						
+					accountNumber: {
+						//required: true,
+						//minlength : 3,
+						maxlength : 9,
+                    	//equalTo: "#reAcctNo"
+					},	
+					reAccountNumber: {
+						//required: true,
+						//minlength : 3,
+						maxlength : 9,
+                    	equalTo: "#acctNo"
+					},					
+					ReEntercheckingNumber: "required",										
+					brokerageAccount: { required:true },	
+					expiremonth: { required:true },	
+					expireyear: { required:true },
+					checkingNumber : {
+						required: true,                    	
+						minlength : 10,
+						maxlength : 10,	
+						equalTo: "#ReEntercheckingNumber"					
+					},
+					ReEntercheckingNumber : {
+						required: true,                    	
+						minlength : 10,
+						maxlength : 10,
+						equalTo: "#checkingNumber"	
+					}
+				},
+				messages: {	
+					accountType: {
+					  required: "Select an Account Type",
+					},						
+					businessName: "Enter the Business name",							
+					cardNo : { 
+						required : "Enter the card number",
+						minlength : "Enter the 16-digit debit card number" ,
+						
+					 },		
+					cvvNo : { 
+						required : "Enter the CVV number",
+						minlength : "Required 3-digit(s)",
+					},					
+					enterAccount : { 
+						required : "Enter an account number. Use only numbers",
+						minlength : "Enter an account number with at least 3 digits" ,
+						//equalTo : "Account Numbers do not match."
+					 },	
+					reEnterAccount : { 
+						required : "Re-enter an account number. Use only numbers",
+						minlength : "Enter an account number with at least 3 digits" ,
+						equalTo : "Account numbers don't match"
+					 },								
+					brokerageAcountNickName: "Please enter brokerage nick name",		
+					radioAccount: "Enter valid amount",		
+					routing: {
+						 required: "Enter a 9-digit routing number",
+						 minlength : "Enter the 9-digit routing number from the bottom of your checks"
+					},
+					accountNumber : { 
+						required : "Enter an account number",
+						minlength : "Enter an account number with at least 3 digits" ,
+						//equalTo : "Account Numbers do not match."
+					 },		
+					reAccountNumber : {
+						 required : "Re-enter an account number",
+					 	 minlength : "Enter an account number with at least 3 digits" ,
+						 equalTo : "Account numbers don't match" 
+					},							
+					checkingNumber: {
+						 required: "Enter an account number",
+						 minlength : "Re-enter a complete 10-digit check number",
+						 equalTo : "The account numbers don't match"
+					},
+					ReEntercheckingNumber: {
+						 required: "Re-enter an account number. Use only numbers",
+						 minlength : "Re-enter a complete 10-digit check number",
+						 equalTo : "The account numbers don't match"
+					},																																											 					brokerageAccount: {
+					  required: "Select a brokerage account",
+					 },
+					expiremonth: {
+					  required: "Select the month",
+					 },					
+					expireyear: {
+					  required: "Select the year",
+					 }					
+				},
+				errorClass: 'alert-message-error',
+				errorElement:'p'				
+			});						
+			
+		$("#businessName, #brokerageDropdown,#brokerageAccount,#brokerageAccNickName, #writeCheck, #cardSection, #checkNumber, #brokerageAccountNumber, #bankName, #checkingNumberLeaf,#legalDebitTxt").hide();
+		
+		/* Checking for only numbers and dot */
+		
+		 $('#routNo').keyup(function(e){	
+			var rout_val = $(this).val();   
+			rout_val = rout_val.replace(/[^0-9]/g,'');											
+			$(this).val(rout_val);
+			if(rout_val.length == 9){
+				if(rout_val=="111111111"){
+					$("#pageLoader").show();	
+					setTimeout(function() {			  
+						$("#bankName").show().text('SunTrust Bank');
+						$("#pageLoader").hide();
+					}, 300);		
+				} else if(rout_val=="000000000"){
+					$("#pageLoader").show();	
+					setTimeout(function() {			  
+						$("#bankName").show().text('Bank of America');
+						$("#pageLoader").hide();
+					}, 300);		
+				} else{
+					$("#bankName").show().text('Fiserv Bank (Multi Login Parameter)');
+				} 
+			} else{
+				$("#bankName").hide();
+			}
+		});
+		
+		/* checking the account type selection and hiding/showing the required fields	*/
+		
+		
+		$("#accountType").on('change', function() {	
+		
+		$("#addExternalAcctHeading").text("Add External Account");		
+			if($(this).val() == 'Brokerage'){
+				$("#businessName, #brokerageAccNickName, #writeCheck, #cardSection, #checkNumber, #checkLeaf, #routingSection, #accountNickName, #brokerageAccountNumber").hide();				
+				$("#brokerageDropdown, #brokerageAccount").show();
+			} else if(($(this).val() == 'Business Checking') || ($(this).val() == 'Business Savings')){
+				$("#businessName, #brokerageDropdown,#brokerageAccount,#brokerageAccNickName, #writeCheck, #cardSection, #checkNumber, #brokerageAccountNumber, #checkingNumberLeaf").hide();				
+				$("#businessName,#accountNickName,#checkLeaf, #routingSection").show();				
+			} else if($(this).val() == 'Debit Card'){
+				$("#businessName, #brokerageDropdown,#brokerageAccount,#brokerageAccNickName, #writeCheck, #checkNumber, #brokerageAccountNumber, #checkLeaf, #routingSection, #checkingNumberLeaf,#legalTxt").hide();
+				$("#cardSection, #legalDebitTxt").show();
+				$("#addExternalAcctHeading").text("Add Account or Debit Card");
+				
+			} else{
+				$("#businessName, #brokerageDropdown,#brokerageAccount,#brokerageAccNickName, #writeCheck, #cardSection, #checkNumber, #brokerageAccountNumber, #checkingNumberLeaf,#legalDebitTxt").hide();
+				$("#accountType, #accountNickName, #checkLeaf, #routingSection, #legalTxt").show();	
+				
+			}
+			
+		});
+		
+		
+		/* checking the brokerage selection and hiding/showing the required fields	*/
+		
+		$("#brokerageAccount").on('change', function() {
+			if($(this).val() == '1'){	
+				//alert("1");			
+				$("#brokerageDropdown, #brokerageAccount, #checkingNumberLeaf, #routingSection, #accountNickName, #brokerageAccountNumber, #brokerageReenterAccount, #checkingNumberLeaf, #checkNumber").show();				
+				$("#routingSection, #checkLeaf").hide();
+				$("#brokerageText").text("(Select the checking account number from the check. The checking account number is the right most 10 digits from the check MICR line.)");
+			} else if($(this).val() == '2'){
+				//alert("2");
+				$("#brokerageDropdown, #brokerageAccount, #checkingNumberLeaf, #accountNickName, #brokerageAccountNumber, #brokerageReenterAccount, #writeCheck, #checkNumber").show();				
+				$("#routingSection, #checkLeaf").hide();
+				$("#brokerageText").text("(Select online account number.)");								
+			} else if($(this).val() == '3'){
+				//alert("3");
+				$("#brokerageDropdown, #brokerageAccount,  #accountNickName, #brokerageAccountNumber, #brokerageReenterAccount").show();				
+				$("#routingSection,  #writeCheck,#checkLeaf, #checkNumber, #checkingNumberLeaf").hide();
+				$("#brokerageText").text("(Select the online account number. Account number could also be found on the brokerage slip if you have a checking account.)");	
+			} else if($(this).val() == '4'){
+				//alert("4");
+				$("#brokerageDropdown, #brokerageAccount,  #accountNickName, #brokerageAccountNumber, #brokerageReenterAccount").show();				
+				$("#routingSection,  #writeCheck,#checkLeaf, #checkNumber, #checkingNumberLeaf").hide();
+				$("#brokerageText").text("");		
+			} else if($(this).val() == '5'){					
+				//alert("5");
+				$("#brokerageDropdown, #brokerageAccount, #accountNickName, #checkingNumberLeaf,#brokerageAccountNumber, #brokerageReenterAccount, #writeCheck, #checkNumber").show();				
+				$("#routingSection,#writeCheck, #checkLeaf").hide();
+				$("#brokerageText").text("");	
+			} else if($(this).val() == '6'){
+				//alert("6");
+				$("#brokerageDropdown, #brokerageAccount,#brokerageAccountNumber, #brokerageReenterAccount, #accountNickName,#writeCheck").show();				
+				$("#routingSection, #writeCheck, #checkLeaf, #checkNumber, #checkingNumberLeaf").hide();
+				$("#brokerageText").text("");	
+			}else if($(this).val() == '7'){
+				//alert("7");
+				$("#brokerageDropdown, #brokerageAccount, #accountNickName,#checkingNumberLeaf, #checkNumber,#brokerageAccountNumber, #brokerageReenterAccount").show();				
+				$("#routingSection, #writeCheck, #checkLeaf").hide();
+				$("#brokerageText").text("");	
+			}else if($(this).val() == '8'){
+				//alert("8");
+				$("#brokerageDropdown, #brokerageAccount, #accountNickName, #checkingNumberLeaf, #checkNumber,#writeCheck").show();				
+				$("#routingSection, #writeCheck,#brokerageAccountNumber, #brokerageReenterAccount, #checkLeaf").hide();
+				$("#brokerageText").text("");	
+			} else if($(this).val() == '9'){				
+				//alert("9");
+				$("#brokerageDropdown, #brokerageAccount, #checkingNumberLeaf, #brokerageAccountNumber,#brokerageReenterAccount, #accountNickName,#checkNumber").show();				
+				$("#routingSection,#writeCheck, #checkLeaf").hide();
+				$("#brokerageText").text("");	
+			} else if($(this).val() == '10'){				
+				//alert("10");
+				$("#brokerageDropdown, #brokerageAccount, #checkingNumberLeaf,  #brokerageAccountNumber, #brokerageReenterAccount, #accountNickName, #checkNumber").show();				
+				$("#routingSection, #writeCheck, #checkLeaf").hide();
+				$("#brokerageText").text("(Select the Account Number on the check. The account number is the 10th through 19th numeric digits from the check MICR line.)");	
+			} else if($(this).val() == '11'){
+				//alert("11");
+				$("#brokerageDropdown, #brokerageAccount, #checkingNumberLeaf, #accountNickName, #brokerageAccountNumber, #brokerageReenterAccount, #writeCheck, #checkNumber").show();				
+				$("#routingSection, #checkLeaf").hide();
+				$("#checkingNumberText").text("(Select the full 10 digit account number. The account numbers could be found on the account identification card provided by TD Waterhouse to the customer.)");	
+			}  else if($(this).val() == '12'){
+				//alert("12");				
+				$("#brokerageDropdown, #brokerageAccount, #brokerageAccountNumber,#brokerageReenterAccount, #accountNickName").show();
+				$("#businessName, #brokerageAccNickName,  #cardSection, #routingSection, #writeCheck,#checkLeaf,#checkNumber, #checkingNumberLeaf").hide();				
+				$("#brokerageText").text("");
+			}
+			 else {
+				$("#businessName, #brokerageAccNickName, #writeCheck, #cardSection, #checkNumber, #checkLeaf, #checkingNumberLeaf,#routingSection, #accountNickName, #brokerageAccountNumber").hide();				
+				$("#brokerageDropdown, #brokerageAccount").show();
+			}
+		});
+		
+		/*	Foramtting the debit card */	
+		
+		$("#visaImage, #masterImage").hide();
+		
+		$("#cardNo").on('keyup', function(){
+			var cardVal = $('#cardNo').val().charAt(0);
+			
+			if(cardVal=="4"){
+				$("#visaImage").show();
+				$("#masterImage").hide();
+			} else if(cardVal=="5") {
+				$("#visaImage").hide();
+				$("#masterImage").show();
+			} else {
+				$("#visaImage, #masterImage").hide();
+			}
+		});
+		
+		
+		$(function () {
+  			$('[data-toggle="tooltip"]').tooltip()
+		})
+		
+	});
+</script>

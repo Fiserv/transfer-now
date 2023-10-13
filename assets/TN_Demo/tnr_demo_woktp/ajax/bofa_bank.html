@@ -1,0 +1,191 @@
+<script src="assets/js/app.js" type="text/javascript"></script>
+<div class="drawer-contents col-xs-12 col-sm-12 col-md-10 pt20 pl20 pr20">
+    <div class="drawer-controls">
+        <a href="javascript:void(0);" id="closeAlert" data-toggle="modal" data-target="#verifyExtAcct" aria-controls="verifyExtAcct" class="btn btn-navigation close" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></a>
+    </div>
+    <div id="mfaSection">
+        <h2>Verify External Account</h2>    
+        <div class="row">
+            <div class="col-xs-12 col-sm-11">
+                <p><strong>For your protection, we need to verify that you own this Bank of America, Savings, xxxx1012, Savings account.</strong></p>
+                <p><strong>How would you like to verify your account?</strong></p>
+                <div class="custom-btn alignc">
+                    <button type="submit" class="btn btn-primary" id="verifyInstantMfa" title="Verify instantly">Verify instantly</button>
+                </div>	
+                <p class="alignc">Log into your external bank account so we can verify you own the account</p>
+                 <div>
+                    <div class="line"></div>
+                    <div class="content">Or</div>
+                    <div class="line"></div>
+                 </div>
+                <div class="clearfix"></div>
+                <div class="custom-btn alignc">
+                    <button type="submit" class="btn btn-primary" id="verifybankDeposits" title="Verify with bank deposits">Verify with bank deposits</button>
+                </div>
+                <p class="alignc">Verify small deposits posted to your bank account in 1 to 2 business days.</p>			
+            </div>
+        </div>
+    </div>
+    
+    <div id="credentialSection">
+        <h2>Verify Instantly</h2>
+        <p>Enter your external bank account login information so we can verify you own the account.</p>
+        <p><strong>Bank of America - Script Coverage Engine</strong></p>
+        
+        <div class="alert alert-dismissible alert-danger" role="alert" aria-live="assertive" id="errorMessage">
+            <i class="material-icons" aria-hidden="true">warning</i>
+            <span class="sr-only">error</span>
+            <p><span>We were unable to verify the ownership of the bank account. Please provide the credentials again to re-initiate verification. </span></p>
+        </div>        
+        <div class="row" id="instantLogin">
+            <div class="col-xs-12 col-sm-10">
+                <div class="panel p15 clearfix drawyer-panel">
+                    <div class="row form-group clearfix">
+                        <div class="col-md-12 secrity_mssg">
+                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>Safely log into your online banking so your account can be verified for use. Your credentials are sent to your bank using the highest encryption standards and are never read or saved.
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-9 form-group">
+                            <label for="verify_usrname">User ID </label>
+                            <input type="text" id="verify_usrname" class="form-control" placeholder="Bank of America - Script Coverage Engine User ID" aria-invalid="false" />
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-9 form-group">
+                            <label for="verify_pswd">Password </label>
+                            <input type="password" id="verify_pswd" class="form-control" placeholder="Bank of America - Script Coverage Engine Password" aria-invalid="false" />
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button type="button" class="btn btn-secondary"  title="Back to verification options" id="backToOptionsMfa">Back to verification options</button>
+                            <button type="button" class="btn btn-primary" title="Verify" id="kbaVerifyMfa">Verify</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- <div class="col-xs-12 col-sm-12">
+                    <p>We can also verify your account without username and password. Please note, this will take an additional 1 to 2 business days and will require additional steps.</p>
+                    <p><a href="javascript:void(0);" title="Verify with Trail Deposits" id="verifyByTrialDeposit">Verify with Trail Deposits</a></p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <div id="quesSection">
+        <h2>Verify instantly</h2>
+    
+        <p><strong>Bank of America - Script Coverage Engine</strong></p>
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-10">
+                <div class="panel p15 clearfix drawyer-panel" id="doubleQuestion">
+                    <div class="row form-group">
+                        <div class="col-md-12 secrity_mssg">
+                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span><p class="mt15">Your bank require more information to verify your account.</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-8 form-group">
+                            <label for="verify_q1">Please enter last four digit of SSN ?</label>
+                            <input type="text" id="verify_q1" class="form-control" aria-invalid="false" maxlength="4" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button type="button" class="btn btn-secondary" title="Back to verification options" id="backToOptionsKbaMfa">Back to verification options</button>
+                            <button type="button" class="btn btn-primary" title="Submit" id="kbaDoubleQuestionSuccessMfa">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div id="mfaAcctVerifiedSuccess">
+        <h2>Account Verified</h2>
+        <div class="alert alert-dismissible alert-success mt25" role="alert" aria-live="assertive">
+            <i class="material-icons" aria-hidden="true">check_circle</i>
+            <span class="sr-only">Success</span>
+            <p>You are all set to transfer money from your <strong>Bank of America, Checking, xxxx1012</strong> account.
+            </p>
+        </div>
+        <div class="custom-btn">
+            <button type="button" class="btn btn-primary" id="accountVerifiedMfa" title="Done">Done</button>
+        </div>
+    </div>
+    
+</div>	
+
+<div id="addNewAccount" class="drawer drawer-right dw-xs-12 dw-sm-8 dw-md-6 fold" tabindex="-1" aria-labelledby="addNewAccount" aria-expanded="false" role="region">
+         
+    </div>
+    
+ <!--   <div class="overlay"></div> -->
+<!-- Loader Starts -->
+
+<div id="pageLoader" style="display:none;">
+    <div id="loader-fade"></div>
+    <div id="loading-spinner">
+        <div class="spinner-icon" aria-label="loading..."></div>
+    </div>
+</div>
+
+<!-- Loader Ends -->
+
+<script src="fdl-bootstrap/js/jquery.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		$("#credentialSection, #quesSection, #mfaAcctVerifiedSuccess").hide();
+        
+		$("#verifyInstantMfa").click(function(){
+			$("#pageLoader").show();           
+			setTimeout(function() {                                                  
+				$("#credentialSection").show();
+				$("#quesSection,#mfaSection, #mfaAcctVerifiedSuccess").hide();
+				$("#pageLoader").hide();
+			}, 300);						
+		});
+		
+		$("#kbaVerifyMfa, #backToOptionsKbaMfa").click(function(){			
+			$("#pageLoader").show();           
+			setTimeout(function() {                                                  				
+				$("#quesSection").show();
+				$("#credentialSection, #mfaSection, #mfaAcctVerifiedSuccess").hide();	
+				$("#pageLoader").hide();
+			}, 300);		
+		});
+		
+		$("#backToOptionsMfa").click(function(){			
+			$("#pageLoader").show();           
+			setTimeout(function() {                                                  
+				$("#mfaSection").show();
+				$("#mfaAcctVerifiedSuccess, #credentialSection, #mfaAcctVerifiedSuccess, #quesSection").hide();
+				$("#pageLoader").hide();
+			}, 300);			
+		});
+		
+		$("#kbaDoubleQuestionSuccessMfa").click(function(){			
+			$("#pageLoader").show();           
+			setTimeout(function() {                                                  				
+				$('#addNewAccount').load('ajax/verified_instant_success_bofa.html'); 
+				$("#pageLoader").hide();
+			}, 300);			
+		});		
+		
+		$("#accountVerifiedMfa").click(function(){
+			$("#pageLoader").show();	
+			setTimeout(function() {			  
+				//$('#addNewAccount').drawer('toggle');
+				//$('.overlay').removeClass('backdrop');					
+				$("#pageLoader").hide();				
+			}, 300);
+			window.location.href="transfer_funds.html";
+			
+		});		
+    });
+</script>

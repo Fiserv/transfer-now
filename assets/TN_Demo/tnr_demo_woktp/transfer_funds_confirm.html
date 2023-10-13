@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transfer Confirmed</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<link href="fdl-bootstrap/css/fdl-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />-->
+    <link href="fdl-bootstrap/css/fdl-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-drawer.css" rel="stylesheet" />
+    <link href="assets/css/jquery_ui.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />    
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" /> 
+    <link href="assets/css/mobile_frame.css" rel="stylesheet" type="text/css" />   
+    
+</head>
+<body>
+		<div class="bank_frame">
+    <div class="bank_header">
+        <div class="header_section">
+            <div class="bank_top_menu">
+                <ul>
+                    <li><a href="javascript:void(0);" class="active" title="Mobile"><img src="assets/images/messsage.jpg" width="28" height="23" border="0" 
+
+/>mobile</a><span> | </span></li>
+                    <li><a href="javascript:void(0);" title="Approvals">approvals (1)</a> <span> | </span></li>
+                    <li><a href="javascript:void(0);" title="Activity">activity</a> <span> | </span></li>
+                    <li><a href="javascript:void(0);" title="Settings">settings</a> <span> | </span></li>
+                    <li><a href="javascript:void(0);" title="Log Out">log out</a></li>
+                </ul>
+            </div>
+            <div class="bank_logo">
+                <a href="javascript:void(0);" title="MyFinanacial Logo"><img src="assets/images/myfinancial.jpg" width="272" height="58" border="0" alt="My 
+
+Financial, Inc" title="My Financial, Inc"/></a>
+            </div>
+        </div>            
+    </div>
+    <div class="clearfix"></div>
+    <div class="mobmenu">
+        <ul class="menu">
+            <li><a href="javascript:void(0);" title="Accounts">Accounts</a></li>
+            <li><a href="transfer_funds.html" class="active" title="Transfers">Transfers</a></li>
+            <li><a href="javascript:void(0);" title="Wires">Wires</a></li>
+            <li><a href="javascript:void(0);" title="Pay Bills">Pay Bills</a></li>
+            <li><a href="javascript:void(0);" title="Send with Zelle">Send with Zelle<sup>&reg;</sup></a></li>
+            <li><a href="javascript:void(0);" title="Trends">Trends</a></li>
+            <li><a href="javascript:void(0);" title="Inovice and Payments">Invoice and Payments</a></li>
+        </ul>
+    </div>
+    <div id="ust">
+      <div id="menuac"> <span></span> </div>
+    </div>
+</div>
+    <div class="container">
+        <a href="#content" class="sr-only sr-only-focusable" id="top" title="Skip to Content">Skip to Content</a>
+        <header class="navbar navbar-default navbar-ext">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-haspopup="true" aria-controls="navbar" aria-label="Navigation" aria-expanded="false">
+                    <i class="material-icons" aria-hidden="true">apps</i>
+                    Menu
+                </button>
+                <span class="navbar-brand selected mt15">
+                    Transfer Funds
+                </span>
+            </div>
+
+		<div class="header-one bankLogoSection"> 
+                <div class="bank-name col-xs-9 col-md-10">MyFinancial Bank</div>
+                <div class="signout col-xs-3 col-md-2"><a href="javascript:void(0);" title="Sign Out">Sign Out</a></div> 
+            </div>
+            
+					
+              
+              
+            <nav class="navbar-collapse collapse" id="navbar" aria-expanded="false" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="transfer_funds.html" title="Transfer Funds" class="selected">Transfer Funds</a></li>
+                    <li><a href="activity.html" title="Activity">Activity</a></li>
+                    <li><a href="preferences.html" title="Preferences" >Preferences</a></li>
+                    <li><a href="help.html" title="Help">Help</a></li>
+                </ul>				
+            </nav>
+
+        </header>
+        <section id="content" role="main">        	
+            <h1 class="mb20">Transfer Confirmed</h1>
+            
+           <!-- <div class="row form-group">
+                <div class="col-md-12 text-right filter-bar">                
+                    <button type="button" class="btn btn-navigation"><i class="material-icons" aria-hidden="true">print</i>Print</button>
+                </div>                               
+            </div>-->
+            
+            <div class="col-md-12 text-right print-desktop">
+                <button type="button" class="btn btn-navigation" title="Print"><i class="material-icons" aria-hidden="true">&#xE8AD;</i>Print</button>
+            </div>
+         
+            <div class="alert alert-success" role="alert" aria-live="assertive">
+                <i class="material-icons" aria-hidden="true">check_circle</i>
+                <span class="sr-only">success</span>
+                <p id="successMsg"></p>	
+            </div>
+            <div class="row form-group">
+                <div class="col-xs-12 col-md-9">
+                  <!--  <h1>Review Transfer</h1>-->
+                    <dl class="review-list">
+                        <dt>From </dt>
+                        <dd id="fromAccount"></dd>
+                        <dt>To </dt>
+                        <dd id="toAccount"></dd>
+                        <dt id="sendDate">Send </dt>
+                        <dd id="startDate"></dd>
+                        <dt id="endDateName">Deliver </dt>
+                        <dd id="end_Date">
+                        	<span id="endingDate"></span>                            
+                        </dd>
+                        <dt>Speed </dt>
+                        <dd><span id="deliverySpeedText"></span></dd> 
+                        <dt id="repeat">Repeat Every </dt>
+                        <dd id="repeatText"></dd>
+                        <dt id="duratn">Duration </dt>
+                        <dd id="durationText"></dd>
+                        <dt id="upto">Up to </dt>
+               		    <dd id="uptoText"></dd>
+                        <dt id="memoName">Memo </dt>
+                        <dd id="memoMsg"></dd> 
+                        <dt id="notify">Notify</dt>
+                        <dd id="NotifymailId"></dd>
+                        <dt id="pMsg">Message  </dt>
+                        <dd id="personalMessage"></dd>  
+                     </dl>
+                     <dl class="review-list">         
+                     	<dt>Transfer Amount  </dt>
+                        <dd id="transferAmount"></dd>                                                                 
+                        <dt>Fees </dt>
+                        <dd id="fees"></dd>
+                        <dt>Total </dt>
+                        <dd id="finalAmount"></dd>
+                    </dl>
+                 </div>
+            </div>
+            <div class="custom-btn">
+                <button type="button" class="btn btn-secondary mr10" id="anotherTransfer" title="Make New Transfer">New Transfer</button>
+                <button type="button" class="btn btn-primary" id="activity" title="Activity">Activity</button>
+            </div>
+            <div class="tips-wrapper">
+                <button type="button" class="btn btn-link info-message-toggle" title="Hide Tip">Hide Tip</button>
+                <div class="alert alert-dismissible alert-info hide-tip">
+
+                    <i class="material-icons" aria-hidden="true">info</i>
+                    <span class="sr-only">info</span>
+                   <p><span class="title">Don't forget you can schedule in advance </span>
+						Pick the date that works best for you and schedule the money to move when you want.</p>
+
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer footerSection">
+            <div id="footerHeader" class="container footer-wrapper">
+                <div class="text-center pb10">
+                    <span><a href="javascript:void(0);" title="Terms of Services">Terms of Services</a></span>
+                    <span>| <a href="javascript:void(0);" title="Privacy Policy">Privacy Policy</a></span>
+<span>| <a href="javascript:void(0);" title="Security Policy">Security Policy</a></span>
+                </div>
+                <div class="text-center"><small>Copyright © <span id="currYear"></span> Fiserv Inc. All rights reserved</small></div>
+            </div>    
+        </footer>
+    </div>
+	
+	 <!-- Loader Starts -->
+
+    <div id="pageLoader" style="display:none;">
+        <div id="loader-fade"></div>
+        <div id="loading-spinner">
+            <div class="spinner-icon" aria-label="loading..."></div>
+        </div>
+    </div>
+    
+    <!-- Loader Ends -->
+	
+    <!--FDL JS-->
+    <script src="fdl-bootstrap/js/jquery.min.js" type="text/javascript"></script>
+    <script src="fdl-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/moment.min.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+   <script>
+
+	/*********************************************************
+	*	 Getting URL parameters & values using jquery		 *
+	*********************************************************/
+			
+	$.extend({
+		getUrlVars: function(){
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			for(var i = 0; i < hashes.length; i++){
+				hash = hashes[i].split('=');
+				vars.push(hash[0]);
+				vars[hash[0]] = hash[1];
+			}
+			return vars;
+		},
+		getUrlVar: function(name){
+			return $.getUrlVars()[name];
+		}
+	});
+	var allVars = $.getUrlVars();
+	
+	/* Adding Commas to the Total amount */
+	
+	$.fn.digits = function(){ 
+		return this.each(function(){ 
+			$(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") ); 
+		});
+	}
+	
+</script>
+	<script>
+    $(document).ready(function(){	
+				
+		/*************************************************************************************************
+		* 	  Getting URL parameters & values using jquery and storing it in the hidden input fields,    * 
+		* 		 On Submitting the form, values will be passed to the next page using GET Method.	     *	
+		*									 															 *
+		* Reference : http://jquery-howto.blogspot.in/2009/09/get-url-parameters-values-with-jquery.html *
+		*************************************************************************************************/
+		
+		var transfer = encodeURI($.getUrlVar('transferType')).replace(/\+/g, " ");			
+		
+		var freq = encodeURI($.getUrlVar('frequency')).replace(/\+/g, " ");	
+		
+		var delvry = encodeURI($.getUrlVar('deliverySpeed')).replace(/\+/g, " ").replace('%2540', '@').replace('%2528','(').replace('%2529',')').replace(/\+/g,' ').replace(/\%20/g," ");							
+		
+		var duration = encodeURI($.getUrlVar('duration')).replace(/\+/g, " ");	
+		
+		var from = encodeURI($.getUrlVar('from')).replace('%2528','(').replace('%2529',')').replace(/\+/g,' ').replace(/\%20/g," ").replace(/\ %2524/g," $").replace(/\%252C/g,",");					
+		$('#fromAccount').html(from);
+		
+		var to = encodeURI($.getUrlVar('to')).replace('%2540', '@').replace('%2528','(').replace('%2529',')').replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%2524/g,"$").replace(/\%252C/g,",");				
+		$('#toAccount').html(to);
+		
+		var amount = encodeURI($.getUrlVar('amount')).replace(/\+/g, " ").replace(/\%2524/g,"$").replace(/\%252C/g,",").replace(/\%2525252C/g,",");			
+		$('#transferAmount').html(amount);						
+		
+		var start = encodeURI($.getUrlVar('sendOn')).replace(/\+/g, " ").replace(/\%252C/g, ",").replace(/\%252F/g ,'/'); 	
+		$('#startDate, #startingDate').html(start);
+			
+		var end = encodeURI($.getUrlVar('endOn')).replace(/\+/g, " ").replace(/\%252C/g, ",").replace(/\%252F/g ,'/').replace('%2528','(').replace('%2529',')');				
+		$('#endingDate').html(end);
+		
+		var ending_text = encodeURI($.getUrlVar('endOnText')).replace('%2540', '@').replace('%2528','(').replace('%2529',')').replace(/\+/g,' ').replace(/\%20/g," ");					
+		$('#deliverySpeedText').html(ending_text);
+		
+		var email = encodeURI($.getUrlVar('recipientEmail')).replace(/\+/g, " ").replace(/\%2540/g, "@");		
+		$('#NotifymailId').html(email);
+		
+		var msg = encodeURI($.getUrlVar('personalMsg')).replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%253F/g,"?").replace(/\%2521/g,"!").replace(/\%250D%250A/g," ").replace(/\%2527/g, "'").replace(/\%2540/g, "@").replace(/\%2523/g, "#").replace(/\%2524/g, "$").replace(/\%2525/g, "%").replace(/\%255E/g, "^").replace(/\%2526/g, "&").replace(/\%2528/g, "(").replace(/\%2529/g, ")").replace(/\%252B/g, "+").replace(/\%253D/g, "=");
+		$('#personalMessage').html(msg);
+		            
+        var memo = encodeURI($.getUrlVar('memo')).replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%253F/g,"?").replace(/\%2521/g,"!").replace(/\%250D%250A/g," ").replace(/\%2527/g, "'").replace(/\%2540/g, "@").replace(/\%2523/g, "#").replace(/\%2524/g, "$").replace(/\%2525/g, "%").replace(/\%255E/g, "^").replace(/\%2526/g, "&").replace(/\%2528/g, "(").replace(/\%2529/g, ")").replace(/\%252B/g, "+").replace(/\%253D/g, "=");		
+		$('#memoMsg').html(memo);
+							
+		
+		var fee = encodeURI($.getUrlVar('fees')).replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%2524/g,"$");	
+		$('#fees').html(fee);
+		
+		var final_amt = encodeURI($.getUrlVar('finalAmount')).replace(/\+/g,' ').replace(/\%20/g," ").replace(/\%2524/g,"$").replace(/\%24/g,"$").replace(/\%252C/g, ",").replace(/\%2525252C/g,",");	
+		$('#finalAmount').html(final_amt);
+				
+		
+		var total_amt = encodeURI($.getUrlVar('totalAmount')).replace(/\+/g, " ").replace(/\%252C/g, ",");						
+		var no_transfer = encodeURI($.getUrlVar('noOfTransfers')).replace(/\+/g, " ").replace(/\%252C/g, ",");						
+		var rec_email = encodeURI($.getUrlVar('chooseRecipientEmail')).replace(/\+/g, " ").replace(/\%252C/g, ",");					
+		
+		if(transfer == "metoothers"){
+			$("#NotifymailId, #personalMessage, #notify, #pMsg").show();			
+		} else{
+			$("#NotifymailId, #personalMessage, #notify, #pMsg").hide();
+		}
+		
+		
+		/*  Hiding the memo fiels if it os empty  */
+	
+		if(memo == ""){
+			$('#memoMsg, #memoName').hide();
+		} else{
+			$('#memoMsg, #memoName').show();					
+		}
+			
+		
+		/*  Calculating the fees and text changes basec on the  frequency and duration */
+		
+		if((freq!="One Time Transfer")){
+			$("#repeat, #repeatText, #duratn, #durationText").show();			
+			$("#sendDate").text("Start ");
+			//$("#endDateName").text("Deliver Date:");
+			if(duration == 'Until I cancel'){
+				$("#durationText").text("Until I cancel");
+				$("#upto, #uptoText").hide();
+			} else if(duration == 'Up to a specified amount'){
+				$("#durationText").text(duration);
+				$("#uptoText").text('$' + parseFloat(total_amt).toFixed(2));
+			} else if(duration == 'Until a specified date'){
+				$("#durationText").text(duration);
+				$("#uptoText").text(end);
+			} else {
+				$("#durationText").text(duration);
+				$("#uptoText").text(no_transfer + ' transfers');
+			}				
+		} else {					
+			$("#repeat, #repeatText, #duratn, #durationText, #upto, #uptoText").hide();
+			$("#sendDate, #endDate").text();
+			$("#durationText").text("Until I cancel");			
+		}
+		
+		if((freq == 'Once every month')){		
+			$("#repeatText").html("Once every month");
+		} else if((freq == 'Every 15 days')){
+			$("#repeatText").html("Every 15 days");
+		} else if((freq == "Every week")){
+			$("#repeatText").html("Every week");
+		} else if((freq == "Every 2 weeks")){
+			$("#repeatText").text("Every 2 weeks");
+		} else if((freq == "Every year")){
+			$("#repeatText").text("Every year");
+		} else if((freq == "First Business Day of Every Month")){
+			$("#repeatText").text("First Business Day of Every Month");
+		} else if((freq == "Last Business Day of Every Month")){
+			$("#repeatText").text("Last Business Day of Every Month");
+		} else {			
+			$("#durationText").text("Until I cancel");
+			$("#repeatText").text("Once every month");
+		}
+		
+		$("#repeatText").html(freq);
+		
+		/* Fee per Transfer */
+		
+		if((freq!="One Time Transfer")){			
+			if(delvry == "instant"){									
+				$('#endDate').html(end + " (Instant)") ;				
+			} else if(delvry == "nextDay") {									
+				$('#endDate').html(end + " (Next-Day)") ;									
+			} else {				
+				$('#endDate').html(end + " (Standard)") ;
+			}		
+		}
+		
+		/* Success Message */
+		
+		if((freq=="One Time Transfer")){		
+			$('#successMsg').html("You're transferring " + amount + " on" +' '+ start) ;	
+		} else{
+			$('#successMsg').html("You're transferring " + amount + " 	" + freq + " starting" +' '+ start) ;	
+		}
+		
+		$("#anotherTransfer").click(function(){               
+           $("#pageLoader").show();	
+			setTimeout(function() {	
+				window.location.href = "transfer_funds.html";					  				
+				$("#pageLoader").hide();
+			}, 300); 			
+        });
+
+		$("#activity").click(function(){    
+			$("#pageLoader").show();	
+			setTimeout(function() {	
+				window.location.href = "activity.html";					  				
+				$("#pageLoader").hide();
+			}, 300);
+        }); 
+
+				
+		$('#menuac').click(function(e){	
+			$('#menuac').toggleClass('acik');
+			$('.mobmenu').toggleClass('mobmenu-acik');
+		});
+						
+		
+    });	
+</script>
+</body>
+</html>

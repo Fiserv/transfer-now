@@ -1,0 +1,247 @@
+<script src="assets/js/preferences.js" type="text/javascript"></script>
+
+<div class="drawer-contents col-xs-12 col-sm-12 col-md-10 pt20 pl20 pr20">
+    <div class="drawer-controls">
+        <a href="#addNewAccount" id="close-dw" role="button" data-toggle="drawer" aria-controls="addNewAccount" class="btn btn-navigation close" aria-label="Close" title="Close" aria-expanded="true"><span aria-hidden="true"><strong>×</strong></span></a>
+     </div>
+     
+      <!-- Add phone number	 --> 
+                         
+        <h3 id="phoneHeadingText">Verify Phone Number 650-234-5678</h3>  
+                
+    <!-- Resend code success message -->
+    
+    <div id="preferenceResend" style="display:none;">
+        <div class="row">                  
+            <div class="col-xs-12 col-sm-11 col-md-11">
+                <div class="alert alert-dismissible alert-success" role="alert" aria-live="assertive">
+                    <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                    <span class="sr-only">Success</span>
+                    <p>
+                        We sent a verification code to <span class="enteredPhone"><strong>650-234-5678</strong></span>. It should arrive within a few minutes.
+                    </p>
+                </div>
+            </div>               
+        </div>
+        <div class="custom-btn">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done" id="preferenceResendCodeDone">Done</button>
+        </div> 
+    </div>
+    
+    
+    <div id="preferenceAddPhone" style="display:none;">      	
+		<div class="row form-group">                                      
+			<div class="col-xs-12 col-sm-6 col-md-10 mt202 mt10">
+				<p>Please allow a few minutes for the verification code to be delivered. If you choose to receive a text message, ensure that your wireless provider is not blocking premium text message. </p>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-10">
+				<div class="radio">                
+					<input type="radio" id="msg" name="myRadio" value="myRadioOption" title="Send me a text message" aria-invalid="false" checked>
+					<label for="msg"><span>Send me a text message</span></label>                                     
+                    <div class="ml30" id="preferenceMsg">
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#collapseList" id="seeList" aria-hidden="false" aria-expanded="false" title="See our list of supported carriers">See our list of supported carriers<i class="material-icons">&#xE315;</i><span class="sr-only">Expand</span></a>
+                        <div id="collapseList" class="collapse">
+                            <div class="radio">
+                                <p>
+                                    Our list of supported carriers 
+                                </p>
+                                <ul class="collapse-carrier-ul">
+                                    <li>Acg_Ntelos</li>
+                                    <li>AT&T </li>
+                                    <li>ALLTEL</li>
+                                    <li>BOOST</li>
+                                    <li>Cincinnati Bell</li>
+                                    <li>Nextel</li>
+                                    <li>Sprint</li>
+                                    <li>T-Mobile</li>
+                                    <li>US Cellular</li>
+                                    <li>Verizon</li>
+                                    <li>Virgin Mobile USA</li>
+                                </ul>
+                            </div>
+                            <a href="javascript:void(0);" id="hideList" aria-hidden="false" aria-expanded="false" title="Hide list of supported carriers">Hide list of supported carriers<i class="material-icons">&#xE316;</i></a>
+                        </div>
+                        <p>If your carrier is not listed, select the "Call me" option. Message and data rates may apply.</p>                         
+                    </div>                    
+				</div>                                     
+				<div class="radio">
+					<input type="radio" id="call" name="myRadio" value="myRadioOption" aria-invalid="false" title="Call Me">
+					<label for="call"><span>Call Me</span></label>
+					<p class="ml30" id="preferenceCall">
+						You will need a pen and paper ready to write down the code.
+					</p>
+				</div>
+			</div>
+		</div>
+        <div class="custom-btn">
+            <button type="button" class="btn btn-secondary mr15" id="phoneCancel" title="Cancel">Cancel</button>
+            <button type="button" class="btn btn-primary" id="phoneResendNext" title="Resend Code">Resend Code</button>
+        </div>
+	</div>
+    
+    <!--Verify-->
+    <div class="row" id="preferenceEmptyNumber" style="display:none;">
+        <div class="col-xs-12 col-sm-11 col-md-11">
+            <div class="alert alert-dismissible alert-danger" role="alert" aria-live="assertive">
+                <i class="material-icons" aria-hidden="true">warning</i>
+                <span class="sr-only">error</span>
+                <p><span>Please enter the verification code.</span></p>
+           </div>  
+       </div>  
+   </div>       
+    
+    <div id="preferenceVerficationCode">     
+        <div class="row form-group">                                                                                       
+            <div class="col-xs-12 col-sm-11 col-md-11">
+            	<label for="preferenceVerifyCode">Enter the verification code.<strong><span class="enteredPhone"></span></strong></label>                
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+            	 <form id="phoneVerification">
+                	 <input class="form-control" type="text" id="preferenceVerifyCode" name="preferenceVerifyCode" placeholder="" aria-invalid="false" maxlength="6">
+                 </form>
+             </div> 
+             <p class="col-xs-12 col-sm-8 col-md-7 mt10">
+                <a href="javascript:void(0);" title="Resend Code" id="preferenceResendCode">Resend Code</a>
+            </p>            
+        </div>  
+        <div class="custom-btn">  
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Cancel" id="verifyCancelPhone">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" title="Submit" id="preferencePhoneVerify">Submit</button>
+        </div>
+    </div>                  
+   
+	 <!-- Success -->
+ 
+	<div class="row" id="preferenceVerifySuccess" style="display:none;">
+    	<div class="col-xs-12 col-sm-11 col-md-11">
+            <div class="alert alert-dismissible alert-success" role="alert" aria-live="assertive" id="preferencePhoneSucce">
+                <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                <span class="sr-only">Success</span>
+                 <p>You've successfully verified your phone number</p>
+            </div>    
+            <div class="custom-btn">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done" id="preferenceVerficationDone">Done</button>
+            </div>
+        </div>    
+	</div>
+
+</div>   
+
+<!-- Ends -->       
+   
+
+<!-- Loader Starts -->
+
+<div id="pageLoader" style="display:none;">
+    <div id="loader-fade"></div>
+    <div id="loading-spinner">
+        <div class="spinner-icon" aria-label="loading..."></div>
+    </div>
+</div>
+
+<!-- Loader Ends -->
+
+<script>
+$(document).ready(function(){
+			
+	$('#phoneVerification').validate({			
+			rules: {	
+				preferenceVerifyCode: {				
+					 required : true,
+					 minlength : 6,
+					 maxlength : 6,
+			 }	
+			},
+			messages: {	
+				preferenceVerifyCode : { 				
+					required : "Please enter the valid code.",
+					minlength : "Please enter the valid code." 
+				}			
+			},
+			errorClass: 'alert-message-error',
+			errorElement:'p'				
+		});
+	
+	$("#preferenceResend, #preferenceAddPhone, #preferenceEmptyNumber, #preferenceVerifySuccess, #preferenceCall, #phoneResendNext").hide();
+	
+	/*	Hide/show for the radio button	*/
+	
+	$("#call").click(function(){				
+		$("#preferenceCall").show();
+		$("#preferenceMsg").hide();		
+	});							
+	$("#msg").click(function(){			
+		$("#preferenceMsg").show();
+		$("#preferenceCall").hide();
+	});
+	
+	$("#preferenceResendCode").click(function(){
+		$("#pageLoader").show();	
+			setTimeout(function() {				
+			$("#preferenceVerifyCode").val("");
+			$("#phoneHeadingText").text("Resend Verification Code to 650-234-5678");
+			$("#preferenceAddPhone, #phoneCancel, #phoneResendNext").show();
+			$("#preferenceVerficationCode, #preferenceEmptyNumber, #preferenceResend, #phoneNumber").hide();
+			$("#pageLoader").hide();	
+		}, 300);				
+	});
+	
+	$("#phoneResendNext").click(function(){
+		$("#phoneHeadingText").text("Verify Phone Number ");
+		$("#preferenceVerifyCode").val("");
+		$("#preferenceResend, #preferencePhoneVerify").show();
+		$("#preferenceAddPhone, #phoneCancel, #phoneResendNext").hide();
+	});
+	
+	$("#preferenceResendCodeDone").click(function(){
+		$("#pageLoader").show();	
+			setTimeout(function() {	
+			$("#preferenceVerficationCode, #preferencePhoneVerify").show();
+			$("#preferenceResend").hide();
+			$("#pageLoader").hide();	
+		}, 300);		
+	});
+	
+	/*$("#preferencePhoneVerify").click(function(){
+		$("#preferenceResend").hide();
+		if(($("#preferenceVerifyCode").val() == "") || ($("#preferenceVerifyCode").val().length < 6) ){
+			$("#preferenceEmptyNumber").show();
+			return false;
+		} else{
+			$("#preferenceEmptyNumber").hide();
+			$("#phoneHeadingText").text("Phone Number Verified ");
+			$("#pageLoader").show();	
+				setTimeout(function() {		
+				$("#preferenceVerifySuccess").show();	
+				$("#preferenceEmptyNumber, #preferenceResend, #preferenceVerficationCode").hide();						
+				$("#pageLoader").hide();
+			}, 300);
+		}
+	});	*/
+	
+	$("#preferencePhoneVerify").click(function(){
+		if ($('#phoneVerification').valid()){
+			$("#preferenceEmptyNumber").hide();
+			$("#phoneHeadingText").text("Phone Number Verified ");
+			$("#pageLoader").show();	
+				setTimeout(function() {		
+				$("#preferenceVerifySuccess").show();	
+				$("#preferenceEmptyNumber, #preferenceResend, #preferenceVerficationCode").hide();						
+				$("#pageLoader").hide();
+			}, 300); 
+		} else {
+			return false;
+		}                                                                                                      
+	});
+	
+	$("#preferenceVerficationDone").click(function(){
+		$("#pageLoader").show();	
+			setTimeout(function() {	
+			window.location.href="preferences.html";
+			$("#pageLoader").hide();	
+		}, 300);
+	});
+	
+});
+</script>

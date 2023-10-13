@@ -1,0 +1,1296 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Preferences</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="fdl-bootstrap/css/fdl-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-drawer.css" rel="stylesheet" />
+    <link href="assets/css/jquery_ui.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" /> 
+    <link href="assets/css/mobile_frame.css" rel="stylesheet" type="text/css" />   
+</head>
+<body>
+	<div class="bank_frame">
+    <div class="bank_header">
+        <div class="header_section">
+            <div class="bank_top_menu">
+                <ul>
+                    <li><a href="javascript:void(0);" class="active" title="Mobile"><img src="assets/images/messsage.jpg" width="28" height="23" border="0" />mobile</a><span> | </span></li>
+                    <li><a href="javascript:void(0);" title="Approvals">approvals (1)</a> <span> | </span></li>
+                    <li><a href="javascript:void(0);" title="Activity">activity</a> <span> | </span></li>
+                    <li><a href="javascript:void(0);" title="Settings">settings</a> <span> | </span></li>
+                    <li><a href="javascript:void(0);" title="Log Out">log out</a></li>
+                </ul>
+            </div>
+            <div class="bank_logo">
+                <a href="javascript:void(0);" title="MyFinanacial Logo"><img src="assets/images/myfinancial.jpg" width="272" height="58" border="0" alt="My Financial, Inc" title="My Financial, Inc"/></a>
+            </div>
+        </div>            
+    </div>
+    <div class="clearfix"></div>
+    <div class="mobmenu">
+        <ul class="menu">
+            <li><a href="javascript:void(0);" title="Accounts">Accounts</a></li>
+            <li><a href="transfer_funds.html" class="active" title="Transfers">Transfers</a></li>
+            <li><a href="javascript:void(0);" title="Wires">Wires</a></li>
+            <li><a href="javascript:void(0);" title="Pay Bills">Pay Bills</a></li>
+            <li><a href="javascript:void(0);" title="Send with Zelle">Send with Zelle<sup>&reg;</sup></a></li>
+            <li><a href="javascript:void(0);" title="Trends">Trends</a></li>
+            <li><a href="javascript:void(0);" title="Inovice and Payments">Invoice and Payments</a></li>
+        </ul>
+    </div>
+    <div id="ust">
+      <div id="menuac"> <span></span> </div>
+    </div>
+</div>
+    <div class="container">
+        <a href="#content" class="sr-only sr-only-focusable" id="top">Skip to Content</a>
+        <header class="navbar navbar-default navbar-ext">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-haspopup="true" aria-controls="navbar" aria-label="Navigation" aria-expanded="false">
+                    <i class="material-icons" aria-hidden="true">apps</i>
+                    Menu
+                </button>
+                <span class="navbar-brand selected mt15">
+                    Preferences
+                </span>
+            </div>
+            
+             
+            <div class="header-one bankLogoSection"> 
+                <div class="bank-name col-xs-9 col-md-10">MyFinancial Bank</div>
+                <div class="signout col-xs-3 col-md-2"><a href="javascript:void(0);" title="Sign Out">Sign Out</a></div> 
+            </div>
+           
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <nav class="navbar-collapse collapse" id="navbar" aria-expanded="false" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="transfer_funds.html" title="Transfer Funds" >Transfer Funds</a></li>
+                    <li><a href="activity.html" title="Activity">Activity</a></li>
+                    <li><a href="preferences.html" title="Preferences" class="selected">Preferences</a></li>
+                    <li><a href="help.html" title="Help" >Help</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="content" role="main" class="preference-container">
+            <h1>Preferences</h1>
+			<div id="broswerViewChange" class="mt20"></div>
+            
+        </section>
+        
+        <footer class="footer footerSection">
+            <div id="footerHeader" class="container footer-wrapper">
+                <div class="text-center pb10">
+                    <span><a href="javascript:void(0);" title="Terms of Services">Terms of Services</a></span>
+                    <span>| <a href="javascript:void(0);" title="Privacy Policy">Privacy Policy</a></span>
+                    <span>| <a href="javascript:void(0);" title="Security Policy">Security Policy</a></span>
+                </div>
+                <div class="text-center"><small>Copyright © <span id="currYear"></span> Fiserv Inc. All rights reserved</small></div>
+            </div>    
+        </footer>
+        
+    </div>
+    
+    
+    
+    <!--Start::Drawer - Add New External Account Starts -->
+    
+    <div id="addNewAccount" class="drawer drawer-right dw-xs-12 dw-sm-8 dw-md-6 fold" tabindex="-1" aria-labelledby="addNewAccount" aria-expanded="false" role="region">
+         
+    </div>
+    
+    <div class="overlay"></div>
+    
+    <!--End::Drawer - Add New External Account Ends -->
+    
+    
+   
+    <!--Start::Modal -Verify Phone number -->
+    
+    <div class="modal fade bs-example-modal-md" id="verifyPhoneNumber" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-describedby="verifyPhoneNumber">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+            	<div id="verify"></div>               
+   			</div>
+	   </div>
+  </div>
+    
+    <!--Ends::Modal -Verify Phone number --> 
+    
+    
+    
+    <!-- Small Modal Default - Alert to close the account verification Starts -->
+     
+<div class="modal fade bs-example-modal-md" id="verifyExtAcct" tabindex="-1" role="dialog" aria-labelledby="verifyAccountLabel">
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+				<h2 class="modal-title" id="verifyAccountLabel">Verify External Account</h2>
+			</div>
+			<div class="modal-body p20">
+				<p>Are you sure you want to stop verification? You can verify later</p>
+			</div>
+			<div class="modal-footer text-center">
+            	<button type="button" class="btn btn-primary" data-dismiss="modal" id="continueVerification" title="Verify">Verify</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal" id="stopVerification" title="Stop">Stop</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Small Modal Default - Alert to close the account verification Ends-->
+    
+    
+    
+    <!-- Deleted  My other account verify -->
+      
+    <div class="modal fade bs-example-modal-md" id="deleteAcConf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-describedby="deleteAcConf">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="myModalLabel1"><i class="material-icons" aria-hidden="true">&#xE002;</i>Delete Account</h2>
+                </div>
+                <div class="modal-body p20">                   
+                     <p>Are you sure you want to delete <strong>SunTrust, Checking, xxxx123?</strong></p>
+                    <dl class="review-list mt0">
+                        <dt>Account </dt>
+                        <dd>SunTrust, Checking, xxxx123</dd>                       
+                        <dt>Routing # </dt>
+                        <dd>111111111</dd>
+                    </dl>
+
+                </div>
+                <div class="modal-footer  right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"  id="accountDelete" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="accountNotDelete" title="Don't Delete">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends -->
+    
+    
+    <!-- Deleted My other account verify account success-->
+    
+   <div class="modal fade bs-example-modal-md" id="verifyMyOtherAcctDeleted" tabindex="-1" role="dialog" aria-labelledby="PhNumDeleted" aria-describedby="phoneNumberdeleted">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Account</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>
+                            You've successfully deleted <strong>SunTrust, Checking, xxxx123</strong>
+                        </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+   	 </div>
+    
+     <!-- Ends -->
+    
+     <!-- Delete Master Debit card -->
+     
+     <div class="modal fade bs-example-modal-md" id="deleteDtCardConf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-describedby="deleteDtCardConf">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingDeleteEmailPending">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+                    Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>Are you sure you want to delete <strong>Fifth Third, MasterCard Debit, xxxx0778 ?</strong></p>
+                    <dl class="review-list mt0">
+                        <dt>Account </dt>
+                        <dd>Fifth Third, MasterCard Debit, xxxx0778 </dd>
+                        <dt>Nickname </dt>
+                        <dd></dd>
+                        <dt>Expiration </dt>
+                        <dd>09/2020</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Delete" id="yesDeleteMasterCard">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"title="Don't Delete" id="dnotDeleteMasterCard">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Ends -->
+    
+    
+    <!-- Delete Master Debit Card Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteSuccessDebitCard" tabindex="-1" role="dialog" aria-labelledby="PhNumFailedDeleted" aria-describedby="deleteSuccessPhoneNumber">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumFailedDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted <strong>Fifth Third, MasterCard Debit, xxxx0778 </strong></p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete Debit Card Success Ends -->
+    
+    
+    
+    <!-- Delete Visa Debit card -->
+     
+     <div class="modal fade bs-example-modal-md" id="deleteVisaCardConf" tabindex="-1" role="dialog" aria-labelledby="myModalLabelVisa2" aria-describedby="deleteVisaCardConf">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingDeleteEmailPending">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+                    Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                     <p>Are you sure you want to delete  <strong>Visa (Debit Card, xxxx5627)?</strong></p>
+                    <dl class="review-list mt0">
+                        <dt>Account </dt>
+                        <dd>Visa (Debit Card, xxxx5627)</dd>
+                        <dt>Nickname </dt>
+                        <dd>John</dd>
+                        <dt>Expiration </dt>
+                        <dd>11/2020</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Delete" id="yesDeleteVisaCard">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"title="Don't Delete" id="dnotDeleteVisaCard">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Ends -->
+    
+    
+    <!-- Delete Visa Debit Card Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteSuccessVisaDebitCard" tabindex="-1" role="dialog" aria-labelledby="visaDeleted" aria-describedby="deleteSuccessVisaDebitCard">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span 
+aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="visaDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted <strong>Visa (Debit Card, xxxx5627)</strong></p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete Debit Card Success Ends -->
+     
+     
+     <!-- Delete Expired Visa Debit card -->
+     
+     <div class="modal fade bs-example-modal-md" id="deleteExpiredVisaCardConf" tabindex="-1" role="dialog" aria-labelledby="myModalLabelVisa3" aria-describedby="deleteExpiredVisaCardConf">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingDeleteEmailPending">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+                    Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                     <p>Are you sure you want to delete  <strong>Visa (Debit Card, xxxx3557)?</strong></p>
+                    <dl class="review-list mt0">
+                        <dt>Account </dt>
+                        <dd>Visa (Debit Card, xxxx3557)</dd>                       
+                        <dt>Expiration </dt>
+                        <dd>12/2017</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Delete" id="yesDeleteExpiredVisaCard">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"title="Don't Delete" id="dnotDeleteExpiredVisaCard">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Ends -->
+    
+    
+    <!-- Delete Expired Visa Debit Card Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteExpiredSuccessVisaDebitCard" tabindex="-1" role="dialog" aria-labelledby="visaDeleted" aria-describedby="deleteExpiredSuccessVisaDebitCard">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span 
+aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="visaDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted <strong>Visa (Debit Card, xxxx3557)</strong></p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete Debit Card Success Ends -->
+    
+    
+     <!-- Delete Phone number Confirmation -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteVerifiedPhoneNumber" tabindex="-1" role="dialog" aria-labelledby="HeadingdeletePhoneNumber" aria-describedby="deleteVerifiedPhoneNumber">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>×</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingdeletePhoneNumber">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+				Delete Phone Number</h2>
+                </div>
+                <div class="modal-body p20">
+                    <p>Delete <strong>650-123-4567</strong><br/>Are you sure you want to delete 650-123-4567?</p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="yesDeleteVerifiedPhone" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="dontDeleteVerifiedPhone" title="Don't Delete">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Delete Phone number Confirmation Ends -->
+    
+     <!-- Delete Phone number Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="phoneNumberdeleted" tabindex="-1" role="dialog" aria-labelledby="PhNumDeleted" aria-describedby="phoneNumberdeleted">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span 
+aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Phone Number</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted phone number  <strong>650-123-4567</strong>.</p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete Phone number Success Ends -->
+     
+     
+     
+     <!-- Delete Phone number for Failed Verification Confirmation -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteFailedPhoneNumber" tabindex="-1" role="dialog" aria-labelledby="HeadingdeleteFailedPhoneNumber" aria-describedby="deleteFailedPhoneNumber">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>×</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingdeleteFailedPhoneNumber">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+				Delete Phone Number</h2>
+                </div>
+                <div class="modal-body p20">
+                    <p>You are about to delete phone number <strong>650-345-6789</strong>.<br/>Are you sure you want to delete phone number?</p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="yesDeleteFailedPhone" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="dontDeleteFailedPhone" title="No, Don't Delete">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Delete Phone number Confirmation Ends -->
+    
+     <!-- Delete Phone number Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteSuccessPhoneNumber" tabindex="-1" role="dialog" aria-labelledby="PhNumFailedDeleted" aria-describedby="deleteSuccessPhoneNumber">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span 
+aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumFailedDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Phone Number</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You have successfully deleted phone number <strong>650-345-6789</strong>.</p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete Phone number Success Ends -->
+     
+     
+     
+     <!-- Delete Phone number for Failed Verification Confirmation -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteVerifyPhoneNumber" tabindex="-1" role="dialog" aria-labelledby="HeadingdeleteVerifyPhoneNumber" aria-describedby="deleteVerifyPhoneNumber">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>×</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingdeleteVerifyPhoneNumber">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+				Delete Phone Number</h2>
+                </div>
+                <div class="modal-body p20">
+                    <p>Delete  <strong>650-234-5678</strong><br/>Are you sure you want to delete 650-234-5678?</p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="yesDeleteVerifyPhone" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="dontDeleteVerifyPhone" title="Don't Delete">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Delete Phone number Confirmation Ends -->
+    
+     <!-- Delete Phone number Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="verifyDeletedSuccessPhone" tabindex="-1" role="dialog" aria-labelledby="PhNumVerifyDeleted" aria-describedby="verifyDeletedSuccessPhone">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span 
+aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumVerifyDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Phone Number</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted phone number <strong>650-234-5678</strong>. </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete Phone number Success Ends -->
+     
+     
+     <!-- Delete Validated Emails main Confirmation -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteEmailValidated" tabindex="-1" role="dialog" aria-labelledby="HeadingDeleteEmailValidated" aria-describedby="deleteEmailValidated">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>×</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingDeleteEmailValidated">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+				Delete Email</h2>
+                </div>
+                <div class="modal-body p20">
+                    <p> Are you sure you want to delete <strong>jsmith@gmail.com?</strong></p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="yesDeleteVerifiedEmail" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="dontDeleteVerifiedEmail" title="Don't Delete">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Delete Validated Emails main Confirmation Ends -->
+    
+     <!-- Delete  Validated Emails Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="deletedSuccessVerifiedEmail" tabindex="-1" role="dialog" aria-labelledby="deletedVerifiedSucss" aria-describedby="deletedSuccessVerifiedEmail">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span 
+aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="deletedVerifiedSucss">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Email</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted <strong>jsmith@gmail.com</strong> </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete Validated Emails Success Ends -->
+     
+     
+     
+      <!-- Delete Pending Emails Confirmation -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteEmailPending" tabindex="-1" role="dialog" aria-labelledby="HeadingDeleteEmailPending" aria-describedby="deleteEmailPending">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>×</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingDeleteEmailPending">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+				Delete Email</h2>
+                </div>
+                <div class="modal-body p20">
+                    <p> Are you sure you want to delete <strong>haljordon@gmail.com?</strong></p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="yesDeletePendingEmail" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="dontDeletePendingEmail" title="Don't Delete">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Delete Pending Emails Confirmation Ends -->
+    
+     <!-- Delete Pending Emails Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="deletedSuccessPendingEmail" tabindex="-1" role="dialog" aria-labelledby="deletedPendingSucss" aria-describedby="deletedSuccessPendingEmail">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span 
+aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="deletedPendingSucss">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Email Address</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted <strong>haljordon@gmail.com</strong></p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Delete Pending Emails Success Ends -->
+     
+     
+    <!-- Email Make main Address Starts -->
+        
+    <div class="modal fade bs-example-modal-md" id="ChangEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-describedby="ChangEmail">
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+				<h2 class="modal-title" id="myModalLabel3">Change Primary Email</h2>
+			</div>
+			<div class="modal-body p20">
+				<p>Only verified emails can be primary.</p>
+				<p>
+					<strong>Current Primary</strong>
+					<span>swalters@gmail.com</span>
+				</p>
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 col-md-6 form-group">
+						<label for="To_account"><span class="sr-only">New Primary</span></label>
+                        <strong>New Primary</strong>
+						<div class="fdl-select mt5">
+							<select id="To_account" class="form-control" aria-invalid="false">
+								<option>jsmith@gmail.com</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer text-center right-buttons">
+				<button type="button" class="btn btn-primary" data-dismiss="modal" title="Save" id="makeMainSave">Save</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal" title="Cancel">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div> 
+
+     <!-- Email Make main Address Ends -->
+     
+     <!-- Email Make main success Starts -->
+     
+    <div class="modal fade bs-example-modal-md" id="makeMainSuccess" tabindex="-1" role="dialog" aria-labelledby="PhNumDeleted" aria-describedby="makeMainSuccess">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+					<h2 class="modal-title success" id="PhNumDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Primary Email Changed</h2>     
+                </div>
+                <div class="modal-body p20">
+                   <p> You have successfully changed your primary email address to <strong>jsmith@gmail.com</strong> </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+     
+     <!-- Email Make main success Ends -->
+     
+     
+      <!-- Delete Active My other account - First  Confirmation -->
+      	
+<div class="modal fade bs-example-modal-md" id="deleteAcConf1" tabindex="-1" role="dialog" aria-labelledby="HeadingdeleteVerifyPhoneNumber" aria-describedby="deleteAcConf1">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>×</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingdeleteVerifyPhoneNumber">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>Delete Account</h2>        
+                </div>
+                <div class="modal-body p20">                 
+                     <p>Are you sure you want to delete <strong>TD Bank, Checking, xxxx5432?</strong></p>
+                    <dl class="review-list mt0">
+                        <dt>Account </dt>
+                        <dd>TD Bank, Checking, xxxx5432</dd>
+                        <dt>Nickname </dt>
+                        <dd>Other Bank 1</dd>
+                        <dt>Routing # </dt>
+                        <dd>061092387</dd>
+                    </dl>
+
+                </div>
+                <div class="modal-footer  right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"  id="deleteOtherAcct1" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Don't Delete">Don't Delete</button>
+                </div>
+		</div>
+	</div>
+</div>
+      
+      <!-- Delete Active My other account - First Confirmation Ends -->
+       
+      <!-- Deleted Active My other account - First Success  --> 
+      
+      <div class="modal fade bs-example-modal-md" id="activeMyOtherAcctDeleted1" tabindex="-1" role="dialog" aria-labelledby="PhNumDeleted" aria-describedby="phoneNumberdeleted">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Account</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>
+                            You have successfully deleted <strong>TD Bank, Checking, xxxx5432</strong>
+                        </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+      <!-- Delete Active My other account - First Success Ends --> 
+      
+      
+      
+      
+      <!-- Delete Active My other account - second  Confirmation -->
+      	
+<div class="modal fade bs-example-modal-md" id="deleteAcConf2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-describedby="deleteAcConf2">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="myModalLabel1"><i class="material-icons" aria-hidden="true">&#xE002;</i> Delete Account</h2>
+                </div>
+                <div class="modal-body p20">                    
+                    	<p>Are you sure you want to delete <strong>Chase Bank, Checking, xxxx2345?</strong></p>
+                    <dl class="review-list mt0">
+                        <dt>Account </dt>
+                        <dd>Chase Bank, Checking, xxxx2345</dd>
+                        <dt>Nickname </dt>
+                        <dd>Other Bank 2</dd>
+                        <dt>Routing # </dt>
+                        <dd>021000089</dd>
+                    </dl>
+
+                </div>
+                <div class="modal-footer  right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"  id="deleteOtherAcct2" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Don't Delete">Don't Delete</button>
+                </div>
+		</div>
+	</div>
+</div>      
+      <!-- Delete Active My other account - second Confirmation Ends -->
+       
+      <!-- Deleted Active My other account - second Success  --> 
+      
+      <div class="modal fade bs-example-modal-md" id="activeMyOtherAcctDeleted2" tabindex="-1" role="dialog" aria-labelledby="PhNumDeleted" aria-describedby="phoneNumberdeleted">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Account</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>
+                            You have successfully deleted <strong>Chase Bank, Checking, xxxx2345</strong>
+                        </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+      
+      <!-- Delete Active My other account - second Success Ends -->
+      
+        <!-- Delete Active My other account - Third  Confirmation -->
+      	
+<div class="modal fade bs-example-modal-md" id="deleteAcConf3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-describedby="deleteAcConf3">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="myModalLabel1"><i class="material-icons" aria-hidden="true">&#xE002;</i> Delete Account</h2>
+                </div>
+                <div class="modal-body p20">                    
+                    	<p>Are you sure you want to delete <strong>E*Trade, Brokerage, xxxx6789?</strong></p>
+                    <dl class="review-list mt0">
+                        <dt>Account </dt>
+                        <dd>E*Trade, Brokerage, xxxx6789</dd>
+                        <dt>Nickname </dt>
+                        <dd>Other Bank 3</dd>
+                        <dt>Routing # </dt>
+                        <dd>021000089</dd>
+                    </dl>
+
+                </div>
+                <div class="modal-footer  right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"  id="deleteOtherAcct3" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Don't Delete">Don't Delete</button>
+                </div>
+		</div>
+	</div>
+</div>      
+      <!-- Delete Active My other account - Third Confirmation Ends -->
+       
+      <!-- Deleted Active My other account - Third Success  --> 
+      
+      <div class="modal fade bs-example-modal-md" id="activeMyOtherAcctDeleted3" tabindex="-1" role="dialog" aria-labelledby="PhNumDeleted" aria-describedby="phoneNumberdeleted">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Account</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>
+                            You have successfully deleted <strong>E*Trade, Brokerage, xxxx6789</strong>
+                        </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+      
+      <!-- Delete Active My other account - Third Success Ends --> 
+     
+    
+     
+    <!-- Delete Active  other Person account - 1 Confirmation -->
+     
+     <div class="modal fade bs-example-modal-md" id="deleteAcConfOtherPerson1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-describedby="deleteAcConfOtherPerson1">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="myModalLabel1"><i class="material-icons" aria-hidden="true">&#xE002;</i> Delete Account</h2>
+                </div>
+                <div class="modal-body p20">                    
+                    <p>Are you sure you want to delete <strong>Jack Milagro, SunTrust, Checking, xxxx2929?</strong></p>
+                    <dl class="review-list mt0">
+                    	<dt>Name </dt>
+                        <dd>Jack Milagro</dd>                        
+                        <dt>Nickname </dt>
+                        <dd>Jack</dd>
+                        <dt>Account </dt>
+                        <dd>Jack Milagro, SunTrust, Checking, xxxx2929</dd>
+                        <dt>Routing # </dt>
+                        <dd>111111111</dd>
+                        <dt>Email Address </dt>
+                        <dd>jmilagro@yahoo.com</dd>
+                    </dl>
+
+                </div>
+                <div class="modal-footer  right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"  id="deleteOtherPersonAcct1" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Don't Delete">Don't Delete</button>
+                </div>
+		</div>
+	</div>
+</div>      
+      <!-- Delete Active  other Person account - 1 Confirmation Ends -->
+       
+      <!-- Deleted Active  other Person account - 1 Success  --> 
+      
+      <div class="modal fade bs-example-modal-md" id="otherPersonAcctDeleted1" tabindex="-1" role="dialog" aria-labelledby="PhNumDeleted" aria-describedby="otherPersonAcctDeleted1">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Account</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>
+                            You've successfully deleted <strong>Jack Milagro, SunTrust, Checking, xxxx2929</strong>
+                        </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+      
+      <!-- Delete Active  other Person account - 1 Success Ends --> 
+    
+      
+      <!-- Delete Active Other People's Accounts - 2 Confirmation -->
+     
+          <div class="modal fade bs-example-modal-md" id="deleteAcConfOtherPerson2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-describedby="deleteAcConfOtherPerson2">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="myModalLabel1"><i class="material-icons" aria-hidden="true">&#xE002;</i> Delete Account</h2>
+                </div>
+                <div class="modal-body p20">                    
+                     <p>Are you sure you want to delete <strong>Melodi Miller, SunTrust, Checking, xxxx4539?</strong></p>
+                    <dl class="review-list mt0">
+                    	<dt>Name </dt>
+                        <dd>Melodi Miller, SunTrust, Checking, xxxx4539</dd>                        
+                        <dt>Nickname </dt>
+                        <dd>Miller</dd>
+                        <dt>Account </dt>
+                        <dd>Melodi Miller, SunTrust, Checking, xxxx4539</dd>
+                        <dt>Routing #</dt>
+                        <dd>061000104</dd>
+                        <dt>Email Address </dt>
+                        <dd>melodi_miller@gmail.com</dd>
+                    </dl>
+
+                </div>
+                <div class="modal-footer  right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"  id="deleteOtherPersonAcct2" title="Delete">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Don't Delete">Don't Delete</button>
+                </div>
+		</div>
+	</div>
+</div> 
+      <!-- Delete Active Other People's Accounts - 2 Confirmation Ends -->
+       
+      <!-- Deleted Active Other People's Accounts - 2 Success  --> 
+      
+            
+      <div class="modal fade bs-example-modal-md" id="otherPersonAcctDeleted2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-describedby="otherPersonAcctDeleted2">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Edit Account</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>
+                            You've successfully deleted <strong>Melodi Miller, SunTrust, Checking, xxxx4539</strong>
+                        </p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	     
+    <!-- Delete Active  other Person account - 2 Success Ends --> 
+    
+    <!--  My Other Accounts - On Hold starts  --> 
+    
+    	<div class="modal fade bs-example-modal-md" id="onHoldOtherAccount" tabindex="-1" role="dialog" aria-labelledby="HeadingdeletePhoneNumber" aria-describedby="onHoldOtherAccount">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingdeletePhoneNumber">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+					Account On Hold</h2>
+                </div>
+                <div class="modal-body p20">
+                  <p>This account is on hold and cannot be used for transfers until the hold has been removed. 
+               		 Please call us at 844-84101427 to remove the hold.</p>                  
+               </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Close">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  My Other Accounts - On Hold Ends --> 
+    
+    
+     <!--  My  Accounts -Suspended starts  --> 
+
+    
+      <div class="modal fade bs-example-modal-md" id="suspendedProfile" tabindex="-1" role="dialog" aria-labelledby="HeadingdeletePhoneNumber" aria-describedby="suspendedProfile">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-danger" id="HeadingdeletePhoneNumber">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+					Suspended Account</h2>
+                </div>
+                <div class="modal-body p20">
+                  <p>This account has been Suspended. This is the result of one of the following causes :</p>
+                  <ul class="modal-list">
+                    <li>If the account was never validated, It has been Suspended because the Financial Institution rejected the trial deposits used to verify the account, This may mean that the account is not able to accept electronic funds transfers. If you think the trial deposits were rejected in error, you can attempt the account verification process again by deleting this account from your profile and adding it again.</li>
+                
+                <li>If the account was previously active, the suspension is either because the account is now closed, or because of questionable activity. For more information regarding this suspension, contact a Commerce Bank customer service representative.</li>
+                
+                </ul>
+
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Close">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  My  Accounts - Suspended Ends --> 
+    
+    
+    
+   <!-- Notice Regarding Receiving Text Messages  starts --> 
+    
+    <div class="modal fade bs-example-modal-md" id="noticeTCPA" tabindex="-1" role="dialog" aria-labelledby="noticeLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title" id="noticeLabel">Notice Regarding Receiving Text Messages</h2>
+                </div>
+                <div class="modal-body p20">
+                    <p>
+                        By using the &lt;FI&gt; External Transfers Service, and by providing your telephone number
+                        for the PNC Bank External Transfers service (including a mobile telephone number)
+                        you consent to receiving calls end/or Text("SMS") messages from us at the numbers,
+                        including receving calls from an automated telephone dialling systems ("ATDS").
+                        You consent to receive theses calls in connection with your use of the PNC Bank External
+                        Transfers service, and as required for our everyday business purposes (including notices
+                        regarding your account or account activity, identity verification, or to prevent fraud).
+                    </p>
+                    <p>Standard text messaging rates may apply based on your plan with your mobile phone carrier</p>
+			</div>
+		<div class="modal-footer text-center">
+			<button type="button" class="btn btn-primary" data-dismiss="modal" title="Close" id="closeTCPA">Close</button>
+		</div>
+	</div>
+	</div>
+</div>
+    
+    <!-- Notice Regarding Receiving Text Messages  Ends -->  
+    
+    <!-- Phone Number Failed Verified Starts -->  
+    	
+        <div class="modal fade bs-example-modal-md" id="failedPhoneNumber" tabindex="-1" role="dialog" aria-labelledby="HeadingdeletePhoneNumber" aria-describedby="failedPhoneNumber">
+         <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>×</strong></span></button>
+                  <h2 class="modal-title alert-danger" id="HeadingdeletePhoneNumber">
+                  	<i class="material-icons warning-icon" aria-hidden="true">&#xE002;</i><span class="sr-only">Error</span>
+                     Phone Number Not Verified
+                  </h2>
+               </div>
+               <div class="modal-body p20">
+                  <p>
+                    We can't verify this phone number. Call 800-555-1234 for help.
+                  </p>
+               </div>
+               <div class="modal-footer text-center right-buttons">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" title="Ok">OK</button>
+               </div>
+         </div>
+	 </div>
+  </div>
+    
+    <!-- Phone Number Failed Verified Ends -->  
+    
+    
+    
+    <!-- Delete Second Visa Debit card -->
+     
+     <div class="modal fade bs-example-modal-md" id="deleteActiveVisaCardConf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-describedby="deleteActiveVisaCardConf">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingDeleteEmailPending">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+                    Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>Are you sure you want to delete <strong>Bank of America, Visa Debit, xxxx0469?</strong></p>
+                    <dl class="review-list mt0">
+                        <dt>Account </dt>
+                        <dd>Bank of America, Visa Debit, xxxx0469</dd>                       
+                        <dt>Expiration </dt>
+                        <dd>03/2022</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Delete" id="yesDeleteActiveVisaCard">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"title="Don't Delete" id="dnotDeleteActiveVisaCard">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Ends -->
+    
+    
+    <!-- Delete Second Visa Debit Card Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteSuccessActiveVisaCard" tabindex="-1" role="dialog" aria-labelledby="PhNumFailedDeleted" aria-describedby="deleteSuccessActiveVisaCard">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumFailedDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted <strong>Bank of America, Visa Debit, xxxx0469</strong></p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete Debit Card Success Ends -->
+     
+     
+   
+     
+             
+      <!--  Card -Suspended starts  --> 
+    
+      <div class="modal fade bs-example-modal-md" id="suspendedCardModal" tabindex="-1" role="dialog" aria-labelledby="HeadingdeletePhoneNumber" aria-describedby="suspendedProfile">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-danger" id="HeadingdeletePhoneNumber">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+					Suspended Account</h2>
+                </div>
+                <div class="modal-body p20">
+                 <p>
+                 	This account is suspended. Call MyFinancial Bank for help.<br>
+					Accounts are suspended when they're closed, the financial institution doesn't accept electronic transfers, or there's been questionable activity on the account.
+
+                 </p>
+
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Close">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  My  Accounts - Suspended Ends --> 
+    
+    
+    
+     <!-- Delete suspended Debit card -->
+     
+     <div class="modal fade bs-example-modal-md" id="deleteSuspendedCardConf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-describedby="deleteSuspendedCardConf">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title alert-warning" id="HeadingDeleteEmailPending">
+					<i class="material-icons" aria-hidden="true">&#xE002;</i>
+                    Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>Are you sure you want to delete <strong>Visa (Debit Card, xxxx9686)?</strong></p>
+                    <dl class="review-list mt0"> 
+                    	<dt>Account </dt>
+                        <dd>Visa (Debit Card, xxxx9686)</dd>                       
+                        <dt>Expiration </dt>
+                        <dd>12/2019</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Delete" id="yesDeleteSuspendedCard">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"title="Don't Delete" id="dnotDeleteSuspendedCard">Don't Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Ends -->
+    
+    
+    <!-- Delete suspended Card Success -->
+    
+    <div class="modal fade bs-example-modal-md" id="deleteSuccessSuspendedCard" tabindex="-1" role="dialog" aria-labelledby="PhNumFailedDeleted" aria-describedby="deleteSuccessSuspendedCard">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title success" id="PhNumFailedDeleted">
+					 <i class="material-icons" aria-hidden="true">&#xE86c;</i>
+                        <span class="sr-only">Success</span>
+						Delete Debit Card</h2>
+                </div>
+                <div class="modal-body p20">
+                   <p>You've successfully deleted <strong>Visa (Debit Card, xxxx9686)</strong></p>
+                </div>
+                <div class="modal-footer text-center right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+     <!-- Delete suspended Card Success Ends -->
+    
+     <!-- Loader Starts -->
+
+    <div id="pageLoader" style="display:none;">
+        <div id="loader-fade"></div>
+        <div id="loading-spinner">
+            <div class="spinner-icon" aria-label="loading..."></div>
+        </div>
+    </div>
+    
+    <!-- Loader Ends -->
+    
+    
+    <script src="fdl-bootstrap/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery_ui.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="fdl-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/drawer.js" type="text/javascript"></script>    
+    <script src="assets/js/preferences.js" type="text/javascript"></script>
+    <script>
+	$(document).ready(function(){	
+		$('#menuac').click(function(e){	
+			$('#menuac').toggleClass('acik');
+			$('.mobmenu').toggleClass('mobmenu-acik');
+		});	
+	});	
+</script>
+</body>
+</html>
