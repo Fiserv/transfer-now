@@ -16,7 +16,7 @@
         "apiSpecFileNames": ["openapi"]
       }
   ],
-  "getStartedFilePath": "/docs/getting-started.md",
+  "getStartedFilePath": "/docs/getting-started1.md",
   "product": {
     "featured": true,
     "logoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Portal_Logo.png",
