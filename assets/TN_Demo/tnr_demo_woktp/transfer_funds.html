@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transfer Funds</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="fdl-bootstrap/css/fdl-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-drawer.css" rel="stylesheet" />
+    <link href="assets/css/jquery_ui.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />    
+    <link href="assets/css/mobile_frame.css" rel="stylesheet" type="text/css" />      
+</head>
+<body>
+      <div class="bank_frame">
+        <div class="bank_header">
+            <div class="header_section">
+                <div class="bank_top_menu">
+                    <ul>
+                        <li><a href="javascript:void(0);" class="active" title="Mobile"><img src="assets/images/messsage.jpg" width="28" height="23" border="0" />mobile</a><span> | </span></li>
+                        <li><a href="javascript:void(0);" title="Approvals">approvals (1)</a> <span> | </span></li>
+                        <li><a href="javascript:void(0);" title="Activity">activity</a> <span> | </span></li>
+                        <li><a href="javascript:void(0);" title="Settings">settings</a> <span> | </span></li>
+                        <li><a href="javascript:void(0);" title="Log Out">log out</a></li>
+                    </ul>
+                </div>
+                <div class="bank_logo">
+                    <a href="javascript:void(0);" title="MyFinanacial Logo"><img src="assets/images/myfinancial.jpg" width="272" height="58" border="0" alt="My Financial, Inc" title="My Financial, Inc"/></a>
+                </div>
+            </div>            
+        </div>
+        <div class="clearfix"></div>
+        <div class="mobmenu">
+            <ul class="menu">
+                <li><a href="javascript:void(0);" title="Accounts">Accounts</a></li>
+                <li><a href="transfer_funds.html" class="active" title="Transfers">Transfers</a></li>
+                <li><a href="javascript:void(0);" title="Wires">Wires</a></li>
+                <li><a href="javascript:void(0);" title="Pay Bills">Pay Bills</a></li>
+                <li><a href="javascript:void(0);" title="Send with Zelle">Send with Zelle<sup>&reg;</sup></a></li>
+                <li><a href="javascript:void(0);" title="Trends">Trends</a></li>
+                <li><a href="javascript:void(0);" title="Inovice and Payments">Invoice and Payments</a></li>
+            </ul>
+        </div>
+        <div id="ust">
+          <div id="menuac"> <span></span> </div>
+        </div>
+    </div>
+    <div class="container">
+        <a href="#content" class="sr-only sr-only-focusable" id="top">Skip to Content</a>
+        <header class="navbar navbar-default navbar-ext">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-haspopup="true" aria-controls="navbar" aria-label="Navigation" aria-expanded="false">
+                    <i class="material-icons" aria-hidden="true">apps</i>
+                    Menu
+                </button>
+                <span class="navbar-brand selected mt15">
+                    Transfer Funds
+                </span>
+            </div>
+            
+            <div class="header-one bankLogoSection"> 
+            	<div class="bank-name col-xs-9 col-md-10">MyFinancial Bank</div>
+           		<div class="signout col-xs-3 col-md-2"><a href="javascript:void(0);" title="Sign Out">Sign Out</a></div> 
+            </div>
+
+            <nav class="navbar-collapse collapse" id="navbar" aria-expanded="false" role="navigation">
+               <ul class="nav navbar-nav">
+                    <li><a href="transfer_funds.html" class="selected" title="Transfer Funds">Transfer Funds</a></li>
+                    <li><a href="activity.html" title="Activity">Activity</a></li>
+                    <li><a href="preferences.html" title="Preferences">Preferences</a></li>
+                    <li><a href="help.html" title="Help">Help</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content" role="main">
+         <form id="transferFunds" method="get" action="transfer_funds_review.html">
+         
+         	<h1>Create Transfer</h1>
+           <input type="hidden" id="reciptEmail" name="recipientEmail">                 
+            <div class="tips-wrapper mt20">
+                <button type="button" class="btn btn-link info-message-toggle" title="Hide Tip">Hide Tip</button>
+                <div class="alert alert-dismissible alert-info hide-tip">
+                    <i class="material-icons" aria-hidden="true">info</i>
+                    <span class="sr-only">info</span>
+                    <p><span class="title">Saving is easy when it's automatic</span>
+                  	  Saving for a big trip, a new home or just a rainy day is just a few clicks away. Just select "Make Recurring" and you are set to go and grow.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="alert alert-dismissible alert-info" id="trialVerification" style="display:none;">
+                <i class="material-icons" aria-hidden="true">&#xE88E;</i>
+                <span class="sr-only">info &</span>
+                <p>We made two small deposits to your account(s).</p>
+                <!-- <p><span class="text-bold">PNC Bank Debit Card.</span><a href="javascript:void(0);">Click here to activate.</a></p>-->
+                <p>Your <span class="text-bold"> Fiserv Bank (Multi Login Parameter), xxxx6557, Savings has beed added <a href="javascript:void(0);" id="trialcheck">Verify this</a></span> </p>	
+            </div>
+            
+            <div class="alert alert-dismissible alert-info" id="trialVerification_suntrust" style="display:none;">
+                <i class="material-icons" aria-hidden="true">&#xE88E;</i>
+                <span class="sr-only">info &</span>
+                <p>We made two small deposits to your account(s).</p>
+                <!-- <p><span class="text-bold">PNC Bank Debit Card.</span><a href="javascript:void(0);">Click here to activate.</a></p>-->
+                <p>Your <span class="text-bold"> SunTrust, xxxx123, Checking has beed added <a href="javascript:void(0);" id="trialcheckmfa">Verify this</a></span> </p>	
+            </div>
+
+            
+            <!--  <div class="alert alert-dismissible alert-warning">
+                <i class="material-icons" aria-hidden="true">warning</i>
+                <span class="sr-only">warning</span>
+                <p>
+                 	You must <a href="javascript:void(0);" title="Validate your email address">Validate your email address</a> before you can transfer funds.                   
+                </p>
+            </div> -->
+            
+            
+           <!--<fieldset class="form-section">
+                <legend class="sr-only">Transfer Funds</legend>
+                <div class="row form-group mt10">
+                    <div class="col-xs-12 col-sm-9 col-md-6">
+                        <div class="radio">
+                            <input type="radio" id="metome" name="transferType" value="metome" aria-invalid="false" checked>
+                            <label for="metome"><span>To or from my other accounts</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="metoothers" name="transferType" value="metoothers" aria-invalid="false">
+                            <label for="metoothers"><span> To my recipient's account</span></label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>-->
+                      
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <div class="panel p15 clearfix">
+                        <div class="row">
+                            <div class="col-md-12 form-group position-relative">
+                                <label for="From_account">From</label>
+                                    <input type="text" id="From_account" name="from" value="" class="fromDropdown" readonly>
+                                    
+                                    <ul class="dropdown" id="From_account_Dropdn" style="display:none;">
+                                        <li><a href="javascript:void(0);">Select From Account</a></li>
+                                        <li id="fromPrimary"><strong class="grouping">MyFinancial Accounts</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">MyFinancial, Checking, xxxx1234, $3,475.00</a></li>
+                                                <li><a href="javascript:void(0);">MyFinancial, Savings, xxxx5678, $28,500.00</a></li>
+                                                <li><a href="javascript:void(0);">MyFinancial, Loan, xxxx9876</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="fromSecondary"><strong class="grouping">My Other Accounts</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">TD Bank, Checking, xxxx5432</a></li>
+                                                <li><a href="javascript:void(0);">Chase Bank, Checking, xxxx2345</a></li>
+                                                <li><a href="javascript:void(0);">E*Trade, Brokerage, xxxx6789</a></li>
+                                            </ul>
+                                        </li>
+                                       <!-- <li id="fromCard"><strong class="grouping">My Debit Cards at Other Banks</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Bank of America, Visa Debit, xxxx0469</a></li>
+                                                <li><a href="javascript:void(0);">Fifth Third, MasterCard Debit, xxxx0778</a></li>
+                                            </ul>
+                                        </li>-->
+                                    </ul>
+                                    
+                            </div>
+                        </div>
+                        
+                    <div class="row">
+                        <div class="col-md-12 form-group position-relative">
+                            <label for="To_account">To</label>
+                               
+                                <input type="text" id="To_account" name="to" value="" class="fromDropdown">
+                                <ul class="dropdown" id="To_account_Dropdn" style="display:none;">
+                                    <li><a href="javascript:void(0);">Select To Account</a></li>
+                                    <li id="toPrimary"><strong class="grouping">MyFinancial Accounts</strong><br>
+                                        <ul>
+                                            <li><a href="javascript:void(0);">MyFinancial, Checking, xxxx1234, $3,475.00</a></li>
+                                            <li><a href="javascript:void(0);">MyFinancial, Savings, xxxx5678, $28,500.00</a></li>
+                                            <li><a href="javascript:void(0);">MyFinancial, Loan, xxxx9876</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="toSecondary"><strong class="grouping">My Other Accounts</strong><br>
+                                        <ul>
+                                            <li><a href="javascript:void(0);">TD Bank, Checking, xxxx5432</a></li>
+                                            <li><a href="javascript:void(0);">Chase Bank, Checking, xxxx2345</a></li>
+                                            <li><a href="javascript:void(0);">E*Trade, Brokerage, xxxx6789</a></li>
+                                        </ul>
+                                    </li>
+                                    <!--<li id="toCard"><strong class="grouping">My Debit Cards at Other Banks</strong><br>
+                                        <ul>
+                                            <li><a href="javascript:void(0);">Bank of America, Visa Debit, xxxx0469</a></li>
+                                            <li><a href="javascript:void(0);">Fifth Third, MasterCard Debit, xxxx0778</a></li>
+                                        </ul>
+                                    </li>-->
+                                    <li id="ktp"><strong class="grouping">My Recipient's Accounts</strong><br>                                        	 
+                                        <ul>
+                                            <li><a href="javascript:void(0);">Jack Milagro, SunTrust, Checking, xxxx2929</a></li>
+                                        </ul>
+                                    </li>                                       
+                                </ul>
+                        </div>                            
+                    </div>
+                 </div>
+            </div>
+        </div>
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 form-group mb0">
+                	<a id="addAccount" href="javascript:void(0);" class="pb5 dropdown-toggle pull-right" title="Add an account">Add an account<span class="sr-only"> Opens Dialog</span></a>
+                	<a id="addPersonsAccount" href="javascript:void(0);" class="pb5 dropdown-toggle pull-right" title="Add a recipient's account" style="display:none;">Add a recipient's account<span class="sr-only"> Opens Dialog</span></a>
+                </div>
+            </div>
+            
+            
+            
+            <div class="form-group mt10">
+                <label for="input_amount">Amount ($)</label>
+                <div class="row">
+                    <div class="col-xs-7 col-sm-4 col-md-3"><input type="text" value="" id="input_amount" placeholder="$" class="form-control" aria-invalid="false" name="amount" maxlength="9" autocomplete="off"></div>
+                    <div class="col-xs-5 col-sm-8 col-md-9 p10" id="viewlimitSection"><a href="javascript:void(0);" class="" data-toggle="modal" data-target="#LimitModal" id="viewlimit" title="View limits">View limits<span class="sr-only"> Opens Dialog</span></a></div>
+                    <div class="col-xs-5 col-sm-8 col-md-9 p10" id="OtherViewLimitSection" style="display:none;"><a href="javascript:void(0);" class="" data-toggle="modal" data-target="#OtherLimitModal" id="OtherViewLimit" title="View limits">View limits<span class="sr-only"> Opens Dialog</span></a></div>
+                </div>
+            </div>
+                    
+            <div class="row form-group">
+                <div class="col-xs-9 col-sm-4 col-md-3">
+                    <label for="Date_sendon" id="send">Send</label>
+                    <div class="inner-addon right-addon">
+                        <i class="glyphicon glyphicon-calendar" aria-label="Pick a send on date from calendar"></i>
+                        <input type="text" id="Date_sendon" placeholder="MM/DD/YYYY" class="form-control" aria-invalid="false" name="sendOn">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row form-group">
+                <div class="col-xs-11 col-sm-7 col-md-5">
+                    <label for="Freq">Frequency</label>
+                    <div class="fdl-select">
+                        <select id="Freq" class="form-control" aria-invalid="false" name="frequency">  
+                 	        <option value="" selected>Select Frequency</option> 
+                            <optgroup label="ONE TIME">
+                            	<option value="One Time Transfer">One-time transfer</option>
+                            </optgroup>
+                            <optgroup label="RECURRING">
+                            	<option value="Once every month">Once every month</option>
+                                <option value="Every 15 days">Every 15 days</option>
+                                <option value="Every week">Every week</option>
+                                <option value="Every 2 weeks">Every 2 weeks</option>
+                                <option value="Every 3 weeks">Every 3 weeks</option>
+                                <option value="Every 4 weeks">Every 4 weeks</option>
+                                <option value="Every 2 months">Every 2 months</option>
+                                <option value="Every 3 months">Every 3 months</option>
+                                <option value="Every 6 months">Every 6 months</option>
+                                <option value="Every year">Every year</option>
+                                <option value="First Business Day of Every Month">First Business Day of Every Month</option>
+                                <option value="Last Business Day of Every Month">Last Business Day of Every Month</option>
+                                <option value="First Business Day of Every 2nd Month">First Business Day of Every 2nd Month</option>
+                                <option value="Last Business Day of Every 2nd Month">Last Business Day of Every 2nd Month</option>
+                                <option value="First Business Day of Every 3rd Month">First Business Day of Every 3rd Month</option>
+                                <option value="Last Business Day of Every 3rd Month">Last Business Day of Every 3rd Month</option>
+                                <option value="First Business Day of Every 6th Month">First Business Day of Every 6th Month</option>
+                                <option value="Last Business Day of Every 6th Month">Last Business Day of Every 6th Month</option>
+                                <option value="First Business Day of Every 12th Month">First Business Day of Every 12th Month</option>
+                                <option value="Last Business Day of Every 12th Month">Last Business Day of Every 12th Month</option>
+                            </optgroup>
+    					</select>
+                        <p class="floatr" id="startDateDisplay">Starts <span id="startingDate">09/20/2017</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row form-group" id="duration" style="display:none;">
+                <div class="col-xs-11 col-sm-7 col-md-5">
+                    <label for="Dur">Duration</label>
+                    <div class="fdl-select">
+                        <select id="Dur" class="form-control" aria-invalid="false" name="duration">
+                            <option value="">Select Duration</option>
+                            <option value="Until I cancel">Until I cancel</option>
+                            <option value="Up to a specified amount">Up to a specified amount</option>
+                            <option value="Up to a specified number of transfers">Up to a specified number of transfers</option>
+                            <option value="Until a specified date">Until a specified date</option>
+                        </select>                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row form-group" id="specificAmount" style="display:none;">
+                <div class="col-xs-9 col-sm-4 col-md-3">
+                    <label for="totalAmount">Total Amount</label>
+                    <div class="inner-addon right-addon">
+                        <input type="text" id="totalAmount" placeholder="$" class="form-control" aria-invalid="false" name="totalAmount" maxlength="9">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row form-group" id="noOfTransfer" style="display:none;">
+                <div class="col-xs-9 col-sm-4 col-md-3">
+                    <label for="noTransfer">Number of Transfers</label>
+                    <div class="inner-addon right-addon">
+                        <input type="text" id="noTransfer" placeholder="" class="form-control" aria-invalid="false" name="noOfTransfers" maxlength="3">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row form-group" id="endDate" style="display:none;">
+                <div class="col-xs-9 col-sm-4 col-md-3">
+                    <label for="EndDate_sendon">End Date</label>
+                    <div class="inner-addon right-addon">
+                        <i class="glyphicon glyphicon-calendar" aria-label="Pick a end date from calendar"></i>
+                        <input type="text" id="EndDate_sendon" placeholder="07/04/2018" class="form-control" aria-invalid="false" name="endOn">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <p class="label-color mb5">Delivery <a href="javascript:void(0);" class="ml10" data-toggle="modal" data-target="#feesModal" id="fees_and_cutoff" name="View Fees and Delivery" title="Fees and delivery info" style="display:none;">Fees and delivery info<span class="sr-only"> Opens Dialog</span></a></p>
+            
+            <div class="row mb10" id="delvry_text">
+                <div class="col-md-11">
+                    <p>You'll see delivery options when you enter your transfer info.</p>                   
+                </div>
+            </div>
+           
+            <div class="row" id="delvry_speed">
+                <div class="col-md-11">
+                    <fieldset class="form-fieldset">
+                        <legend class="sr-only">Delivery</legend>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <div class="radio" id="delivrySpeedInstant">
+                                    <input type="radio" id="deliveryone" name="deliverySpeed" value="instant" aria-invalid="false">
+                                    <label for="deliveryone"><span> Within minutes (Instant) - <span id="instantFee">$5.00</span> fee</span></label>
+                                </div>
+                                <div class="radio" id="delivrySpeedNextDay">
+                                    <input type="radio" id="deliverytwo" name="deliverySpeed" value="nextDay" aria-invalid="false">
+                                    <label for="deliverytwo"><span><span id="first" class="deliveryfix">06/28/2017</span> (Next-Day) - <span id="nextDayFee">$3.00</span> fee</span></label>
+                                </div>
+                                <div class="radio" id="delivrySpeedStandard">
+                                    <input type="radio" id="deliverythree" name="deliverySpeed" value="threeDay" aria-invalid="false" checked>
+                                    <label for="deliverythree"><span><span class="last deliveryfix">06/28/2017</span> (Standard) - free</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>                                     
+            </div>
+            
+             <div class="row form-group" id="standardWithoutBtn" style="display:none;">
+                <div class="col-md-12">  
+                	<p><span class="last deliveryfix">06/28/2017</span> (Standard) - free</span></p>                                    
+                </div>    
+             </div>
+            
+             <div class="row form-group" id="weekendNotification" style="display:none;">
+                <div class="col-xs-12 col-md-7">
+                    <p>We'll change your transfer date to the <strong>previous business day</strong> when it falls on weekend or bank holiday.</p>                </div>
+             </div>                     
+                
+           	<div id="ktpNotification" style="display:none;">	
+            	 
+            
+            	<div class="row form-group">
+                    <div class="col-xs-11 col-sm-6 col-md-4">
+                        <span class="label-color">Recipient's Email</span>
+                        <p id="emailKTP">jack.milagro@suntrust.com</p>
+                    </div>
+                </div>
+                
+                <div class="row form-group">
+                    <div class="col-xs-11 col-sm-7 col-md-5">
+                        <label for="input-send-message">Send a message (Optional)</label>
+                        <textarea type="text" id="input-send-message" placeholder="" class="form-control" aria-invalid="false" name="personalMsg" maxlength="200"></textarea>
+                        <p class="label-color pt5 mb0">(<span id="msgTextCount">200</span> characters remaining)</p>
+                    </div>
+                </div>
+                
+                <div class="row form-group">
+                    <div class="col-md-5">
+                        <p>We'll email your recipient when the money is on its way and when its available.</p>
+                    </div>
+                </div>
+            
+            </div>
+           
+           
+            <div class="row form-group">
+                <div class="col-xs-11 col-sm-7 col-md-5">
+                    <label for="memo">Memo to self (Optional)</label>
+                    <input type="text" id="memo" placeholder="" class="form-control" aria-invalid="false" name="memo" maxlength="50">
+                    <p class="label-color mt5">(<span id="memoTextCount">50</span> characters remaining)</p>
+                </div>
+            </div>
+            
+            <p><a href="javascript:void(0);" class="" data-toggle="modal" data-target="#DisclamierModal" id="fundsTransferDisclaimer" title="Transfer Disclaimer">Transfer Disclaimer<span class="sr-only"> Opens Dialog</span></a></p>
+            <div class="custom-btn">
+                <button type="submit" class="btn btn-primary" id="continue" title="Review">Review</button>
+            </div>
+           </form> 
+           
+        </section>
+        
+      	<footer class="footer footerSection">
+            <div id="footerHeader" class="container footer-wrapper">
+                <div class="text-center pb10">
+                    <span><a href="javascript:void(0);" title="Terms of Services">Terms of Services</a></span>
+                    <span>| <a href="javascript:void(0);" title="Privacy Policy">Privacy Policy</a></span>
+                    <span>| <a href="javascript:void(0);" title="Security Policy">Security Policy</a></span>
+                </div>
+                <div class="text-center"><small>CopyRight © <span id="currYear"></span> Fiserv Inc. All rights reserved</small></div>
+            </div>    
+        </footer>
+               
+    </div>        
+        
+    <!-- Funds Transfer Disclaimer Model Start -->
+    
+   	<div class="modal fade bs-example-modal-md" id="DisclamierModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-describedby="fundsTransferDisclaimer">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title" id="myModalLabel">External Transfer Disclaimer</h2>
+                </div>
+                
+                <div class="modal-body p20">
+                    <p>All external transfers are subject to your financial institution’s rules and regulations governing your accounts, such as savings account transfer limitations. MyFinancial Bank is not liable or responsible for any costs or losses incurred as a result of external transfer requests.</p>
+                </div>
+                <div class="modal-footer  right-buttons">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Funds Transfer Disclaimer Model Ends --> 
+    
+      
+    <!-- View Limits Model Starts -->
+    
+	<div class="modal fade bs-example-modal-md" id="LimitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-describedby="viewlimit">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" title="Close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title" id="myModalLabel">Limits as of <span class="currDate"></span></h2>
+                </div>
+                <div class="modal-body p20">
+                    <p>To protect your accounts, we've set limits on how much money you can transfer. Limits can change with the <strong>From</strong> and <strong>To</strong> account selection.</p>
+                    <p class="mt20">View Limits </p>
+                    
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-7">
+                            <label for="From_account_modal">From</label>
+                           	 <div class="fdl-select">                              
+                                    <input type="text" id="From_account_modal" class="fromDropdown" readonly>                                    
+                                    <ul class="dropdown" id="From_account_modal_Dropdn">
+                                        <li><a href="javascript:void(0);">Select From Account</a></li>
+                                        <li id="fromPrimaryModal"><strong class="grouping">MyFinancial Accounts</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">MyFinancial, Checking, xxxx1234, $3,475.00</a></li>
+                                                <li><a href="javascript:void(0);">MyFinancial, Savings, xxxx5678, $28,500.00</a></li>
+                                                <li><a href="javascript:void(0);">MyFinancial, Loan, xxxx9876</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="fromSecondaryModal"><strong class="grouping">My Other Accounts</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">TD Bank, Checking, xxxx5432</a></li>
+                                                <li><a href="javascript:void(0);">Chase Bank, Checking, xxxx2345</a></li>
+                                                <li><a href="javascript:void(0);">E*Trade, Brokerage, xxxx6789</a></li>
+                                            </ul>
+                                        </li>
+                                        <!--<li id="fromCardModal"><strong class="grouping">My Debit Cards at Other Banks</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Bank of America, Visa Debit, xxxx0469</a></li>
+                                                <li><a href="javascript:void(0);">Fifth Third, MasterCard Debit, xxxx0778</a></li>
+                                            </ul>
+                                        </li>-->
+                                    </ul>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-7">
+                           <label for="To_account_modal">To</label>               
+                            <div class="fdl-select">                                                 
+                                    <input type="text" id="To_account_modal" class="fromDropdown">
+                                    <ul class="dropdown" id="To_account_modal_Dropdn">
+                                        <li><a href="javascript:void(0);">Select To Account</a></li>
+                                        <li id="toPrimaryModal"><strong class="grouping">MyFinancial Accounts</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">MyFinancial, Checking, xxxx1234, $3,475.00</a></li>
+                                                <li><a href="javascript:void(0);">MyFinancial, Savings, xxxx5678, $28,500.00</a></li>
+                                                <li><a href="javascript:void(0);">MyFinancial, Loan, xxxx9876</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="toSecondaryModal"><strong class="grouping">My Other Accounts</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">TD Bank, Checking, xxxx5432</a></li>
+                                                <li><a href="javascript:void(0);">Chase Bank, Checking, xxxx2345</a></li>
+                                                <li><a href="javascript:void(0);">E*Trade, Brokerage, xxxx6789</a></li>
+                                            </ul>
+                                        </li>
+                                        <!--<li id="toCardModal"><strong class="grouping">My Debit Cards at Other Banks</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Bank of America, Visa Debit, xxxx0469</a></li>
+                                                <li><a href="javascript:void(0);">Fifth Third, MasterCard Debit, xxxx0778</a></li>
+                                            </ul>
+                                        </li>-->
+                                        <li id="ktpModal"><strong class="grouping">My Recipient's Accounts</strong><br>                                        	 
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Jack Milagro, SunTrust, Checking, xxxx2929</a></li>
+                                            </ul>
+                                        </li>                                       
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row transfer-table" id="viewLimitsDetails">
+                        <div class="col-md-6 col-sm-6 col-xs-12" id="instantSectionModal">
+    						<p class="center-320"><strong>Instant Transfers</strong></p>
+                            <table class="table">
+                                <caption class="sr-only">Limits for Standard Transfers between the chosen accounts</caption>
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Remaining today</th>
+                                        <td>$1,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Daily</th>
+                                        <td>$1,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Per Transfer</th>
+                                        <td>$1,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Monthly</th>
+                                        <td>$3,000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12" id="nextDaySectionModal">
+                            <p class="center-320"><strong>Next-Day Transfers</strong></p>
+								<table class="table">
+                                    <caption class="sr-only">Limits for Next-Day Transfers between the chosen accounts</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Remaining today</th>
+                                            <td>$1,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Daily</th>
+                                            <td>$1,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Per Transfer</th>
+                                            <td>$1,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Monthly</th>
+                                            <td>$3,000.00</td>
+                                        </tr>
+                          		    </tbody>
+                                 </table>
+                        </div>
+                         <div class="col-md-6 col-sm-6 col-xs-12" id="standardSectionModal">
+    						<p class="center-320"><strong>Standard Transfers</strong></p>
+                            <table class="table">
+                                <caption class="sr-only">Limits for Standard Transfers between the chosen accounts</caption>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Remaining today</th>
+                                    <td>$5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Daily</th>
+                                    <td>$5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Per Transfer</th>
+                                    <td>$5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Monthly</th>
+                                    <td>$15,000.00</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                  </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>    	    
+    
+	<!-- View Limits Model Ends -->
+    
+    <!--- View Fee and Delivery Starts --->
+    
+    <div class="modal fade bs-example-modal-md" id="feesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-describedby="fees_and_cutoff">
+    	<div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title" id="myModalLabel">Fees and Delivery Info</h2>
+                </div>
+                <div class="modal-body accordion-body">
+                    <div class="panel-group common-accordion" id="accordion">
+                        <div class="panel panel-default" id="feesCollapsible">
+                            <div class="panel-heading border-top-none">
+                                <div class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="sr-only">Collapse</span>Fees</a>
+                                </div>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p>$0.00 to Limit</p>
+                                    <div class="row common-table">
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <table class="table fee-table">
+                                                <caption>Standard transfers</caption>
+                                                <tr>
+                                                    <th scope="row">Inbound</th>
+                                                    <td>$1.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Outbound</th>
+                                                    <td>$2.00</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <table class="table fee-table">
+                                                <caption>Next-Day transfers</caption>
+                                                <tr>
+                                                    <th scope="row">Inbound</th>
+                                                    <td>$1.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Outbound</th>
+                                                    <td>$2.00</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <table class="table fee-table">
+                                                <caption>Instant transfers</caption>
+                                                <tr>
+                                                    <th scope="row">Inbound</th>
+                                                    <td>$1.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Outbound</th>
+                                                    <td>$2.00</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" id="fundCollapsible">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <span class="sr-only">Expand</span>
+                                        Delivery Dates
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body fund-availability">
+                                    <div class="common-table">
+                                        <table class="table">
+                                            <caption>Standard <span class="sr-only">Funds Availability</span> <a href="#3DayText"><span class="sr-only">3 Business Days Explanation Text</span></a></caption>
+                                            <tr>
+                                                <th scope="col">Send</th>
+                                                <th scope="col">Withdrawn<a href="#DebitText"> <span class="sr-only">Debit Explanation Text</span></a></th>
+                                                <th scope="col">Delivered</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Monday </td>
+                                                <td>Tuesday </td>
+                                                <td>Thursday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tuesday </td>
+                                                <td>Wednesday </td>
+                                                <td>Friday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Wednesday </td>
+                                                <td>Thursday </td>
+                                                <td>Monday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thursday </td>
+                                                <td>Friday </td>
+                                                <td>Tuesday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Friday </td>
+                                                <td>Monday </td>
+                                                <td>Wednesday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Saturday </td>
+                                                <td>Monday </td>
+                                                <td>Wednesday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sunday </td>
+                                                <td>Monday </td>
+                                                <td>Wednesday</td>
+                                            </tr>
+                                        </table>
+                                        <small>
+                                           Money is withdrawn and delivered before business hours on the day listed.
+                                        </small>
+                                       </div>
+                                        <div class="common-table mt25"> 
+                                        <table class="table">
+                                            <caption>Next-Day<span class="sr-only">Funds Availability</span> <a href="#3DayText"><span class="sr-only">3 Business Days Explanation Text</span></a></caption>
+                                            <tr>
+                                                <th scope="col">Send</th>
+                                                <th scope="col">Withdrawn<a href="#DebitText"> <span class="sr-only">Debit Explanation Text</span></a></th>
+                                                <th scope="col">Delivered</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Monday </td>
+                                                <td>Tuesday </td>
+                                                <td>Tuesday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tuesday </td>
+                                                <td>Wednesday </td>
+                                                <td>Wednesday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Wednesday </td>
+                                                <td>Thursday </td>
+                                                <td>Thursday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thursday </td>
+                                                <td>Friday </td>
+                                                <td>Friday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Friday </td>
+                                                <td>Monday </td>
+                                                <td>Monday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Saturday </td>
+                                                <td>Tuesday </td>
+                                                <td>Tuesday</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sunday </td>
+                                                <td>Tuesday </td>
+                                                <td>Tuesday</td>
+                                            </tr>
+                                        </table>
+                                        <small>
+                                            For some customers, (FI name) may delay the delivery date. We'll email you if this happens.<br>
+                                            Money is withdrawn and delivered before business hours on the day listed.</a>
+                                            <br />
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" id="cutOffCollapsible">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        <span class="sr-only">Expand</span>
+                                        Delivery Cut Off Times
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><strong>Standard scheduled today</strong><br /><span class="sr-only">Cut Off Time </span>10:00 PM PT*</p>
+                                    <p><strong>Next-Day scheduled today</strong><br /><span class="sr-only">Cut Off Time </span>7:30 PM PT*</p>
+                                    <p><strong>Instant</strong><br />No cut off time</p>
+                                    <small>*For example, if Monday and Tuesday are both business days, you can request a Standard Transfer "Monday" up until 10:00 PM PT.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" title="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--- View Fee and Delivery Ends --->
+    
+    <!-- View Limits Model Starts - Me to Others -->
+    
+	<div class="modal fade bs-example-modal-md" id="OtherLimitModal" tabindex="-1" role="dialog" aria-labelledby="otherModalLabel" aria-describedby="otherViewlimit">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" title="Close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+                    <h2 class="modal-title" id="otherModalLabel">Limits as of <span class="currDate"></span></h2>
+                </div>
+                <div class="modal-body p20">
+                    <p>To protect your accounts, we've set limits on how much money you can transfer. Limits can change with the <strong>From</strong> and <strong>To</strong> account selection.</p>
+                    <p class="mt20">View Limits </p>
+                   
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-7">
+                            <label for="From_account_modal_new">From</label>
+                            <div class="fdl-select">                                                         
+                               <input type="text" id="From_account_modal_new" class="fromDropdown" readonly>                                    
+                                    <ul class="dropdown" id="From_account_modal_Dropdn_new">
+                                        <li><a href="javascript:void(0);">Select From Account</a></li>
+                                        <li id="fromPrimaryModalNew"><strong class="grouping">MyFinancial Accounts</strong><br>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">MyFinancial, Checking, xxxx1234, $3,475.00</a></li>
+                                                <li><a href="javascript:void(0);">MyFinancial, Savings, xxxx5678, $28,500.00</a></li>
+                                                <li><a href="javascript:void(0);">MyFinancial, Loan, xxxx9876</a></li>
+                                            </ul>
+                                        </li>                                                                               
+                                    </ul>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-12 col-sm-7">
+                            <label for="To_account_modal_new">To</label>
+                            <div class="fdl-select">
+                                 <input type="text" id="To_account_modal_new" class="fromDropdown">
+                                    <ul class="dropdown" id="To_account_modal_Dropdn_new">
+                                        <li><a href="javascript:void(0);">Select To Account</a></li>                                        
+                                        <li id="ktpNew"><strong class="grouping">My Recipient's Accounts</strong><br>                                        	 
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Jack Milagro, SunTrust, Checking, xxxx2929</a></li>
+                                            </ul>
+                                        </li>                                       
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row transfer-table" id="otherViewLimitsDetails">
+                        <!--<div class="col-md-6 col-sm-6 col-xs-12">
+    						<p class="center-320"><strong>Instant Transfers</strong></p>
+                            <table class="table">
+                                <caption class="sr-only">Limits for Standard Transfers between the chosen accounts</caption>
+                               <tbody>
+                                    <tr>
+                                        <th scope="row">Remaining today</th>
+                                        <td>$1,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Daily</th>
+                                        <td>$1,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Per Transfer</th>
+                                        <td>$1,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Monthly</th>
+                                        <td>$3,000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>-->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <p class="center-320"><strong>Next-Day Transfers</strong></p>
+								<table class="table">
+                                    <caption class="sr-only">Limits for Next-Day Transfers between the chosen accounts</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Remaining today</th>
+                                            <td>$1,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Daily</th>
+                                            <td>$1,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Per Transfer</th>
+                                            <td>$1,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Monthly</th>
+                                            <td>$3,000.00</td>
+                                        </tr>
+                          		    </tbody>
+                                 </table>
+                        </div>
+                         <div class="col-md-6 col-sm-6 col-xs-12">
+    						<p class="center-320"><strong>Standard Transfers</strong></p>
+                            <table class="table">
+                                <caption class="sr-only">Limits for Standard Transfers between the chosen accounts</caption>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Remaining today</th>
+                                    <td>$5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Daily</th>
+                                    <td>$5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Per Transfer</th>
+                                    <td>$5,000.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Monthly</th>
+                                    <td>$15,000.00</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                  </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" title="Close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>    	    
+    
+	<!-- View Limits Model Ends - Me to others-->
+    
+    
+   <!--Start::Drawer - Add New External Account Starts -->
+    
+    <div id="addNewAccount" class="drawer drawer-right dw-xs-12 dw-sm-8 dw-md-6 fold" tabindex="-1" aria-labelledby="addNewAccount" aria-expanded="false" role="region">
+         
+    </div>
+    
+    <div class="overlay"></div>
+    
+    <!--End::Drawer - Add New External Account Ends -->
+    
+    
+    <!-- Small Modal Default - Alert to close the account verification Starts -->
+     
+<div class="modal fade bs-example-modal-md" id="verifyExtAcct" tabindex="-1" role="dialog" aria-labelledby="verifyAccountLabel">
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></button>
+				<h2 class="modal-title" id="verifyAccountLabel">Verify External Account</h2>
+			</div>
+			<div class="modal-body p20">
+				<p>
+					Are you sure you want to stop verification? You can verify later
+				</p>
+			</div>
+			<div class="modal-footer text-center">
+            	<button type="button" class="btn btn-primary" data-dismiss="modal" id="continueVerification" title="Verify Now">Verify Now</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal" id="stopVerification" title="Stop">Stop</button>				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Small Modal Default - Alert to close the account verification Ends-->
+
+<!-- Loader Starts -->
+
+<div id="pageLoader" style="display:none;">
+    <div id="loader-fade"></div>
+    <div id="loading-spinner">
+        <div class="spinner-icon" aria-label="loading..."></div>
+    </div>
+</div>
+
+<!-- Loader Ends -->
+
+    <script src="fdl-bootstrap/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery_ui.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="fdl-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/drawer.js" type="text/javascript"></script>    
+    <script src="assets/js/app.js" type="text/javascript"></script>
+    <script src="assets/js/moment.min.js" type="text/javascript"></script>   
+    <script type="text/javascript">
+
+		/*********************************************************
+		*	 Getting URL parameters & values using jquery		 *
+		*********************************************************/
+			
+		$.extend({
+			getUrlVars: function(){
+				var vars = [], hash;
+				var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+				for(var i = 0; i < hashes.length; i++){
+					hash = hashes[i].split('=');
+					vars.push(hash[0]);
+					vars[hash[0]] = hash[1];
+				}
+				return vars;
+			},
+			getUrlVar: function(name){
+				return $.getUrlVars()[name];
+			}
+		});
+		var allVars = $.getUrlVars();
+		
+	</script>
+   
+    <script>
+	
+	$(document).ready(function(){							
+		
+		$('#menuac').click(function(e){	
+			$('#menuac').toggleClass('acik');
+			$('.mobmenu').toggleClass('mobmenu-acik');
+		});								
+		/* 	Validation 	*/
+		
+			
+
+		
+			$('#transferFunds').validate({
+				onsubmit: true,
+				rules: {
+					amount: "required",
+					totalAmount: "required",
+					noOfTransfers: "required",					
+					from: { 
+						from_check:true,
+					 },
+					to: { 						
+						to_check:true, 
+					},	
+					toKTP: { required:true },	
+					duration: { required:true }
+					
+				},
+				messages: {
+					amount: "Enter an amount",												
+					from: {
+					  from_check: "Select a From Account",					 
+					 },
+					 to: {
+					  to_check: "Select a To Account",
+					 },
+					 toKTP: {
+					  required: "Select a To Account",
+					 },					
+					 duration: {
+					  required: "Select a Duration",
+					 },
+					 totalAmount : "Enter an amount",
+					 noOfTransfers : "Enter the number of transfers for this plan",		
+				},
+				errorClass: 'alert-message-error',
+				errorElement:'p'					
+			});
+										
+					
+			$("#continue").click(function(){
+				
+				jQuery.validator.addMethod("from_check", function(value, element) {
+					if(value !="Select From Account"){
+						 return true;
+					} else{
+						 return false;
+					}									   
+				});
+			
+				jQuery.validator.addMethod("to_check", function(value, element) {
+					if(value =="Select To Account"){
+						 return false;
+					} else{
+						   return true;
+					}					   
+				});
+			
+				$("#pageLoader").show();	
+				setTimeout(function() {			  
+					$("#transferFunds").submit();
+					$("#pageLoader").hide();
+				}, 300);				
+			});
+			
+			$("#duration, #delvry_speed, #endDate, #ktp, #addPersonsAccount, #specificAmount, #noOfTransfer, #ktpNotification, #weekendNotification, #recipientMultipleMail, #recipientNewEmail, #trialVerification, #startDateDisplay, #fees_and_cutoff").hide();
+			
+			/* Amount field - checking the entered value is number and the dot separation   */
+				   
+		   $('#input_amount, #totalAmount, #noOfTransfer').keyup(function(e){	
+			var val = $(this).val();   
+				val = val.replace(/[^0-9\.]/g,'');
+				if(val.split('.').length>2) 
+					val =val.replace(/\.+$/,"");							
+				$(this).val(val);							
+			});
+			
+			
+			$("#instantFee,#nextDayFee").hide();
+			
+			$("#input_amount").on('blur', function(){
+				if($("#input_amount").val()!=''){			
+					$("#instantFee,#nextDayFee").show();
+					$("#pageLoader").show();	
+					setTimeout(function() {			  					
+						$("#pageLoader").hide();												
+					}, 200);	
+				} else {
+					$("#instantFee,#nextDayFee").hide();
+					$("#pageLoader").hide();
+				}
+			});
+			
+			
+			/* Error message for From and To Account */
+			
+			$("#From_account_Dropdn li ul li a").click(function(){     
+				$("#From_account-error").css("display","none");
+				$("#From_account").attr("aria-invalid","false").removeClass('alert-message-error');                                                                
+			});           
+			
+			$("#To_account_Dropdn li ul li a").click(function(){           
+				$("#To_account-error").css("display","none");
+				$("#To_account").attr("aria-invalid","false").removeClass('alert-message-error');                                                                
+			});
+			
+		   /* Hiding or Showing the "From" & "To" dropdown based on selection */ 
+		   
+		   $("#OtherViewLimitSection").hide();		   		
+		   
+		   $("#metome").on("click", function(){
+				$("#ktp, #addPersonsAccount, #ktpNotification, #OtherViewLimitSection, #duration").hide();
+				$("#fromSecondary, #addAccount, #viewlimitSection, #delvry_text").show();				
+				$("#From_account, #From_account_modal").val("Select From Account");
+				$("#To_account, #To_account_modal").val("Select To Account");
+				$("#Freq").val("");	
+				$("#Dur").val("");
+				from();	
+				changedMeToMe(); 					
+		   });
+		   
+		   $("#metoothers").on("click", function(){
+				$("#ktp, #addPersonsAccount, #OtherViewLimitSection, #delvry_text").show();
+				$("#fromSecondary, #addAccount, #viewlimitSection, #fromCard, #duration").hide();						
+				$("#From_account, #From_account_modal").val("Select From Account");
+				$("#To_account, #To_account_modal").val("Select To Account");		
+				$("#Freq").val("");	
+				$("#Dur").val("");								
+				from();	
+				changedMeToMe(); 		
+		   });	
+		   		   		  
+			/*	Hide/Show the dropdown on click */
+		
+			$("#From_account").on('click', function(){
+				$("#From_account_Dropdn").toggle();
+				$("#To_account_Dropdn").hide();		
+			});					
+			
+			$("#To_account").on('click', function(){
+				$("#To_account_Dropdn").toggle();
+				$("#From_account_Dropdn").hide();
+			});
+			
+			
+			$('#From_account,#To_account').on('focus', function(e) { 
+				e.preventDefault();
+				$(this).blur();
+			});
+			
+			
+			$(document).click(function(e) {
+				if( e.target.id != 'From_account') {  // To hide the Dropdown when clicking outside div
+					$("#From_account_Dropdn").hide();   
+				} 
+				  
+				if( e.target.id != 'To_account') {
+					$("#To_account_Dropdn").hide();
+				}
+			}); 
+		
+			/* Hiding or Showing the option based on From and To field selection */
+			
+			
+			$("#From_account_Dropdn, #To_account_Dropdn, #ktp").hide();
+			$("#From_account").val($("#From_account_Dropdn li a").first().text());	
+			$("#To_account").val($("#To_account_Dropdn li a").first().text());	
+			
+			
+			/*  From Account value setting */
+		
+			$("#From_account_Dropdn").on('click', function(){										
+				from();	
+				deliveryRadioBtn();				
+			});
+			
+			$("#fromPrimary ul li a, #fromSecondary ul li a, #fromCard ul li a ").on('click', function(){						
+				$("#From_account").val($(this).text());
+				$("#From_account_Dropdn").hide();					
+			});	
+			
+			function from(){			
+			
+			var main_val = $("#From_account").val().split(",")[0];
+			var to_val = $("#To_account").val().split(",")[0];
+			
+			/* Resetting the To account value to Default("Select To Account") */
+			
+			if(main_val == to_val){                                                                                  
+				$("#To_account").val($("#To_account_Dropdn li a").first().text());          
+			} else if( ((to_val == "TD Bank") || (to_val == "Chase Bank") || (to_val == "E*Trade")) && ((main_val == "Bank of America") || (main_val == "Fifth Third") )){          
+				$("#To_account").val($("#To_account_Dropdn li a").first().text());          
+			} else if( ((main_val == "TD Bank") || (main_val == "Chase Bank") || (main_val == "E*Trade")) && ((to_val == "Bank of America") || (to_val == "Fifth Third") )){     
+				$("#To_account").val($("#To_account_Dropdn li a").first().text());          
+			} else if( ((to_val == "TD Bank") || (to_val == "Chase Bank") || (to_val == "E*Trade")) && ((main_val == "TD Bank") || (main_val == "Chase Bank") || (main_val == "E*Trade") )){                
+				$("#To_account").val($("#To_account_Dropdn li a").first().text());          
+			}  else if( ((to_val == "Bank of America") || (to_val == "Fifth Third")) && ((main_val == "Bank of America") || (main_val == "Fifth Third") )){         
+				$("#To_account").val($("#To_account_Dropdn li a").first().text());          
+			} else {                                                                                                                                  
+				$("#To_account").val();                                
+			}
+			
+			/* Changing the Transfer Type  */
+			
+			var new_val = $("input[name='transferType']:checked"). val();		
+			if((new_val == "metome") || ($("input[name='transferType']").is(":visible") == false)){
+				$("#fromPrimary, #fromSecondary, #fromCard, #toPrimary, #toSecondary, #toCard ").show();				
+				if (main_val == "MyFinancial"){					
+					$("#toPrimary").hide();	
+					$("#toSecondary, #toCard").show();																
+				} else if((main_val == "TD Bank") || (main_val == "Chase Bank") || (main_val == "E*Trade")){	
+					$("#toSecondary, #toCard").hide();	
+					$("#toPrimary").show();													
+				} else if((main_val == "Bank of America") || (main_val == "Fifth Third")){	
+					$("#toCard, #toSecondary").hide();	
+					$("#toPrimary").show();													
+				} else {
+					$("#fromPrimary, #fromSecondary,#fromCard").show();													
+				}
+			} else {				
+				$("#toPrimary, #toSecondary, #toCard, #fromSecondary, #fromCard").hide(); 
+				$("#ktp").show();								
+			}						
+														
+		}	
+		
+		
+		/*  To Account value setting */
+		
+		$("#To_account_Dropdn").on('click', function(){							
+			from();	
+			deliveryRadioBtn();										
+		});
+		
+		$("#toPrimary ul li a, #toSecondary ul li a, #toCard ul li a").on('click', function(){						
+			$("#To_account").val($(this).text());
+			$("#To_account_Dropdn").hide();				
+		});	
+						
+		$("#ktp ul li a").on('click', function(){						
+			$("#To_account").val($(this).text());
+			$("#To_account_Dropdn").hide();			
+		});	
+						
+			
+		function changedMeToMe(){
+			if(((($("#From_account").val())!= 'Select From Account') && ($("#To_account").val())!= 'Select To Account') ||
+			   ((($("#From_account").val())!= 'Select From Account') && ($("#ktp").val())!= 'Select From Account')){					   																					
+					$("#pageLoader").show();	
+					setTimeout(function() {															  								
+						//$("#delvry_speed, #fees_and_cutoff").show();		
+						deliveryRadioBtn();					
+						$("#pageLoader").hide();							
+					}, 200);																	
+					//$("#delvry_text").show();																		
+			} else{												
+				$("#delvry_speed, #fees_and_cutoff").hide();		
+				$("#delvry_text").show();										
+			}		
+		}		
+			
+		$("#ktp").click(function(){	
+			//deliveryRadioBtn()						
+			 if(($('#metoothers').is(':checked')) && ($("#To_account").val()) == 'Jack Milagro, SunTrust, Checking, xxxx2929'){								 							
+				$("#pageLoader").show();	
+				setTimeout(function() {										  
+					$("#ktpNotification, #delvry_text").show();	
+					$("#delvry_text, #delvry_speed").hide();													
+					$("#emailKTP").text("jack.milagro@suntrust.com");
+					$('#reciptEmail').val($('#emailKTP').text());
+					$("#pageLoader").hide();
+				}, 200);
+				deliveryRadioBtn();								
+			} else{	
+				$("#delvry_text").show();									
+				$("#ktpNotification, #emailKTP, #delvry_speed").hide();
+			}
+		});		
+						
+							
+			
+				/* Showing the delivery speed based on the contact selected  */
+		  
+		   		$("#standardWithoutBtn").hide();
+		   
+				$("#input_amount").keyup(function(){
+					deliveryRadioBtn()
+				});
+		   
+			  function deliveryRadioBtn(){
+				 var frm_cont = $("#From_account").val().split(",")[0];					 
+				 var to_cont = $("#To_account").val().split(",")[0];
+				 var amt_val = $("#input_amount").val();	
+				 var fre_val = $("#Freq").val();
+				// alert(frm_cont)	
+				 //alert(to_cont)	
+				 if( ($("#From_account").val() == "Select From Account") || ($("#To_account").val() == "Select To Account") ||(amt_val == "") ||(fre_val == "")){
+					// alert("1");	
+					 $("#delvry_text").show();			
+					 $("#delvry_speed, #fees_and_cutoff").hide();		
+				 } else if( ($("#From_account").val()!= '') && ($("#To_account").val()!= '') && (amt_val!= '') && (fre_val!= '')){
+					 	//alert("2");					
+					   $("#fees_and_cutoff").show();						 					
+					   if( ((frm_cont == "Bank of America") || (frm_cont == "Fifth Third") || (frm_cont == "TD Bank")) && (to_cont == "MyFinancial")){						   		  
+						  $("#delvry_speed, #delvry_text").hide();						 
+						  $("#delvry_speed, #delivrySpeedInstant").show();				
+						  $("#deliveryone").prop("disabled", false);		  			  
+					  } else if( ((to_cont == "Bank of America") || (to_cont == "Fifth Third") || (to_cont == "TD Bank")) && (frm_cont == "MyFinancial")){						   		  
+						  $("#deliveryone").prop("disabled", false);
+						  $("#delvry_speed, #delvry_text").hide();						 
+						  $("#delvry_speed, #delivrySpeedInstant").show();				
+					  } else if((frm_cont == "MyFinancial") && (to_cont == "Chase Bank") || ((frm_cont == "Chase Bank") && (to_cont == "MyFinancial"))){
+						//  alert("In");
+						  $("#deliveryone").prop("disabled", true).removeAttr("checked");		
+						  $("#delvry_speed, #delivrySpeedInstant").show();  
+						  $("#standardWithoutBtn, #delvry_text").hide();  			  
+					  } else {
+						  $("#deliveryone").prop("disabled", true).removeAttr("checked");		
+						  $("#delvry_speed, #delivrySpeedInstant").show();  
+						  $("#standardWithoutBtn, #delvry_text").hide();
+					  } 	
+				  } else {
+					  	 //alert("out");
+						 $("#delvry_text").show()					  	  
+						 $("#delvry_speed, #fees_and_cutoff").hide();						   						   
+				   } 					 
+			  }
+			  
+			  /* Hiding or Showing for the duration field based on frequency change */
+			
+			$("#Freq").on('change',function(){
+				deliveryRadioBtn();									
+				var fre = $("#Freq option:selected").val();
+				//alert(fre)
+				 if((fre=="")){		
+					 //$('#Dur').val("");					 
+					 $("#delvry_text").show();			
+					 $("#duration, #specificAmount, #noOfTransfer, #endDate, #weekendNotification, #startDateDisplay, #delvry_speed, #standardWithoutBtn").hide();
+					 $("#send").text("Send");
+					 deliveryRadioBtn();					 
+				} else if((fre=="One Time Transfer")){
+					// $("#deliveryone").prop("disabled", false);									
+					 $("#duration, #specificAmount, #noOfTransfer, #endDate, #weekendNotification, #startDateDisplay").hide();
+					 $("#send").text("Send");	
+					 deliveryRadioBtn();			
+				} else {
+					$("#deliveryone").prop("disabled", true).removeAttr("checked");
+					$("#duration, #weekendNotification, #startDateDisplay").show();				
+					$("#send").text("Start");
+					deliveryRadioBtn();
+				}			
+				
+				//disableInstant();
+			});
+			
+			
+			/* Duration change */
+			
+			$('#Dur').on('change', function(){
+				deliveryRadioBtn();
+				if($(this).val() == ''){							
+					$("#duration").show();
+					$("#specificAmount, #noOfTransfer, #endDate").hide();
+					deliveryRadioBtn();
+				} if($(this).val() == 'Until I cancel'){
+					$("#duration").show();
+					$("#specificAmount, #noOfTransfer, #endDate").hide();
+					deliveryRadioBtn();	
+				}
+				else if($(this).val() == 'Up to a specified amount'){
+					$("#duration, #specificAmount").show();
+					$("#noOfTransfer, #endDate").hide();
+					deliveryRadioBtn();	
+				}
+				else if($(this).val() == 'Up to a specified number of transfers'){
+					$("#duration, #noOfTransfer").show();
+					$("#specificAmount, #endDate").hide();
+					deliveryRadioBtn();	
+				}
+				else if($(this).val() == 'Until a specified date'){
+					$("#duration, #endDate").show();
+					$("#noOfTransfer, #specificAmount").hide();
+					deliveryRadioBtn();	
+				}
+				else{
+					$("#duration, #specificAmount, #noOfTransfer, #endDate").hide();
+				}
+			});			
+			
+			
+			/* Disabling the instant option based on Date(Future) and frequency(Recurring)	*/								
+		
+		//disableInstant();
+		
+		function disableInstant(){
+			var current = $("#Date_sendon").val();				
+			var today = new Date();
+			today = moment(today).format('MM/DD/YYYY');										
+			if((current!=today) ||(($("#Freq option:selected").val())!="One Time Transfer") )	{							
+				$("#deliveryone").prop("disabled", true).removeAttr("checked");
+			} else {				
+				$("#deliveryone").prop("disabled", false);
+			}			
+		}
+			  
+			
+		/* View limit Model - Dropdown Hide & Show based on the Account choosen */
+		
+			
+		 
+		 	/* Hiding or Showing the option based on From Modal and To Modal field selection */
+			
+			$("#From_account_modal_Dropdn, #To_account_modal_Dropdn, #ktpModal").hide();
+			$("#From_account_modal").val($("#From_account_modal_Dropdn li a").first().text());	
+			$("#To_account_modal").val($("#To_account_modal_Dropdn li a").first().text());	
+		
+			$("#From_account_modal").on('click', function(){				
+				$("#From_account_modal_Dropdn").toggle();
+				$("#To_account_modal_Dropdn").hide();					
+			});					
+			
+			$("#To_account_modal").on('click', function(){
+				$("#To_account_modal_Dropdn").toggle();
+				$("#From_account_modal_Dropdn").hide();
+				 metomeModal();	
+			});
+			
+			
+			
+			
+			$('#From_account_modal,#To_account_modal').on('focus', function(e) { 
+				e.preventDefault();
+				$(this).blur();
+			});
+			
+			
+			$(document).click(function(e) {
+				if( e.target.id != 'From_account_modal') {  // To hide the Dropdown when clicking outside div
+					$("#From_account_modal_Dropdn").hide();   
+				} 
+				  
+				if( e.target.id != 'To_account_modal') {
+					$("#To_account_modal_Dropdn").hide();
+				}
+			}); 					
+			
+			/*  From Account value setting */
+		
+			$("#From_account_modal_Dropdn").on('click', function(){										
+				fromModal();
+				fromAndTo();
+				deliveryModal()	
+				//deliveryRadioBtn();				
+			});
+			
+			$("#fromPrimaryModal ul li a, #fromSecondaryModal ul li a, #fromCardModal ul li a ").on('click', function(){						
+				$("#From_account_modal").val($(this).text());
+				$("#From_account_modal_Dropdn").hide();					
+			});	
+			
+			function fromModal(){			
+			
+				var main_val = $("#From_account_modal").val().split(",")[0];
+				var to_val = $("#To_account_modal").val().split(",")[0];
+				
+				/* Resetting the To account value to Default("Select To Account") */
+				
+				if(main_val == to_val){                                                                                  
+					$("#To_account_modal").val($("#To_account_modal_Dropdn li a").first().text());          
+				} else if( ((to_val == "TD Bank") || (to_val == "Chase Bank") || (to_val == "E*Trade")) && ((main_val == "Bank of America") || (main_val == "Fifth Third") )){          
+					$("#To_account_modal").val($("#To_account_modal_Dropdn li a").first().text());          
+				} else if( ((main_val == "TD Bank") || (main_val == "Chase Bank") || (main_val == "E*Trade")) && ((to_val == "Bank of America") || (to_val == "Fifth Third") )){     
+					$("#To_account_modal").val($("#To_account_modal_Dropdn li a").first().text());          
+				} else if( ((to_val == "TD Bank") || (to_val == "Chase Bank") || (to_val == "E*Trade")) && ((main_val == "TD Bank") || (main_val == "Chase Bank") || (main_val == "E*Trade") )){                
+					$("#To_account_modal").val($("#To_account_modal_Dropdn li a").first().text());          
+				}  else if( ((to_val == "Bank of America") || (to_val == "Fifth Third")) && ((main_val == "Bank of America") || (main_val == "Fifth Third") )){         
+					$("#To_account_modal").val($("#To_account_modal_Dropdn li a").first().text());          
+				} else {                                                                                                                                  
+					$("#To_account_modal").val();                                
+				}
+				
+				/* Changing the Transfer Type  */
+				
+				
+				if($("#transferTypeSection").is(":visible") == true) {
+					var new_val = $("input[name='transferType']:checked"). val();
+					if(new_val == "metome"){
+						$("#fromPrimaryModal, #fromSecondaryModal, #fromCardModal, #toPrimaryModal, #toSecondaryModal, #toCardModal ").show();				
+						 radioBtnVisible()
+					} else {				
+						$("#toPrimaryModal, #toSecondaryModal, #toCardModal, #fromSecondaryModal, #fromCardModal").hide(); 
+						$("#ktpModal").show();	
+					}
+				} else {
+					 radioBtnVisible();
+					
+		 	}	
+			
+			
+			function radioBtnVisible(){
+				var main_val = $("#From_account_modal").val().split(",")[0];
+				var to_val = $("#To_account_modal").val().split(",")[0];
+				
+				if(main_val == "MyFinancial"){					
+					$("#toPrimaryModal").hide();	
+					$("#toSecondaryModal, #toCardModal").show();																
+					} else if((main_val == "TD Bank") || (main_val == "Chase Bank") || (main_val == "E*Trade")){	
+						$("#toSecondaryModal, #toCardModal").hide();	
+						$("#toPrimaryModal").show();													
+					} else if((main_val == "Bank of America") || (main_val == "Fifth Third")){	
+						$("#toCardModal, #toSecondaryModal").hide();	
+						$("#toPrimaryModal").show();													
+					} else {
+						$("#fromPrimaryModal, #fromSecondaryModal,#fromCardModal").show();													
+					}	
+				}
+				
+			}
+		
+		
+		/*  To Account value setting */
+		
+		$("#To_account_modal_Dropdn").on('click', function(){							
+			fromModal();
+			fromAndTo();	
+			deliveryModal();
+			//deliveryRadioBtn();										
+		});
+		
+		$("#toPrimaryModal ul li a, #toSecondaryModal ul li a, #toCardModal ul li a").on('click', function(){						
+			$("#To_account_modal").val($(this).text());
+			$("#To_account_modal_Dropdn").hide();				
+		});	
+						
+		$("#ktpModal ul li a").on('click', function(){						
+			$("#To_account_modal").val($(this).text());
+			$("#To_account_modal_Dropdn").hide();	
+		});	
+		
+		
+		function metomeModal(){
+			var check_val = $("input[type='radio']:checked").val();
+			if(check_val = "metome"){
+				$("#ktpModal").hide();
+			} else {
+				$("#ktpModal").hide();
+			}
+		}
+		
+		
+		/* Displaying the fees based on the delivery speed and accounts */
+				
+		$("#standardSectionModal,#instantSectionModal, #nextDaySectionModal").hide();										
+		
+		function fromAndTo(){				
+			if((($("#From_account_modal").val())!= 'Select From Account') && ($("#To_account_modal").val())!= 'Select To Account'){							
+				$("#viewLimitsDetails").show();				
+			}else{					
+				$("#viewLimitsDetails").hide();
+			}	
+		}						
+		
+			
+		function deliveryModal(){	
+			var from_cont = $("#From_account_modal").val().split(" ")[0].toLowerCase();					
+			var to_cont = $("#To_account_modal").val().split(" ")[0].toLowerCase();		
+			if((from_cont == "td") || (to_cont == "td")){					  	  
+			   $("#standardSectionModal,#instantSectionModal, #nextDaySectionModal").show();				  
+			} else {		
+				$("#instantSectionModal").hide();		  
+			    $("#standardSectionModal, #nextDaySectionModal").show();						
+			}
+		}
+			
+			
+	/* View limits Ends here */ 
+	
+		/* View Limits - KTP */
+	  
+	  
+	  	 	$("#From_account_modal_Dropdn_new, #To_account_modal_Dropdn_new").hide();
+			$("#From_account_modal_new").val($("#From_account_modal_Dropdn_new li a").first().text());	
+			$("#To_account_modal_new").val($("#To_account_modal_Dropdn_new li a").first().text());	
+		
+			$("#From_account_modal_new").on('click', function(){				
+				$("#From_account_modal_Dropdn_new").toggle();
+				$("#To_account_modal_Dropdn_new").hide();								
+			});					
+			
+			$("#To_account_modal_new").on('click', function(){
+				$("#To_account_modal_Dropdn_new").toggle();
+				$("#From_account_modal_Dropdn_new").hide();	
+			});
+			
+			
+			$('#From_account_modal_new, #To_account_modal_new').on('focus', function(e) { 
+				e.preventDefault();
+				$(this).blur();
+			});
+			
+			
+			$(document).click(function(e) {
+				if( e.target.id != 'From_account_modal_new') {  // To hide the Dropdown when clicking outside div
+					$("#From_account_modal_Dropdn_new").hide();   
+				} 
+				  
+				if( e.target.id != 'To_account_modal_new') {
+					$("#To_account_modal_Dropdn_new").hide();
+				}
+			}); 
+			
+			
+		$("#fromPrimaryModalNew ul li a").on('click', function(){						
+			$("#From_account_modal_new").val($(this).text());
+			$("#From_account_modal_Dropdn_new").hide();		
+			fromAndToKTP();				
+		});
+		
+		$("#ktpNew ul li a").on('click', function(){						
+			$("#To_account_modal_new").val($(this).text());
+			$("#To_account_modal_Dropdn_new").hide();	
+			fromAndToKTP();					
+		});
+		 
+		$("#otherViewLimitsDetails").hide();	 
+	 
+		function fromAndToKTP(){							
+			if((($("#From_account_modal_new").val()) != 'Select From Account') && ($("#To_account_modal_new").val())!= 'Select To Account'){										
+				$("#otherViewLimitsDetails").show();				
+			}else{					
+				$("#otherViewLimitsDetails").hide();
+			}	
+		}
+						
+		/* View Limits Ends - KTP */
+		
+														
+		
+			
+			
+		/****************************************************************************
+		*	 			Moment.js for calender calculation for weekdays 			*
+		*																			*
+		*	Reference : http://momentjs.com/docs/#/displaying/format/				*
+		*	Reference : http://jsfiddle.net/dain/5xrr79h0/  						*
+		****************************************************************************/
+		
+			moment.fn.addWorkdays = function (days) {
+				var increment = days / Math.abs(days);
+				var date = this.clone().add(Math.floor(Math.abs(days) / 5) * 7 * increment, 'days');
+				var remaining = days % 5;
+				while(remaining != 0) {
+				  date.add(increment, 'days');
+				  if(date.isoWeekday() !== 6 && date.isoWeekday() !== 7)
+					remaining -= increment;
+				}
+				return date;
+			};
+			
+			function deliverySpeed(){		
+												
+				var start =  $.datepicker.formatDate('mm/dd/yy', new Date());
+				start = moment(start);					
+				var oneday = start.addWorkdays(1).format('MM/DD/YYYY');
+				var threedays = start.addWorkdays(3).format('MM/DD/YYYY');											
+				$("#first").text(oneday);			
+				$(".last").text(threedays);	
+			}
+			
+			deliverySpeed();
+			
+			function deliveryChange(){														
+				var start = $("#Date_sendon").val();
+				start = moment(start);									
+				var oneday = start.addWorkdays(1).format('MM/DD/YYYY');
+				var threedays = start.addWorkdays(3).format('MM/DD/YYYY');											
+				$("#first").text(oneday);			
+				$(".last").text(threedays);
+				
+				disableInstant();									
+			}
+			
+		/* View Limit Current Date */
+			
+			var current_date = new Date();
+			current_date = moment(current_date).format('MM/DD/YYYY');
+			$(".currDate").text(current_date);
+			//alert(current_date);
+			
+						
+		/* Date picker for Send on Field */ 
+			
+			$("#startingDate").text($.datepicker.formatDate('mm/dd/yy', new Date()));    // Displaying the current date 					
+						
+			$(function() { 
+				$('#Date_sendon').datepicker({
+					minDate: 0,	
+					//maxDate: '+12m',	
+					//defaultDate: '-6m',		
+					//beforeShowDay: $.datepicker.noWeekends,
+					dateFormat: 'mm/dd/yy',	
+					dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+					showOtherMonths: true,	
+					//changeYear: true,	
+					onSelect: function (selected) {
+						var dt = new Date(selected);					
+						dt.setDate(dt.getDate() + 1);
+						$("#EndDate_sendon").datepicker("option", "minDate", dt);	
+						$("#startingDate").text($("#Date_sendon").val());															
+																		
+						deliveryChange();  // To display the value on change in delivery
+					}
+				});	
+				
+				$('.glyphicon-calendar').click(function() {
+					$("#Date_sendon").focus();
+				});			
+				$("#Date_sendon").datepicker().datepicker("setDate", new Date());
+			});
+				
+			$("#Date_sendon").datepicker('setDate', new Date());
+								
+			$(function() { 
+				$("#EndDate_sendon").datepicker({ 
+					dateFormat: 'mm/dd/yy',	
+					dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+					showOtherMonths: true,
+					//changeYear: true,
+					minDate: 1,	
+					//maxDate: '+12m',	
+					//defaultDate: '-6m',	
+ 					//beforeShowDay: $.datepicker.noWeekends,
+					onSelect: function (selected) {						
+						var dt = $('#Date_sendon').datepicker('getDate');
+            		    dt.setDate(dt.getDate() + 1);
+						
+						$("#Date_sendon").datepicker("option", "maxDate", dt);														
+					}
+				});
+				$('.glyphicon-calendar').click(function() {
+					$("#EndDate_sendon").focus();
+				});			
+			 	$("#EndDate_sendon").datepicker().datepicker("setDate", "1");
+			});	
+			
+					
+		/* Trail Deposit - verification	*/	
+		
+			var url = window.location.search;	
+			url = url.split('=');
+			urlval = url[1];									
+			
+			if(urlval == 'trialBank'){				
+				$("#trialVerification").show();	
+				$("#trialVerification_suntrust").hide();			
+			} else if(urlval == 'suntrust'){
+				$("#trialVerification_suntrust").show();
+				$("#trialVerification").hide();				
+			} else {
+				$("#trialVerification, #trialVerification_suntrust").hide();	
+			}
+			
+			$("#trialcheck").click(function(){						
+				if(urlval == 'trialBank'){													
+					$('#addNewAccount').drawer('toggle');
+					$('.overlay').addClass('backdrop');						
+					$('#addNewAccount').load('ajax/trial_deposit.html');					
+				} else {								
+					$('#addNewAccount').drawer('toggle');
+					$('.overlay').removeClass('backdrop');	
+				}
+			});	
+			
+			$("#trialcheckmfa").click(function(){						
+				if(urlval == 'suntrust'){													
+					$('#addNewAccount').drawer('toggle');
+					$('.overlay').addClass('backdrop');						
+					$('#addNewAccount').load('ajax/trial_deposit_mfa.html');					
+				} else {								
+					$('#addNewAccount').drawer('toggle');
+					$('.overlay').removeClass('backdrop');	
+				}
+			});			
+				
+		
+		$('#memo').keypress(function() {
+			var txtVal = $(this).val().length;
+			  $("#memoTextCount").text(50 - txtVal);
+		  });
+		  
+		  $('#input-send-message').keypress(function() {
+			var txtVal = $(this).val().length;
+			  $("#msgTextCount").text(200 - txtVal);
+		  });	
+		  
+		  
+		/*  Browser specific From and To Account dropdown icon change */
+				  
+		 if(navigator.userAgent.indexOf("Chrome") != -1 ) {
+				$("#From_account, #To_account").addClass('chrome');
+				$("#From_account, #To_account").removeClass('firefox ie safari');
+			}else if(navigator.userAgent.indexOf("Safari") != -1 ){
+				$("#From_account, #To_account").addClass('safari');
+				$("#From_account, #To_account").removeClass('firefox ie chrome');
+			}else if(navigator.userAgent.indexOf("Firefox") != -1 ){
+				$("#From_account, #To_account").addClass('firefox');
+				$("#From_account, #To_account").removeClass('ie safari chrome');
+			} else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )){
+				$("#From_account, #To_account").addClass('ie');
+				$("#From_account, #To_account").removeClass('firefox chrome safari');
+			} else {
+				$("#From_account, #To_account").removeClass('firefox ie safari chrome');
+			}
+  				
+	});
+	
+	</script>
+  
+</body>
+</html>

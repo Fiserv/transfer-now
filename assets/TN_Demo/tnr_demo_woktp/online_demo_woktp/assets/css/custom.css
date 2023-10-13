@@ -1,0 +1,80 @@
+body{ padding:0px !important;}
+.alignc{text-align: center;  width:100%;}
+.radio label span span{ padding-left: 0px; display: inline-block; } 
+div.line {background-color: #aaaaaa;float: left; height: 1px;width: 44%; margin-top:16px;}
+div.content {float: left; font-size: 1.3em; font-weight: bold; margin: 4px;text-align: center; width: 8%;}
+#seeListNew > i.material-icons, #hideListNew > i.material-icons { vertical-align: middle;}
+.helpTable tr td{ padding:4px 10px;}
+.floatr{ float:right;}
+.preference-mobile .moreinfo{ margin-top:10px;}
+select.form-control{ padding:8px 10px;}
+
+/* Error Message */
+input.alert-message-error, select.alert-message-error {border:1px solid #dd3435 !important}
+p.alert-message-error{color: #dd3435;padding-left: 20px;padding-top: 5px; background:url(../images/error.png) 0 8px no-repeat;}	
+
+/* Datepicker */
+
+#ui-datepicker-div .ui-state-default{ background:#fff; border:1px solid #fff; text-align:center; color:#454545}
+#ui-datepicker-div .ui-state-default.ui-state-highlight, #ui-datepicker-div .ui-state-default.ui-state-highlight.ui-state-active{ border:1px solid #3d7ab7;-moz-border-radius: 3px;-webkit-border-radius:3px; -khtml-border-radius: 3px;border-radius: 3px; background:#fff; color:#454545;}
+#ui-datepicker-div td a{ text-align:center;}
+.ui-datepicker{ width:auto;}
+.ui-datepicker td, .ui-datepicker th{ padding:2px;}
+.ui-datepicker td span, .ui-datepicker td a{ padding:8px 10px;}
+#ui-datepicker-div td a:hover, #ui-datepicker-div .ui-state-default.ui-state-highlight:hover, #ui-datepicker-div .ui-state-default.ui-state-highlight.ui-state-active:hover, #ui-datepicker-div .ui-state-default.ui-state-active{ background:#3d7ab7; border:1px solid #3d7ab7; -moz-border-radius: 3px;-webkit-border-radius:3px;   -khtml-border-radius: 3px;border-radius: 3px; color:#fff;}
+#ui-datepicker-div .ui-widget-header{background:#fff; border:1px solid #fff; margin-bottom:10px;}
+.ui-datepicker .ui-icon-circle-triangle-w{ background:url("../images/left.png") 0 0 no-repeat !important;}
+.ui-datepicker .ui-icon-circle-triangle-e{ background:url("../images/right.png") 0 0 no-repeat !important;}	
+.ui-datepicker-header .ui-state-hover{ background:#fff !important; border:1px solid #fff !important;}
+.ui-datepicker-year{background-color: #fff;background-image: none;border-radius: 2px;box-shadow: none;color: #212121;
+height: 25px;padding: 2px 5px; width:40%;}
+.ui-datepicker select.ui-datepicker-year{width:40%; margin-left:10px;}
+
+/* Table Sorter */ 
+
+th.tablesorter-headerDesc {background:url("../images/up.png") 80px 11px no-repeat;}
+th.tablesorter-headerAsc {background:url("../images/down.png") 80px 11px no-repeat;}
+.pager li > a{ border-radius:0px;}
+.pager{ text-align:left; margin:0px;}
+ul.pagination li > a{ margin-left:0px;}
+ul.pagination li > a.prev i, ul.pagination li > a.next i{ font-size:18px; line-height:14px; vertical-align: middle; }
+ul.pagination li a.current {background-color: #69c;border-color: #69c; color: #fff;}
+.pager .disabled > a,.pager .disabled > a:hover{ color:#69c; background:#fafafa; border-color:#f2f2f2; cursor:not-allowed;}
+li a.prev.disabled, li a.next.disabled{cursor:not-allowed;}
+.activity-container h1{ padding:0px !important;}
+
+
+/* From and To accounts Dropdown */
+
+li{ list-style:none;}
+.grouping{ background:#f0f0f0; width:100%; float:left; padding:5px; font-size:13px;}
+.dropdown{ border:1px solid #6d6d6d; float:left; position:absolute; top:62px; z-index:9999; background:#fff; width:95%;}
+.dropdown li{ width:100%; float:left; font-size:12px; box-sizing:border-box;}
+.dropdown li a{ width:100%; float:left; padding:5px; color:#212121;}
+.dropdown li a:hover, .dropdown li a:focus{ background:#3399ff; text-decoration:none; color:#fff;}
+.dropdown li ul li a{ width:100%; float:left; padding:5px 0 5px 20px; color:#212121;}
+.dropdown li ul li a:hover{ background:#3399ff; text-decoration:none; color:#fff;}
+
+/*  Browser specific From and To Account dropdown icon change */
+
+.fromDropdown{ background:url(../../assets/images/dropIcon.jpg) 100% 0  no-repeat; width:100%; height:40px; border:1px solid #9e9e9e; border-radius:2px; padding:10px 20px 10px 10px;cursor:default;}
+.fromDropdown.firefox{ background:url(../../assets/images/dropIcon.jpg) 100% 0  no-repeat; }
+.fromDropdown.chrome{ background:url(../../assets/images/chrome.jpg) 100% 0  no-repeat; }
+.fromDropdown.ie{ background:url(../../assets/images/ie.jpg) 100% 0  no-repeat; }
+.fromDropdown.safari{ background:url(../../assets/images/safari.jpg) 100% 0  no-repeat; }
+#From_account_modal_Dropdn, #To_account_modal_Dropdn, #From_account_modal_Dropdn_new, #To_account_modal_Dropdn_new{ top:39px; z-index:9999; width:100%; }
+
+
+@media (max-width: 740px){
+	 .preference-container { padding: 20px; }
+}
+
+
+/* TNR demo to Online demo - CSS need to be changed */
+
+.bankLogoSection, #divHeader { display:none; }
+.bank_frame { display:block; }
+/*.header-one .bank-name {float:left; }
+.navbar-default {border-color: #d4d7db !important;}
+ body{background:#fff !important;}*/
+

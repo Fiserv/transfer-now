@@ -1,0 +1,65 @@
+<script src="assets/js/app.js" type="text/javascript"></script>
+<div class="drawer-contents col-xs-12 col-sm-12 col-md-10 pt20 pl20 pr20">
+    <div class="drawer-controls">
+        <a href="javascript:void(0);" data-toggle="modal" id="closeAlert" data-target="#verifyExtAcct" aria-controls="verifyExtAcct" class="btn btn-navigation close" aria-label="Close" title="Close"><span aria-hidden="true"><strong>&times;</strong></span></a>
+    </div>
+    <h2>Verify Instantly</h2>
+    <p>Enter your external bank account login information so we can verify you own the account.</p>
+    <p><strong>FIServ - Script Coverage Engine</strong></p>
+    
+    <div class="alert alert-dismissible alert-danger" role="alert" aria-live="assertive" id="errorMessage">
+        <i class="material-icons" aria-hidden="true">warning</i>
+        <span class="sr-only">error</span>
+        <p><span>We were unable to verify the ownership of the bank account. Please provide the credentials again to re-initiate verification. </span></p>
+    </div>
+
+
+    <div class="row" id="instantLogin">
+        <div class="col-xs-12 col-sm-10">
+            <div class="panel p15 clearfix drawyer-panel">
+                <div class="row form-group clearfix">
+                    <div class="col-md-12 secrity_mssg">
+                        <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>Safely log into your online banking so your account can be verified for use. Your credentials are sent to your bank using the highest encryption standards and are never read or saved.
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-9 form-group">
+                        <label for="verify_usrname">User ID </label>
+                        <input type="text" id="verify_usrname" class="form-control" placeholder="FIServ - Script Coverage Engine User ID" aria-invalid="false" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-9 form-group">
+                        <label for="verify_pswd">Password </label>
+                        <input type="password" id="verify_pswd" class="form-control" placeholder="FIServ - Script Coverage Engine Password" aria-invalid="false" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button type="button" class="btn btn-secondary"  title="Back to verification options" id="backToOptions">Back to verification options</button>
+                        <button type="button" class="btn btn-primary" title="Verify Now" id="kbaVerify" disabled="disabled">Verify Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-xs-12 col-sm-12">
+                <p>We can also verify your account without username and password. Please note, this will take an additional 1 to 2 business days and will require additional steps.</p>
+                <p><a href="javascript:void(0);" title="Verify with Trail Deposits" id="verifyByTrialDeposit">Verify with Trail Deposits</a></p>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<!-- Loader Starts -->
+
+<div id="pageLoader" style="display:none;">
+    <div id="loader-fade"></div>
+    <div id="loading-spinner">
+        <div class="spinner-icon" aria-label="loading..."></div>
+    </div>
+</div>
+
+<!-- Loader Ends -->
