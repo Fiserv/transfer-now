@@ -6,24 +6,48 @@ tags: [ACH, New User, Returning User, Digital Payments, Account Ownership, Data 
 
 This document provides details on how TransferNow application enables a FI to offer secure inter-institution funds transfer services by automating the authentication of external accounts and debit cards, provides a comprehensive risk management system, and moves fund using the Automated Clearing House (ACH), and other payment networks. Common use cases include:
 
-- Add, verify, and delete external ACH accounts and debit cards (supported by Visa)
-- Create, edit, and cancel one-time scheduled and recurring transfers
-- View all transfer activity
-- Verify email addresses
-- View limits and fees
-- Validate limits
+<div class="card-body">
+<ul>
+<li>Add, verify, and delete external ACH accounts and debit cards (supported by Visa)</li>
+<li>Create, edit, and cancel one-time scheduled and recurring transfers</li>
+<li>View all transfer activity</li>
+<li>Verify email addresses</li>
+<li>View limits and fees</li>
+<li>Validate limits</li>
+</ul>
+</div>
+
 
 ## SSL Log-In
 
 An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. SSL Secure Messaging is a specialized form of authentication that enables a user to authenticate once and gain access to the resources of multiple software systems.
 
-When an FI passes users to Fiserv via SSL Secure Messaging, Fiserv routes them to the TN landing page, which is the Transfer Funds Overview screen. Refer to Figure 5 below.
+When an FI passes users to Fiserv via SSL Secure Messaging, Fiserv routes them to the TN landing page, which is the Transfer Funds Overview screen.
 
 <!-- align: center -->
 
-![Image centering](../assets/images/TransferNowOverview.png "Image centering")
+
+![image](../assets/images/TransferNowOverview.png)
+
+<video controls width="480" height="270">
+        <source src="../assets/images/SSo-LogIn.webm" type="video/webm"/>
+    </video>
+
+
+<div class="centered-image">
+
+
+<img src="../assets/images/TransferNowOverview.png" alt="image">
 
 <p style="text-align:center">Transfer Now Overview Screen</p>
+
+</div>
+
+
+<iframe width="480" height="270" src="../assets/images/SSo-LogIn.webm"></iframe>
+
+
+
 
 
 
@@ -42,3 +66,29 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
 - User Logging in via the Single Sign-On integration between Fiserv and the client partner (any Financial Institution) using the standard Fiserv ePayments user interface.
 
 - XML API integration with the respective Financial Institution web pages that support the service.
+
+
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+    .centered-image {
+        dispaly: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+    }
+    .centered-image img {
+        width: 70%;
+        height: auto;
+    }
+</style>

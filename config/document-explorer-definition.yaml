@@ -45,6 +45,13 @@
       link: docs/acc-to-acc-transfer/delete-Acc.md
     - title: Manage Accounts
       link: docs/acc-to-acc-transfer/manage-Acc.md
+      sections:
+      - title: Account Restrictions
+        link: docs/acc-to-acc-transfer/Manage-Account/acc-restrictions.md
+      - title: Account-Summary
+        link: docs/acc-to-acc-transfer/Manage-Account/acc-summary.md
+      - title: Account Limitations
+        link: docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md
     - title: Account Verification
       link: docs/acc-to-acc-transfer/Account-Verify/acc-verify-home.md
       sections:
@@ -58,13 +65,6 @@
         link: docs/acc-to-acc-transfer/Account-Verify/real-time-addition.md
     - title: Manage-Account
       link: docs/acc-to-acc-transfer/manage-Acc.md
-      sections:
-      - title: Account Restrictions
-        link: docs/acc-to-acc-transfer/Manage-Account/acc-restrictions.md
-      - title: Account-Summary
-        link: docs/acc-to-acc-transfer/Manage-Account/acc-summary.md
-      - title: Account Limitations
-        link: docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md
 - sections:
   - title: Release notes
     sections:
