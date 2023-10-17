@@ -29,6 +29,7 @@ When an FI passes users to Fiserv via SSL Secure Messaging, Fiserv routes them t
 
 ![image](../assets/images/TransferNowOverview.png)
 
+
 <video controls width="480" height="270">
         <source src="../assets/images/SSo-LogIn.webm" type="video/webm"/>
     </video>
@@ -48,9 +49,6 @@ When an FI passes users to Fiserv via SSL Secure Messaging, Fiserv routes them t
 
 
 
-
-
-
 Whenever Fiserv receives a user via SSL Secure Messaging, the user’s profile is registered in the Fiserv ePayments database. The profile establishes a unique identifier called <>.
 
 <!-- theme: info -->
@@ -63,9 +61,20 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
 
 **Transfer Now can be deployed in one of the following ways:**
 
-- User Logging in via the Single Sign-On integration between Fiserv and the client partner (any Financial Institution) using the standard Fiserv ePayments user interface.
-
-- XML API integration with the respective Financial Institution web pages that support the service.
+<div class="card-container">
+        <div class="card">
+            <img src="../assets/images/SSL.png" alt="ssl">
+            <div class="desc">
+                <p>User Logging in via the Single Sign-On integration between Fiserv and the client partner (any Financial Institution) using the standard Fiserv ePayments user interface.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/images/API.png" alt="api">
+            <div class="desc">
+                <p>XML API integration with the respective Financial Institution web pages that support the service.</p>
+            </div>
+        </div>
+    </div>
 
 
 <style>
@@ -91,4 +100,26 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
         width: 70%;
         height: auto;
     }
+    .card-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            width: 48%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        .card .desc {
+            padding: 10px;
+            text-align: left;
+        }
 </style>
