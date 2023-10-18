@@ -8,7 +8,7 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 
 <center>
 
-![image](../assets/images/responsiveUIScreens.jpg)
+![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/responsiveUIScreens.jpg)
 
 </center>
 
@@ -34,13 +34,13 @@ This is achieved in part through breakpoints (or breakpoint ranges)—sizes or s
 
 <div class="card-container">
         <div class="card">
-            <img src="../assets/images/320MobileViewpng.png">
+            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/320MobileViewpng.png">
         </div>
         <div class="card">
-            <img src="../assets/images/480MobileView.png">
+            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/480MobileView.png">
         </div>
         <div class="card">
-            <img src="../assets/images/desktopview.png">
+            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/desktopview.png">
         </div>
     </div>
 
