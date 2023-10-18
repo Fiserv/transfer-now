@@ -1,7 +1,10 @@
+## Account Summary Information
+
 TransferNow provides account summary information on the Preferences screen, as shown below
 
-<!-- align: center -->
+<center>
 
-![Image centering](../assets/images/Preferences-Screen.png "Image centering")
+![Image](../../../assets/images/Preferences_Screen.png ) <br />
 
-<p style="text-align:center">PREFERENCE SCREEN</p>
+PREFERENCES SCREEN
+</center>

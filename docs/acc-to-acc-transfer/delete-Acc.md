@@ -7,13 +7,15 @@
 - The Delete Account screen prompts the user to confirm that they want to delete the account. 
 
 
-> :memo: **Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted.
+**Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted.
 
-<!-- align: center -->
+<center>
 
-![Image centering](../assets/images/Delete-An-Account.png "Image centering")
+![Image](../../assets/images/Delete_An_Account.png) <br />
 
-<p style="text-align:center">DELETE AN ACCOUNT</p>
+DELETE AN ACCOUNT
+
+</center>
 
 ## Pending Transfers 
 
