@@ -11,14 +11,14 @@ TransferNow verifies a user’s ownership of an external account using four type
 
 <!-- theme: info -->
 
-> :memo: **Note:** Clients have the option to allow Outbound Transfers (Transfer to a third-party account) to unverified external accounts, subject to a client-specified dollar limit. By default, verification is ON.
+**Note:** Clients have the option to allow Outbound Transfers (Transfer to a third-party account) to unverified external accounts, subject to a client-specified dollar limit. By default, verification is ON.
 
  &nbsp;
 
 
 <center>
 
-![image](../assets/images/transferVerification.png)
+![image](../../../assets/images/transferVerification.png) <br />
 Account Verification
 
 </center>

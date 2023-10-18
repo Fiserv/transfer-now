@@ -11,7 +11,7 @@ TransferNow then matches the added name and account numbers against the name of 
 
 <!-- theme: info -->
 
-> :memo: **Note:** For security and privacy considerations, Fiserv never stores user ID and password data.
+**Note:** For security and privacy considerations, Fiserv never stores user ID and password data.
 
  &nbsp;
 
@@ -46,7 +46,7 @@ Refer to Figure 6 for account verification screen.
  &nbsp;
 
 
-![image](../assets/images/RealTimeVerification.png)
+![image](../../../assets/images/RealTimeVerification.png)
 
 
 

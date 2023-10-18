@@ -1,39 +1,24 @@
 # Instant Verification
 
-<!-- theme: info -->
+**Note:** Instant account verification requires the financial institution client to have a contractual relationship established with Early Warning (EWS) for the Account Ownership Authentication service. Additional data sources will be added to the service in the future.
 
-> :memo: **Note:** Instant account verification is optional
-
-### Fidelity National Information Services (FIS)®
-
- &nbsp;
-
-<!-- theme: info -->
-
-> :memo: **Note:** This account ownership product was formerly owned by eFunds
-
- &nbsp;
-
-FIS has built relationships with several authorized printing facilities who print checks for financial institutions. Through these printing facilities, FIS has access to customer name and account number information. The FIS database is limited by the number of check printing facilities with which FIS has a relationship. Furthermore, not all Financial Institutions allow the check-printing facilities to disclose the information of their clients.
-
- &nbsp;
-
-### Early Warning Services (EWS) ®
-
-EWS houses data contributed by various financial institutions and uses this data to authenticate account ownership claims. EWS data is limited by the number of financial institutions that contribute to this product. EWS requires that clients contribute data to the product in order to be allowed to use it. With Early Warning Services, instant account verification occurs in-session with no user interaction required.
-
-EWS has been enhanced with new data elements, including Enhanced Name Matching, Account Status, and Account Score for non-participating banks.
-
- &nbsp;
+EWS houses data contributed by financial institutions with data elements including account holder names, address, tax ID, and additional elements leveraged to determine ownership of the account. Additionally, EWS provides a status of the account such as open/close, ability to accept debits, type of account, and risk indicators. Fiserv uses this response data to instantly decision the account as Approved, Denied, or Inconclusive. Inconclusive accounts are eligible for other verification methods.
 
 Instant Verification process are as follows:
 
-- Once the user adds the account, Transfer Now checks the ABA number against the FIS database to confirm that it is a supported ABA number.
-- If confirmed YES, Transfer Now matches the users name and account information against those in the FIS database.
-- If a match is found in FIS or EWS, as appropriate, then the Verification Complete screen is displayed, and the Verify Your Account step is complete.
-- If a match is not found in FIS or EWS, then the user is directed either to real-time verification or trial deposit verification.
+-	Once the user adds the account, TransferNow checks validates the ABA routing number in-session.
+-	Once the user submits the routing and account number, TransferNow interacts with the EWS service and decisions the account.
+-	If Approved, the Verification Complete screen is displayed, and the user can immediately begin initiating transfers to/from the account.  
+-	If Denied, the user is presented a message the account cannot be added and to try another account.  
+-	If the decision is Inconclusive, the user is directed either to real-time verification or trial deposit verification.
 
- &nbsp;
+<center>
+
+![image](../../../assets/images/Instant_Verification.png) <br />
+Account Verification
+
+</center>
+
 
 ## Documents References
 

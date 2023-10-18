@@ -21,11 +21,11 @@ TN makes two small trial deposits and one trial debit (the debit is equal to the
 
 <!-- theme: info -->
 
-> :memo: **Note:** For brokerage accounts, two deposits and one debit (as applicable for some brokerages) will be sent for trial deposit verification.
+**Note:** For brokerage accounts, two deposits and one debit (as applicable for some brokerages) will be sent for trial deposit verification.
 
 <!-- theme: info -->
 
-> :memo: **Note:** The account cannot be verified if the trial deposit fails.
+**Note:** The account cannot be verified if the trial deposit fails.
 
  &nbsp;
 
@@ -43,17 +43,16 @@ Refer to Figure 7 and Figure 8 for account verification using Trial Deposit and 
 
 <center>
 
-![image](../../assets/images/VERIFY%20WITH%20BANK%20DEPOSITS.png)
-          
-               VERIFY WITH BANK DEPOSITS
+![image](../../../assets/images/verifywithBankDeposits.png) <br />
+VERIFY WITH BANK DEPOSITS
+
 </center>               
 
 
 <center>
 
-![image](../../assets/images/ACTIVATING%20ACCOUNT%20USING%20TRIAL%20DEPOSITS%20SCREEN.png)
-
-            ACTIVATING ACCOUNT USING TRIAL DEPOSITS SCREEN
+![image](../../../assets/images/ActivatingAccTrailDepositsscreen.png) <br />
+ACTIVATING ACCOUNT USING TRIAL DEPOSITS SCREEN
 
 </center>
 
