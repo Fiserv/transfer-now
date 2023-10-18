@@ -63,14 +63,14 @@ featuredFeatures:
   - title: Responsive Web Design 
     groupName: Responsive Web Design
     description: Having an interactive, innovative website is key to meeting customer expectations and keeping them interested in your brand. With Web Design Services, Fiserv offers flexible, responsive design for financial institutions delivering outstanding results for desktop, tablet and mobile users, ensuring a consistent brand experience across all devices. Benefits of our services include more mobile traffic, lower maintenance needs, faster webpages and an overall improved online experience.
-    featured: false
+    featured: true
     relatedDocs:
      - link: docs/resp-webdesign.md
        title: Responsive Web Design
   - title: Industry-Leading Security
     groupName: Industry-Leading Security
     description: Leverage Fiserv best -of-breed, powerful risk management tools.
-    featured: false
+    featured: true
     relatedDocs:
      - link: /docs/getting-started.md
        title: Industry-Leading Security
