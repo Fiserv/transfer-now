@@ -33,6 +33,9 @@
     link: docs/getting-started.md
     sections: 
     - title: Developer Studio
+      link: docs/getting-started/developer-studio.md
+    - title: TN Integeration and Configuration Options 
+      link: docs/getting-started/tn_integeration_and_config_guide.md 
 - sections:
   - title: Responsive Web Design
     link: docs/resp-webdesign.md
