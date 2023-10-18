@@ -61,10 +61,26 @@
         link: docs/acc-to-acc-transfer/Account-Verify/real-time.md
       - title: Trial Deposit Verification
         link: docs/acc-to-acc-transfer/Account-Verify/trial-verify.md
-      - title: Real Time Verification & Addition
-        link: docs/acc-to-acc-transfer/Account-Verify/real-time-addition.md
-    - title: Manage-Account
-      link: docs/acc-to-acc-transfer/manage-Acc.md
+- sections:
+  - title: Transfer via Debit Cards
+    sections:
+    - title: Adding Debit Cards
+      link: docs/transfer-debit-card/adding-Acc.md
+    - title: Debit Card Verification
+      link: docs/transfer-debit-card/debit-cardVerify.md
+    - title: Deleting Debit Cards
+      link: docs/transfer-debit-card/delete-debitCard.md
+    - title: Editing Debit Cards 
+      link: docs/transfer-debit-card/edit-debitCard.md
+- sections:
+  - title: Fund Transfers
+    sections:
+    - title: Transfer Methods
+      link: docs/fund-transfer/transfer-methods.md
+    - title: Fund Transfer frequencies & Durations
+      link: docs/fund-transfer/FT-freq.md
+    - title: Transfer Cut-off Times
+      link: docs/fund-transfer/transfer-cutOff.md
 - sections:
   - title: Release notes
     sections:
