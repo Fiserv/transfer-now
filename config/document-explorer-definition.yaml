@@ -74,6 +74,7 @@
       link: docs/transfer-debit-card/edit-debitCard.md
 - sections:
   - title: Fund Transfers
+    link: docs/fund-transfer/fund-transfer.md
     sections:
     - title: Transfer Methods
       link: docs/fund-transfer/transfer-methods.md
