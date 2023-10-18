@@ -24,28 +24,14 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. SS
 
 When an FI passes users to Fiserv via SSL Secure Messaging, Fiserv routes them to the TN landing page, which is the Transfer Funds Overview screen.
 
+
 <!-- align: center -->
 
 
 ![image](../assets/images/TransferNowOverview.png)
 
 
-<video controls width="480" height="270">
-        <source src="../assets/images/SSo-LogIn.webm" type="video/webm"/>
-    </video>
 
-
-<div class="centered-image">
-
-
-<img src="../assets/images/TransferNowOverview.png" alt="image">
-
-<p style="text-align:center">Transfer Now Overview Screen</p>
-
-</div>
-
-
-<iframe width="480" height="270" src="../assets/images/SSo-LogIn.webm"></iframe>
 
 
 
@@ -63,13 +49,13 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
 
 <div class="card-container">
         <div class="card">
-            <img src="../assets/images/SSL.png" alt="ssl">
+            <!-- <img src="../assets/images/SSL.png" alt="ssl"> -->
             <div class="desc">
                 <p>User Logging in via the Single Sign-On integration between Fiserv and the client partner (any Financial Institution) using the standard Fiserv ePayments user interface.</p>
             </div>
         </div>
         <div class="card">
-            <img src="../assets/images/API.png" alt="api">
+            <!-- <img src="../assets/images/API.png" alt="api"> -->
             <div class="desc">
                 <p>XML API integration with the respective Financial Institution web pages that support the service.</p>
             </div>
