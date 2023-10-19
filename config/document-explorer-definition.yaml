@@ -47,7 +47,6 @@
     - title: Deleting Accounts
       link: docs/acc-to-acc-transfer/delete-Acc.md
     - title: Manage Accounts
-      link: docs/acc-to-acc-transfer/manage-Acc.md
       sections:
       - title: Account Restrictions
         link: docs/acc-to-acc-transfer/Manage-Account/acc-restrictions.md
@@ -77,7 +76,6 @@
       link: docs/transfer-debit-card/edit-debitCard.md
 - sections:
   - title: Fund Transfers
-    link: docs/fund-transfer/fund-transfer.md
     sections:
     - title: Transfer Methods
       link: docs/fund-transfer/transfer-methods.md
