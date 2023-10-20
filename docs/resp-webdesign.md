@@ -33,13 +33,13 @@ This is achieved in part through breakpoints (or breakpoint ranges)—sizes or s
 
 
 <div class="card-container">
-        <div class="card">
+        <div style="margin: 5px">
             <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/320MobileViewpng.png">
         </div>
-        <div class="card">
+        <div style="margin: 5px">
             <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/480MobileView.png">
         </div>
-        <div class="card">
+        <div style="margin: 5px">
             <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/desktopview.png">
         </div>
     </div>
