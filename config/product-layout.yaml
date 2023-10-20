@@ -58,7 +58,7 @@ featuredFeatures:
     description: Fiserv offers several advanced alternatives to help you protect against online banking fraud. With Multifactor Authentication from Fiserv, you can enhance online security and maintain compliance with banking regulations without devoting significant resources.
     featured: true
     relatedDocs:
-     - link: docs/acc-to-acc-transfer/Account-Verify/acc-verify-home.md
+     - link: docs/acc-to-acc-transfer/Account-Verify/Account-Verify.md
        title: Account Verification
   - title: Responsive Web Design 
     groupName: Responsive Web Design
