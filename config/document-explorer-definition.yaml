@@ -84,6 +84,9 @@
     - title: Transfer Cut-off Times
       link: docs/fund-transfer/transfer-cutOff.md
 - sections:
+  - title: Transfernow Sandbox
+    link: docs/sandbox.md      
+- sections:
   - title: Release notes
     sections:
     - title: March 2022
