@@ -39,7 +39,7 @@ Following actions will take place when a trial deposit is failed:
 
 - If the second attempt at account verification fails, the user cannot add the account to TransferNow services.
 
-Refer to Figure 7 and Figure 8 for account verification using Trial Deposit and activating the external account for transactions.
+Refer to account verification using Trial Deposit and activating the external account for transactions.
 
 <center>
 
