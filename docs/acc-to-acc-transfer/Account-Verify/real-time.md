@@ -41,7 +41,7 @@ There are thousands of financial institutions. It is not possible for TransferNo
 
 If real-time account verification is not available, then the user's account is verified using trial deposit verification.
 
-Refer to Figure 6 for account verification screen.
+Refer to account verification screen.
 
  &nbsp;
 

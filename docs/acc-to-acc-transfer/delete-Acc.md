@@ -1,9 +1,9 @@
 ## Deleting Accounts 
 
 
-- From the Preferences screen (shown in Figure 9), the user can choose Delete Account. 
+- From the Preferences screen, the user can choose Delete Account. 
 - Select any account that you wanted to delete from the list. 
-- Click “Delete Account” as shown below in Figure 10. 
+- Click “Delete Account”. 
 - The Delete Account screen prompts the user to confirm that they want to delete the account. 
 
 

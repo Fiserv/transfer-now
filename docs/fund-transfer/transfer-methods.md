@@ -17,7 +17,7 @@ After adding one or more accounts, the TransferNow user can set up one-time tran
 transfers to move funds to and from the account(s).
 
 # One-Time Transfer 
-A one-time transfer requires the following information as shown below in Figure 
+A one-time transfer requires the following information
 
 <center>
 
@@ -39,7 +39,7 @@ ONE-TIME TRANSFER
 
 # Recurring Transfer
 
- Recurring transfers require the following information as shown below in Figure 
+ Recurring transfers require the following information
 
 **Note:** The Instant Transfer option is not applicable for recurring transfers.
 
