@@ -10,6 +10,23 @@ EWS houses data contributed by financial institutions with data elements includi
 
 Instant Verification process are as follows:
 
+
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+</style> 
+
+
 <div class="card-body">
 <ul>
 <li>Once the user adds the account, TransferNow checks validates the ABA routing number in-session.</li>
@@ -42,17 +59,4 @@ Account Verification
 
 
 
-<style>
-    .card-body ul {
-        list-style: none;
-        padding-left: 20px;
-    }
-    .card-body ul li::before {
-        content: "\2022";
-        font-size: 1.5em;
-        color: #f60;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    }
-</style>    
+  
