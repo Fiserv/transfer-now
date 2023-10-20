@@ -29,10 +29,10 @@ TransferNow can perform either a hard fail or soft fail of the transfer if the a
 
 <!-- theme: info -->
 
-**Note**: Clients specify whether they want hard fail or soft fail in the Data Gathering Form (DGF).
+> :memo: **Note:** Clients specify whether they want hard fail or soft fail in the Data Gathering Form (DGF).
 
->	Hard Fail - TransferNow displays a message to the user informing them that the transfer amount exceeds the available balance. The user is prevented from submitting the transfer until adjusting the transfer amount less than or equal to the available balance.
->	Soft Fail - TransferNow displays a warning message to the user informing them that the transfer amount exceeds the available balance. The user is permitted to submit the transfer even though the transfer amount is greater than the available balance.
+-	Hard Fail - TransferNow displays a message to the user informing them that the transfer amount exceeds the available balance. The user is prevented from submitting the transfer until adjusting the transfer amount less than or equal to the available balance.
+-	Soft Fail - TransferNow displays a warning message to the user informing them that the transfer amount exceeds the available balance. The user is permitted to submit the transfer even though the transfer amount is greater than the available balance.
 
 
 <!-- type: tab -->
@@ -40,6 +40,7 @@ TransferNow can perform either a hard fail or soft fail of the transfer if the a
  
 
 # Next Day Transfers
+
 Next-day ACH transfers are inter-institutional transfers in which both the debit and credit leg of the transaction settle the next business day by ACH. 
 The completion of a transfer, including the availability of funds in the destination account and access to transaction details, depends in part on how quickly the client updates his/her account after receiving funds transfer information.
 
@@ -58,22 +59,22 @@ Qualification Rules
 
 The default qualification rules for Next-Day transfers are as follows:
 
->	The user has been a customer in good standing for at least three months. 
->	The user has not caused any negative activity or result via Fiserv ePayments software where such negative activity or result includes but is not limited to: Non-Sufficient Funds (NSF); Account Closed; Authorization Revoked by End User Payment Stopped; End User Advises not Authorized; Account Holder deceased; Beneficiary Deceased; or Account Frozen. 
->	For each external account from which a Next-Day processing funds transfer is initiated, the user has completed at least one (1) successful inbound funds transfer of at least $500 from the external account to a client hosted account no sooner than sixty (60) days prior to initiating the first inbound Next-Day processing funds transfer. 
->	For an inbound transaction, the user maintains an available account balance of at least $750 in the client-hosted account receiving the funds transfer. 
->	For an outbound transaction, the user maintains an available account balance of at least $750 (excluding the transaction amount) in the client-hosted account.
+-	The user has been a customer in good standing for at least three months. 
+-	The user has not caused any negative activity or result via Fiserv ePayments software where such negative activity or result includes but is not limited to: Non-Sufficient Funds (NSF); Account Closed; Authorization Revoked by End User Payment Stopped; End User Advises not Authorized; Account Holder deceased; Beneficiary Deceased; or Account Frozen. 
+-	For each external account from which a Next-Day processing funds transfer is initiated, the user has completed at least one (1) successful inbound funds transfer of at least $500 from the external account to a client hosted account no sooner than sixty (60) days prior to initiating the first inbound Next-Day processing funds transfer. 
+-	For an inbound transaction, the user maintains an available account balance of at least $750 in the client-hosted account receiving the funds transfer. 
+-	For an outbound transaction, the user maintains an available account balance of at least $750 (excluding the transaction amount) in the client-hosted account.
 
 
 <!-- theme: info -->
 
-**Note**: If a client chooses not to offer an optional transfer type, it does not appear in the user interface. 
+> :memo: **Note:** If a client chooses not to offer an optional transfer type, it does not appear in the user interface. 
 
 ## Next Day Good Funds
 
->	Next Day Good Funds are Next Day transfers where the sender's account is instantly (within seconds) debited after the user executes a Next Day transfer. The credit to the receiving institution, however, occurs the next day via ACH. 
->	Next Day Good Funds are available when an FI is participating in Fiserv's NOW network and the sending account is at this FI. Because the funds being transferred are taken out of the sending account immediately after the user executes the transaction, the funds are guaranteed and secured for the FI, virtually eliminating all credit risk, including NSF. 
->	FIs that use Next Day Good Funds will be able to offer Next Day to 100% of its customers, increase limits, and reduce administrative costs.
+-	Next Day Good Funds are Next Day transfers where the sender's account is instantly (within seconds) debited after the user executes a Next Day transfer. The credit to the receiving institution, however, occurs the next day via ACH. 
+-	Next Day Good Funds are available when an FI is participating in Fiserv's NOW network and the sending account is at this FI. Because the funds being transferred are taken out of the sending account immediately after the user executes the transaction, the funds are guaranteed and secured for the FI, virtually eliminating all credit risk, including NSF. 
+-	FIs that use Next Day Good Funds will be able to offer Next Day to 100% of its customers, increase limits, and reduce administrative costs.
 
 
  <center>
@@ -95,7 +96,7 @@ The NOW network debits and credits accounts instantly at an FI through real-time
 
 <!-- theme: info -->
 
-**Note**: Instant connectivity via the NOW network is a prerequisite for the Instant Transfer feature. Debit-card networks can be accessed via the NOW network (only VISA is offered at this time). Clients should clarify which service provider supports their Instant service (e.g., ESF) and provide that information to the implementation project manager. If an FI already has Instant Transfers for Zelle® via NOW Instant connectivity, then Instant Transfers will leverage that same underlying connectivity.
+> :memo: **Note:** Instant connectivity via the NOW network is a prerequisite for the Instant Transfer feature. Debit-card networks can be accessed via the NOW network (only VISA is offered at this time). Clients should clarify which service provider supports their Instant service (e.g., ESF) and provide that information to the implementation project manager. If an FI already has Instant Transfers for Zelle® via NOW Instant connectivity, then Instant Transfers will leverage that same underlying connectivity.
 
  <!-- type: tab -->
 
@@ -107,9 +108,9 @@ service processing.
 
 The default qualification rules for high-limit transfers are listed below:
 
->	The user has been a customer in good standing for at least three months. 
->	The user has not caused any negative activity or result via Fiserv ePayments software where such negative activity or result includes but is not limited to: Non-Sufficient Funds (NSF); Account Closed; Authorization Revoked by End User Payment Stopped; End User Advises not Authorized; Account Holder deceased; Beneficiary Deceased; or Account Frozen.
->	For each external account from which a high limit funds transfer is initiated, the user has completed at least one successful inbound funds transfer of at least $1,000 from the external account to a client-hosted account no sooner than sixty (60) days prior to initiating the first inbound high-limit funds transfer.
+-	The user has been a customer in good standing for at least three months. 
+-	The user has not caused any negative activity or result via Fiserv ePayments software where such negative activity or result includes but is not limited to: Non-Sufficient Funds (NSF); Account Closed; Authorization Revoked by End User Payment Stopped; End User Advises not Authorized; Account Holder deceased; Beneficiary Deceased; or Account Frozen.
+-	For each external account from which a high limit funds transfer is initiated, the user has completed at least one successful inbound funds transfer of at least $1,000 from the external account to a client-hosted account no sooner than sixty (60) days prior to initiating the first inbound high-limit funds transfer.
 
  <!-- type: tab -->
 
