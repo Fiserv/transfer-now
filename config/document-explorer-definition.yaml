@@ -67,7 +67,7 @@
   - title: Transfer via Debit Cards
     sections:
     - title: Adding Debit Cards
-      link: docs/transfer-debit-card/adding-Acc.md
+      link: docs/transfer-debit-card/adding-debitCard.md
     - title: Debit Card Verification
       link: docs/transfer-debit-card/debit-cardVerify.md
     - title: Deleting Debit Cards

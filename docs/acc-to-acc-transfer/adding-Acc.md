@@ -6,13 +6,17 @@ Accounts require verification of account ownership, as described in Account Veri
 
 To add a brokerage institution, the user selects from the following list of supported brokerages:
 
--	Ameriprise Financial®
--	Charles Schwab®
--	E-Trade
--	Fidelity Investments®
--	Merrill Lynch®
--	Morgan Stanley®
--	Principal® Funds Money Market
--	Scottrade, Inc. ®
--	Smith Barney®
--	TD Ameritrade®
+
+![Image](../../assets/images/Adding_Account.png) <br />
+
+
+
+## Documents References
+
+[Deleting Accounts](?path=docs/acc-to-acc-transfer/Manage-Account/delete-Acc.md)
+[Add Restrictions](?path=docs/acc-to-acc-transfer/acc-restrictions.md)
+[Account Summary Information](?path=docs/acc-to-acc-transfer/Manage-Account/acc-summary.md)
+[Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)
+[Instant Verification](?path=docs/fund-transfer/Instant-Verify.md)
+[Real Time Verifiaction](?path=docs/acc-to-acc-transfer/Manage-Account/real-time.md)
+[Trial Deposit Verfication](?path=docs/acc-to-acc-transfer/Manage-Account/trial-verify.md)
