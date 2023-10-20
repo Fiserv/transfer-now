@@ -54,11 +54,11 @@ featuredFeatures:
      - link: docs/fund-transfer/transfer-services.md
        title: Instant Verification
   - title: Multiple Account Verification
-    groupName: Manage Account
+    groupName: Multiple Account Verification
     description: Fiserv offers several advanced alternatives to help you protect against online banking fraud. With Multifactor Authentication from Fiserv, you can enhance online security and maintain compliance with banking regulations without devoting significant resources.
     featured: true
     relatedDocs:
-     - link: docs/acc-to-acc-transfer/Account-verify
+     - link: docs/acc-to-acc-transfer/Account-Verify
        title: Account Verification
   - title: Responsive Web Design 
     groupName: Responsive Web Design
