@@ -41,9 +41,9 @@
     - title: Help Link Configuration
       link: docs/getting-started/Help Link Configuration.md
     - title: Session Timeout Configuration
-      link: docs/getting-started/Session Timeout Configuration.md
+      link: docs/getting-started/Session_Timeout_Configuration.md
     - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
-      link: docs/getting-started/Guidelines_for_Obtaining_a_CA_Issued_SSL_Digital_Server_Certificate.md
+      link: docs/getting-started/Guidelines_for_Obtaining.md
 - sections:
   - title: Responsive Web Design
     link: docs/resp-webdesign.md
