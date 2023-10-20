@@ -34,23 +34,23 @@
     sections: 
    - title: Developer Studio
       link: docs/getting-started/developer-studio.md
-    - title: TN Integeration and Configuration Options 
+   - title: TN Integeration and Configuration Options 
       link: docs/getting-started/tn_integeration_and_config_guide.md 
-    - title: First-Time Agreement Page Configuration
+   - title: First-Time Agreement Page Configuration
       link: docs/getting-started/First-Time Agreement Page Configuration.md
-    - title: Help Link Configuration
+   - title: Help Link Configuration
       link: docs/getting-started/Help Link Configuration.md
-    - title: Session Timeout Configuration
+   - title: Session Timeout Configuration
       link: docs/getting-started/Session Timeout Configuration.md
-    - title: Session Keep-Alive Configuration
+   - title: Session Keep-Alive Configuration
       link: docs/getting-started/Session Keep-Alive Configuration.md
-    - title: Security Integration and Configuration Options
+   - title: Security Integration and Configuration Options
       link: docs/getting-started/Security Integration and Configuration Options.md
-    - title: Fiserv Supported Modes of Server Authentication 
+   - title: Fiserv Supported Modes of Server Authentication 
       link: docs/getting-started/Fiserv Supported Modes of Server Authentication.md
-    - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
+   - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
       link: docs/getting-started/transfer-now/config/document-explorer-definition.yaml.md
-    - title: Fiserv Secure Message Exchange Error Handling
+   - title: Fiserv Secure Message Exchange Error Handling
       link: docs/getting-started/Fiserv Secure Message Exchange Error Handling.md
 - sections:
   - title: Responsive Web Design
