@@ -42,10 +42,8 @@
       link: docs/getting-started/Help Link Configuration.md
     - title: Session Timeout Configuration
       link: docs/getting-started/Session Timeout Configuration.md
-    - title: Session Keep-Alive Configuration
-      link: docs/getting-started/Session_Keep-Alive_Configuration.md
-    - title: Guidelines_for_Obtaining a CA Issued SSL Digital Server Certificate
-      link: docs/getting-started/transfer-now/config/Guidelines_for_Obtaining_a_CA_Issued_SSL_Digital_Server_Certificate.md
+    - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
+      link: docs/getting-started/Guidelines_for_Obtaining_a_CA_Issued_SSL_Digital_Server_Certificate.md
 - sections:
   - title: Responsive Web Design
     link: docs/resp-webdesign.md
