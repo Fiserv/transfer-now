@@ -4,7 +4,7 @@
 
 type: tab
 
-titles: One-Time Transfer, Recurring Transfer, Pending Transfer
+titles: Standard Transfers, Next Day Transfers, Instant Transfers ,High Limit Transfers
 
 -->
 
