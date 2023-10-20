@@ -12,11 +12,10 @@ titles: One-Time Transfer, Recurring Transfer, Pending Transfer
 
 # One-Time Transfer
 
- # Fund Transfer 
+ 
 After adding one or more accounts, the TransferNow user can set up one-time transfers and recurring 
 transfers to move funds to and from the account(s).
-
-# One-Time Transfer 
+ 
 A one-time transfer requires the following information as shown below in Figure 
 
 <center>

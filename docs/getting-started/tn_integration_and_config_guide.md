@@ -73,9 +73,9 @@ POP-UP IMPLEMENTATION
 
 The size of the browser pop-up window is controlled by the Client via code that gets added to the access link on the Client side. Below is an example of such code.
 
-<a href="#" onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel', 
+ `<a href="#" onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel', 
 'PopupPage', 'width=700, height=500, scrollbars=yes,resizable=yes,
-toolbar=no, menubar=no'); return false;">Click to open</a>
+toolbar=no, menubar=no'); return false;">Click to open</a>`
 
 <!-- theme: info -->
 

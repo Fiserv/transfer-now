@@ -44,21 +44,21 @@ featuredFeatures:
     description: Give customers multiple transfer speed options from Standard ACH, and Next Day, to Next Day Good Funds or Instant.
     featured: true
     relatedDocs:
-     - link: docs/fund-transfer/FT-freq.md
+     - link: docs/fund-transfer/transfer-methods.md
        title:
   - title: Real Time Speed using Instant Transfer
     groupName: Account Verification
     description: NOW® Network from Fiserv lets your accountholders transfer money between two instant-enabled accounts at different financial institutions in real-time or by the next day. This removes the credit risk related to ACH-based, next-day services.
     featured: true
     relatedDocs:
-     - link: docs/acc-to-acc-transfer/Account-Verify/Instant-Verify.md
+     - link: docs/fund-transfer/transfer-services.md
        title: Instant Verification
   - title: Multiple Account Verification
     groupName: Manage Account
     description: Fiserv offers several advanced alternatives to help you protect against online banking fraud. With Multifactor Authentication from Fiserv, you can enhance online security and maintain compliance with banking regulations without devoting significant resources.
     featured: true
     relatedDocs:
-     - link: docs/acc-to-acc-transfer/manage-Acc.md
+     - link: docs/acc-to-acc-transfer/Account-Verify.md
        title: Account Verification
   - title: Responsive Web Design 
     groupName: Responsive Web Design
@@ -71,6 +71,3 @@ featuredFeatures:
     groupName: Industry-Leading Security
     description: Leverage Fiserv best -of-breed, powerful risk management tools.
     featured: true
-    relatedDocs:
-     - link: /docs/getting-started.md
-       title: Industry-Leading Security
