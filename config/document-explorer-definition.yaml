@@ -43,15 +43,9 @@
     - title: Session Timeout Configuration
       link: docs/getting-started/Session Timeout Configuration.md
     - title: Session Keep-Alive Configuration
-      link: docs/getting-started/Session Keep-Alive Configuration.md
-    - title: Security Integration and Configuration Options
-      link: docs/getting-started/Security Integration and Configuration Options.md
-    - title: Fiserv Supported Modes of Server Authentication 
-      link: docs/getting-started/Fiserv Supported Modes of Server Authentication.md
-    - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
-      link: docs/getting-started/transfer-now/config/document-explorer-definition.yaml.md
-    - title: Fiserv Secure Message Exchange Error Handling
-      link: docs/getting-started/Fiserv Secure Message Exchange Error Handling.md
+      link: docs/getting-started/Session_Keep-Alive_Configuration.md
+    - title: Guidelines_for_Obtaining a CA Issued SSL Digital Server Certificate
+      link: docs/getting-started/transfer-now/config/Guidelines_for_Obtaining_a_CA_Issued_SSL_Digital_Server_Certificate.md
 - sections:
   - title: Responsive Web Design
     link: docs/resp-webdesign.md
