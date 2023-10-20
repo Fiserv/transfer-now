@@ -1,6 +1,11 @@
+
+
 <!--
+
 type: tab
-titles: Instant Verification, RealTime Verification, Trail Deposite Verification, RealTime Verification Addition
+
+titles: Instant Verification, RealTime Verification, Trail Deposite Verification
+
 -->
 
 # Instant Verification
@@ -33,7 +38,10 @@ Account Verification
 - [Pending Transfers](?path=docs/fund-transfer/pending-Transfer.md)
 - [Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)
 
+
+
 <!-- type: tab -->
+
 
 # Real Time Verification
 
@@ -95,7 +103,10 @@ Refer to account verification screen.
 - [Pending Transfers](?path=docs/fund-transfer/pending-Transfer.md)
 - [Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)
 
+
+
 <!-- type: tab -->
+
 
 # Trial Deposit Verification
 
@@ -156,7 +167,6 @@ ACTIVATING ACCOUNT USING TRIAL DEPOSITS SCREEN
 </center>
 
 
----
 
 ## Documents References
 
@@ -166,6 +176,8 @@ ACTIVATING ACCOUNT USING TRIAL DEPOSITS SCREEN
 - [Pending Transfers](?path=docs/fund-transfer/pending-Transfer.md)
 - [Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)
 
----
+
 
 <!-- type: tab-end -->
+
+
