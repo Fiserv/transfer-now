@@ -6,13 +6,32 @@ Accounts require verification of account ownership, as described in Account Veri
 
 To add a brokerage institution, the user selects from the following list of supported brokerages:
 
--	Ameriprise Financial®
--	Charles Schwab®
--	E-Trade
--	Fidelity Investments®
--	Merrill Lynch®
--	Morgan Stanley®
--	Principal® Funds Money Market
--	Scottrade, Inc. ®
--	Smith Barney®
--	TD Ameritrade®
+<div class="card-body">
+<ul>
+<li>Ameriprise Financial®</li>
+<li>Charles Schwab®</li>
+<li>E-Trade</li>
+<li>Fidelity Investments®</li>
+<li>Merrill Lynch®</li>
+<li>Principal® Funds Money Market</li>
+<li>Scottrade, Inc. ®</li>
+<li>Smith Barney®</li>
+<li>TD Ameritrade®</li>
+</ul>
+</div>
+
+
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+</style>
