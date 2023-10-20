@@ -17,6 +17,7 @@ Instant Verification process are as follows:
 <li>If Approved, the Verification Complete screen is displayed, and the user can immediately begin initiating transfers to/from the account.</li>  
 <li>If Denied, the user is presented a message the account cannot be added and to try another account.</li>  
 <li>If the decision is Inconclusive, the user is directed either to real-time verification or trial deposit verification.</li>
+
 &nbsp;
 
 <center>
@@ -35,6 +36,9 @@ Account Verification
 - [Deleting Accounts](?path=docs/acc-to-acc-transfer/delete-Acc.md)
 - [Pending Transfers](?path=docs/fund-transfer/pending-Transfer.md)
 - [Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)
+
+
+
 
 
 
