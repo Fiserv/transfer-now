@@ -82,14 +82,21 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 The size of the browser pop-up window is controlled by the Client via code that gets added to the access link on the Client side. Below is an example of such code.
 
 
+
+
 `<a href="#" onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel', 
 'PopupPage', 'width=700, height=500, scrollbars=yes,resizable=yes,
 toolbar=no, menubar=no'); return false;">Click to open</a>`
+
+&nbsp;
 
 
 <!-- theme: info -->
 
 > :memo: **Note:** If the Client chooses not to control the size of the pop-up browser window, then the default browser pop-up created will open in full screen mode which will most likely cover the client’s original parent window responsible for spawning the pop-up.
+
+
+&nbsp;
 
 
 <style>
