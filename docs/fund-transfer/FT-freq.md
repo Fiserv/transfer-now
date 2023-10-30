@@ -28,7 +28,7 @@ FUND TRANSFER DURATIONS
 </center>
 
 
-## Documents References
+## See Also
 
 [Transfer Methods](?path=docs/fund-transfer/FT-freq.md)  
 [Transfer Cut-off Times](?path=docs/fund-transfer/transfer-cutOff.md)

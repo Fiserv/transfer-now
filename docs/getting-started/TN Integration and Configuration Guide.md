@@ -44,7 +44,7 @@ A Client-initiated end user session will result in all respectiveFiserv-hosted w
 
 <center>
 
-![image](../../assets/images/Full_Controll_Implementation.png) <br/>
+<img src="../../assets/images/Full_Controll_Implementation.png" width="500" height="600"> <br/>
 FULL CONTROL IMPLEMENTATION
 </center>
 
@@ -96,20 +96,3 @@ toolbar=no, menubar=no'); return false;">Click to open</a>`
 > :memo: **Note:** If the Client chooses not to control the size of the pop-up browser window, then the default browser pop-up created will open in full screen mode which will most likely cover the client’s original parent window responsible for spawning the pop-up.
 
 
-&nbsp;
-
-
-<style>
-    .card-body ul {
-        list-style: none;
-        padding-left: 20px;
-    }
-    .card-body ul li::before {
-        content: "\2022";
-        font-size: 1.5em;
-        color: #f60;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    }
-</style>    

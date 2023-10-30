@@ -1,13 +1,19 @@
 ## Deleting Accounts 
 
 
-- From the Preferences screen, the user can choose Delete Account. 
-- Select any account that you wanted to delete from the list. 
-- Click “Delete Account”. 
-- The Delete Account screen prompts the user to confirm that they want to delete the account. 
+<div class="card-body">
+<ul>
+<li>From the Preferences screen, the user can choose Delete Account.</li>
+<li>Select any account that you wanted to delete from the list. </li>
+<li>Click “Delete Account”.</li>
+<li>The Delete Account screen prompts the user to confirm that they want to delete the account.</li>
+</ul>
+</div>
 
 
-**Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted.
+<!-- theme: info -->
+
+> :memo: **Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted.
 
 <center>
 
@@ -24,5 +30,5 @@ transfers have completed or cancel all pending transfers that have not been rele
 attempting to delete the account again. 
 
 
-[Dashboard](https://qa-ft.onefiserv.net/jsp/backoffice/queryQA.jsp#end)
+
 
