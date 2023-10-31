@@ -94,5 +94,3 @@ toolbar=no, menubar=no'); return false;">Click to open</a>`
 <!-- theme: info -->
 
 > :memo: **Note:** If the Client chooses not to control the size of the pop-up browser window, then the default browser pop-up created will open in full screen mode which will most likely cover the client’s original parent window responsible for spawning the pop-up.
-
-
