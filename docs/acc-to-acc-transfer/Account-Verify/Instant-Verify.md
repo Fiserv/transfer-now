@@ -47,7 +47,7 @@ Instant Verification process are as follows:
 
 &nbsp;
 
-[Click here]() to know more about account verification and acess VerifyNow APIs
+![Click here](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop) to know more about account verification and acess VerifyNow APIs
 
 &nbsp;
 
