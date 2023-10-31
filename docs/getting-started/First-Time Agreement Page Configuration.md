@@ -24,7 +24,6 @@ There are three configuration options available to the Client with regard to the
 
 > :memo: **Note:** The Client preference for this option is to be indicated in the DGF.
 
-
 ## Page Footer Configuration
 
 Most Fiserv-hosted pages display a footer containing Client-defined URLs that link to the Client’s Terms of Service, Security Policy, and Privacy Policy. Each URL, when selected, will result in the content being displayed in a separate pop-up window. 
