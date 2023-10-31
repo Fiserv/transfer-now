@@ -55,13 +55,7 @@
     - title: Deleting Accounts
       link: docs/acc-to-acc-transfer/delete-Acc.md
     - title: Manage Accounts
-      sections:
-      - title: Account Restrictions
-        link: docs/acc-to-acc-transfer/Manage-Account/acc-restrictions.md
-      - title: Account-Summary
-        link: docs/acc-to-acc-transfer/Manage-Account/acc-summary.md
-      - title: Account Limitations
-        link: docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md
+      link: docs/acc-to-acc-transfer/manage-Acc.md
     - title: Account Verification
       link: docs/acc-to-acc-transfer/Account-Verify/acc-verify-home.md
       sections:
