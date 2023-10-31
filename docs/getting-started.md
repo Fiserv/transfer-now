@@ -2,7 +2,7 @@
 tags: [ACH, New User, Returning User, Digital Payments, Account Ownership, Data Validation Check]
 ---
 
-# Getting Started
+# Getting Started with Transfer Now
 
 This document provides details on how TransferNow application enables a FI to offer secure inter-institution funds transfer services by automating the authentication of external accounts and debit cards, provides a comprehensive risk management system, and moves fund using the Automated Clearing House (ACH), and other payment networks. Common use cases include:
 
@@ -26,10 +26,14 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. SS
 When an FI passes users to Fiserv via SSL Secure Messaging, Fiserv routes them to the TN landing page, which is the Transfer Funds Overview screen.
 
 
-<!-- align: center -->
+<center>
 
+![Image](../assets/images/TransferNowOverview.png) <br />
 
-![image](../assets/images/TransferNowOverview.png)
+TRANSFER NOW OVERVIEW SCREEN
+
+</center>
+
 
 
 
