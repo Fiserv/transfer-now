@@ -1,32 +1,14 @@
 ## Deleting Accounts 
 
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-ul {
-  list-style: none;
-}
-
-ul li::before {
-  content: "\2022";
-  color: red;
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}
-</style>
-</head>
-<body>
 
 
+<div class="card-body">
 <ul>
-  <li>From the Preferences screen, the user can choose Delete Account.</li>
-  <li>Select any account that you wanted to delete from the list.</li>
-  <li>Click “Delete Account”.</li>
-  <li>The Delete Account screen prompts the user to confirm that they want to delete the account.</li>
+  <li>From the Preferences screen, the user can choose Delete Account. </li>
+  <li>Select any account that you wanted to delete from the list. </li>
+  <li>Click “Delete Account”. </li>
+  <li>The Delete Account screen prompts the user to confirm that they want to delete the account. </li>
 </ul>
 
 </body>
@@ -53,5 +35,29 @@ transfers have completed or cancel all pending transfers that have not been rele
 attempting to delete the account again. 
 
 
+## See Also
+
+[Deleting Accounts](?path=docs/acc-to-acc-transfer/delete-Acc.md)   
+[Add Restrictions](?path=docs/acc-to-acc-transfer/Manage-Account/acc-restrictions.md)   
+[Account Summary Information](?path=docs/acc-to-acc-transfer/Manage-Account/acc-summary.md)   
+[Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)   
+[Instant Verification](?path=docs/acc-to-acc-transfer/Account-Verify/Instant-Verify.md)   
+[Real Time Verification](?path=docs/fund-transfer/Account-Verify/real-time.md)   
+[Trial Deposit Verification](?path=docs/acc-to-acc-transfer/Account-Verify/trial-verify.md)   
+
+
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
 
 
