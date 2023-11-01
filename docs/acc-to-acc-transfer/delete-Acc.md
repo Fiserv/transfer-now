@@ -1,19 +1,14 @@
 ## Deleting Accounts 
 
 
-
-
 <div class="card-body">
 <ul>
-  <li>From the Preferences screen, the user can choose Delete Account. </li>
-  <li>Select any account that you wanted to delete from the list. </li>
-  <li>Click “Delete Account”. </li>
-  <li>The Delete Account screen prompts the user to confirm that they want to delete the account. </li>
+<li>From the Preferences screen, the user can choose Delete Account.</li>
+<li>Select any account that you wanted to delete from the list.</li>
+<li>Click “Delete Account”.</li>
+<li>The Delete Account screen prompts the user to confirm that they want to delete the account.</li>
 </ul>
-
-</body>
-</html>
-
+</div>
 
 
 <!-- theme: info -->
@@ -59,5 +54,6 @@ attempting to delete the account again.
         width: 1em;
         margin-left: -1em;
     }
+</style>
 
 
