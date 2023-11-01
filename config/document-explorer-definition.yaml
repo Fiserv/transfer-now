@@ -58,7 +58,6 @@
         link: docs/getting-started/Fiserv Payload Submission Error Codes.md
       - title: Fiserv Secure Message Exchange Error Handling
         link: docs/getting-started/Fiserv Secure Message Exchange Error Handling.md
-
 - sections:
   - title: Responsive Web Design
     link: docs/resp-webdesign.md
