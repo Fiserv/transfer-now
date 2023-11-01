@@ -58,6 +58,7 @@ With the Fiserv ePayments-hosted UI solution, clients control how they launch th
 
 A Client-initiated end user session will result in all respectiveFiserv-hosted web pages rendering within the same browser window initially used to display the Client web page. ThereforeHere, the user is directed to TransferNow screens that use the same window as the FI’s web page.
 
+&nbsp;
 
 <center>
 
@@ -75,14 +76,15 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 > :memo: _**Note:** The size of this frame is controlled by the Client._
 
 
-The navigation in the frame links only to screens within TransferNow. In this implementation, an FI has the option to remove the header and footer, so only the working area of the application is displayed in the frame.
+The navigation in the frame links only to screens within TransferNow. In this implementation, an FI has the option to remove the header and footer, so only the working area of the application is displayed in the frame.</br>
 At the point of exit from TransferNow (which is running within a frame), the frame will disappear, and the full screen FI web page will be visible.
+
+&nbsp;
 
 <center>
 
-![image](../../assets/images/Framed_Implemention.png) <br/>
+<img src="../../assets/images/Framed_Implemention.png" width="400" height="300"> <br/>
 FRAMED IMPLEMENTATION
-
 </center>
 
 
@@ -90,22 +92,23 @@ FRAMED IMPLEMENTATION
 
 A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering within a second single browser pop-up window. when the user clicks on the Fiserv ePayments-provided HTML URL, a new window with the TransferNow application appears. Users work within the new window.
 
+&nbsp;
+
 <center>
 
-![image](../../assets/images/Pop-up_Implementation.png)
-</br>
+<img src="../../assets/images/Pop-up_Implementation.png" width="400" height="300"> <br/>
 POP-UP IMPLEMENTATION
-
 </center>
 
 The size of the browser pop-up window is controlled by the Client via code that gets added to the access link on the Client side. Below is an example of such code.
 
 
 
-
-`<a href="#" onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel', 
+```
+<a href="#" onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel', 
 'PopupPage', 'width=700, height=500, scrollbars=yes,resizable=yes,
-toolbar=no, menubar=no'); return false;">Click to open</a>`
+toolbar=no, menubar=no'); return false;">Click to open</a>
+```
 
 &nbsp;
 
