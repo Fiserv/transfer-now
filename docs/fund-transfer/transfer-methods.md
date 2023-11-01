@@ -39,7 +39,9 @@ ONE-TIME TRANSFER
 
  Recurring transfers require the following information
 
-**Note:** The Instant Transfer option is not applicable for recurring transfers.
+<!-- theme: info -->
+
+>:memo: **Note:** The Instant Transfer option is not applicable for recurring transfers.
 
 &nbsp;
 
