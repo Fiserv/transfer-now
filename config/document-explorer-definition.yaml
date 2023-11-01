@@ -35,29 +35,29 @@
     - title: Developer Studio
       link: docs/getting-started/developer-studio.md
     - title: TN Integeration and Configuration Guide
-    sections: 
-    - title: TN Integeration and Configuration Guide
-      link: docs/getting-started/TN Integration and Configuration Guide.md 
-    - title: First-Time Agreement Page Configuration
-      link: docs/getting-started/First-Time Agreement Page Configuration.md
-    - title: Help Link Configuration
-      link: docs/getting-started/Help Link Configuration.md
-    - title: Session Timeout Configuration
-      link: docs/getting-started/Session_Timeout_Configuration.md
-    - title: Session Keep-Alive Configuration
-      link: docs/getting-started/Session_keep-Alive_Configuration.md
-    - title: Security Integration and Configuration Options
-      link: docs/getting-started/Security Integration and Configuration Options.md
-    - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
-      link: docs/getting-started/Guidelines_for_Obtaining.md
-    - title: Fiserv ePayments Secure Message Exchange QA and Production Environments
-      link: docs/getting-started/Fiserv ePayments Secure Message Exchange QA and Production Environments.md
-    - title: Fiserv ePayments TN Application Error Codes
-      link: docs/getting-started/Fiserv ePayments TN Application Error Codes.md
-    - title: Fiserv Payload Submission Error Codes
-      link: docs/getting-started/Fiserv Payload Submission Error Codes.md
-    - title: Fiserv Secure Message Exchange Error Handling
-      link: docs/getting-started/Fiserv Secure Message Exchange Error Handling.md
+      sections: 
+      - title: TN Integeration and Configuration Guide
+        link: docs/getting-started/TN Integration and Configuration Guide.md 
+      - title: First-Time Agreement Page Configuration
+        link: docs/getting-started/First-Time Agreement Page Configuration.md
+      - title: Help Link Configuration
+        link: docs/getting-started/Help Link Configuration.md
+      - title: Session Timeout Configuration
+        link: docs/getting-started/Session_Timeout_Configuration.md
+      - title: Session Keep-Alive Configuration
+        link: docs/getting-started/Session_keep-Alive_Configuration.md
+      - title: Security Integration and Configuration Options
+        link: docs/getting-started/Security Integration and Configuration Options.md
+      - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
+        link: docs/getting-started/Guidelines_for_Obtaining.md
+      - title: Fiserv ePayments Secure Message Exchange QA and Production Environments
+        link: docs/getting-started/Fiserv ePayments Secure Message Exchange QA and Production Environments.md
+      - title: Fiserv ePayments TN Application Error Codes
+        link: docs/getting-started/Fiserv ePayments TN Application Error Codes.md
+      - title: Fiserv Payload Submission Error Codes
+        link: docs/getting-started/Fiserv Payload Submission Error Codes.md
+      - title: Fiserv Secure Message Exchange Error Handling
+        link: docs/getting-started/Fiserv Secure Message Exchange Error Handling.md
 
 - sections:
   - title: Responsive Web Design
