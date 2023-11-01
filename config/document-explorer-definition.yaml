@@ -29,81 +29,94 @@
 ################################################################################
 
 - sections:
-  - title: Getting Started
-    link: docs/getting-started.md
-    sections: 
-    - title: Developer Studio
-      link: docs/getting-started/developer-studio.md
-    - title: TN Integeration and Configuration Guide
-      sections: 
-      - title: TN Integeration and Configuration Guide
-        link: docs/getting-started/TN Integration and Configuration Guide.md 
-      - title: First-Time Agreement Page Configuration
-        link: docs/getting-started/First-Time Agreement Page Configuration.md
-      - title: Help Link Configuration
-        link: docs/getting-started/Help Link Configuration.md
-      - title: Session Timeout Configuration
-        link: docs/getting-started/Session_Timeout_Configuration.md
-      - title: Session Keep-Alive Configuration
-        link: docs/getting-started/Session_keep-Alive_Configuration.md
-      - title: Security Integration and Configuration Options
-        link: docs/getting-started/Security Integration and Configuration Options.md
-      - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
-        link: docs/getting-started/Guidelines_for_Obtaining.md
-      - title: Fiserv ePayments Secure Message Exchange QA and Production Environments
-        link: docs/getting-started/Fiserv ePayments Secure Message Exchange QA and Production Environments.md
-      - title: Fiserv ePayments TN Application Error Codes
-        link: docs/getting-started/Fiserv ePayments TN Application Error Codes.md
-      - title: Fiserv Payload Submission Error Codes
-        link: docs/getting-started/Fiserv Payload Submission Error Codes.md
-      - title: Fiserv Secure Message Exchange Error Handling
-        link: docs/getting-started/Fiserv Secure Message Exchange Error Handling.md
-- sections:
-  - title: Responsive Web Design
-    link: docs/resp-webdesign.md
-- sections:
-  - title: Account to Account Transfers
-    sections:
-    - title: Adding an Account
-      link: docs/acc-to-acc-transfer/adding-Acc.md
-    - title: Deleting Accounts
-      link: docs/acc-to-acc-transfer/delete-Acc.md
-    - title: Manage Accounts
-      link: docs/acc-to-acc-transfer/manage-Acc.md
-    - title: Account Verification
-      link: docs/acc-to-acc-transfer/Account-Verify/acc-verify-home.md
+    - title: Getting Started
+      link: docs/getting-started.md
       sections:
-      - title: Instant Verification
-        link: docs/acc-to-acc-transfer/Account-Verify/Instant-Verify.md
-      - title: Real Time Verification
-        link: docs/acc-to-acc-transfer/Account-Verify/real-time.md
-      - title: Trial Deposit Verification
-        link: docs/acc-to-acc-transfer/Account-Verify/trial-verify.md
+        - title: Developer Studio
+          link: docs/getting-started/developer-studio.md
+        - title: TN Integeration and Configuration Guide
+          sections:
+            - title: TN Integeration and Configuration Guide
+              link: docs/getting-started/TN Integration and Configuration Guide.md
+            - title: First-Time Agreement Page Configuration
+              link: docs/getting-started/First-Time Agreement Page Configuration.md
+            - title: Help Link Configuration
+              link: docs/getting-started/Help Link Configuration.md
+            - title: Session Timeout Configuration
+              link: docs/getting-started/Session_Timeout_Configuration.md
+            - title: Session Keep-Alive Configuration
+              link: docs/getting-started/Session_keep-Alive_Configuration.md
+            - title: Security Integration and Configuration Options
+              link: >-
+                docs/getting-started/Security Integration and Configuration
+                Options.md
+            - title: >-
+                Guidelines for Obtaining a CA Issued SSL Digital Server
+                Certificate
+              link: docs/getting-started/Guidelines_for_Obtaining.md
+            - title: >-
+                Fiserv ePayments Secure Message Exchange QA and Production
+                Environments
+              link: >-
+                docs/getting-started/Fiserv ePayments Secure Message Exchange QA
+                and Production Environments.md
+            - title: Fiserv ePayments TN Application Error Codes
+              link: >-
+                docs/getting-started/Fiserv ePayments TN Application Error
+                Codes.md
+            - title: Fiserv Payload Submission Error Codes
+              link: docs/getting-started/Fiserv Payload Submission Error Codes.md
+            - title: Fiserv Secure Message Exchange Error Handling
+              link: >-
+                docs/getting-started/Fiserv Secure Message Exchange Error
+                Handling.md
 - sections:
-  - title: Transfer via Debit Cards
-    sections:
-    - title: Adding Debit Cards
-      link: docs/transfer-debit-card/adding-Acc.md
-    - title: Debit Card Verification
-      link: docs/transfer-debit-card/debit-cardVerify.md
-    - title: Deleting Debit Cards
-      link: docs/transfer-debit-card/delete-debitCard.md
-    - title: Editing Debit Cards 
-      link: docs/transfer-debit-card/edit-debitCard.md
+    - title: Responsive Web Design
+      link: docs/resp-webdesign.md
 - sections:
-  - title: Fund Transfers
-    sections:
-    - title: Transfer Methods
-      link: docs/fund-transfer/transfer-methods.md
-    - title: Fund Transfer frequencies & Durations
-      link: docs/fund-transfer/FT-freq.md
-    - title: Transfer Cut-off Times
-      link: docs/fund-transfer/transfer-cutOff.md
+    - title: Account to Account Transfers
+      sections:
+        - title: Adding an Account
+          link: docs/acc-to-acc-transfer/adding-Acc.md
+        - title: Deleting Accounts
+          link: docs/acc-to-acc-transfer/delete-Acc.md
+        - title: Manage Accounts
+          link: docs/acc-to-acc-transfer/manage-Acc.md
+        - title: Account Verification
+          link: docs/acc-to-acc-transfer/Account-Verify/acc-verify-home.md
+          sections:
+            - title: Instant Verification
+              link: docs/acc-to-acc-transfer/Account-Verify/Instant-Verify.md
+            - title: Real Time Verification
+              link: docs/acc-to-acc-transfer/Account-Verify/real-time.md
+            - title: Trial Deposit Verification
+              link: docs/acc-to-acc-transfer/Account-Verify/trial-verify.md
 - sections:
-  - title: Transfernow Sandbox
-    link: docs/sandbox.md      
+    - title: Transfer via Debit Cards
+      sections:
+        - title: Adding Debit Cards
+          link: docs/transfer-debit-card/adding-Acc.md
+        - title: Debit Card Verification
+          link: docs/transfer-debit-card/debit-cardVerify.md
+        - title: Deleting Debit Cards
+          link: docs/transfer-debit-card/delete-debitCard.md
+        - title: Editing Debit Cards
+          link: docs/transfer-debit-card/edit-debitCard.md
 - sections:
-  - title: Release notes
-    sections:
-    - title: March 2022
-      link: docs/release-notes/2022/march.md
+    - title: Fund Transfers
+      sections:
+        - title: Transfer Methods
+          link: docs/fund-transfer/transfer-methods.md
+        - title: Fund Transfer frequencies & Durations
+          link: docs/fund-transfer/FT-freq.md
+        - title: Transfer Cut-off Times
+          link: docs/fund-transfer/transfer-cutOff.md
+- sections:
+    - title: Transfernow Sandbox
+      link: docs/sandbox.md
+- sections:
+    - title: Release notes
+      sections:
+        - title: March 2022
+          link: docs/release-notes/2022/march.md
+
