@@ -1,28 +1,44 @@
-## Real Time Verification
+# Real Time Verification
 
-Real-time account verification - also known as “online credential verification” - leverages Fiserv Aggregation Services to perform the verification.
+Real-time account verification - also known as “online credential verification” - leverages the Fiserv AllData Aggregation Service within the verification flow.
 
-If an account is eligible for real-time account verification, TransferNow prompts the user to enter his/her user ID and password for the banking web site hosted by the financial institution that services the account. The AllData service allows TransferNow to log onto the web site. Once there, TransferNow adds the name and account numbers from the web site.
-
-TransferNow then matches the added name and account numbers against the name of the applicant and the account number to verify account ownership in real time.
+If an account is eligible for real-time account verification, TransferNow will direct the user to the external financial institution's hosted log-in site or prompt the user to enter their user ID and password for within the TransferNow user experience, depending on the endpoint's method of authentication. Once authentication is complete, TransferNow leverages the accountholder name(s) and account number and TransferNow user profile data to verify the account in real-time. 
 
  &nbsp;
 
-
 <!-- theme: info -->
 
-**Note:** For security and privacy considerations, Fiserv never stores user ID and password data.
+> :memo: _**Note:** For security and privacy considerations, Fiserv never stores user ID and password data._
 
  &nbsp;
 
 
 Real-time account verification can fail for the following reasons:
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+</style> 
 
-- The user provided incorrect login credentials after multiple attempts
 
-- TransferNow was able to log onto the banking web site, but the information on the web site did not match what the user entered
+<div class="card-body">
+<ul>
+<li>The user provided incorrect login credentials after multiple attempts, fails the external financial institution's MFA, or otherwise is unable to authenticate.</li>
 
-- The banking web site is down for upgrades or TransferNow is experiencing temporary connection issues with the web site.
+<li>TransferNow was able to log onto the banking web site, but the information on the web site did not match what the user entered.</li>
+
+<li>The banking web site is unavailable, or other temporary connectivity disruptions.</li>
+</ul>
+</div>
 
  &nbsp;
 
@@ -33,27 +49,30 @@ If real-time account verification fails, the user is prompted to use the trial d
 
 <!-- theme: info -->
 
-> :memo: **Note:** Clients can choose not to use real-time account verification to verify the user's ownership of the external account.
+> :memo: _**Note:** Clients can choose not to use real-time account verification to verify the user's ownership of the external account._
 
  &nbsp;
 
-There are thousands of financial institutions. It is not possible for TransferNow to support real-time account verification for all institutions. TransferNow checks the ABA number of the external account to verify that it is a supported financial institution before offering real-time account verification as an option.
+ TransferNow supports thousands of financial institutions for real-time verification. However, it is not possible for TransferNow to support real-time account verification for all institutions. TransferNow checks the ABA number of the external account to verify that it is a supported financial institution before offering real-time account verification as an option.
 
 If real-time account verification is not available, then the user's account is verified using trial deposit verification.
 
-Refer to account verification screen.
-
  &nbsp;
+<center>
+
+![image](../../../assets/images/RealTimeVerification.png)<br/>
+ACCOUNT VERIFICATION SCREEN
+</center>
+
+&nbsp;
+
+[Click here]() to know more about account verification and access VerifyNow APIs
 
 
-![image](../../../assets/images/RealTimeVerification.png)
-
-
-
-## Documents References
-
-- [Account Restrictions](?path=docs/acc-to-acc-transfer/Manage-Account/acc-restrictions.md)
-- [Account Summary Information](?path=docs/acc-to-acc-transfer/Manage-Account/acc-summary.md)
-- [Deleting Accounts](?path=docs/acc-to-acc-transfer/delete-Acc.md)
-- [Pending Transfers](?path=docs/fund-transfer/pending-Transfer.md)
-- [Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)
+## See Also
+[Adding an Account](?path=docs/acc-to-acc-transfer/adding-Acc.md)<br/>
+[Add Restrictions](?path=docs/acc-to-acc-transfer/Manage-Account/acc-restrictions.md)<br/>
+[Account Summary Information](?path=docs/acc-to-acc-transfer/Manage-Account/acc-summary.md)<br/>
+[Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)<br/>
+[Instant Verification](?path=docs/acc-to-acc-transfer/Account-Verify/Instant-Verify.md)<br/>
+[Trail Deposit Verification](?path=docs/acc-to-acc-transfer/Account-Verify/trial-verify.md)
