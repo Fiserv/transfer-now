@@ -42,7 +42,7 @@ To add a brokerage institution, the user selects from the following list of supp
             </div>
             <div class="single-column">
             <div class="card">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/principle.png"/>
+            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TD.png"/>
             </div>
             </div>
     </div>
@@ -104,7 +104,7 @@ To add a brokerage institution, the user selects from the following list of supp
 
     .single-column .card {
         flex:1;
-        max-width: 28% !important;
+        max-width: 12%;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
