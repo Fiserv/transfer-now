@@ -6,42 +6,42 @@ Accounts require verification of account ownership, as described in Account Veri
 
 To add a brokerage institution, the user selects from the following list of supported brokerages:
 
-<div class="container">
-    <div class="row">
-    <div class="card">
+<div class="container-card">
+    <div class="row-card">
+    <div class="card-account">
     <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/amer.png"/>
     </div>
-    <div class="card">
+    <div class="card-account">
         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/charles.png"/>
     </div>
-    <div class="card">
+    <div class="card-account">
         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/extrade.png"/>
     </div>
     </div>
-    <div class="row">
-        <div class="card">
+    <div class="row-card">
+        <div class="card-account">
         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/fied.png"/>
         </div>
-        <div class="card">
+        <div class="card-account">
             <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/mer.png"/>
         </div>
-        <div class="card">
+        <div class="card-account">
             <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/morgan.png"/>
         </div>
         </div>
-        <div class="row">
-            <div class="card">
+        <div class="row-card">
+            <div class="card-account">
             <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/principle.png"/>
             </div>
-            <div class="card">
+            <div class="card-account">
                 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/scot.png"/>
             </div>
-            <div class="card">
+            <div class="card-account">
                 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/smith.png"/>
             </div>
             </div>
             <div class="single-column">
-            <div class="card">
+            <div class="card-account">
             <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TD.png"/>
             </div>
             </div>
@@ -61,19 +61,19 @@ To add a brokerage institution, the user selects from the following list of supp
 
 <style>
 
-    .container {
+    .container-card {
         margin: 0 auto;
         padding: 20px;
     }
 
-    .row {
+    .row-card {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         gap: 20%;
         margin:20px 0;
     }
 
-    .card {
+    .card-account {
         flex: 1;
         padding: 20px;
         border: 1px solid #ccc;
@@ -84,11 +84,11 @@ To add a brokerage institution, the user selects from the following list of supp
         transition: transform 0.2s ease-in-out;
     }
 
-    .card:hover {
+    .card-account:hover {
         transform: scale(1.05);
     }
 
-    .card img{
+    .card-account img{
         max-width: 100%;
         height: auto;
         display: block;
@@ -102,9 +102,9 @@ To add a brokerage institution, the user selects from the following list of supp
         margin: 20px 0;
     }
 
-    .single-column .card {
+    .single-column .card-account {
         flex:1;
-        max-width: 12%;
+        max-width: 33%;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
