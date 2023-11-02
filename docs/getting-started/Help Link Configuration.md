@@ -12,4 +12,4 @@ Help Link Configuration
 
 <!-- theme: info -->
 
-> :memo: **Note:**The Client preference for this option is to be indicated in the DGF.
+> _**Note:**The Client preference for this option is to be indicated in the DGF._

@@ -1,15 +1,19 @@
 ## First-Time Agreement Page Configuration
 
+
 Each new end user accessing the service for the very first time will be presented with a First Time Agreement page, as shown in the following figure.
 
 <center>
 
 <img src="../../assets/images/First_Time_Aggreement.png" width="500" height="500"> <br/>
-First-Time Agreement Page Configuration
+
+
 
 </center>
 
 The end user must agree to the terms and conditions detailed in the text of the agreement before being allowed access to the service. The language used in the agreement is always defined by the Client and the actual agreement text page itself can be hosted either on the Fiserv side or on the Client side. 
+
+
 There are three configuration options available to the Client with regard to the behavior of user agreement acceptance:
 
 <div class="card-body">
@@ -22,7 +26,8 @@ There are three configuration options available to the Client with regard to the
 
 <!-- theme: info -->
 
-> :memo: **Note:** The Client preference for this option is to be indicated in the DGF.
+> _**Note:** The Client preference for this option is to be indicated in the DGF._
+
 
 ## Page Footer Configuration
 
@@ -31,4 +36,21 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 
 <!-- theme: info -->
 
-> :memo: **Note:** The Client preference for this option is to be indicated in the DGF
+> _**Note:** The Client preference for this option is to be indicated in the DGF._
+
+
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+</style>
+
