@@ -5,7 +5,7 @@ This provides an architectural overview of the mobile integration and invoking o
 
 <center>
 
-![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/mob.jpg)
+![image](../../assets/images/mob.png)
 
 </center>
 
