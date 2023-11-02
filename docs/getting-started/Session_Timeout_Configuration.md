@@ -14,5 +14,6 @@ Finally, Fiserv suggests that the Client configure a session timeout expiration 
 
 <!-- theme: info -->
 
-> :memo: **Note:** The Client preference for this option is to be indicated in the DGF.
+> _**Note:** The Client preference for this option is to be indicated in the DGF._
+
 
