@@ -69,7 +69,7 @@ To add a brokerage institution, the user selects from the following list of supp
     .row-card {
         display: flex;
         justify-content: left;
-        gap: 20%;
+        gap: 5%;
         margin:20px 0;
     }
 
@@ -98,13 +98,14 @@ To add a brokerage institution, the user selects from the following list of supp
     .single-column {
         display: flex;
         justify-content: left;
-        gap: 20px;
+        gap: 5%;
         margin: 20px 0;
     }
 
     .single-column .card-account {
         flex:1;
-        max-width: 33%;
+        max-width: 30%;
+        height: 150px;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
