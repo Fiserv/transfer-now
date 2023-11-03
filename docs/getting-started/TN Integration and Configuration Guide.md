@@ -3,11 +3,13 @@
 
 TransferNow can be used as a standalone product, or integrated with other products.
 
+
 <!-- theme: info -->
 
 > _**Note:** A Client FI makes the service available to its existing customer base._
 
 Clients choose to integrate the TransferNow service in one of the following ways:
+
 
 <div class="card-body">
 <ul>
@@ -16,6 +18,7 @@ Clients choose to integrate the TransferNow service in one of the following ways
 <li>Client UI with API Solution: in this solution, the client has their own UI, and they integrate with TransferNow through XML or Web Services API’s.</li>
 </ul>
 </div>
+
 
 &nbsp;
 
@@ -67,6 +70,22 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 
 &nbsp;
 
+
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+</style> 
+
 <center>
 
 <img src="../../assets/images/Framed_Implemention.png" width="400" height="300"> <br/>
@@ -88,11 +107,15 @@ POP-UP IMPLEMENTATION
 
 The size of the browser pop-up window is controlled by the Client via code that gets added to the access link on the Client side. Below is an example of such code.
 
+### HTML
 
+```
 
-`<a href="#" onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel', 
+<a href="#" onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel', 
 'PopupPage', 'width=700, height=500, scrollbars=yes,resizable=yes,
-toolbar=no, menubar=no'); return false;">Click to open</a>`
+toolbar=no, menubar=no'); return false;">Click to open</a>
+
+```
 
 
 &nbsp;
@@ -103,18 +126,4 @@ toolbar=no, menubar=no'); return false;">Click to open</a>`
 > _**Note:** If the Client chooses not to control the size of the pop-up browser window, then the default browser pop-up created will open in full screen mode which will most likely cover the client’s original parent window responsible for spawning the pop-up._
 
 
-<style>
-    .card-body ul {
-        list-style: none;
-        padding-left: 20px;
-    }
-    .card-body ul li::before {
-        content: "\2022";
-        font-size: 1.5em;
-        color: #f60;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    }
-</style> 
 
