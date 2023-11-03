@@ -50,8 +50,6 @@ A Client-initiated end user session will result in all respectiveFiserv-hosted w
 
 <img src="../../assets/images/TN-INT-FULL.png" width="400" height="300"> <br/>
 
-FULL CONTROL IMPLEMENTATION
-
 </center>
 
 
