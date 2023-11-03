@@ -49,11 +49,27 @@ A Client-initiated end user session will result in all respectiveFiserv-hosted w
 
 &nbsp;
 
-<center>
 
-<img src="../../assets/images/TN-INT-FULL.png" width="400" height="300"> <br/>
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+</style> 
 
-</center>
+
+<img src="../../assets/images/TN-INT-FULL.png" style="width: 400;height: 300">
+
+<p style="text-align: center">FULL CONTROL IMPLEMENTATION</p>
+
 
 
 ## Framed
@@ -71,26 +87,8 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 &nbsp;
 
 
-<style>
-    .card-body ul {
-        list-style: none;
-        padding-left: 20px;
-    }
-    .card-body ul li::before {
-        content: "\2022";
-        font-size: 1.5em;
-        color: #f60;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    }
-</style> 
-
-<center>
-
-<img src="../../assets/images/Framed_Implemention.png" width="400" height="300"> <br/>
-FRAMED IMPLEMENTATION
-</center>
+<img src="../../assets/images/Framed_Implemention.png" style="width: 400;height: 300">
+<p style="text-align: center">FRAMED IMPLEMENTATION</p>
 
 
 ## Pop-up
@@ -99,11 +97,11 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 
 &nbsp;
 
-<center>
 
-<img src="../../assets/images/Pop-up_Implementation.png" width="400" height="300"> <br/>
-POP-UP IMPLEMENTATION
-</center>
+<img src="../../assets/images/Pop-up_Implementation.png" style="width: 400;height: 300">
+
+<p style="text-align: center">POP-UP IMPLEMENTATION</p>
+
 
 The size of the browser pop-up window is controlled by the Client via code that gets added to the access link on the Client side. Below is an example of such code.
 
