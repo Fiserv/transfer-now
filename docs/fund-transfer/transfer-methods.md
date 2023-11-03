@@ -10,22 +10,27 @@ titles: One-Time Transfer, Recurring Transfer, Pending Transfer
 
  
 
-# One-Time Transfer
+# Fund Transfer
  
 After adding one or more accounts, the TransferNow user can set up one-time transfers and recurring 
 transfers to move funds to and from the account(s).
+
+# One-Time Transfer
  
-A one-time transfer requires the following information
+A one-time transfer requires the following information as shown below in Figure
+
+&nbsp;
 
 <center>
 
 ![image](../../assets/images/One_Time_Transfer.png) <br/>
+
 ONE-TIME TRANSFER
 
 </center>
 
 
-## Documents References
+**Documents References**
 
 [Fund Transfer frequencies & Duration](?path=docs/fund-transfer/FT-freq.md)  
 [Transfer Cut-off Times](?path=docs/fund-transfer/transfer-cutOff.md)
@@ -37,11 +42,10 @@ ONE-TIME TRANSFER
 
 # Recurring Transfer
 
- Recurring transfers require the following information
-
+ Recurring transfers require the following information as shown below in Figure
 <!-- theme: info -->
 
->:memo: **Note:** The Instant Transfer option is not applicable for recurring transfers.
+> _**Note:** The Instant Transfer option is not applicable for recurring transfers._
 
 &nbsp;
 
@@ -49,13 +53,19 @@ ONE-TIME TRANSFER
 <center>
 
 ![image](../../assets/images/Recurring_Transfers.png) <br/>
+
 RECURRING TRANSFERS
 
 </center>
 
+**Documents References**
+
+[Fund Transfer frequencies & Duration](?path=docs/fund-transfer/FT-freq.md)  
+[Transfer Cut-off Times](?path=docs/fund-transfer/transfer-cutOff.md)
+
 
  
-
+&nbsp;
 <!-- type: tab -->
 
  
@@ -68,7 +78,10 @@ An account with a pending transfer cannot be deleted. The user can either wait u
  
 
  
+ ## Documents References
 
+[Fund Transfer frequencies & Duration](?path=docs/fund-transfer/FT-freq.md)  
+[Transfer Cut-off Times](?path=docs/fund-transfer/transfer-cutOff.md)
  
 
 <!-- type: tab-end -->

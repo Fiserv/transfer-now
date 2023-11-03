@@ -1,14 +1,20 @@
 # Deleting Debit Cards 
 
 &nbsp;
-- Go to Preferences screen.
-- Under “My Debit Cards” menu, user can see all the debit cards added.
+
+<div class="card-body">
+<ul>
+<li>Go to Preferences screen. </li>
+<li>Under “My Debit Cards” menu, user can see all the debit cards added. </li>
+</ul>
+
 
 <center>
 
 &nbsp;
 
 ![image](../../assets/images/My_Debit_Cards_Screen_To_Delete.png) <br/>
+
 MY DEBIT CARDS SCREEN – TO DELETE
 
 </center>
@@ -26,6 +32,7 @@ MY DEBIT CARDS SCREEN – TO DELETE
 <center>
 
 ![image](../../assets/images/Delete_Debit_Card.png) <br/>
+
 DELETE DEBIT CARD
 
 </center>
@@ -37,3 +44,17 @@ DELETE DEBIT CARD
 [Adding Debit Cards](?path=docs/transfer-debit-card/adding-Acc.md)  
 [Debit Card Verification](?path=docs/transfer-debit-card/debit-cardVerify.md)  
 [Editing Debit Cards](?path=docs/transfer-debit-card/edit-debitCard.md)
+
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
