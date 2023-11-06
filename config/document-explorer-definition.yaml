@@ -35,16 +35,16 @@
     - title: Developer Studio
       link: docs/getting-started/developer-studio.md
     - title: TN Integeration and Configuration Guide
-      link: docs/getting-started/TN-Int-Config-Guide.md
+      link: docs/getting-started/TN-INT-CONFIG/TN-Int-Config-Guide.md
       sections:
         - title: First-Time Agreement Page Configuration
-          link: docs/getting-started/First-Time Agreement Page Configuration.md
+          link: docs/getting-started/TN-INT-CONFIG/First-Time-Page-Config.md
         - title: Help Link Configuration
-          link: docs/getting-started/Help Link Configuration.md
+          link: docs/getting-started/TN-INT-CONFIG/Help-Link-Config.md
         - title: Session Timeout Configuration
-          link: docs/getting-started/Session_Timeout_Configuration.md
+          link: docs/getting-started/TN-INT-CONFIG/Session_Timeout_Configuration.md
         - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
-          link: docs/getting-started/Guidelines_for_Obtaining.md    
+          link: docs/getting-started/TN-INT-CONFIG/Guidelines_for_Obtaining.md    
     - title: TN Mobile Integration Guide
       link: docs/getting-started/TN-Mobile-Integration-Guide.md
       sections:
