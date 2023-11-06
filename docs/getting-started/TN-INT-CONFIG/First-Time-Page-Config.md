@@ -6,13 +6,12 @@ Each new end user accessing the service for the very first time will be presente
 <center>
 <img src="../../../assets/images/First_Time_Aggreement.png" width="400" height="400"> <br/>
 </center>
+&nbsp;
 
 The end user must agree to the terms and conditions detailed in the text of the agreement before being allowed access to the service. The language used in the agreement is always defined by the Client and the actual agreement text page itself can be hosted either on the Fiserv side or on the Client side. 
-
 &nbsp;
 
 There are three configuration options available to the Client with regard to the behavior of user agreement acceptance:
-
 
 
 <style>
@@ -30,8 +29,6 @@ There are three configuration options available to the Client with regard to the
     }
 </style>
 
-
-
 <div class="card-body">
     <ul>
         <li>Fiserv hosts the agreement page and tracks end user agreement acceptance.</li>
@@ -39,7 +36,7 @@ There are three configuration options available to the Client with regard to the
         <li>Fiserv configures a Client specified URL pointing to a Client hosted agreement page that contains only agreement text, and Fiserv tracks end user agreement acceptance.</li>
     </ul>
 </div>
-
+&nbsp;
 
 > :memo: _**Note:** The Client preference for this option is to be indicated in the DGF._
 
@@ -47,11 +44,10 @@ There are three configuration options available to the Client with regard to the
 ### Page Footer Configuration
 
 Most Fiserv-hosted pages display a footer containing Client-defined URLs that link to the Client’s Terms of Service, Security Policy, and Privacy Policy. Each URL, when selected, will result in the content being displayed in a separate pop-up window.
-
 &nbsp;
 
 Also, content that each URL points to is hosted by the Client and not Fiserv, and if the Client does not define a URL for one of the footer links, then that link will not be displayed on any applicable Fiserv hosted page.
-
+&nbsp;
 
 > :memo: _**Note:** The Client preference for this option is to be indicated in the DGF._
 
