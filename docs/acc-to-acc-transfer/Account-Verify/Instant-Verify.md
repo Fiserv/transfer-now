@@ -50,6 +50,12 @@ Instant Verification process are as follows:
 
 [Click here](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop) to know more about account verification and acess VerifyNow APIs
 
+
+window.open("https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop","_self")
+
+
+<iframe src="https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop" target="_self" title="description"></iframe>
+
 &nbsp;
 
 ## See Also
