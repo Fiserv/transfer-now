@@ -67,7 +67,7 @@ A Client-initiated end user session will result in all respectiveFiserv-hosted w
 
 
 
-## Framed
+### Framed
 
 A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering in a single frame embedded within the client’s parent web page. The Fiserv screens are embedded in a frame that is built and maintained by the client.
 
@@ -82,22 +82,24 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 &nbsp;
 
 
-<img src="../../assets/images/Framed_Implemention.png">
+![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Framed_Implemention.png)
 
 
-## Pop-up
+### Pop-up
 
 A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering within a second single browser pop-up window. when the user clicks on the Fiserv ePayments-provided HTML URL, a new window with the TransferNow application appears. Users work within the new window.
 
 &nbsp;
 
 
-<img src="../../assets/images/Pop-up_Implementation.png">
+![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Pop-up_Implementation.png)
+
 
 
 The size of the browser pop-up window is controlled by the Client via code that gets added to the access link on the Client side. Below is an example of such code.
 
-### HTML
+
+#### HTML
 
 ```
 
