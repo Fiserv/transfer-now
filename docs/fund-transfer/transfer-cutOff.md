@@ -16,10 +16,7 @@ settings via the DGF.
 </center>
 
 &nbsp;
-<!-- theme: info -->
 
- > _**Note:** If a client has specified the ET time zone for display of the Standard cutoff time, TransferNow includes an asterisk and a footnote on the screen, as shown below:_
-&nbsp;
 
 
 <div class="card-body">
@@ -32,13 +29,18 @@ settings via the DGF.
 
 <!-- theme: info -->
 
- > _**Note:** There are no cutoff times for Instant Transfers, as Instant Transfers will leverage the NOW network. ACH cutoff times and limitations do not apply to Instant Transfers._
+ > :memo: **Note:** If a client has specified the ET time zone for display of the Standard cutoff time, TransferNow includes an asterisk and a footnote on the screen.
+
+ &nbsp;
+<!-- theme: info -->
+
+ > :memo: **Note:** There are no cutoff times for Instant Transfers, as Instant Transfers will leverage the NOW network. ACH cutoff times and limitations do not apply to Instant Transfers.
 
 &nbsp;
 
 
 
-## Documents References
+## See Also
 
 [Transfer Methods](?path=docs/fund-transfer/transfer-methods.md)  
 [Fund Transfer frequencies & Duration](?path=docs/fund-transfer/FT-freq.md)
