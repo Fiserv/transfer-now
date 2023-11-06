@@ -34,6 +34,8 @@
     sections: 
     - title: Developer Studio
       link: docs/getting-started/developer-studio.md
+    - title: TN Integeration and Configuration Guide
+      link: docs/getting-started/TN-Int-Config-Guide.md  
       sections:
         - title: First-Time Agreement Page Configuration
           link: docs/getting-started/First-Time Agreement Page Configuration.md
