@@ -63,10 +63,7 @@ A Client-initiated end user session will result in all respectiveFiserv-hosted w
 </style> 
 
 
-<img src="../../assets/images/TN-INT-FULL.png" style="width: 400;height: 300;display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;">
+<img src="../../assets/images/TN-INT-FULL.png">
 
 <p style="text-align: center">FULL CONTROL IMPLEMENTATION</p>
 
@@ -78,7 +75,7 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 
 <!-- theme: info -->
 
-> _**Note:** The size of this frame is controlled by the Client._
+> :memo: _**Note:** The size of this frame is controlled by the Client._
 
 
 The navigation in the frame links only to screens within TransferNow. In this implementation, an FI has the option to remove the header and footer, so only the working area of the application is displayed in the frame.</br>
@@ -87,10 +84,7 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 &nbsp;
 
 
-<img src="../../assets/images/Framed_Implemention.png" style="width: 400;height: 300;display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;">
+<img src="../../assets/images/Framed_Implemention.png">
 <p style="text-align: center">FRAMED IMPLEMENTATION</p>
 
 
@@ -101,11 +95,7 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 &nbsp;
 
 
-<img src="../../assets/images/Pop-up_Implementation.png" style="width: 400;height: 300;display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;">
-
+<img src="../../assets/images/Pop-up_Implementation.png">
 <p style="text-align: center">POP-UP IMPLEMENTATION</p>
 
 
