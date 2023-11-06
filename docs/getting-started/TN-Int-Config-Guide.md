@@ -63,7 +63,7 @@ A Client-initiated end user session will result in all respectiveFiserv-hosted w
 </style> 
 
 
-<img src="../../assets/images/TN-INT-FULL.png">
+![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-INT-FULL.png)
 
 
 
