@@ -74,7 +74,7 @@ Following actions will take place when a trial deposit is failed:
 &nbsp;
 <center>
 
-<img src="../../../assets/images/verifywithBankDeposits.png"> <br />
+![image](../../../assets/images/verifywithBankDeposits.png) <br />
 VERIFY WITH BANK DEPOSITS
 
 </center>     
