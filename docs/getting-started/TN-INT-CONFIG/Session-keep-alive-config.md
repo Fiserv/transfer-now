@@ -14,7 +14,7 @@ Thus, to the Client’s web server it looks as if the image is being retrieved v
 
 If a gif is not available on the Client web server responsible for creating the end user’s original session (i.e., a different server is used to manage images), a user’s session can still be kept alive via a URL that returns an empty page as long as the URL points to a resource hosted on that same web server. An example of such a URL might be:
 
-![https://www.someclient.com/client_app/jsp/keepAlive.jsp](https://www.someclient.com/client_app/jsp/keepAlive.jsp)
+[https://www.someclient.com/client_app/jsp/keepAlive.jsp](https://www.someclient.com/client_app/jsp/keepAlive.jsp)
 
 
 > :memo: _**Note:** The Client preference for this option is to be indicated in the DGF._

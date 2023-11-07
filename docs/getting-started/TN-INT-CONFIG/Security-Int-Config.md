@@ -40,7 +40,7 @@ Zoning is the process of defining, grouping, and isolating different networked c
 
 In order for different zoned components to be able to communicate with each other, some components must first execute a series of zone-specific authentication requirements that mutually prove each component’s identity. In the case of the TN service, such authentication begins with the establishment of Secure Socket Layer Handshake between the Client Server and the Fiserv Server.
 
-<!-- type: tab-end -->
+<!-- type: tab -->
 
 ### SSL Transport Layer Security
 
@@ -55,7 +55,7 @@ The second round trip is when the client authenticates the server only, called O
 Both roundtrips completing successfully results in an SSL channel being established between the client and server; application data is then allowed to flow between the client and server using this secure conduit.
 
 
-<!-- type: tab-end -->
+<!-- type: tab -->
 
 
 ### Digital Certificates
