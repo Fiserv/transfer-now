@@ -50,7 +50,7 @@
         - title: Fiserv Supported Modes of Server Authentication
           link: docs/getting-started/TN-INT-CONFIG/server-auth.md
         - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
-          link: docs/getting-started/TN-INT-CONFIG/Guidelines_for_Obtaining.md    
+          link: docs/getting-started/TN-INT-CONFIG/Guidelines-Obtain.md    
     - title: TN Mobile Integration Guide
       link: docs/getting-started/TN-Mobile-Integration-Guide.md
       sections:
