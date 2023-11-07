@@ -109,7 +109,10 @@ toolbar=no, menubar=no'); return false;">Click to open</a>
 
 ```
 
-<a href="#" onclick="popup=window.open(https://www.google.com/)">google</a>
+<a href="http://www.google.com" target="popup" 
+    onclick="window.open('http://www.google.com','popup','width=600,height=600');   
+    return false;"> Open Link in Popup
+</a>
 
 
 &nbsp;
