@@ -1,4 +1,4 @@
-# Real Time Verification
+## Real Time Verification
 
 Real-time account verification - also known as “online credential verification” - leverages the Fiserv AllData Aggregation Service within the verification flow.
 
@@ -60,14 +60,15 @@ If real-time account verification is not available, then the user's account is v
  &nbsp;
 <center>
 
-![image](../../../assets/images/RealTimeVerification.png)<br/>
-ACCOUNT VERIFICATION SCREEN
+![image](../../../assets/images/RealTimeVerification.png)</br>
+<p style="color:grey;font-size:12px">ACCOUNT VERIFICATION SCREEN</p>
 </center>
 
 &nbsp;
 
-[Click here]() to know more about account verification and access VerifyNow APIs
+[Click here](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop) to know more about account verification and access VerifyNow APIs
 
+&nbsp;
 
 ## See Also
 [Adding an Account](?path=docs/acc-to-acc-transfer/adding-Acc.md)<br/>
