@@ -54,7 +54,9 @@
         - title: Client / Fiserv Payload Secure Message Exchange
           link: docs/getting-started/TN-INT-CONFIG/client-payload.md
         - title: Fiserv Secure Message Exchange Error Handling
-          link: docs/getting-started/TN-INT-CONFIG/message-error-handling.md     
+          link: docs/getting-started/TN-INT-CONFIG/message-error-handling.md
+        - title: Fiserv Payload Submission Error Codes
+          link: docs/getting-started/TN-INT-CONFIG/payload-sub-error.md       
     - title: TN Mobile Integration Guide
       link: docs/getting-started/TN-Mobile-Integration-Guide.md
       sections:
