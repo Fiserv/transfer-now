@@ -52,7 +52,9 @@
         - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
           link: docs/getting-started/TN-INT-CONFIG/Guidelines-Obtain.md
         - title: Client / Fiserv Payload Secure Message Exchange
-          link: docs/getting-started/TN-INT-CONFIG/client-payload.md    
+          link: docs/getting-started/TN-INT-CONFIG/client-payload.md
+        - title: Fiserv Secure Message Exchange Error Handling
+          link: docs/getting-started/TN-INT-CONFIG/message-error-handling.md     
     - title: TN Mobile Integration Guide
       link: docs/getting-started/TN-Mobile-Integration-Guide.md
       sections:
