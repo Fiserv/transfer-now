@@ -47,6 +47,8 @@
           link: docs/getting-started/TN-INT-CONFIG/Session-keep-alive-config.md
         - title: Security Integration and Configuration Options
           link: docs/getting-started/TN-INT-CONFIG/Security-Int-Config.md
+        - title: Fiserv Supported Modes of Server Authentication
+          link: docs/getting-started/TN-INT-CONFIG/server-auth.md
         - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
           link: docs/getting-started/TN-INT-CONFIG/Guidelines_for_Obtaining.md    
     - title: TN Mobile Integration Guide
