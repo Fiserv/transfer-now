@@ -27,8 +27,6 @@ Fiserv takes a three-pronged approach to establishing a trust relationship betwe
     }
 </style>
 
-&nbsp;
-
 The following figure shows the SSL steps taken for certificate authentication; (OW, MA) indicates that the step is required for both One-way Server and Mutual Server Authentication, and (MA) indicates that the step is required for Mutual Server Authentication only.
 
 &nbsp;
