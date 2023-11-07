@@ -56,7 +56,9 @@
         - title: Fiserv Secure Message Exchange Error Handling
           link: docs/getting-started/TN-INT-CONFIG/message-error-handling.md
         - title: Fiserv Payload Submission Error Codes
-          link: docs/getting-started/TN-INT-CONFIG/payload-sub-error.md       
+          link: docs/getting-started/TN-INT-CONFIG/payload-sub-error.md
+        - title: Fiserv ePayments TN Application Error Codes
+          link: docs/getting-started/TN-INT-CONFIG/epayment-TN-error-code.md         
     - title: TN Mobile Integration Guide
       link: docs/getting-started/TN-Mobile-Integration-Guide.md
       sections:
