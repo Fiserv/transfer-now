@@ -41,8 +41,6 @@
           link: docs/getting-started/TN-INT-CONFIG/First-Time-Page-Config.md
         - title: Help Link Configuration
           link: docs/getting-started/TN-INT-CONFIG/Help-Link-Config.md
-        - title: Session Timeout Configuration
-          link: docs/getting-started/TN-INT-CONFIG/Session_Timeout_Configuration.md
         - title: Session Keep-Alive Configuration
           link: docs/getting-started/TN-INT-CONFIG/Session-keep-alive-config.md
         - title: Security Integration and Configuration Options
