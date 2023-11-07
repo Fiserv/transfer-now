@@ -122,6 +122,7 @@ First-Time Agreement Page Configuration
 Help Link Configuration
 Session Timeout Configuration
 Session Keep-Alive Configuration
+Security Integration and Configuration Options
 Fiserv Supported Modes of Server Authentication
 Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
 Client / Fiserv Payload Secure Message Exchange
