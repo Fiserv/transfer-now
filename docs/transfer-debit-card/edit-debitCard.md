@@ -5,7 +5,7 @@
 <li>Go to Preferences screen. </li>
 <li>Under “My Debit Cards” menu, user can see all the debit cards added. </li>
 </ul>
-
+</div>
 
 <center>
 
@@ -20,9 +20,13 @@ MY DEBIT CARDS SCREEN – TO EDIT
 &nbsp;
 
 
-- Select a debit card that the user wants to edit. 
-- Click “Edit".
-- Edit Debit Card screen is displayed. 
+<div class="card-body">
+<ul>
+<li>Select a debit card that the user wants to edit. </li>
+<li>Click “Edit". </li>
+<li>Edit Debit Card screen is displayed. </li>
+</ul>
+</div>
 
 
 &nbsp;
@@ -40,8 +44,12 @@ EDIT DEBIT CARD
 
 A user can edit the following details in the debit cards added:
 
-- Nickname of the debit card
-- Expiry Date.
+<div class="card-body">
+<ul>
+<li>Nickname of the debit card </li>
+<li>Expiry Date. </li>
+</ul>
+</div>
 
 &nbsp;
 
@@ -52,7 +60,7 @@ A user can edit the following details in the debit cards added:
 
 &nbsp;
 
-## Documents References
+## See Also
 
 [Adding Debit Cards](?path=docs/transfer-debit-card/adding-Acc.md)  
 [Debit Card Verification](?path=docs/transfer-debit-card/debit-cardVerify.md)  

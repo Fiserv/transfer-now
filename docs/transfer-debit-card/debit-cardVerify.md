@@ -10,7 +10,7 @@ TransferNow verifies a user’s ownership of an external debit card using two be
 
 &nbsp;
 
-## Documents References
+## See Also
 
 [Adding Debit Cards](?path=docs/transfer-debit-card/adding-Acc.md)  
 [Deleting Debit Cards](?path=docs/transfer-debit-card/delete-debitCard.md)  
