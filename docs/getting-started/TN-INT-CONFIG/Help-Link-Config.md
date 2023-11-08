@@ -3,16 +3,11 @@
 Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page.
 &nbsp;
 
+<center>
 
-<img class="help" src="../../../assets/images/help.png">
-
-
-<style>
-    .help {
-        border: 1px solid lightgray;
-        padding: 1px;
-    }
-</style>  
+![help](../../../assets/images/help.png)
+  
+</center>  
   
 
 &nbsp;
