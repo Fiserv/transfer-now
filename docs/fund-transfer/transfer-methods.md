@@ -4,7 +4,7 @@
 
 type: tab
 
-titles: One-Time Transfer, Recurring Transfer, Pending Transfer
+titles: One-Time Transfer, Recurring Transfer
 
 -->
 
@@ -17,20 +17,19 @@ transfers to move funds to and from the account(s).
 
 # One-Time Transfer
  
-A one-time transfer requires the following information as shown below in Figure
+A one-time transfer requires the following information:
 
 &nbsp;
 
 <center>
 
 ![image](../../assets/images/One_Time_Transfer.png) <br/>
-
-ONE-TIME TRANSFER
+<p style="color:grey;font-size:12px">ONE-TIME TRANSFER</p>
 
 </center>
+&nbsp;
 
-
-**Documents References**
+**See Also**
 
 [Fund Transfer frequencies & Duration](?path=docs/fund-transfer/FT-freq.md)  
 [Transfer Cut-off Times](?path=docs/fund-transfer/transfer-cutOff.md)
@@ -42,10 +41,10 @@ ONE-TIME TRANSFER
 
 # Recurring Transfer
 
- Recurring transfers require the following information as shown below in Figure
+ Recurring transfers require the following information:
 <!-- theme: info -->
 
-> _**Note:** The Instant Transfer option is not applicable for recurring transfers._
+> :memo: _**Note:** The Instant Transfer option is not applicable for recurring transfers._
 
 &nbsp;
 
@@ -53,37 +52,19 @@ ONE-TIME TRANSFER
 <center>
 
 ![image](../../assets/images/Recurring_Transfers.png) <br/>
-
-RECURRING TRANSFERS
+<p style="color:grey;font-size:12px">RECURRING TRANSFERS</p>
 
 </center>
 
-**Documents References**
-
-[Fund Transfer frequencies & Duration](?path=docs/fund-transfer/FT-freq.md)  
-[Transfer Cut-off Times](?path=docs/fund-transfer/transfer-cutOff.md)
-
-
- 
 &nbsp;
-<!-- type: tab -->
 
- 
-
-# Pending Transfer
-
- 
-
-An account with a pending transfer cannot be deleted. The user can either wait until all pending transfers have completed or cancel all pending transfers that have not been released to ACH before attempting to delete the account again. 
- 
-
- 
- ## Documents References
+## See Also
 
 [Fund Transfer frequencies & Duration](?path=docs/fund-transfer/FT-freq.md)  
 [Transfer Cut-off Times](?path=docs/fund-transfer/transfer-cutOff.md)
+
+
  
 
-<!-- type: tab-end -->
 
  
