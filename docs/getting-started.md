@@ -4,7 +4,7 @@ tags: [TN Widget, Home ID, Automated Clearing House, Accounts, Debit Cards, Mone
 
  
 
-## How to Sign-In to Developer Studio Portal to Access TransferNow Widget for Various Use Cases 
+## How to Sign-In to Developer Studio Portal to Access TransferNow Widget 
 
 ### Introduction
 
