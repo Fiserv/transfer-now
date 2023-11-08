@@ -8,7 +8,7 @@ With Full Control or Framed implementations, an end user session timeout on the 
 
 <center>
 
-<img style="border: 1px solid gray; padding: 2px " src="../../../assets/images/Session-timeout-config.png" width="400" height="300"> <br/>
+<img src="../../../assets/images/Session-timeout-config.png" width="400" height="300"> <br/>
 
 </center>
 
