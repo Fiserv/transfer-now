@@ -1,12 +1,7 @@
 ## Help Link Configuration
 
 Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page.
-
-<center>
-
-![image](../../../assets/images/help.png)
-
-</center>
+&nbsp;
 
 
 <img class="help" src="../../../assets/images/help.png">
@@ -17,13 +12,17 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
         border: 1px solid lightgray;
         padding: 1px;
     }
-</style>    
+</style>  
+  
+
+&nbsp;
 
 
 > :memo: _**Note:**The Client preference for this option is to be indicated in the DGF._
 
 
 &nbsp;
+
 
 ### See Also
 
