@@ -4,9 +4,20 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 
 <center>
 
-![image](../../../assets/images/Help_Link_Config.png)
+![image](../../../assets/images/help.png)
 
 </center>
+
+
+<img class="help" src="../../../assets/images/help.png">
+
+
+<style>
+    .help {
+        border: 1px solid lightgray;
+        padding: 1px;
+    }
+</style>    
 
 
 > :memo: _**Note:**The Client preference for this option is to be indicated in the DGF._
