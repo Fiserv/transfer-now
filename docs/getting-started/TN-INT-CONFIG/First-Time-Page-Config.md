@@ -56,7 +56,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 
 ### See Also
 
-[First-Time Agreement Page Configuration](?path=docs/getting-started/TN-INT-CONFIG/TN-Int-Config-Guide.md)
+[TN Integeration and Configuration Guide](?path=docs/getting-started/TN-INT-CONFIG/TN-Int-Config-Guide.md)
 
 [Help Link Configuration](?path=docs/getting-started/TN-INT-CONFIG/Help-Link-Config.md)
 
