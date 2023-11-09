@@ -5,7 +5,7 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 
 <center>
 
-![help](../../../assets/images/help-TN.png){ width=80% }
+![help](../../../assets/images/help-TN.png)
   
 </center>  
   
