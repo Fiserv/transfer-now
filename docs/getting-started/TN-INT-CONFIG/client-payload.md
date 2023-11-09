@@ -1,19 +1,19 @@
 ## Client / Fiserv Payload Secure Message Exchange
 
-Assume a Client’s end user has logged into the Client’s web page and now attempts to access the service via the Client’s TN page link. Before the Fiserv ePayments Client Integration Server can grant access to the requested service, it expects that the Client has included—as part of the access request— information specific to the end user only (i.e., account data, contact information, etc.). 
+Assume a Client’s end user has logged into the Client’s web page and now attempts to access the service via the Client’s TN page link. Before the Fiserv ePayments Client Integration Server can grant access to the requested service, it expects that the Client has included-as part of the access request- information specific to the end user only (i.e., account data, contact information, etc.). 
 
 Upon receiving this end user payload information, the Fiserv ePayments Client Integration Server will check to ensure that all required information is part of the request; if the Fiserv ePayments Client Integration Server deems the payload as being valid, it will return an application session key back to the Client’s server. The Client will then use this session key as part of the end user redirect to the Fiserv ePayments Application Server.
 
 
 <center>
 
-![ePayment](../../../assets/images/ePayment-flow.png)
+![ePayment](../../../assets/images/flow-client.png)
 
 </center>
 
 All exchange of payload and session key information done between the Client and Fiserv servers can be thought of as a Secure Message Exchange of data, since both the end user payload and the returned Fiserv generated session key happens over a pre-established SSL channel.
 
-## Client/Fiserv Secure Message Exchange Payload Parameters
+### Client/Fiserv Secure Message Exchange Payload Parameters
 
 The end user payload that a Client sends to Fiserv is composed of various parameter name/value pairs, transmitted to the Fiserv ePayments Client Integration Server in the form of an https POST (and NOT an https GET). Table 1 defines the User Profilepayload elements, Table 2 defines the Account Profile payload elements, and Table 3 defines the Card Account Profile payload elements that Fiserv processes as part of a Client payload secure message post. Each table provides a description of each payload element, any associated usage restrictions, and the error flow that either the service application takes or the Client should take if a payload issue is detected.
 
