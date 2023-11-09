@@ -30,7 +30,7 @@
 
 header:
   productionDescription: Enhance your digital payment and transfer offerings, drive revenue and strengthen relationships by offering the flexibility to transfer funds to and from accounts at different Financial Institution (FI) with TransferNow. The Fiserv ePayments TransferNow product enables a FI to offer secure inter-institution funds transfer services. With TransferNow, customers can transfer money between accounts and debit cards.
-  getStarted: /docs/getting-started.md
+  getStarted: docs/getting-started.md
 benefits:
   - title: NOW® Network
     description: NOW Network from Fiserv enables instant transfers, which are delivered in seconds and available 24/7. NOW Network also makes TransferNow. Next-Day Good Funds possible, meaning you can offer next-day transfers that eliminate credit risks and allow higher limits.
