@@ -48,7 +48,7 @@ An intermediate certificate is a subordinate certificate issued by the trusted r
 
 &nbsp;
 
-Click here to know more about [Guidelines for Obtaining a CA Issued SSL Digital Server Certificate](?path=docs/getting-started/TN-Integration-Guide/Digital-Certificates.md)
+Click here to know more about [Guidelines for Obtaining a CA Issued SSL Digital Server Certificate](?path=docs/getting-started/TN-Integration-Guide/SSL-Guidelines.md)
 
 
 &nbsp;
