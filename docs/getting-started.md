@@ -14,7 +14,7 @@ The purpose of this document is to advise Fiserv partners that plan to use the T
 
 Before utilizing TransferNow widget, you must follow the steps to get an access to the Developer Studio. 
 
-You will be assigned a unique partner ID and a home ID (or multiple home IDs, depending on your needs). You may provision multiple customers (users) under a home ID. A user may have more than one Financial Institution (FI), or any other accounts and connection types offered by AllData / Early Warning System (EWS) under their profile. See AllData® Aggregation [AllData® Aggregation](https://qa-developerstudio.fiserv.com/product/AllDataAggregation?branch=develop) for more information.  
+You will be assigned a unique partner ID and a home ID (or multiple home IDs, depending on your needs). You may provision multiple customers (users) under a home ID. A user may have more than one Financial Institution (FI), or any other accounts and connection types offered by AllData / Early Warning System (EWS) under their profile. See [AllData® Aggregation](https://qa-developerstudio.fiserv.com/product/AllDataAggregation?branch=develop) for more information.  
 
 To know more about EWS, see in this document. 
  

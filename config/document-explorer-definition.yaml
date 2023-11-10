@@ -32,35 +32,15 @@
   - title: Getting Started
     link: docs/getting-started.md
     sections: 
-    - title: Developer Studio
-      link: docs/getting-started/developer-studio.md
-    - title: TN Integeration and Configuration Guide
-      link: docs/getting-started/TN-INT-CONFIG/TN-Int-Config-Guide.md
+    - title: TN Integration Guide
       sections:
-        - title: First-Time Agreement Page Configuration
-          link: docs/getting-started/TN-INT-CONFIG/First-Time-Page-Config.md
-        - title: Help Link Configuration
-          link: docs/getting-started/TN-INT-CONFIG/Help-Link-Config.md
-        - title: Session Timeout Configuration
-          link: docs/getting-started/TN-INT-CONFIG/Session-Timeout-Config.md  
-        - title: Session Keep-Alive Configuration
-          link: docs/getting-started/TN-INT-CONFIG/Session-keep-alive-config.md
-        - title: Security Integration and Configuration Options
-          link: docs/getting-started/TN-INT-CONFIG/Security-Int-Config.md
-        - title: Fiserv Supported Modes of Server Authentication
-          link: docs/getting-started/TN-INT-CONFIG/server-auth.md
-        - title: Guidelines for Obtaining a CA Issued SSL Digital Server Certificate
-          link: docs/getting-started/TN-INT-CONFIG/Guidelines-Obtain.md
-        - title: Client / Fiserv Payload Secure Message Exchange
-          link: docs/getting-started/TN-INT-CONFIG/client-payload.md
-        - title: Fiserv Secure Message Exchange Error Handling
-          link: docs/getting-started/TN-INT-CONFIG/message-error-handling.md
-        - title: Fiserv Payload Submission Error Codes
-          link: docs/getting-started/TN-INT-CONFIG/payload-sub-error.md
-        - title: Fiserv ePayments TN Application Error Codes
-          link: docs/getting-started/TN-INT-CONFIG/epayment-TN-error-code.md
-        - title: Fiserv ePayments Secure Message Exchange QA and Production Environments
-          link: docs/getting-started/TN-INT-CONFIG/epayment-QA-prod.md          
+      - title: SSL Authentication
+        link: docs/getting-started/TN-Integration-Guide/SSL-Authentication.md
+        sections:
+        - title: Digital Certificates
+          link: docs/getting-started/TN-Integration-Guide/Digital-Certificates.md
+        - title: Server Authentication
+          link: docs/getting-started/TN-Integration-Guide/Server-Authentication.md      
     - title: TN Mobile Integration Guide
       link: docs/getting-started/TN-Mobile-Integration-Guide.md
       sections:
