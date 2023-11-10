@@ -38,6 +38,7 @@
         link: docs/getting-started/TN-Integration-Guide/SSL-Authentication.md
         sections:
         - title: Digital Certificates
+          link: docs/getting-started/TN-Integration-Guide/Digital-Certificates.md
         - title: Server Authentication      
     - title: TN Mobile Integration Guide
       link: docs/getting-started/TN-Mobile-Integration-Guide.md
