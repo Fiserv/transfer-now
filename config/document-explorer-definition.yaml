@@ -76,6 +76,9 @@
     - title: Editing Debit Cards 
       link: docs/transfer-debit-card/edit-debitCard.md
 - sections:
+  - title: Transfer via Bank Accounts
+    link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
+- sections:
   - title: Fund Transfers
     sections:
     - title: Transfer Methods
