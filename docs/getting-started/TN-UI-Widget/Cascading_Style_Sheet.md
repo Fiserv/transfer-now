@@ -19,9 +19,9 @@ Clients may view and update the CSS in the following ways:
 
 **To Know more visit the below Guidelines:**
 
-[The Data Gathering Form (DGF) ](?path=docs/getting_started/TN-UI-Widget/The_Data_Gathering_Form.md)    
-[Email Specifications ](?path=docs/getting_started/TN-UI-Widget/Email_Specifications.md)     
-[Exit URL ](?path=docs/getting_started/TN-UI-Widget/Exit_URL.md)    
+[The Data Gathering Form (DGF) ](?path=docs/getting-started/TN-UI-Widget/The_Data_Gathering_Form.md)    
+[Email Specifications ](?path=docs/getting-started/TN-UI-Widget/Email_Specifications.md)     
+[Exit URL ](?path=docs/getting-started/TN-UI-Widget/Exit_URL.md)    
 
 
 <style>

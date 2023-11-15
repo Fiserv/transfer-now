@@ -9,3 +9,9 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 <!-- theme: info -->
 
 > :memo: _**Note:** The Client preference for this option is to be indicated in the DGF._
+
+**To Know more visit the below Configuration:**
+
+[Help Link Configuration](?path=docs/getting-started/TN-UI-Widget/Help_Link_Configuration.md)    
+[Session Timeout Configuration](?path=docs/getting-started/TN-UI-Widget/Session_Timeout_Configuration.md)    
+[Session Keep-Alive Configuration ](?path=docs/getting-started/TN-UI-Widget/Session_Keep-Alive_Configuration.md)  

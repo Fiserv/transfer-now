@@ -15,9 +15,9 @@ The FI should define the following exit URL:
 
 **To Know more visit the below Configuration:**
 
-[The Data Gathering Form (DGF) ](?path=docs/getting_started/TN-UI-Widget/The_Data_Gathering_Form.md)    
-[Cascading Style Sheet (CSS) ](?path=docs/getting_started/TN-UI-Widget/Cascading_Style_Sheet.md)    
-[Email Specifications ](?path=docs/getting_started/TN-UI-Widget/Email_Specifications.md)     
+[The Data Gathering Form (DGF) ](?path=docs/getting-started/TN-UI-Widget/The_Data_Gathering_Form.md)    
+[Cascading Style Sheet (CSS) ](?path=docs/getting-started/TN-UI-Widget/Cascading_Style_Sheet.md)    
+[Email Specifications ](?path=docs/getting-started/TN-UI-Widget/Email_Specifications.md)     
 
 
 <style>

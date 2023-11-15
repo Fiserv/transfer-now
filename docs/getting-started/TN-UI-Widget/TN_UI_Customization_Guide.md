@@ -27,7 +27,12 @@ Users provide the information specific to their institution and their desired cu
 > :memo: _**Note:** An FI can customize any instructional text that is displayed on the TransferNow user interface (UI)._
 
  
+**To Know more visit the below Guidelines:**
 
+[Email Specifications ](?path=docs/getting-started/TN-UI-Widget/Email_Specifications.md)     
+[The Data Gathering Form (DGF) ](?path=docs/getting-started/TN-UI-Widget/The_Data_Gathering_Form.md)    
+[Cascading Style Sheet (CSS) ](?path=docs/getting-started/TN-UI-Widget/Cascading_Style_Sheet.md)    
+[Exit URL ](?path=docs/getting-started/TN-UI-Widget/Exit_URL.md)    
 
  
 

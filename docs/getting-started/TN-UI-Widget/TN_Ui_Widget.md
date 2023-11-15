@@ -9,6 +9,6 @@ Click here to use our TN UI widget.
 
 ## See Also 
 
-[TN UI Rendering Options](?path=docs/getting_started/TN-UI-Widget/TN_UI_Rendering_Options.md) 
+[TN UI Rendering Options](?path=docs/getting-started/TN-UI-Widget/TN_UI_Rendering_Options.md) 
 
-[TN UI Customization Guide](?path=docs/getting_started/TN-UI-Widget/TN_UI_Customization_Guide.md)
+[TN UI Customization Guide](?path=docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md)

@@ -16,9 +16,9 @@ A partial list of configurable elements is given below:
 
 **To Know more visit the below Configuration:**
 
-[Cascading Style Sheet (CSS) ](?path=docs/getting_started/TN-UI-Widget/Cascading_Style_Sheet.md)    
-[Email Specifications ](?path=docs/getting_started/TN-UI-Widget/Email_Specifications.md)     
-[Exit URL ](?path=docs/getting_started/TN-UI-Widget/Exit_URL.md)    
+[Cascading Style Sheet (CSS) ](?path=docs/getting-started/TN-UI-Widget/Cascading_Style_Sheet.md)    
+[Email Specifications ](?path=docs/getting-started/TN-UI-Widget/Email_Specifications.md)     
+[Exit URL ](?path=docs/getting-started/TN-UI-Widget/Exit_URL.md)    
 
 
 <style>

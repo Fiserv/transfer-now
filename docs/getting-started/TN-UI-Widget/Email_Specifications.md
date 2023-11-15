@@ -21,9 +21,9 @@ Many events occur within TransferNow warrants an email to be sent to the user. T
 
 **To Know more visit the below Guidelines:**
 
-[The Data Gathering Form (DGF) ](?path=docs/getting_started/TN-UI-Widget/The_Data_Gathering_Form.md)    
-[Cascading Style Sheet (CSS) ](?path=docs/getting_started/TN-UI-Widget/Cascading_Style_Sheet.md)    
-[Exit URL ](?path=docs/getting_started/TN-UI-Widget/Exit_URL.md)    
+[The Data Gathering Form (DGF) ](?path=docs/getting-started/TN-UI-Widget/The_Data_Gathering_Form.md)    
+[Cascading Style Sheet (CSS) ](?path=docs/getting-started/TN-UI-Widget/Cascading_Style_Sheet.md)    
+[Exit URL ](?path=docs/getting-started/TN-UI-Widget/Exit_URL.md)    
 
 
 <style>
