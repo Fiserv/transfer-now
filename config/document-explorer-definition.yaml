@@ -47,9 +47,6 @@
         - title: Session Management
           link: docs/getting-started/session_management.md       
 - sections:
-  - title: Responsive Web Design
-    link: docs/resp-webdesign.md
-- sections:
   - title: Account to Account Transfers
     sections:
     - title: Adding an Account

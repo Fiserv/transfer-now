@@ -1,7 +1,5 @@
 ## Responsive Web Design
 
-TransferNow implements Responsive Web Design, which optimizes the user experience by accommodating a range of differently sized screens, such as those used for standard mobile phones, for plus-sized mobile phones, and for laptops, desktops, and tablets.
-
 Responsive Web Design detects and adapts to the screen size of the user’s device, presenting a display format that best matches the device’s screen size. This is achieved in part through breakpoints (or breakpoint ranges)-sizes or size ranges, measured in pixels, that are specified as the points at which the display changes, depending on and adapting to the size of the device’s screen. 
 
 &nbsp;
@@ -14,14 +12,9 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 
 &nbsp;
 
-<!-- align: center 
-![Image centering](../assets/images/responsiveUIScreens.jpg "Image centering") -->
+<!-- theme: info -->
 
-
-
-Responsive Web Design detects and adapts to the screen size of the user’s device, presenting a display format that best matches the device’s screen size.
-
-This is achieved in part through breakpoints (or breakpoint ranges)—sizes or size ranges, measured in pixels, that are specified as the points at which the display changes, depending on and adapting to the size of the device’s screen.
+> :memo: _**Note:** There are differences between the mobile-focused and desktop user interfaces. Most of the screenshot samples in this document are desktop-focused, unless otherwise specified. 
 
 &nbsp;
 
