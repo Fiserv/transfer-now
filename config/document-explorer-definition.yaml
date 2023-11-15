@@ -89,7 +89,7 @@
       link: docs/fund-transfer/transfer-cutOff.md
 - sections:
   - title: Transfernow Sandbox
-    link: docs/getting_started/TN-UI-Widget.md     
+    link: docs/getting_started/TN-UI-Widget/TN_Ui_Widget.md     
 - sections:
   - title: Release notes
     sections:
