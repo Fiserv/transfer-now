@@ -88,7 +88,7 @@
     - title: Transfer Cut-off Times
       link: docs/fund-transfer/transfer-cutOff.md
 - sections:
-  - title: TransferNow UI Widgets
+  - title: TransferNow UI Widget
     link: docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md
 - sections:
   - title: Release notes
