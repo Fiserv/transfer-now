@@ -38,7 +38,58 @@ attempting to delete the account again.
 [Add/Delete Limitations](?path=docs/acc-to-acc-transfer/Manage-Account/add-del-limitations.md)   
 [Instant Verification](?path=docs/acc-to-acc-transfer/Account-Verify/Instant-Verify.md)   
 [Real Time Verification](?path=docs/fund-transfer/Account-Verify/real-time.md)   
-[Trial Deposit Verification](?path=docs/acc-to-acc-transfer/Account-Verify/trial-verify.md)   
+[Trial Deposit Verification](?path=docs/acc-to-acc-transfer/Account-Verify/trial-verify.md)  
+
+
+
+
+<html>
+  <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th> User profile parameter</th>
+                    <th> Description, Usage Restriction, and error flow </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">INSTITUTION_ID </br>Client will pass to Fiserv? YES</td>
+                    <td>Fiserv assigned unique persistent Client identifier (also referred to as the 
+Client Home ID) Usage Restrictions Is a required payload parameter Associated value must be numeric and 8 digits in length</td>
+                </tr>
+                <tr>
+                    <td>Error Flow (refer to Fiserv Secure Message Exchange Error Handling for 
+more information):
+Fiserv will return an SS28 payload error if the parameter is not present in payload or the associated value length equals 0
+Fiserv will display an application SS42 error page if the associated value length is > 0 but < 8, or > 8</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td rowspan="2">CE_APPLICATION_CODE</br>Client will pass to Fiserv? _____</td>
+                    <td>Client indicates if end user is accessing TransferNow or another Fiserv product.</br>Usage Restrictions
+If client sends TN or any other value, end user would be directed to the TransferNow application.</br>If this field is missing, end user would be directed to the TransferNow application. </td>
+                </tr>
+                <tr>
+                    <td>Error Flow (refer to Fiserv Secure Message Exchange Error Handling for more information): </br>N/A</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td rowspan="2">USER_FI_NUMBER</br>Client will pass to Fiserv? YES</td>
+                    <td>Client assigned unique persistent end user identifier; end user can have only one active profile per Fiserv service </br>Usage Restrictions Is a required payload parameter Associated value should be alphanumeric, 3 to 20 characters in length. It 
+can include dashes but not spaces</td>
+                </tr>
+                <tr>
+                    <td>Error Flow (refer to Fiserv Secure Message Exchange Error Handling for 
+more information):</br>Fiserv will return an SS30 payload error if the parameter is not present in payload or the associated value length equals 0</td>
+                </tr>
+            </tbody>
+        </table>
+</html>
+
+
+
 
 
 <style>
