@@ -31,39 +31,24 @@
 - sections:
   - title: Getting Started
     link: docs/getting-started.md
-    sections: 
-    - title: TN Integration Guide
+    sections:
+    - title: Responsive Web Design
+      link: docs/getting-started/resp-webdesign.md
+- sections: 
+  - title: TN Integration Guide
+    sections:
+    - title: SSL Authentication
+      link: docs/getting-started/TN-Integration-Guide/SSL-Authentication.md
       sections:
-      - title: SSL Authentication
-        link: docs/getting-started/TN-Integration-Guide/SSL-Authentication.md
-        sections:
-        - title: Digital Certificates
-          link: docs/getting-started/TN-Integration-Guide/Digital-Certificates.md
-        - title: Server Authentication 
-          link: docs/getting-started/TN-Integration-Guide/Server-Authentication.md     
+      - title: Digital Certificates
+        link: docs/getting-started/TN-Integration-Guide/Digital-Certificates.md
+      - title: Server Authentication 
+        link: docs/getting-started/TN-Integration-Guide/Server-Authentication.md     
     - title: TN Mobile Integration Guide
       link: docs/getting-started/TN-Mobile-Integration-Guide.md
       sections:
         - title: Session Management
           link: docs/getting-started/session_management.md       
-- sections:
-  - title: Account to Account Transfers
-    sections:
-    - title: Adding an Account
-      link: docs/acc-to-acc-transfer/adding-Acc.md
-    - title: Deleting Accounts
-      link: docs/acc-to-acc-transfer/delete-Acc.md
-    - title: Manage Accounts
-      link: docs/acc-to-acc-transfer/manage-Acc.md
-    - title: Account Verification
-      link: docs/acc-to-acc-transfer/Account-Verify/acc-verify-home.md
-      sections:
-      - title: Instant Verification
-        link: docs/acc-to-acc-transfer/Account-Verify/Instant-Verify.md
-      - title: Real Time Verification
-        link: docs/acc-to-acc-transfer/Account-Verify/real-time.md
-      - title: Trial Deposit Verification
-        link: docs/acc-to-acc-transfer/Account-Verify/trial-verify.md
 - sections:
   - title: Transfer via Debit Cards
     sections:
@@ -79,7 +64,7 @@
   - title: Transfer via Bank Accounts
     link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
 - sections:
-  - title: Fund Transfers
+  - title: Fund Transfers Services
     sections:
     - title: Transfer Methods
       link: docs/fund-transfer/transfer-methods.md
