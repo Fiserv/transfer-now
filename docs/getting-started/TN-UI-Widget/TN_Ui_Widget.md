@@ -4,7 +4,7 @@ User can integrate the TransferNow service via the Fiserv ePayments-hosted UI So
 
 In this solution, Fiserv manages the entire online application experience. 
 
-Click here to use our TN UI widget. 
+Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/tnAPI.jsp) . 
 
 
 ## See Also 
