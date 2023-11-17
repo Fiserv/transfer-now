@@ -21,14 +21,14 @@
 </ul>
 </div>
 
-**Transfer Limits**
+## Transfer Limits
 
 
 Transfers are subject to a limit structure maintained to manage the risk associated with funds transfers. 
 
 There is a default minimum transfer amount of $10.00. 
 
-**Individual Limits**
+## Individual Limits
 
 Limits are set for the account. The following types of limits are applicable: 
 
@@ -53,7 +53,7 @@ Limits are set for the account. The following types of limits are applicable:
 
 </center>
 
-**Debit Card Limits** <br>
+## Debit Card Limits <br>
 
 Debit card limits and services have different Individual account limits. 
 
@@ -68,7 +68,7 @@ Debit card limits and services have different Individual account limits.
 &nbsp;
 
 
-**Transfer Fees**
+## Transfer Fees
 
 Fees can be a flat rate, a percent of transaction, or a combination of flat rate plus percent of transaction. Fees are always deducted from the source account. 
 
