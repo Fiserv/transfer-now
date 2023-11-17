@@ -65,7 +65,7 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Fo
   
 ![image](../../../assets/images/Create-Transfer.png) <br/>
 
-CERATE TRANSFER
+CREATE TRANSFER
 
 </center>
  

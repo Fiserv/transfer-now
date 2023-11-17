@@ -65,7 +65,7 @@ featuredFeatures:
     description: Flexible, responsive design delivering outstanding results for desktop, tablet, and mobile users, ensuring a consistent brand experience across all devices. This helps in more mobile traffic, lower maintenance needs, faster webpages, and an overall improved online experience. 
     featured: true
     relatedDocs:
-     - link: docs/resp-webdesign.md
+     - link: docs/getting-started/resp-webdesign.md
        title: Responsive Web Design
   - title: Industry-Leading Security
     groupName: Industry-Leading Security

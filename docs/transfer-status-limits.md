@@ -53,7 +53,7 @@ Limits are set for the account. The following types of limits are applicable:
 
 </center>
 
-## Debit Card Limits <br>
+## Debit Card Limits 
 
 Debit card limits and services have different Individual account limits. 
 
