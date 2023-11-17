@@ -49,10 +49,8 @@
       sections:
         - title: Payload Parameters
           link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md
-      sections:
         - title: Error Handling / Erro Codes
           link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md
-      sections:
         - title: Payload Submission
           link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md       
 - sections:
