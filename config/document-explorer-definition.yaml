@@ -49,10 +49,12 @@
       sections:
         - title: Payload Parameters
           link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md
-        - title: Error Handling / Erro Codes
+        - title: Error Handling / Error Codes
           link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md
         - title: Payload Submission
-          link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md       
+          link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md   
+    - title: SSO for Mobile
+      link: docs/getting-started/TN-Integration-Guide/SSO-For-Mobile.md    
 - sections:
   - title: Transfer via Bank Accounts
     link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
@@ -76,6 +78,12 @@
       link: docs/fund-transfer/FT-freq.md
     - title: Transfer Cut-off Times
       link: docs/fund-transfer/transfer-cutOff.md
+- sections:
+  - title: Transfer Frequencies/Duration
+    link: docs/transfer-durations.md
+- sections:
+  - title: Transfer Status/Limits
+    link: docs/transfer-status-limits.md
 - sections:
   - title: TransferNow UI Widget
     link: docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md
