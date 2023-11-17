@@ -48,7 +48,13 @@ Payload elements that are listed (in [User profile parameter-Table](?path=docs/g
 
 &nbsp;
 
-<img class="center" src="../../../../assets/images/payloadsecuremessageexchange.png">
+<center>
+
+![Image](../../../../assets/images/payloadsecuremessageexchange.png) <br />
+
+
+
+</center>
 
 &nbsp;
 
