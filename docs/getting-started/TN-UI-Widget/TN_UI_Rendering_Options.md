@@ -50,7 +50,7 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 [Session Keep-Alive Configuration ](?path=docs/getting-started/TN-UI-Widget/Session_Keep-Alive_Configuration.md)    
 
 
-## See Also
+**See Also**
 
 [First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
 
@@ -91,7 +91,7 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 [Session Keep-Alive Configuration ](?path=docs/getting_started/TN-UI-Widget/Session_Keep-Alive_Configuration.md)    
 
 
-## See Also
+**See Also**
 
 [First-Time Agreement Page Configuration](?path=docs/getting_started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
 

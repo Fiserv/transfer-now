@@ -268,7 +268,13 @@ Now copy the session key value returned to you into the Session Key text box and
 
 &nbsp;
 
-<img class="center" src="../../../../assets/images/session-key-QA.png">
+<center>
+
+![Image](../../../../assets/images/session-key-QA.png) <br />
+
+DELETE AN ACCOUNT
+
+</center>
 
 
 <style>
