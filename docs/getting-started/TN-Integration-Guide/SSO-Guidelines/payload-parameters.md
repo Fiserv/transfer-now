@@ -10,8 +10,8 @@ The end user payload that a Client sends to Fiserv is composed of various parame
 **See The Below Tables For More Information**
 
 
-[User Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md)  </br>
-[Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md)</br>
+[User Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md) - defines the User Profilepayload elements. </br>
+[Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md) - defines the Account Profile payload elements. </br>
 [Card Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md) (only applicable if a client has enabled Simple Business support in TN) - defines the Card Account Profile payload elements that Fiserv processes as part of a client payload secure message post.</br>
 
 Each table provides a description of each payload element, any associated usage restrictions, and the error flow that either the service application takes, or the Client should take if a payload issue is detected. 

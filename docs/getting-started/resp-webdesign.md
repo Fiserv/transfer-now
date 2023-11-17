@@ -18,11 +18,11 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 
 &nbsp;
 
+<!-- theme: info -->
+
 > :memo: **Note:** The screenshot samples in this document are strictly representational; they are provided as examples only.
 
-> :memo: **Note:** There are differences between the mobile-focused and desktop user interfaces. Most of the screenshot samples in this document are desktop-focused, unless otherwise specified.
 
-&nbsp;
 
 
 <div class="card-container">
