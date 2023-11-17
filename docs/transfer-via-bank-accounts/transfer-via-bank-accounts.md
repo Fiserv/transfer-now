@@ -88,7 +88,7 @@ Following topics cover additional information that allows a user to manage and t
 
 ## See Also
 
-[Account Restrictions]((?path=docs/transfer-via-bank-accounts/accounts-restrictions.md))
+[Account Restrictions](?path=docs/transfer-via-bank-accounts/accounts-restrictions.md)
 
 
 
