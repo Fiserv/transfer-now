@@ -44,25 +44,29 @@
         link: docs/getting-started/TN-Integration-Guide/Digital-Certificates.md
       - title: Server Authentication 
         link: docs/getting-started/TN-Integration-Guide/Server-Authentication.md     
-    - title: TN Mobile Integration Guide
-      link: docs/getting-started/TN-Mobile-Integration-Guide.md
+    - title: SSO - Payload Secure Message Exchange
+      link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md
       sections:
-        - title: Session Management
-          link: docs/getting-started/session_management.md       
-- sections:
-  - title: Transfer via Debit Cards
-    sections:
-    - title: Adding Debit Cards
-      link: docs/transfer-debit-card/adding-Acc.md
-    - title: Debit Card Verification
-      link: docs/transfer-debit-card/debit-cardVerify.md
-    - title: Deleting Debit Cards
-      link: docs/transfer-debit-card/delete-debitCard.md
-    - title: Editing Debit Cards 
-      link: docs/transfer-debit-card/edit-debitCard.md
+        - title: Payload Parameters
+          link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md
+        - title: Error Handling / Erro Codes
+          link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md
+        - title: Payload Submission
+          link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md       
 - sections:
   - title: Transfer via Bank Accounts
     link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
+    sections:
+    - title: Add an Account
+      link: docs/transfer-via-bank-accounts/add-an-Account.md
+    - title: Account Verfication
+      link: docs/transfer-via-bank-accounts/account_verification.md
+    - title: Add Brokerage Accounts
+      link: docs/transfer-via-bank-accounts/add_brokerage.md
+    - title: Delete Accounts
+      link: docs/transfer-via-bank-accounts/delete_accounts.md
+    - title: Account Restrictions
+      link: docs/transfer-via-bank-accounts/accounts-restrictions.md
 - sections:
   - title: Fund Transfers Services
     sections:
@@ -75,6 +79,11 @@
 - sections:
   - title: TransferNow UI Widget
     link: docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md
+    sections:
+        - title: TN UI Rendering Options
+          link: docs/getting-started/TN-UI-Widget/TN_UI_Rendering_Options.md
+        - title: TN UI Customization Guide
+          link: docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md
 - sections:
   - title: Release notes
     sections:
