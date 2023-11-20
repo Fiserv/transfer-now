@@ -2,14 +2,20 @@
 ## SSO for Mobile
 
 The below Figure represents the proposed sequence of calls via the SSO. See [SSO - Payload Secure Message Exchange](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md) to know more about the SSO process and the list of applicable SSO elements. 
-
+&nbsp;
+<div>
+   <img class="center" src="../../../assets/images/ssoformobile.png">
+</div>
 &nbsp;
 
-<center>
-
-![image](../../../assets/images/ssoformobile1.png)
-
-</center>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
+</style>
 
 This leverages the TransferNow SSO built for online banking. The parent app will need to get that one-use SSO key from the existing middleware. The SSO key will then be appended to the URL to invoke TransferNow in the webview.  
 URLs would be confirmed during the implementation, clients continue to invoke the existing TransferNow URL and would internally get directed to the TransferNow UI. 
