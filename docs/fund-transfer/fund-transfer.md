@@ -55,7 +55,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
 <p>A one-time transfer requires the following information.</p>
 </div>
 <div class="image-otp">
-<img src="../../assets/images/one-time.png">
+<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/one-time.png">
 </div>
 </div>
 
