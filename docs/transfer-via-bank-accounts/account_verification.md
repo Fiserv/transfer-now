@@ -16,7 +16,8 @@ TransferNow verifies a user’s ownership of an external account using three typ
 
 > :memo: _**Note:** To know more about adding a brokerage accounts, see Adding Brokerage Accounts, Clients have the option to allow Outbound Transfers (Transfer to a third-party account) to unverified external accounts, subject to a client-specified dollar limit. By default, verification is ON._
 
-The detailed information about account verification and the process flow can be seen in [VerifyNow Tenant](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop) . 
+The detailed information about account verification and the process flow can be seen in VerifyNow Tenant.
+<!-- [VerifyNow Tenant](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop) .  -->
 
 
 ## See Also
