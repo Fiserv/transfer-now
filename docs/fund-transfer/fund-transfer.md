@@ -50,6 +50,9 @@ A transaction processed via the GFM has less risk associated with it, because TN
 
 
 <style>
+    .card-body {
+        margin: 20px;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;
