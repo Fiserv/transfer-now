@@ -26,7 +26,7 @@ The below Figure represents the proposed sequence of calls via the SSO. See [SSO
 }
 </style> -->
 
-This leverages the TransferNow SSO built for online banking. The parent app will need to get that one-use SSO key from the existing middleware. The SSO key will then be appended to the URL to invoke TransferNow in the webview.  
+This leverages the TransferNow SSO built for online banking. The parent app will need to get that one-use SSO key from the existing middleware. The SSO key will then be appended to the URL to invoke TransferNow in the webview.  </br>
 URLs would be confirmed during the implementation, clients continue to invoke the existing TransferNow URL and would internally get directed to the TransferNow UI. 
 
 
@@ -64,11 +64,19 @@ loadView.loadUrl(<>);
 
 ## Session Management
 
-**Keeping banking session alive**
+<font size="4">  
+    <b>Keeping banking session alive </b>
+</font> 
+
+&nbsp;
 
 Both iOS and Android platform broadcast touch events for a webview, so that the parent app can listen and keep the session alive.
 
-**Handling session timeouts in TransferNow**
+<font size="4">  
+    <b>Handling session timeouts in TransferNow </b>
+</font> 
+
+&nbsp;
 
 TransferNow will call a function on the parent app when the session times out.  
 
@@ -93,7 +101,9 @@ public class WebAppInterface {
 ```
 Call following method on WebView 
 
+``` 
 loadView.addJavascriptInterface(new WebAppInterface(getActivity()), "FTKAndroidInterface"); 
+```
 
 **iOS**
 

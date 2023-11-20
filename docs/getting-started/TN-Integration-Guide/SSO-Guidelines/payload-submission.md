@@ -46,13 +46,12 @@ When the Fiserv Client Integration Server returns a session key in response to a
 The Client is requesting the following session key expiration period: 
 
 
-
 ## Perform a Payload Submission Using Only a Web Browser
 
 Assume that the Client wishes to submit the payload parameters shown in the table below to the Fiserv TN service QA environment. 
 
 <html>
-  <table style="width: 50%;">
+  <table style="width: 70%;">
             <thead>
                 <tr>
                     <th> Payload Parameter</th>

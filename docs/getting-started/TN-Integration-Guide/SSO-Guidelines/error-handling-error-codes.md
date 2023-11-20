@@ -1,4 +1,6 @@
 ## Error Handling / Error Codes
+
+
 The TN service contains a robust error handling framework that will alert both the Client and end user to potential issues when attempting to access or during use of the service. Additionally, there may be that rare instance when the Client is unable to access the service because either the Fiserv ePayments Client Integration Server is unavailable, or the Fiserv ePayments TN Application Server is unavailable.  
 
 The sub-sections that follow provide the Client with the needed insight into possible service errors and what steps, if any, the Client will need to take to handle such errors. 
@@ -164,7 +166,7 @@ As mentioned in [SSO - Payload Secure Message Exchange](?path=docs/getting-start
 Unlike the error codes listed in Fiserv Payload Submission Error Codes , application error codes do not require the Client to perform any additional error handling because an application error page will only be displayed after the end user has been granted access to the service. 
 
 &nbsp;
-<p style="color:red;padding:10px;border:1px solid red">SS24 Your Profile is already registered.</p>
+<p style="color:red;padding:10px;border:1px solid red"><i>&#9888;</i>  SS24 Your Profile is already registered.</p>
 &nbsp;
 
 [Application Error Code-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will display in an application error page to the service end user. The Client does not need to perform additional error handling for any of the listed error codes. 

@@ -1,5 +1,5 @@
 ---
-tags: [TN Widget, Home ID, Automated Clearing House, Accounts, Debit Cards, Money Transfer, Validation, Limits]
+tags: [TN UI Widget, Home ID, Automated Clearing House, Accounts, Debit Cards, Money Transfer, Validation, Limits]
 ---
 
  
@@ -12,11 +12,11 @@ The purpose of this document is to advise Fiserv partners that plan to use the T
 
 ### Overview
 
-Before utilizing TransferNow widget, you must follow the steps to get an access to the Developer Studio. 
+Before utilizing TransferNow UI widget, you must follow the steps to get an access to the Developer Studio. 
 
 You will be assigned a unique partner ID and a home ID (or multiple home IDs, depending on your needs). You may provision multiple customers (users) under a home ID. A user may have more than one Financial Institution (FI), or any other accounts and connection types offered by AllData / Early Warning System (EWS) under their profile. See [AllData® Aggregation](https://qa-developerstudio.fiserv.com/product/AllDataAggregation?branch=develop) for more information.  
 
-To know more about EWS, see in this document. 
+To know more about EWS, see [Instant (Risk Database) Verification](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verify-accounts-using-verifynow/instant-verification.md&branch=develop)
  
 
 ### Access Developer Studio
@@ -36,13 +36,13 @@ To create an account in Developer Studio, you will need the following:
 
 Request and create a developer account in the Developer Studio. 
 
-After registration, the developer will have an instant access to the shared sandbox Home ID and TransferNow Widget. An assigned sandbox Home ID can be requested for dedicated testing purposes. 
+After registration, the developer will have an instant access to the shared sandbox Home ID and TransferNow UI Widget. An assigned sandbox Home ID can be requested for dedicated testing purposes. 
 
  
 
 **Step 2: Using TransferNow Widget**
 
-To use and explore TransferNow Widget, navigate to TransferNow SandBox and use the default (Shared) Home ID or create a dedicated sandbox Home ID. 
+To use and explore TransferNow Widget, navigate to [TransferNow UI Widget](?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md) and use the default (Shared) Home ID or create a dedicated sandbox Home ID. 
 
 ### TransferNow and Its Use Cases 
 
