@@ -50,11 +50,11 @@ A transaction processed via the GFM has less risk associated with it, because TN
 
 
 <div class="content-body">
-<div class="content">
+<div class="content-left">
 <h1>One-Time Transfer</h1>
 <p>A one-time transfer requires the following information.</p>
 </div>
-<div class="image">
+<div class="image-otp">
 <img src="../../assets/images/one-time.png">
 </div>
 </div>
@@ -62,11 +62,11 @@ A transaction processed via the GFM has less risk associated with it, because TN
 
 <style>
 
-    .content {
+    .content-left {
         width: 50%
     }
 
-    .image {
+    .image-otp {
         width: 40%
     }
 
