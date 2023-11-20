@@ -4,10 +4,16 @@
 The below Figure represents the proposed sequence of calls via the SSO. See [SSO - Payload Secure Message Exchange](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md) to know more about the SSO process and the list of applicable SSO elements. 
 
 &nbsp;
-   <img style="display: block;
+   <!-- <img style="display: block;
   margin-left: auto;
   margin-right: auto;
-  width:50%;" src="../../../assets/images/ssoformobile.png">
+  width:50%;" src="../../../assets/images/ssoformobile.png"> -->
+<center>
+
+![Image](../../../assets/images/ssoformobile.png) <br />
+
+
+</center>
 
 &nbsp;
 
