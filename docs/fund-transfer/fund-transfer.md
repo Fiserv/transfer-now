@@ -59,8 +59,55 @@ A transaction processed via the GFM has less risk associated with it, because TN
 </div>
 </div>
 
+<div class="collapsible-container">
+    <input type="checkbox" class="collapsible-checkbox">
+    <label class="label-expand" for="section1">One-Time Transfer</label>
+    <div class="content-expand">
+        <p>
+            A one-time transfer requires the following information.
+        </p>
+    </div>
+</div>
+
 
 <style>
+
+    .collapsible-container {
+        width: 100%;
+    }
+
+
+    .collapsible-checkbox {
+        display: none;
+    }
+
+    .label-expand {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        display: block;
+    }
+
+    .collapsible:checked+.label {
+        background-color: #555;
+    }
+
+    .content-expand {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+
+    .collapsible:checked+.label+.content-expand {
+        display: block;
+    }
 
     .content-left {
         width: 50%
