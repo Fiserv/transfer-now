@@ -47,3 +47,20 @@ A transaction processed via the GFM has less risk associated with it, because TN
 <!-- theme: info -->
 
 > :memo: **Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted.
+
+
+<style>
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1.5em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+</style>
+
