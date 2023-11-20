@@ -7,7 +7,7 @@ The below Figure represents the proposed sequence of calls via the SSO. See [SSO
 
 <center>
 
-![image](../../../assets/images/mob.png)
+![image](../../../assets/images/ssoformobile1.png)
 
 </center>
 
