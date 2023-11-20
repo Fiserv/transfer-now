@@ -49,7 +49,34 @@ A transaction processed via the GFM has less risk associated with it, because TN
 > :memo: **Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted.
 
 
+<div class="content-body">
+<div class="content">
+<h1>One-Time Transfer</h1>
+<p>A one-time transfer requires the following information.</p>
+</div>
+<div class="image">
+<img src="../../assets/images/one-time.png">
+</div>
+</div>
+
+
 <style>
+
+    .content {
+        width: 50%
+    }
+
+    .image {
+        width: 40%
+    }
+
+    .content-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
     .card-body {
         margin: 20px;
     }
