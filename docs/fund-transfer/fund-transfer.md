@@ -60,7 +60,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
 </div>
 
 <div class="collapsible-container">
-    <input type="checkbox" class="collapsible-checkbox">
+    <input type="checkbox" class="collapsible-checkbox" id="section1">
     <label class="label-expand" for="section1">One-Time Transfer</label>
     <div class="content-expand">
         <p>
