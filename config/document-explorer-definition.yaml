@@ -72,12 +72,8 @@
 - sections:
   - title: Fund Transfers Services
     sections:
-    - title: Transfer Methods
-      link: docs/fund-transfer/transfer-methods.md
-    - title: Fund Transfer frequencies & Durations
-      link: docs/fund-transfer/FT-freq.md
-    - title: Transfer Cut-off Times
-      link: docs/fund-transfer/transfer-cutOff.md
+    - title: Fund Transfer
+      link: docs/fund-transfer/fund-transfer.md
 - sections:
   - title: Transfer Frequencies/Duration
     link: docs/transfer-durations.md
