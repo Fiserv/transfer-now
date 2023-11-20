@@ -4,7 +4,7 @@
 The below Figure represents the proposed sequence of calls via the SSO. See [SSO - Payload Secure Message Exchange](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md) to know more about the SSO process and the list of applicable SSO elements. 
 
 &nbsp;
-   <img class="center" src="../../../assets/images/ssoformobile.png">
+   <img class="center" src="https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/ssoformobile.png">
 
 &nbsp;
 
