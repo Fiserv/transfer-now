@@ -71,9 +71,7 @@
       link: docs/transfer-via-bank-accounts/accounts-restrictions.md
 - sections:
   - title: Fund Transfers Services
-    sections:
-    - title: Fund Transfer
-      link: docs/fund-transfer/fund-transfer.md
+    link: docs/fund-transfer/fund-transfer.md
 - sections:
   - title: Transfer Frequencies/Duration
     link: docs/transfer-durations.md
