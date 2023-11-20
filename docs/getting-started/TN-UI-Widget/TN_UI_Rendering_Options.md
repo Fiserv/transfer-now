@@ -20,14 +20,14 @@ With the Fiserv ePayments-hosted UI solution, clients control how they launch th
 
 
 
-
 <!--
 
 type: tab
 
-titles: Full Control, Framed, Pop-up
+titles: Full Control , Framed, Pop-up
 
 -->
+
 
  ## Full Control 
 
@@ -68,7 +68,9 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 
 A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering in a single frame embedded within the client’s parent web page. The Fiserv screens are embedded in a frame that is built and maintained by the client. 
 
-Note: The size of this frame is controlled by the Client. 
+<!-- theme: info -->
+
+> :memo: _**Note:** The size of this frame is controlled by the Client._
 
 The navigation in the frame links only to screens within TransferNow. In this implementation, an FI has the option to remove the header and footer, so only the working area of the application is displayed in the frame. 
 
@@ -121,13 +123,16 @@ The size of the browser pop-up window is controlled by the Client via code that 
 
  
 
+```
 <a href="#"  
 
 onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel',  
 
 'PopupPage', 'width=700, height=500, scrollbars=yes,resizable=yes, 
 
-toolbar=no, menubar=no'); return false;">Click to open</a> 
+toolbar=no, menubar=no'); return false;">Click to open</a>
+```
+ 
 
 <!-- theme: info -->
 

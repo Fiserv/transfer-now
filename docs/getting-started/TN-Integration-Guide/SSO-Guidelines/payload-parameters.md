@@ -11,7 +11,9 @@ The end user payload that a Client sends to Fiserv is composed of various parame
 
 
 [User Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md) - defines the User Profilepayload elements. </br>
+
 [Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md) - defines the Account Profile payload elements. </br>
+
 [Card Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md) (only applicable if a client has enabled Simple Business support in TN) - defines the Card Account Profile payload elements that Fiserv processes as part of a client payload secure message post.</br>
 
 Each table provides a description of each payload element, any associated usage restrictions, and the error flow that either the service application takes, or the Client should take if a payload issue is detected. 
@@ -44,17 +46,8 @@ Payload elements that are listed as being a required payload parameter must be p
     }
 </style>
 
-Payload elements that are listed (in [User profile parameter-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md) and [Account Profile Payload Elements-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md)) as being optional payload parameter but Fiserv strongly suggests Client include parameter and associated value for Risk Management purposes identify those elements where it is up to the Client to decide whether that respective element will be passed to Fiserv. Failing to pass such an element to Fiserv could have risk implications. For example, a client choosing not to pass the user-in-good-standing payload element could result in Fiserv revisiting any risk agreement pre-negotiated with the Client under the assumption that all Risk Management payload elements would be passed to Fiserv. Additionally, the Client excluding any element identified as a Risk Management element could hinder Fiserv’s ability to detect end user fraud or misuse of services. 
+Payload elements that are listed in ( [User profile parameter-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md) and [Account Profile Payload Elements-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md)) as being optional payload parameter but Fiserv strongly suggests Client include parameter and associated value for Risk Management purposes identify those elements where it is up to the Client to decide whether that respective element will be passed to Fiserv. Failing to pass such an element to Fiserv could have risk implications. For example, a client choosing not to pass the user-in-good-standing payload element could result in Fiserv revisiting any risk agreement pre-negotiated with the Client under the assumption that all Risk Management payload elements would be passed to Fiserv. Additionally, the Client excluding any element identified as a Risk Management element could hinder Fiserv’s ability to detect end user fraud or misuse of services. 
 
-&nbsp;
-
-<center>
-
-![Image](../../../../assets/images/payloadsecuremessageexchange.png) <br />
-
-
-
-</center>
 
 &nbsp;
 
