@@ -60,12 +60,41 @@ A transaction processed via the GFM has less risk associated with it, because TN
 </div>
 
 <div class="collapsible-container">
+<div>
     <input type="checkbox" class="collapsible-checkbox" id="section1">
     <label class="label-expand" for="section1">One-Time Transfer</label>
     <div class="content-expand">
         <p>
             A one-time transfer requires the following information.
         </p>
+    </div>
+    </div>
+    </br>
+    <div>
+    <input type="checkbox" class="collapsible-checkbox" id="section2">
+    <label class="label-expand" for="section2">Recurring Transfers</label>
+    <div class="content-expand">
+        <p>
+            Recurring transfers require the following information.
+        </p>
+        <p class="block-quote">Note: The Instant Transfer option is not applicable for recurring transfers.</p>
+    </div>
+    </div>
+    </br>
+    <div>
+    <input type="checkbox" class="collapsible-checkbox" id="section3">
+    <label class="label-expand" for="section3">On-Screen User Messaging</label>
+    <div class="content-expand">
+        <p>If a user sets up a Scheduled Recurring Transfer with a transfer date that falls on a weekend or a holiday, they are informed that:</p> 
+        <p>“A send date of one or more transfers may fall on a weekend, bank holiday or at the end of a month with less than 31 days. We will reschedule these transfers for the business day”. 
+        </p>
+        <p class="block-quote">Note: The previous/next day transfer will be adjusted based on the Financial Institutions choice to prepone or postpone transfers.</p>
+        </br>
+        <p>If a user attempts to schedule a one-time transfer on a weekend or holiday, the user is informed as follows: </p>
+        <p><strong>Weekend transfer:</strong> As the date selected is a weekend, this transfer will start to be processed on the next/prior business day.</p>
+        <p><strong>Holiday transfer:</strong> As the date selected is a holiday, this transfer will start to be processed on the next/prior business day.</p>
+        <p class="block-quote">Note: The previous/next day transfer will be adjusted based on the Financial Institutions choice to prepone or postpone transfers.</p>
+    </div>
     </div>
 </div>
 
@@ -107,6 +136,14 @@ A transaction processed via the GFM has less risk associated with it, because TN
 
     .collapsible-checkbox:checked+.label-expand+.content-expand {
         display: block;
+    }
+
+    .block-quote {
+        padding: 1em;
+        color: #6a737d;
+        border-left: 0.375em solid #40a9ff;
+        background: #e6f7ff;
+        border-radius: 3px;
     }
 
     .content-left {
