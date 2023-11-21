@@ -67,13 +67,13 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>
             A one-time transfer requires the following information.
         </p>
-        <img src="../../assets/images/otp-duration.png"/>
+        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/otp-duration.png"/>
         <h2>Recurring Transfers</h2>
         <p>
             Recurring transfers require the following information.
         </p>
         <p class="block-quote">Note: The Instant Transfer option is not applicable for recurring transfers.</p>
-        <img src="../../assets/images/otp-duration.png"/>
+        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/otp-duration.png"/>
         <h2>On-Screen User Messaging</h2>
         <p>If a user sets up a Scheduled Recurring Transfer with a transfer date that falls on a weekend or a holiday, they are informed that:</p> 
         <p>“A send date of one or more transfers may fall on a weekend, bank holiday or at the end of a month with less than 31 days. We will reschedule these transfers for the business day”. 
