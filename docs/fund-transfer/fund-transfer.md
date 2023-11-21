@@ -94,7 +94,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         display: block;
     }
 
-    .collapsible:checked+.label {
+    .collapsible-checkbox:checked+.label-expand {
         background-color: #555;
     }
 
@@ -105,7 +105,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         background-color: #f1f1f1;
     }
 
-    .collapsible:checked+.label+.content-expand {
+    .collapsible-checkbox:checked+.label-expand+.content-expand {
         display: block;
     }
 
