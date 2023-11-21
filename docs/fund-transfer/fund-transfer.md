@@ -46,7 +46,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
 
 <!-- theme: info -->
 
-> :memo: **Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted.
+> :memo: **Note:** TN offers automated emails for clients to send to users to keep them informed of the progress of the ACH transaction.
 
 
 <!-- <div class="content-body">
@@ -213,6 +213,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>
             The below Figure explains the differences in process flow between ACH, Next Day Good Funds, and Instant Transfers.
         </p>
+        <img src="../../assets/images/fund-transfer-flow.png"/>
     </div>
     </div>
     </br>
