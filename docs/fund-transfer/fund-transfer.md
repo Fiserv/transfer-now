@@ -244,7 +244,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         </div>
         <h2>Cancelling and Editing Transfers</h2>
         <p>Users can edit scheduled or recurring transfers in the Activity screen.</p>
-        <img src="../../assets/images/activity.png"/>
+        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/activity.png"/>
     </div>
     </div>
     </br>
