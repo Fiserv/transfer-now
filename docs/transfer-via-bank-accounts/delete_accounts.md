@@ -41,7 +41,7 @@ From the Preferences screen, the user can choose Delete Account.
  
 
 
- ## See Also
+ **See Also**
 
 
 [Add An Account](?path=docs/transfer-via-bank-accounts/add-an-Account.md)   
