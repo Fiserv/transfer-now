@@ -217,6 +217,52 @@ A transaction processed via the GFM has less risk associated with it, because TN
     </div>
     </div>
     </br>
+    <div>
+    <input type="checkbox" class="collapsible-checkbox" id="section5">
+    <label class="label-expand" for="section5">Instant Transfers (Via the NOW Network)</label>
+    <div class="content-expand">
+            <p>The optional Instant Transfers feature adds real-time speed to TransferNow. Through use of real-time connectivity offered by the NOW Network, Instant Transfers enables consumers to move money instantly between their bank accounts at different financial institutions and between their account at host institution and Debit Card.</p>
+            <p>Instant Transfers are inter-institution transfers that are completed within seconds of transaction initiation by the consumer. When an Instant Transfer is executed by the user, the sending account or card is debited instantly and then the receiving account or card is credited instantly. Funds are made available instantly for withdrawal to the consumer at the receiving institution as well.</p>
+            <p>Instant Transfers are only available to FIs that participate in Fiserv's NOW network. The NOW network is Fiserv's real-time payments network that can move funds instantly from an account/card at one participating Financial Institution to an account/card at another participating FI.</p>
+        <p>NOW network debits and credits accounts instantly at an FI through real-time instructions/messages to the core banking system at an FI. When a user executes an Instant Transfer, the funds are instantly debited from her/his account/card by TransferNow through the NOW network. Once the debit transaction is successful, a real-time credit message/instruction is issued to the receiving FI. Funds are instantly credited to the receiving account/card and immediately made available to the user. Because the funds are taken out of the account prior to the credit transaction, this constitutes a 'good funds' model.</p>
+        <p class="block-quote">Note: Instant connectivity via the NOW network is a prerequisite for the Instant Transfer feature. Debit-card networks can be accessed via the NOW network (only VISA is offered at this time). Clients should clarify which service provider supports their Instant service (e.g., ESF) and provide that information to the implementation project manager. If an FI already has Instant Transfers for Zelle® via NOW Instant connectivity, then Instant Transfers will leverage that same underlying connectivity.</p>
+    </div>
+    </div>
+    </br>
+    <div>
+    <input type="checkbox" class="collapsible-checkbox" id="section6">
+    <label class="label-expand" for="section6">High Limit Transfers</label>
+    <div class="content-expand">
+            <p>A client can offer high-limit funds transfers beyond the transaction limits that apply to standard service processing.</p>
+            <p>The default qualification rules for high-limit transfers are listed below:</p>
+            <div class="card-body">
+            <ul>
+            <li>The user has been a customer in good standing for at least three months.</li>
+            <li>The user has not caused any negative activity or result via Fiserv ePayments software where such negative activity or result includes but is not limited to: Non-Sufficient Funds (NSF); Account Closed; Authorization Revoked by End User Payment Stopped; End User Advises Not Authorized; Account Holder deceased; Beneficiary Deceased; or Account Frozen.</li>
+            <li>For each external account from which a high limit funds transfer is initiated, the user has completed at least one successful inbound funds transfer of at least $1,000 from the external account to a client-hosted account no sooner than sixty (60) days prior to initiating the first inbound high-limit funds transfer.</li>
+            </ul>
+        </div>
+        <h2>Cancelling and Editing Transfers</h2>
+        <p>Users can edit scheduled or recurring transfers in the Activity screen.</p>
+        <img src="../../assets/images/activity.png"/>
+    </div>
+    </div>
+    </br>
+    <div>
+    <input type="checkbox" class="collapsible-checkbox" id="section7">
+    <label class="label-expand" for="section7">Shared Transfers (Optional)</label>
+    <div class="content-expand">
+      <p>Optionally, financial Institutions can allow all users that share a host account, to view (but not edit/delete) all activity within that account.</p>
+    </div>
+    </div>
+    </br>
+    <div>
+    <input type="checkbox" class="collapsible-checkbox" id="section8">
+    <label class="label-expand" for="section8">Cancelling/Editing Transfers</label>
+    <div class="content-expand">
+      <p>Only the user who creates a transfer (or whom it was created on behalf of) can edit/cancel the transfer. For all others who see this shared transfer, it is view only.</p>
+    </div>
+    </div>
 </div>
 
 
