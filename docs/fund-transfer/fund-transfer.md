@@ -213,7 +213,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>
             The below Figure explains the differences in process flow between ACH, Next Day Good Funds, and Instant Transfers.
         </p>
-        <img src="../../assets/images/fund-transfer-flow.png"/>
+        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/fund-transfer-flow.png"/>
     </div>
     </div>
     </br>
