@@ -96,6 +96,53 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p class="block-quote">Note: The previous/next day transfer will be adjusted based on the Financial Institutions choice to prepone or postpone transfers.</p>
     </div>
     </div>
+    </br>
+    <div>
+    <input type="checkbox" class="collapsible-checkbox" id="section4">
+    <label class="label-expand" for="section4">Standard Transfers</label>
+    <div class="content-expand">
+        <p>Standard funds transfers are inter-institution transfers settled using the ACH system and completed within three business days. The completion of a transfer, including the availability of funds in the destination account and access to transaction details, depends in part on how quickly the client updates its account after receiving funds transfer information.</p> 
+        <p>Funds are posted to the destination account before start-of-business on the third business day after the funds are withdrawn from the source account.</p>
+        <p>Banking holidays and/or New York Stock Exchange (NYSE) holidays extend the transaction cycle for standard transactions.</p>
+        <table>
+  <tr>
+    <th>Requested by 10:00 PST on:</th>
+    <th>Source account debited before Start-of-Business on:</th>
+    <th>Destination account credited before Start-of-Business on:</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>Tuesday</td>
+    <td>Thursday</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>Wednesday</td>
+    <td>Friday</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>Thursday</td>
+    <td>Monday</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td>Friday</td>
+    <td>Tuesday</td>
+  </tr>
+  <tr>
+    <td>Saturday</td>
+    <td>Monday</td>
+    <td>Wednesday</td>
+  </tr>
+  <tr>
+    <td>Sunday</td>
+    <td>Monday</td>
+    <td>Wednesday</td>
+  </tr>
+</table>
+    </div>
+    </div>
 </div>
 
 
