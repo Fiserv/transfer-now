@@ -43,6 +43,8 @@ A transaction processed via the GFM has less risk associated with it, because TN
 
 ![ACH](../../assets/images/ACH.png)
 
+<img class="image-center" src="../../assets/images/ACH.png"/>
+
 
 <!-- theme: info -->
 
@@ -326,6 +328,13 @@ A transaction processed via the GFM has less risk associated with it, because TN
         align-items: center;
         justify-content: space-between;
         padding: 20px;
+    }
+
+    .image-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
     }
     
     .card-body {
