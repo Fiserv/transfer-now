@@ -49,7 +49,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
 > :memo: **Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted.
 
 
-<div class="content-body">
+<!-- <div class="content-body">
 <div class="content-left">
 <h1>One-Time Transfer</h1>
 <p>A one-time transfer requires the following information.</p>
@@ -57,7 +57,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
 <div class="image-otp">
 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/one-time.png">
 </div>
-</div>
+</div> -->
 
 <div class="collapsible-container">
 <div>
@@ -67,11 +67,13 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>
             A one-time transfer requires the following information.
         </p>
+        <img src="../../assets/images/otp-duration.png"/>
         <h2>Recurring Transfers</h2>
         <p>
             Recurring transfers require the following information.
         </p>
         <p class="block-quote">Note: The Instant Transfer option is not applicable for recurring transfers.</p>
+        <img src="../../assets/images/otp-duration.png"/>
         <h2>On-Screen User Messaging</h2>
         <p>If a user sets up a Scheduled Recurring Transfer with a transfer date that falls on a weekend or a holiday, they are informed that:</p> 
         <p>“A send date of one or more transfers may fall on a weekend, bank holiday or at the end of a month with less than 31 days. We will reschedule these transfers for the business day”. 
