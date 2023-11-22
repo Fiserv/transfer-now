@@ -1,12 +1,12 @@
 ## Payload Submission
 
 
-Clients are required to submit end user payloads to the Fiserv Client Integration Server via [https://sso.fta.cashedge.com/signupGRel?](https://sso.fta.cashedge.com/signupGRel?) 
+Clients are required to submit end user payloads to the Fiserv Client Integration Server via `https://sso.fta.cashedge.com/signupGRel?` the Client end user submitted payload—which would get appended to the end of each respective URL (thus replacing the &lt; payload &gt; substring)
+ 
 
 upon receiving this end user payload information, the Fiserv Client Integration Server will check to ensure that all required information is part of the request. If the Fiserv Client Integration Server deems the payload as being valid, it will return an application session key back to the Client’s server; otherwise, it will return an SS error code (see [Fiserv Payload Submission Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md)). 
 
-Valid Session Key 
-
+Valid Session Key is shown below.
 <center>
 
 ![Image](../../../../assets/images/payloadsubmission.png) <br />
@@ -44,6 +44,27 @@ When the Fiserv Client Integration Server returns a session key in response to a
 >:memo:_**Note:**  If the Client performs the redirect after the session key has expired, the service will display an SS41 error page. See [Fiserv ePayments TN Application Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md)._ 
 
 The Client is requesting the following session key expiration period: 
+
+<html>
+  <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>Session Key Expiration</th>
+                    <th> Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Payload Session Key Expiration Period</td>
+                </tr>
+                <tr>
+                    <td>For Fiserv ePayments Production Environment
+                    • Client wishes session key to be valid only for 5 minutes (default)</td>
+                </tr>
+            </tbody>
+        </table>
+</html>
+
 
 
 ## Perform a Payload Submission Using Only a Web Browser
