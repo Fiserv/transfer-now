@@ -15,6 +15,9 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 <div class="card-body">
 <ul>
 <li>User selects the bank account from which the amount to be debited under “From” dropdown list.</li>
+</ul>
+</div>
+
 
 &nbsp;
 
@@ -26,7 +29,11 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 </center>
 
+<div class="card-body">
+<ul>
 <li>User selects the bank account to which the amount to be credited under “To” dropdown list. </li>
+</ul>
+</div>
 
 
 &nbsp;
@@ -38,15 +45,24 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 </center>
 
+<div class="card-body">
+<ul>
 <li>Enter the amount to be transferred.</li></br>
+</ul>
+</div>
 
 <!-- theme: info -->
 
 > :memo: _**Note:** View Limits will display the maximum amount that can be transferred._
 
+<div class="card-body">
+<ul>
 <li>Set the date when the user wants to initiate the transaction.</li>
 
 <li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="../transfer-durations.md">Transfer Frequencies / Durations</a></li>
+
+</ul>
+</div>
 
 
 
@@ -59,9 +75,14 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 </center>
 
+<div class="card-body">
+<ul>
 <li>Click Review. </li>
 
 <li>The transfer detail is displayed on the screen to allow the user to review and confirm. </li>
+
+</ul>
+</div>
 
 &nbsp;
 
@@ -72,9 +93,14 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 </center>
 
+<div class="card-body">
+<ul>
 <li>Click Confirm to complete the transfer. </li>
 
 <li>Transfer confirmation screen is displayed.</li>
+
+</ul>
+</div>
 
 &nbsp;
 
@@ -85,8 +111,9 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 </center>
 
+<div class="card-body">
+<ul>
 <li>All transfers, including debit card transfers are shown on the “Activity” page as shown below. </li>
-
 </ul>
 </div>
 
