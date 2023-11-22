@@ -1,12 +1,12 @@
 ## Payload Submission
 
 
-Clients are required to submit end user payloads to the Fiserv Client Integration Server via `https://sso.fta.cashedge.com/signupGRel?` the Client end user submitted payload—which would get appended to the end of each respective URL (thus replacing the &lt; payload &gt; substring)
+Clients are required to submit end user payloads to the Fiserv Client Integration Server via ` https://sso.fta.cashedge.com/signupGRel? ` the Client end user submitted payload—which would get appended to the end of each respective URL (thus replacing the &lt; payload &gt; substring)
  
 
 upon receiving this end user payload information, the Fiserv Client Integration Server will check to ensure that all required information is part of the request. If the Fiserv Client Integration Server deems the payload as being valid, it will return an application session key back to the Client’s server; otherwise, it will return an SS error code (see [Fiserv Payload Submission Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md)). 
 
-Valid Session Key is shown below.
+Valid Session Key is shown below:
 <center>
 
 ![Image](../../../../assets/images/payloadsubmission.png) <br />
@@ -25,7 +25,7 @@ Valid Session Key is shown below.
 
 &nbsp;
 
-After the Client captures the session key value returned in the response from the Fiserv Client Integration Server, the Client would then append this value to one of the session key submissions URL [https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=](https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=) , just after the KEY = string (thus replacing the substring). 
+After the Client captures the session key value returned in the response from the Fiserv Client Integration Server, the Client would then append this value to one of the session key submissions URL [https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=](https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=), just after the KEY = string (thus replacing the substring). 
 
 &nbsp;
 
@@ -37,7 +37,7 @@ After the Client captures the session key value returned in the response from th
 
 ## Payload Session Key Expiration Period 
 
-When the Fiserv Client Integration Server returns a session key in response to a client submitted end user payload, the key is only valid for a short period of time and, therefore, must be submitted to the key submission URL [https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=](https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=) , before the session key validation period expires. 
+When the Fiserv Client Integration Server returns a session key in response to a client submitted end user payload, the key is only valid for a short period of time and, therefore, must be submitted to the key submission URL [https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=](https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=), before the session key validation period expires. 
 
 <!-- theme: info -->
 
