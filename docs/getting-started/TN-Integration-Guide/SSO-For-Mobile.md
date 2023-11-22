@@ -64,15 +64,21 @@ loadView.loadUrl(<>);
 
 ## Session Management
 
-<b>Keeping banking session alive </b>
+<font size="4">  
+    <b>Keeping banking session alive </b>
+</font> 
+
+&nbsp;
 
 Both iOS and Android platform broadcast touch events for a webview, so that the parent app can listen and keep the session alive.
- 
 
-<b>Handling session timeouts in TransferNow </b>
+<font size="4">  
+    <b>Handling session timeouts in TransferNow </b>
+</font> 
 
-TransferNow will call a function on the parent app when the session times out. 
- 
+&nbsp;
+
+TransferNow will call a function on the parent app when the session times out.  
 
 ## Sample Pseudocode for Handling Session Management 
 

@@ -7,89 +7,68 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 <center>
 
-![Image](../../assets/images/Transfer-via-bank-accounts-create-transfer.png) <br />
+![Image](../../assets/images/Create-Transfer.png) <br />
 
 
 </center>
 
 <div class="card-body">
 <ul>
-<li>User selects the bank account from which the amount to be debited under “From” dropdown list.</li>
-
-&nbsp;
-
-
-<center>
-
-![Image](../../assets/images/Transfer-via-bank-accounts-2.png) <br />
-
-
-</center>
-
-<li>User selects the bank account to which the amount to be credited under “To” dropdown list. </li>
-
-
-&nbsp;
-
-<center>
-
-![Image](../../assets/images/Transfer-via-bank-accounts-3.png) <br />
-
-
-</center>
-
-<li>Enter the amount to be transferred.</li></br>
+<li>User can select “From” and “To” account information from the list of accounts that are already added.</li>
+<li>Enter the amount to be transferred.</li>
+</ul>
+</div>
 
 <!-- theme: info -->
 
 > :memo: _**Note:** View Limits will display the maximum amount that can be transferred._
+User can select “From” and “To” account information from the list of accounts that are already added. 
 
+<div class="card-body">
+<ul>
 <li>Set the date when the user wants to initiate the transaction.</li>
-
-<li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="../transfer-durations.md">Transfer Frequencies / Durations</a></li>
-
-
-
-&nbsp;
-
-<center>
-
-![Image](../../assets/images/Transfer-via-bank-accounts-4.png) <br />
-
-
-</center>
-
-<li>Click Review. </li>
-
-<li>The transfer detail is displayed on the screen to allow the user to review and confirm. </li>
-
-&nbsp;
-
-<center>
-
-![Image](../../assets/images/Transfer-via-bank-accounts-5.png) <br />
-
-
-</center>
-
-<li>Click Confirm to complete the transfer. </li>
-
-<li>Transfer confirmation screen is displayed.</li>
-
-&nbsp;
-
-<center>
-
-![Image](../../assets/images/Transfer-via-bank-accounts-6.png) <br />
-
-
-</center>
-
-<li>All transfers, including debit card transfers are shown on the “Activity” page as shown below. </li>
-
+<li>Select the Frequency. To know more about Transfer Funds Frequency, see XXX.</li>
+<li>Click Review.</li>
 </ul>
 </div>
 
+
+&nbsp;
+
+<center>
+
+![Image](../../assets/images/Review-Transfer.png) <br />
+
+
+</center>
+
+<div class="card-body">
+<ul>
+<li>The transfer detail is displayed on the screen to allow the user to review and confirm. </li>
+<li>lick confirm to complete the transfer.</li>
+<li>Transfer confirmation screen is displayed.</li>
+</ul>
+</div>
+
+
+
+&nbsp;
+
+<center>
+
+![Image](../../assets/images/Transfer-Confirmation.png) <br />
+
+
+</center>
+
+
+<div class="card-body">
+<ul>
+<li>All transfers, including debit card transfers are shown on the “Activity” page as shown below. </li>
+</ul>
+</div> 
+
+&nbsp;
 
 <center>
 

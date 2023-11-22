@@ -40,7 +40,7 @@ After registration, the developer will have an instant access to the shared sand
 
  
 
-**Step 2: Using TransferNow UI Widget**
+**Step 2: Using TransferNow Widget**
 
 To use and explore TransferNow Widget, navigate to [TransferNow UI Widget](?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md) and use the default (Shared) Home ID or create a dedicated sandbox Home ID. 
 

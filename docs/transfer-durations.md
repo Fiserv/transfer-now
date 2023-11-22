@@ -42,7 +42,7 @@ settings via the DGF.
 
 <center>
 
-![image](../assets/images/frequency-duration.png) <br/>
+![image](../assets/images/Standard_CutOff_Time.png) <br/>
 
 
 </center>
