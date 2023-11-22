@@ -29,7 +29,11 @@ titles: Full Control , Framed, Pop-up
 -->
 
 
- ## Full Control 
+
+
+
+ ##  Full Control 
+
 
 A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering in a window initially used to display the Client web page. Therefore, the user is directed to TransferNow screens that use the same window as the FI’s web page. 
 

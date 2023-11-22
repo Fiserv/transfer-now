@@ -6,7 +6,7 @@ Each new end user accessing the service for the very first time will be presente
 
 <center>
 
-<img src="../../../assets/images/First_Time_Aggreement.png" width="300" height="400"></br>
+<img src="../../../assets/images/First_Time_Aggreement.png" width="200" height="300"></br>
 
 </center> 
 
