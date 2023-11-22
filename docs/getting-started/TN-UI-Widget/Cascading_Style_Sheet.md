@@ -15,7 +15,7 @@ Clients may view and update the CSS in the following ways:
 
 <!-- theme: info -->
 
-> :memo: _**Note:** Once Fiserv receives the CSS from the client, Fiserv applies these elements to the TransferNow UI. 
+> :memo: _**Note:** Once Fiserv receives the CSS from the client, Fiserv applies these elements to the TransferNow UI._
 
 **To Know more visit the below Guidelines:**
 

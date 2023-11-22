@@ -12,7 +12,9 @@ This provides an architectural overview of the mobile integration and invoking o
 
 ## SSO for Mobile
 
-This leverages the TransferNow SSO built for online banking. The parent app will need to get that one-use SSO key from the existing middleware. The SSOkey will then be appended to the URL to invoke TransferNow in the webview. URL’s would be confirmed during the implementation , clients continue to invoke the existing TransferNow URL and would internally get directed to the TransferNow UI.
+This leverages the TransferNow SSO built for online banking. The parent app will need to get that one-use SSO key from the existing middleware. The SSOkey will then be appended to the URL to invoke TransferNow in the webview.
+ 
+URL’s would be confirmed during the implementation , clients continue to invoke the existing TransferNow URL and would internally get directed to the TransferNow UI.
 
 &nbsp;
 
