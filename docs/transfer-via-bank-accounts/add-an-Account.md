@@ -4,7 +4,7 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 
 <div class="card-body">
 <ul>
-<li>To add a new account, user can select Add an account or debit card option.</li>
+<li>To add an external account, user can select Add a New Account option. </li>
 </ul>
 </div> 
 
@@ -12,14 +12,14 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 
 <center>
 
-![Image](../../assets/images/Create-Transfer.png) <br />
+![Image](../../assets/images/Transfer-via-bank-accounts-create-transfer.png) <br />
 
 
 </center>
 
 <div class="card-body">
 <ul>
-<li>Add Recipient’s Account screen is displayed.</li>
+<li>Add External Account screen is displayed. </li>
 </ul>
 </div> 
 
@@ -27,7 +27,7 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 
 <center>
 
-![Image](../../assets/images/Add_recipient.png) <br />
+![Image](../../assets/images/Add-External-Bank-Account.png) <br />
 
 
 </center>
@@ -37,8 +37,20 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 <ul>
 <li>The user adds one account at a time, specifying the account type, account number, and ABA routing number.</li>
 <li>Click Next.</li>
+<li>Verify your external bank account screen appears. See <a href="../transfer-durations.md">VerifyNow - Account Verification Methods </a> for more information on the account verification. </li>
+
 </ul>
 </div> 
+
+
+&nbsp;
+
+<center>
+
+![Image](../../assets/images/Verify-your-External-Bank-Account.png) <br />
+
+
+</center>
 
 
 The list of accounts added under any user can be viewed under the Preferences Screen. 
@@ -47,7 +59,7 @@ The list of accounts added under any user can be viewed under the Preferences Sc
 
 <center>
 
-![Image](../../assets/images/Add_an_account_preference_Screen.png) <br />
+![Image](../../assets/images/Preferences_Screen.png) <br />
 
 
 </center>
@@ -55,7 +67,7 @@ The list of accounts added under any user can be viewed under the Preferences Sc
 
 <!-- theme: info -->
 
-> :memo: _**Note:** To know more about adding a brokerage accounts, see Adding Brokerage Accounts_
+> :memo: _**Note:** To know more about adding a brokerage accounts,_ see [Adding Brokerage Accounts](?path=docs/transfer-via-bank-accounts/add_brokerage.md)
 
 
 ## See Also
