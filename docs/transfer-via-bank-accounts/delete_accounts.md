@@ -13,6 +13,7 @@ From the Preferences screen, the user can choose Delete Account.
 
 &nbsp;
 
+
 <center>
 
 ![Image](../../assets/images/Delete_Account_Preference_1.png) <br />
@@ -20,7 +21,9 @@ From the Preferences screen, the user can choose Delete Account.
 
 </center>
 
+
 &nbsp;
+
 
 <center>
 
@@ -29,10 +32,12 @@ From the Preferences screen, the user can choose Delete Account.
 
 </center>
 
+
 <!-- theme: info -->
 
 > :memo: _**Note:** Users can delete an account that is suspended; however, they cannot re-add the account until the suspension has been lifted._</br>
 > _Users can delete an account and re-add it. To prevent misuse of the trial deposit process, users can repeat this only once._
+
 
 <!-- theme: info -->
 
@@ -41,9 +46,7 @@ From the Preferences screen, the user can choose Delete Account.
  
 
 
- ##  See Also
-
-
+ **See Also**
 
 [Add An Account](?path=docs/transfer-via-bank-accounts/add-an-Account.md)   
 [Account Verification](?path=docs/transfer-via-bank-accounts/account_verification.md)      
