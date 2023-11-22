@@ -71,7 +71,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>
             A one-time transfer requires the following information.
         </p>
-        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/otp-duration.png"/>
+        <img src="../../assets/images/one-time-transfer.png"/>
         <h2>Recurring Transfers</h2>
         <p>
             Recurring transfers require the following information.
