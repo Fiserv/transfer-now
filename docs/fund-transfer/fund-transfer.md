@@ -41,8 +41,6 @@ TN supports two ACH transaction methods:
 
 A transaction processed via the GFM has less risk associated with it, because TN waits until the debit transaction completes successfully before initiating the credit transaction. On the other hand, for a NDT transaction, TN initiates both the credit and the debit transaction at the same time.
 
-<!-- ![ACH](../../assets/images/ACH.png) -->
-
 <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ACH.png"/>
 
 </br>
@@ -68,10 +66,14 @@ A transaction processed via the GFM has less risk associated with it, because TN
     <input type="checkbox" class="collapsible-checkbox" id="section1">
     <label class="label-expand" for="section1">One-Time Transfer</label>
     <div class="content-expand">
-        <p>
-            A one-time transfer requires the following information.
-        </p>
-        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/one-time-transfer.png"/>
+        <div class="content-body">
+          <div class="content-left">
+          <p>A one-time transfer requires the following information.</p>
+          </div>
+          <div class="image-otp">
+          <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/one-time-transfer.png">
+          </div>
+        </div>
         <h2>Recurring Transfers</h2>
         <p>
             Recurring transfers require the following information.
