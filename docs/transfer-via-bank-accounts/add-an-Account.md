@@ -37,7 +37,7 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 <ul>
 <li>The user adds one account at a time, specifying the account type, account number, and ABA routing number.</li>
 <li>Click Next.</li>
-<li>Verify your external bank account screen appears. See <a href="../transfer-durations.md">VerifyNow - Account Verification Methods </a> for more information on the account verification. </li>
+<li>Verify your external bank account screen appears. See <a href="https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method.md&branch=develop">VerifyNow - Account Verification Methods </a> for more information on the account verification. </li>
 
 </ul>
 </div> 
