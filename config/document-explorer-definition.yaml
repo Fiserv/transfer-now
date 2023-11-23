@@ -70,9 +70,6 @@
     - title: Account Restrictions
       link: docs/transfer-via-bank-accounts/accounts-restrictions.md
 - sections:
-  - title: Fund Transfers Services
-    link: docs/fund-transfer/fund-transfer.md
-- sections:
   - title: Transfer Frequencies/Duration
     link: docs/transfer-durations.md
 - sections:
