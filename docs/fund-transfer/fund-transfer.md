@@ -50,17 +50,6 @@ A transaction processed via the GFM has less risk associated with it, because TN
 
 > :memo: **Note:** TN offers automated emails for clients to send to users to keep them informed of the progress of the ACH transaction.
 
-
-<!-- <div class="content-body">
-<div class="content-left">
-<h1>One-Time Transfer</h1>
-<p>A one-time transfer requires the following information.</p>
-</div>
-<div class="image-otp">
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/one-time.png">
-</div>
-</div> -->
-
 <div class="collapsible-container">
 <div>
     <input type="checkbox" class="collapsible-checkbox" id="section1">
