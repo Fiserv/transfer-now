@@ -71,7 +71,6 @@ A transaction processed via the GFM has less risk associated with it, because TN
         </p>
           </div>
           <div class="image-otp">
-          <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/rec-time-transfer.png"/>
           </div>
         </div>
         <p class="block-quote">Note: The Instant Transfer option is not applicable for recurring transfers.</p>
