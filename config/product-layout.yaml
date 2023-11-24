@@ -46,16 +46,16 @@ featuredFeatures:
     relatedDocs:
      - link: docs/fund-transfer/transfer-methods.md
        title:
-  - title: Real Time Speed using Instant Transfer
+  - title: Real-Time Speed using Instant Transfer
     groupName: Account Verification
-    description: Now® Network allows transferring money between two instant – enabled accounts at different financial institutions in realtime or by the next day. This removes the credit risk related to ACH-based, next day services.
+    description: Now® Network allows transferring money between two instant - enabled accounts at different financial institutions in realtime or by the next day. This removes the credit risk related to ACH-based, next day services.
     featured: true
     relatedDocs:
      - link: docs/fund-transfer/transfer-services.md
        title: Instant Verification
   - title: Multiple Account Verification
     groupName: Multiple Account Verification
-    description: Fiserv offers several advanced alternatives to help protecting against online banking fraud. Multifactor Authentication/Account Verification enhances online security and maintain compliance with banking regulations.
+    description: Fiserv offers several advanced alternatives to help protecting against online banking fraud. Multifactor Authentication / Account Verification enhances online security and maintain compliance with banking regulations.
     featured: true
     relatedDocs:
      - link: docs/acc-to-acc-transfer/Account-Verify/Account-Verify.md
