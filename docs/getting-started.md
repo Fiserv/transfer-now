@@ -16,7 +16,7 @@ Before utilizing TransferNow UI widget, you must follow the steps to get an acce
 
 You will be assigned a unique partner ID and a home ID (or multiple home IDs, depending on your needs). You may provision multiple customers (users) under a home ID. A user may have more than one Financial Institution (FI), or any other accounts and connection types offered by AllData / Early Warning System (EWS) under their profile. See [AllData® Aggregation](https://qa-developerstudio.fiserv.com/product/AllDataAggregation?branch=develop) for more information.  
 
-To know more about EWS, see [Instant (Risk Database) Verification](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verify-accounts-using-verifynow/instant-verification.md&branch=develop)
+To know more about EWS, see [Instant (Risk Database) Verification](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verify-accounts-using-verifynow/instant-verification.md&branch=develop).
  
 
 ### Access Developer Studio
@@ -27,7 +27,7 @@ To create an account in Developer Studio, you will need the following:
 <div class="card-body">
 <ul>
 <li>Account information</li>
-<li>Valid business e-mail address</li>
+<li>Valid business e-mail address.</li>
 </ul>
 </div>
 
@@ -42,7 +42,7 @@ After registration, the developer will have an instant access to the shared sand
 
 **Step 2: Using TransferNow UI Widget**
 
-To use and explore TransferNow Widget, navigate to [TransferNow UI Widget](?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md) and use the default (Shared) Home ID or create a dedicated sandbox Home ID. 
+To use and explore TransferNow UI Widget, navigate to [TransferNow UI Widget](?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md) and use the default (Shared) Home ID or create a dedicated sandbox Home ID. 
 
 ### TransferNow and Its Use Cases 
 
@@ -72,7 +72,7 @@ In addition to that, TransferNow implements Responsive Web Design, which optimiz
     }
     .card-body ul li::before {
         content: "\2022";
-        font-size: 1.5em;
+        font-size: 1em;
         color: #f60;
         display: inline-block;
         width: 1em;
