@@ -11,7 +11,6 @@ Successful One-Way and Mutual Server Authentication is dependent upon the use of
 <li><b>Signature Algorithm </b>— the algorithm used to produce the certificate’s digital signature  </li>
 <li><b>Valid From/To </b>— when the validity of the certificate will expire. </li>
 </ul>
-&nbsp;
 
 A digital certificate contains the principal’s public key. If you were to sign a digital document with your own personal private key, you would need to provide the recipient of that document with your public key so that the recipient could verify that the document was really signed by you. 
 
@@ -60,7 +59,7 @@ Click here to know more about [Guidelines for Obtaining a CA Issued SSL Digital 
     }
     .card-body ul li::before {
         content: "\2022";
-        font-size: 1.5em;
+        font-size: 1em;
         color: #f60;
         display: inline-block;
         width: 1em;
