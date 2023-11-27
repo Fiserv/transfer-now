@@ -25,7 +25,7 @@ Valid Session Key is shown below:
 
 &nbsp;
 
-After the Client captures the session key value returned in the response from the Fiserv Client Integration Server, the Client would then append this value to one of the session key submissions URL [https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=](https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=), just after the KEY = string (thus replacing the substring). 
+After the Client captures the session key value returned in the response from the Fiserv Client Integration Server, the Client would then append this value to one of the session key submissions URL ` https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY= ` , just after the KEY = string (thus replacing the substring). 
 
 &nbsp;
 
@@ -37,7 +37,7 @@ After the Client captures the session key value returned in the response from th
 
 ## Payload Session Key Expiration Period 
 
-When the Fiserv Client Integration Server returns a session key in response to a client submitted end user payload, the key is only valid for a short period of time and, therefore, must be submitted to the key submission URL [https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=](https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=), before the session key validation period expires. 
+When the Fiserv Client Integration Server returns a session key in response to a client submitted end user payload, the key is only valid for a short period of time and, therefore, must be submitted to the key submission URL ` https://transfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY= `, before the session key validation period expires. 
 
 <!-- theme: info -->
 
@@ -312,4 +312,4 @@ When the Submit Session Key button is clicked, the session key value is being su
 
 Alternatively, you can enter the URL directly into your browser’s address bar and then press enter. 
 
-[https://certtransfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=9f407d86d636c32145dd7f05062230ae](https://certtransfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=9f407d86d636c32145dd7f05062230ae) 
+` https://certtransfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=9f407d86d636c32145dd7f05062230ae `

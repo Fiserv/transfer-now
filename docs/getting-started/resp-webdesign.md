@@ -18,22 +18,27 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 
 &nbsp;
 
+<center>
 
+![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/320MobileViewpng.png)</br>320*479 Pixel Breakpoint for Mobile Phones</br>
 
+</center>
 
+&nbsp;
 
-<div class="card-container">
-        <div style="margin: 5px">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/320MobileViewpng.png"> <br>320*479 Pixel Breakpoint for Mobile Phones</br>
-        </div>
-        <div style="margin: 5px">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/480MobileView.png"> </br>480*767 Pixel Breakpoint For Plus-Sized Mobile Phones</br>
-        </div>
-        <div style="margin: 5px">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/desktopview.png"> </br>700 Plus Pixel Breakpoint for Larger Screens</br>
-        </div>
-    </div>
+<center>
 
+![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/480MobileView.png) </br>480*767 Pixel Breakpoint For Plus-Sized Mobile Phones</br>
+
+</center>
+
+&nbsp;
+
+<center>
+
+![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/desktopview.png)    </br>700 Plus Pixel Breakpoint for Larger Screens</br>
+
+</center>
 
 
 &nbsp;
