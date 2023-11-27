@@ -21,7 +21,7 @@ The following figure shows the SSL steps taken for certificate authentication; (
  
  <center>
   
-![image](../../../assets/images/SSL-Steps.png) <br/>
+![image](../../../assets/images/SSLAuth.png) <br/>
 
 
 </center>
@@ -66,7 +66,7 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Fo
  
  <center>
   
-![image](../../../assets/images/Create-Transfer.png) <br/>
+![image](../../../assets/images/transfer-via-bank-trasfer-funds-account.png) <br/>
 
 
 </center>
