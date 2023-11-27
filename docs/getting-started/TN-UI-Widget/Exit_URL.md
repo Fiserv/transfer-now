@@ -27,7 +27,7 @@ The FI should define the following exit URL:
     }
     .card-body ul li::before {
         content: "\2022";
-        font-size: 1.5em;
+        font-size: 1em;
         color: #f60;
         display: inline-block;
         width: 1em;

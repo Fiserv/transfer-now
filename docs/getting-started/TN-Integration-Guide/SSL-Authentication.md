@@ -80,9 +80,9 @@ Whenever Fiserv receives a user via SSL Secure Messaging, the user’s profile i
 
 > :memo: _**Note:** A unique TransferNow user is defined by last name, social security number, and date of birth. All users with matching information for these fields are considered the same user in TransferNow._
 
-<!-- theme: info -->
 
-> :memo: _**Note:** When a user is passed to Fiserv with an identifier that already exists in the Fiserv ePayments database, Fiserv treats them as a returning user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop)). If the identifier does not exist, then Fiserv treats them as a new user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop)) and registers the profile in the Fiserv ePayments database._
+
+When a user is passed to Fiserv with an identifier that already exists in the Fiserv ePayments database, Fiserv treats them as a returning user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop)). If the identifier does not exist, then Fiserv treats them as a new user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop)) and registers the profile in the Fiserv ePayments database.
 
  
 
@@ -100,7 +100,7 @@ Whenever Fiserv receives a user via SSL Secure Messaging, the user’s profile i
     }
     .card-body ul li::before {
         content: "\2022";
-        font-size: 1.5em;
+        font-size: 1em;
         color: #f60;
         display: inline-block;
         width: 1em;
