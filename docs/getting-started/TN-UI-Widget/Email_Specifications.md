@@ -12,9 +12,12 @@ Many events occur within TransferNow warrants an email to be sent to the user. T
 </ul>
 </div>
 
+<!-- theme: info -->
 
 > :memo: _**Note:** All TransferNow emails are sent at the client’s discretion. Clients can turn each email on or off based on their business needs._
  
+ 
+<!-- theme: info -->
 
 > :memo: _**Note:** An email is ON or OFF for either all or no users._
 
