@@ -44,7 +44,7 @@
         link: docs/getting-started/TN-Integration-Guide/Digital-Certificates.md
       - title: Server Authentication 
         link: docs/getting-started/TN-Integration-Guide/Server-Authentication.md     
-    - title: SSO - Payload Secure Message Exchange
+    - title: SSO-Payload Secure Message Exchange
       link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md
       sections:
         - title: Payload Parameters
