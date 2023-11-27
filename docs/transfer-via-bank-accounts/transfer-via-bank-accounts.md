@@ -7,7 +7,7 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 <center>
 
-![Image](../../assets/images/Transfer-via-bank-accounts-create-transfer.png) <br />
+![Image](../../assets/images/transfer-via-bank-trasfer-funds-account.png) <br />
 
 
 </center>
@@ -24,7 +24,7 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 <center>
 
-![Image](../../assets/images/Transfer-via-bank-accounts-2.png) <br />
+![Image](../../assets/images/transfer-via-bank-from-account.png) <br />
 
 
 </center>
@@ -40,7 +40,7 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 <center>
 
-![Image](../../assets/images/Transfer-via-bank-accounts-3.png) <br />
+![Image](../../assets/images/transfer-via-bank-to-account.png) <br />
 
 
 </center>
@@ -70,7 +70,7 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 <center>
 
-![Image](../../assets/images/Transfer-via-bank-accounts-4.png) <br />
+![Image](../../assets/images/transfer-via-bank-account-frequency.png) <br />
 
 
 </center>
@@ -88,7 +88,7 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 <center>
 
-![Image](../../assets/images/Transfer-via-bank-accounts-5.png) <br />
+![Image](../../assets/images/transfer-via-bank-account-edit-confirm.png) <br />
 
 
 </center>
@@ -102,11 +102,11 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 </ul>
 </div>
 
-&nbsp;
+&nbsp; 
 
 <center>
 
-![Image](../../assets/images/Transfer-via-bank-accounts-6.png) <br />
+![Image](../../assets/images/transfer-via-bank-confirmed-account.png) <br />
 
 
 </center>
@@ -120,7 +120,7 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 
 <center>
 
-![Image](../../assets/images/Tranfer-via-bankaccounts-activity.png) <br />
+![Image](../../assets/images/transfer-via-bank-account-activity.png) <br />
 
 
 </center>
