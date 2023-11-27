@@ -21,7 +21,7 @@ The following figure shows the SSL steps taken for certificate authentication; (
  
  <center>
   
-![image](../../../assets/images/SSLAuth.png) <br/>
+![image](../../../assets/images/SSL-Auth.png) <br/>
 
 
 </center>
