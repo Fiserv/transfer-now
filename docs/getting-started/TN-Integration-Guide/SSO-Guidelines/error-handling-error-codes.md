@@ -20,7 +20,7 @@ If the Fiserv Integration Server becomes unexpectedly unavailable when the Clien
     </ul>
 </div>
 
-If the Fiserv TN Application Server becomes unexpectedly unavailable as part of the Client end user redirect to the TN service, the Client will receive one of the following errors: 
+If the Fiserv  TN Application Server becomes unexpectedly unavailable as part of the Client end user redirect to the TN service, the Client will receive one of the following errors: 
 
 <div class="card-body">
     <ul>
@@ -59,7 +59,7 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
 
 >:memo:_**Note:** The "1" preceding the two pipe characters ("||") indicates that the payload submission failed, and the SS14 following the two pipe characters represents the SS error code. If the payload submission resulted in multiple error codes being returned in the response, then a comma delimited list of error codes, following the two pipe characters, would be returned._  
 
-[Card Account Profile Parameter-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will return to the Client in the https response because of the Client submitting an invalid payload; the Client will need to perform the proper error handling for any of the listed returned errors. 
+[SS Error Codes Returned by Fiser-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will return to the Client in the https response because of the Client submitting an invalid payload; the Client will need to perform the proper error handling for any of the listed returned errors. 
 
 <html>
   <table style="width: 100%;">
@@ -169,7 +169,7 @@ Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=d
 <p style="color:red;padding:10px;border:1px solid red"><i>&#9888;</i>  SS24 Your Profile is already registered.</p>
 &nbsp;
 
-[Application Error Code-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will display in an application error page to the service end user. The Client does not need to perform additional error handling for any of the listed error codes. 
+[SS Error Codes Returned by Fiserv-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will display in an application error page to the service end user. The Client does not need to perform additional error handling for any of the listed error codes. 
 
 <html>
   <table style="width: 100%;">

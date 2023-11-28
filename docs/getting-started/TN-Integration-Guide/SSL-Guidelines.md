@@ -25,7 +25,7 @@ The CA will also require that the Client provide a Certificate Signing Request (
 </ul>
 </div>
 
-After a CA accepts the support documentation and CSR provided by the Client, the CA will then generate two digital certificates for the Client: a CA root certificate and the SSL Digital Server Certificate the Client (i.e., principal) has requested. The Client needs to install the server certificate on all web servers responsible for handling requests/response for the domain originally entered as the certificate CN value. The root certificate should be placed in each web server’s trusted root store (if not already there), and a copy should also be provided to Fiserv. 
+After a CA accepts the support documentation and CSR provided by the Client, the CA will then generate two digital certificates for the Client: a CA root certificate and the SSL Digital Server Certificate the Client (i.e., principal) has requested. The Client needs to install the server certificate on all web servers responsible for handling requests/response for the domain originally entered as the certificate CN value. The root certificate should be placed in each web server’s trusted root store (if not already there), and a copy should also be provided to Fiserv. </br>
 
 The actual installation of the server certificate is web server vendor dependent and, therefore, will vary. The usual generic install process usually resembles the following: 
 

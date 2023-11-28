@@ -1,7 +1,7 @@
 ## Payload Submission
 
 
-Clients are required to submit end user payloads to the Fiserv Client Integration Server via ` https://sso.fta.cashedge.com/signupGRel? ` the Client end user submitted payload—which would get appended to the end of each respective URL (thus replacing the &lt; payload &gt; substring)
+Clients are required to submit end user payloads to the Fiserv Client Integration Server via ` https://sso.fta.cashedge.com/signupGRel?<payload> ` the Client end user submitted payload—which would get appended to the end of each respective URL (thus replacing the &lt; payload &gt; substring)
  
 
 upon receiving this end user payload information, the Fiserv Client Integration Server will check to ensure that all required information is part of the request. If the Fiserv Client Integration Server deems the payload as being valid, it will return an application session key back to the Client’s server; otherwise, it will return an SS error code (see [Fiserv Payload Submission Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md)). 
