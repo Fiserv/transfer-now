@@ -18,13 +18,10 @@ Users provide the information specific to their institution and their desired cu
 
 > :memo: _**Note:** An FI has the option to either allow Fiserv to host the CSS, or to use their own CSS, and pass the CSS URL to Fiserv via SSL Secure Messaging._
 
-<!-- theme: info -->
 
-> :memo: _**Note:** Since TransferNow is a secured application, Fiserv advises that users do not use the browser provided Back and Forward buttons/icons while using TransferNow. Previous and Next buttons are provided in TransferNow for back and forward navigation._ 
+ Since TransferNow is a secured application, Fiserv advises that users do not use the browser provided Back and Forward buttons/icons while using TransferNow. Previous and Next buttons are provided in TransferNow for back and forward navigation.
 
-<!-- theme: info -->
-
-> :memo: _**Note:** An FI can customize any instructional text that is displayed on the TransferNow user interface (UI)._
+ An FI can customize any instructional text that is displayed on the TransferNow user interface (UI).
 
  
 **To Know more visit the below Guidelines:**
