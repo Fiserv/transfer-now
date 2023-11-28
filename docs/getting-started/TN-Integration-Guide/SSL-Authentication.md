@@ -82,7 +82,7 @@ Whenever Fiserv receives a user via SSL Secure Messaging, the user’s profile i
 
 
 
-When a user is passed to Fiserv with an identifier that already exists in the Fiserv ePayments database, Fiserv treats them as a returning user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop)). If the identifier does not exist, then Fiserv treats them as a new user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow?branch=develop)) and registers the profile in the Fiserv ePayments database.
+When a user is passed to Fiserv with an identifier that already exists in the Fiserv ePayments database, Fiserv treats them as a returning user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/user-workflow.md&branch=develop)). If the identifier does not exist, then Fiserv treats them as a new user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/user-workflow.md&branch=develop)) and registers the profile in the Fiserv ePayments database.
 
  
 

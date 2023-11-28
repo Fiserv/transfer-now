@@ -86,18 +86,20 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 
 
 </center> 
+
  
 **To Know more visit the below Configuration:**
 
-[Page Footer Configuration](?path=docs/getting_started/TN-UI-Widget/Page_Footer_Configuration.md)    
-[Help Link Configuration](?path=docs/getting_started/TN-UI-Widget/Help_Link_Configuration.md)    
-[Session Timeout Configuration](?path=docs/getting_started/TN-UI-Widget/Session_Timeout_Configuration.md)    
-[Session Keep-Alive Configuration ](?path=docs/getting_started/TN-UI-Widget/Session_Keep-Alive_Configuration.md)    
+[Page Footer Configuration](?path=docs/getting-started/TN-UI-Widget/Page_Footer_Configuration.md)    
+[Help Link Configuration](?path=docs/getting-started/TN-UI-Widget/Help_Link_Configuration.md)    
+[Session Timeout Configuration](?path=docs/getting-started/TN-UI-Widget/Session_Timeout_Configuration.md)    
+[Session Keep-Alive Configuration ](?path=docs/getting-started/TN-UI-Widget/Session_Keep-Alive_Configuration.md)    
 
 
 **See Also**
 
-[First-Time Agreement Page Configuration](?path=docs/getting_started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
+[First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
+
 
 
 
