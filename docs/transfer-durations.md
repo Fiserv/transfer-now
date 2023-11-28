@@ -5,7 +5,7 @@ TransferNow supports the weekly and monthly frequencies.
 
 <center>
 
-![image](../assets/images/Weekly_Transfer_Frequencies.png) <br/>
+![Image](../assets/images/TF-weekly-transfer.png) <br/>
 
 
 </center>
@@ -14,7 +14,7 @@ TransferNow supports the weekly and monthly frequencies.
 
 <center>
 
-![image](../assets/images/Monthly_Transfer_Frequencies.png) <br/>
+![Image](../assets/images/TF-monthly.png) <br/>
 
 &nbsp;
 
@@ -25,7 +25,7 @@ TransferNow supports the weekly and monthly frequencies.
 
 <center>
 
-![image](../assets/images/Fund_Transfer_Durations.png) <br/>
+![Image](../assets/images/TF-durations.png) <br/>
 
 </center>
 
