@@ -5,11 +5,11 @@ TransferNow enables a client to enforce several restrictions on added accounts. 
 
 <div class="card-body">
 <ul>
-<li><b>External Account Limit</b>-Clients can limit the total number of external accounts a user can add 
+<li><b>External Account Limit</b>—Clients can limit the total number of external accounts a user can add 
 to the TransferNow service. If the client does not set a limit, the user can add an unlimited 
 number of accounts. </li>
 <li><b>Suspended Accounts</b>—Negative activity such as returns on accounts will result in systematic, 
-account-level suspension. Preemptive risk management processes can also manually suspend an 
+account-level suspension. Pre-emptive risk management processes can also manually suspend an 
 account. A TransferNow user can delete a suspended account, but no suspended account can be 
 reregistered until a suspension is removed. </li>
 <li><b>Exception Denied Accounts</b>—Exception denials of account registration are levied through 
