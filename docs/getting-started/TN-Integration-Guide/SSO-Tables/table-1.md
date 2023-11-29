@@ -93,7 +93,7 @@
                     <td>End user’s postal ZIP Code </br>Usage Restrictions </br>Is a required payload parameter Associated value must be numeric and 5 digits in length. If more than 5 digits in length are submitted, then the additional characters will be ignored</td>
                 </tr>
                 <tr>
-                    <td>Error Flow (refer to <a href="../SSO-Guidelines/error-handling-error-codes.md">Fiserv Secure Message Exchange Error Handling</a> for more information)   </br>Fiserv will return an SS20 payload error if the parameter is not present in payload, or the associated value has a length of < 5 characters or contains one or more non-numeric characters within the first five digit positions</td>
+                    <td>Error Flow (refer to <a href="docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md">Fiserv Secure Message Exchange Error Handling</a> for more information)   </br>Fiserv will return an SS20 payload error if the parameter is not present in payload, or the associated value has a length of < 5 characters or contains one or more non-numeric characters within the first five digit positions.<a href="https://qa-developerstudio.fiserv.com/product/TransferNow/docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md&branch=develop">Fiserv Secure Message Exchange Error Handling</a></td>
                 </tr>
             </tbody>
              <tbody>
