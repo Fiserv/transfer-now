@@ -53,11 +53,12 @@ A transaction processed via the GFM has less risk associated with it, because TN
 <div class="collapsible-container">
 <div>
     <input type="checkbox" class="collapsible-checkbox" id="section1">
-    <label class="label-expand" for="section1">One-Time Transfer</label>
+    <label class="label-expand" for="section1">One-Time/Recurring Transfer</label>
     <div class="content-expand">
+        <h2>One-Time Transfer</h2>
         <div class="content-body">
           <div class="content-left">
-          <p>A one-time transfer requires the following information.</p>
+          <p>A one-time transfer, provide the necessary details to ensure a smooth and secure transcation.</p>
           </div>
           <div class="image-otp">
           <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/one-time-transfer.png">
@@ -67,7 +68,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <div class="content-body">
           <div class="content-left">
           <p>
-            Recurring transfers require the following information.
+            To eanble a recurring transfer, provide the necessary details to ensure a smooth and secure transcation.
         </p>
           </div>
           <div class="image-otp">
