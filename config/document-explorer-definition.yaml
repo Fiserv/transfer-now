@@ -73,6 +73,9 @@
   - title: Fund Transfer Services
     link: docs/fund-transfer/Fund-Transfer-Services.md
 - sections:
+  - title: Transfer Via Debit Cards
+    link: docs/debit-card-transfer/debit-card-transaction.md    
+- sections:
   - title: Transfer Frequencies/Duration
     link: docs/transfer-durations.md
 - sections:
