@@ -97,7 +97,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>Banking holidays and/or New York Stock Exchange (NYSE) holidays extend the transaction cycle for standard transactions.</p>
         <table>
   <tr>
-    <th>Requested by 10:00 PST on:</th>
+    <th>Requested by 10:00pm PST on:</th>
     <th>Source account debited before Start-of-Business on:</th>
     <th>Destination account credited before Start-of-Business on:</th>
   </tr>
@@ -120,6 +120,11 @@ A transaction processed via the GFM has less risk associated with it, because TN
     <td>Thursday</td>
     <td>Friday</td>
     <td>Tuesday</td>
+  </tr>
+  <tr>
+    <td>Friday</td>
+    <td>Monday</td>
+    <td>Wednesday</td>
   </tr>
   <tr>
     <td>Saturday</td>
@@ -149,7 +154,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>The completion of a transfer, including the availability of funds in the destination account and access to transaction details, depends in part on how quickly the client updates his/her account after receiving funds transfer information.</p>
         <table>
   <tr>
-    <th>Requested by 10:00 PST on:</th>
+    <th>Requested by 10:00pm PST on:</th>
     <th>Source account debited before Start-of-Business on:</th>
     <th>Destination account credited before Start-of-Business on:</th>
   </tr>
@@ -167,6 +172,11 @@ A transaction processed via the GFM has less risk associated with it, because TN
     <td>Wednesday</td>
     <td>Thursday</td>
     <td>Thursday</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td>Friday</td>
+    <td>Friday</td>
   </tr>
   <tr>
     <td>Friday</td>
