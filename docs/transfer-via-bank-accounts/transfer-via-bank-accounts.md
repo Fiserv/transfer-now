@@ -59,7 +59,7 @@ TransferNow provides the user with access to 23,000 banks, credit unions, and br
 <ul>
 <li>Set the date when the user wants to initiate the transaction.</li>
 
-<li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="docs/transfer-durations.md">Transfer Frequencies / Durations</a></li>
+<li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="../transfer-durations.md">Transfer Frequencies / Durations</a></li>
 
 </ul>
 </div>
