@@ -7,9 +7,9 @@ In addition to adding user's bank account, TransferNow allows users to add their
     <li>User can select “From” and “To” debit card information from the list that are already added.</li>
     <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile.png">
     <li>Enter the amount to be transferred.</li>
+    <p class="block-quote">Note: View Limits will display the maximum amount that can be transferred.</p>
     </ul>
 </div>
-    <p class="block-quote">Note: View Limits will display the maximum amount that can be transferred.</p>
 <div class="card-body">
     <ul>
     <li>Set the date when the user wants to initiate the transaction.</li>
@@ -23,7 +23,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
     <li>All transfers, including debit card transfers are shown on the <strong>Activity</strong> page as shown below.</li>
     </ul>
 </div>
-<div>Following topics cover additional information that allows a user to manage and transfer money from debit cards.</div>
+<div>Following topics cover additional information that allows a user to manage and transfer money from debit cards.
     <div class="debit-body">
     <div class="debit-container">
         <input type="radio" name="dot" id="one">
@@ -91,6 +91,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
             <label for="two" class="two"></label>
         </div>
     </div>
+</div>
 </div>
 <style>
     * {
