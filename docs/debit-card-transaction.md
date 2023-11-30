@@ -39,7 +39,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                         <div class="name">Add Debit Cards</div>
                     </div>
                     <div class="media-icons">
-                        <a href="../transfer-debit-card/add-debit-card.md">Click View</a>
+                        <a href="?path=docs/transfer-debit-card/add-debit-card.md">Click View</a>
                     </div>
                 </div>
                 </div>
