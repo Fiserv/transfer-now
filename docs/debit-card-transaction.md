@@ -13,7 +13,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
 <div class="card-body">
     <ul>
     <li>Set the date when the user wants to initiate the transaction.</li>
-    <li>Select the Frequency. To know more about Frequency, see <a href="../transfer-durations.md">Transfer Frequencies/Duration.</a></li>
+    <li>Select the Frequency. To know more about Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies/Duration.</a></li>
     <li>Click the <button class="confirm-button">Review</button> button and review the page.</li>
     <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/review.png">
     <li>The transfer detail is displayed on the screen to allow the user to review and confirm.</li>
