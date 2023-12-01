@@ -102,7 +102,7 @@
                     <td>End user’s Social Security number </br>Usage Restrictions </br>Is a required payload parameter Associated value must be 9 digits in length and can include dashes or spaces. If more than 9 digits are submitted, the additional digits will be ignored</td>
                 </tr>
                 <tr>
-                    <td>Error Flow (<a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>): </br>Fiserv will return an SS14 payload error if the parameter is not present in payload or the associated value has a length equal to 0 </br>Fiserv will display an application SS24 error page if the passed in payload parameter value combination of FIRST_NAME, LAST_NAME, SSN, and DOB has already been associated with some other USER_FI_NUMBER</td>
+                    <td>Error Flow (refer to <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>): </br>Fiserv will return an SS14 payload error if the parameter is not present in payload or the associated value has a length equal to 0 </br>Fiserv will display an application SS24 error page if the passed in payload parameter value combination of FIRST_NAME, LAST_NAME, SSN, and DOB has already been associated with some other USER_FI_NUMBER</td>
                 </tr>
             </tbody>
             <tbody>
@@ -111,7 +111,7 @@
                     <td>End user’s date of birth </br>Usage Restrictions Is a required payload parameter Associated value must in MM/DD/YYYY format but not equal to 01/01/1901, YYYY > 1900, and end user’s calculated age is >= 18 and <= 110</td>
                 </tr>
                 <tr>
-                    <td>Error Flow (<a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>): </br>Fiserv will return an SS21 payload error if the parameter is not present in payload, the associated value has a length equal to 0, the end user’s calculated age is < 18 or > 110, or the associated MM/DD/YYYY value is equal to 01/01/1901 or YYYY equals 1900    </br>Fiserv will display an application SS24 error page if the passed in payload parameter value combination of FIRST_NAME, LAST_NAME, SSN, and DOB has already been associated with some other USER_FI_NUMBER</td>
+                    <td>Error Flow (refer to <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>): </br>Fiserv will return an SS21 payload error if the parameter is not present in payload, the associated value has a length equal to 0, the end user’s calculated age is < 18 or > 110, or the associated MM/DD/YYYY value is equal to 01/01/1901 or YYYY equals 1900    </br>Fiserv will display an application SS24 error page if the passed in payload parameter value combination of FIRST_NAME, LAST_NAME, SSN, and DOB has already been associated with some other USER_FI_NUMBER</td>
                 </tr>
             </tbody>
             <tbody>
@@ -120,7 +120,7 @@
                     <td>End user’s phone number Client may send multiple phone numbers. Each number should be denoted with a different number; number system starts with no number, then 2, 3, 4… N.         </br>Usage Restrictions </br>Is a required payload parameter Associated value is numeric, minimum 10 digits in length. Can include spaces or dashes.</td>
                 </tr>
                 <tr>
-                    <td>Error Flow (<a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>):  </br>Fiserv will return an SS24 payload error if the parameter is not present in payload or the associated value has a length equal to 0 </td>
+                    <td>Error Flow (refer to <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>):  </br>Fiserv will return an SS24 payload error if the parameter is not present in payload or the associated value has a length equal to 0 </td>
                 </tr>
             </tbody>
             <tbody>
@@ -141,7 +141,7 @@
                     </br>Usage Restrictions</br>Recognized phone usages are: E for Evening, W for Work, D for daytime and H for Home. Any other value sent would be stored as is. </br> Maximum 1 character. If more than 1 character, then we discard the value.If PHONE is not sent, but PHONE_USAGE is sent, then we discard the value.</td>
                 </tr>
                 <tr>
-                    <td>Error Flow (<a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>):  </br>
+                    <td>Error Flow (refer to <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>):  </br>
                     N/A</td>
                 </tr>
             </tbody>
