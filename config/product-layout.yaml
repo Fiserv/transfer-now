@@ -33,11 +33,11 @@ header:
   getStarted: docs/getting-started.md
 benefits:
   - title: NOW® Network
-    description: NOW Network from Fiserv enables instant transfers, which are delivered in seconds and available 24/7. NOW Network also makes TransferNow. Next-Day Good Funds possible, meaning you can offer next-day transfers that eliminate credit risks and allow higher limits.
+    description: NOW Network from Fiserv enables instant transfers, which are delivered in seconds and available 24/7.
   - title: Exceptional Market Reach
-    description: Enable customers to move money to and from checking, savings and money market accounts at nearly every U.S.-based financial institution.
+    description: Enable customers to move money to and from checking/savings and money market accounts at every U.S.based FIs.
   - title: Streamlined Processes
-    description: Effortlessly manage every aspect of ACH Processing, from handling expectations to managing resubmissions and inquiries.
+    description: Manage every aspect of ACH Processing from handling expectations to managing resubmissions/inquiries.
 featuredFeatures:
   - title: Multiple Transfer Speeds 
     groupName: 
@@ -55,14 +55,14 @@ featuredFeatures:
        title: Instant Verification
   - title: Multiple Account Verification
     groupName: Multiple Account Verification
-    description: Fiserv offers several advanced alternatives to help protecting against online banking fraud. Multifactor Authentication / Account Verification enhances online security and maintain compliance with banking regulations.
+    description: Fiserv offers advanced alternatives to help protecting against online banking fraud. Multifactor Authentication / Account Verification enhances online security and maintain compliance with banking regulations.
     featured: true
     relatedDocs:
      - link: docs/acc-to-acc-transfer/Account-Verify/Account-Verify.md
        title: Account Verification
   - title: Responsive Web Design 
     groupName: Responsive Web Design
-    description: Flexible, responsive design delivering outstanding results for desktop, tablet, and mobile users, ensuring a consistent brand experience across all devices. This helps in more mobile traffic, lower maintenance needs, faster webpages, and an overall improved online experience. 
+    description: Flexible, responsive design delivering outstanding results for desktop, tablet, and mobile users, ensuring a consistent experience across all devices. This helps in more mobile traffic, lower maintenance needs, and faster webpages. 
     featured: true
     relatedDocs:
      - link: docs/getting-started/resp-webdesign.md
