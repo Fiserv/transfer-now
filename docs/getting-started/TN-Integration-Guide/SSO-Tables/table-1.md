@@ -12,7 +12,7 @@
                     <td>Fiserv assigned unique persistent Client identifier (also referred to as the Client Home ID)</br> Usage Restrictions</br> Is a required payload parameter Associated value must be numeric and 8 digits in length</td>
                 </tr>
                 <tr>
-                    <td>Error Flow (refer to <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>): </br>Fiserv will return an SS28 payload error if the parameter is not present in payload or the associated value length equals 0Fiserv will display an application SS42 error page if the associated value length is > 0 but < 8, or > 8</td>
+                    <td>Error Flow (refer to <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md"> Fiserv Secure Message Exchange Error Handling</a>): </br>Fiserv will return an SS28 payload error if the parameter is not present in payload or the associated value length equals 0 Fiserv will display an application SS42 error page if the associated value length is > 0 but < 8, or > 8</td>
                 </tr>
             </tbody>
             <tbody>

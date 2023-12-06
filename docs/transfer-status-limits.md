@@ -78,7 +78,7 @@ A user can avail a minimum number of free inbound transactions and free outbound
 
 <!-- theme: info -->
 
- > :memo: **Note:** User will also have Free-to-Affiliate function enabled from certain financial institutions where no transaction fee is charged when using inbound or outbound transactions. 
+ > :memo: _**Note:** User will also have Free-to-Affiliate function enabled from certain financial institutions where no transaction fee is charged when using inbound or outbound transactions._ 
 
 &nbsp;
 
