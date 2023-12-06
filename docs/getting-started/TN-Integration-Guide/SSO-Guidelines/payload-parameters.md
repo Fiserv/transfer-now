@@ -10,7 +10,7 @@ The end user payload that a Client sends to Fiserv is composed of various parame
 **See The Below Tables For More Information**
 
 
-[User Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md) - defines the User Profilepayload elements. </br>
+[User Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md) - defines the User Profile payload elements. </br>
 
 [Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md) - defines the Account Profile payload elements. </br>
 
