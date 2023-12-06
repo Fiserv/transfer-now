@@ -4,11 +4,11 @@
     <ul>
     <li>Go to the Preferences screen.</li>
     <li>Under <strong>My Debit Cards</strong> menu, user can see all the debit cards added.</li>
-    <img src="../../assets/images/my-debit-card.png">
+    <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/my-debit-card.png">
     <li>Select a debit card that the user wants to edit.</li>
     <li>Click the <button class="confirm-button">Edit</button> button.</li>
     <li><strong>Edit Debit Card</strong> screen is displayed.</li>
-    <img src="../../assets/images/edit-debit-cards.png">
+    <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/edit-debit-cards.png">
     <li>The user can edit the Nickname on the debit card.</li>
     <li>Click the <button class="confirm-button">Save</button> button to view the edited information.</li>
     </ul>
