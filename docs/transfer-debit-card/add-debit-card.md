@@ -3,17 +3,17 @@
 <div class="card-body">
     <ul>
     <li>User can select Add an account or debit card option to add a new debit card.</li>
-    <img class="image-center" src="../../assets/images/create-transfer-mobile.png">
+    <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile.png">
     <li>If RTVA is enabled, then the user is navigated to RTVA FI Search Page.</li>
     <p class="block-quote">Note: If RTVA is not enabled, then the user is navigated to Add Account or Debit Card screen.</p>
     </ul>
 </div>
-<img class="image-center" src="../../assets/images/search-debit-tile.png">
+<img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/search-debit-tile.png">
 <div class="card-body">
     <ul>
     <li>Select Add Visa Debit Card tile.</li>
     <li><strong>Add Account or Debit Card</strong> screen is displayed.</li>
-    <img class="image-center" src="../../assets/images/add-debit-card.png">
+    <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/add-debit-card.png">
     <li>Select Debit Card from the drop-down list under Account Type option.</li>
     <p class="block-quote">Note: Account Nickname is optional.</p>
     <li>Select the debit card expiration month and year from the drop-down list under Expiration option.</li>
