@@ -22,11 +22,50 @@
     <li>Click the <button class="confirm-button">Next</button> button to finish adding a debit card.</li>
     </ul>
 </div>
-
-
+<div class="debit-card-button-container">
+<div class="debit-card-left-button">
+<a href="?path=docs/debit-card-transaction.md">Back</a>
+</div>
+<div class="debit-card-right-button"><a href="?path=docs/transfer-debit-card/debit-card-verification.md">Next</a></div>
+</div>
 <style>
-
-
+    .debit-card-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .debit-card-left-button a,
+    .debit-card-right-button a{
+        position: absolute;
+        height: 100%;
+        width: 80px;
+        background-color: #f60;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        line-height: 35px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+    .debit-card-left-button a{ 
+        left: 0;
+    }
+    .debit-card-right-button a{
+        right: 0;
+    }
+    .debit-card-left-button a:hover,
+    .debit-card-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
     .block-quote {
         padding: 1em;
         color: #6a737d;
@@ -34,18 +73,15 @@
         background: #e6f7ff;
         border-radius: 3px;
     }
-
     .image-center {
       display: block;
       width: 70%;
       margin: 5px auto;
     }
-
     .confirm-button {
         padding: 2px;
         font-weight: bold;
     }
-    
     .card-body {
         margin: 20px;
     }
