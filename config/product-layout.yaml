@@ -35,7 +35,7 @@ benefits:
   - title: NOW® Network
     description: NOW Network from Fiserv enables instant transfers, which are delivered in seconds and available 24/7.
   - title: Exceptional Market Reach
-    description: Enable customers to move money to and from checking/savings and money market accounts at every U.S.based FIs.
+    description: Enable customers to move money via checking/savings/money market accounts at every U.S.based FIs.
   - title: Streamlined Processes
     description: Manage every aspect of ACH Processing from handling expectations to managing resubmissions/inquiries.
 featuredFeatures:
@@ -55,14 +55,14 @@ featuredFeatures:
        title: Instant Verification
   - title: Multiple Account Verification
     groupName: Multiple Account Verification
-    description: Fiserv offers advanced alternatives to help protecting against online banking fraud. Multifactor Authentication / Account Verification enhances online security and maintain compliance with banking regulations.
+    description: Fiserv offers advanced alternatives to help protecting against online banking fraud. Multifactor Authentication / Account Verification enhances online security and maintain compliance.
     featured: true
     relatedDocs:
      - link: docs/acc-to-acc-transfer/Account-Verify/Account-Verify.md
        title: Account Verification
   - title: Responsive Web Design 
     groupName: Responsive Web Design
-    description: Flexible, responsive design delivering outstanding results for desktop, tablet, and mobile users, ensuring a consistent experience across all devices. This helps in more mobile traffic, lower maintenance needs, and faster webpages. 
+    description: Flexible, responsive design delivering outstanding results for desktop, tablet, and mobile users, ensuring a consistent experience across all devices. 
     featured: true
     relatedDocs:
      - link: docs/getting-started/resp-webdesign.md
