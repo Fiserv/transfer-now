@@ -16,7 +16,7 @@ From the Preferences screen, the user can choose Delete Account.
 
 <center>
 
-![Image](../../assets/images/Delete_Account_Preference_1.png) <br />
+![Image](../../assets/images/add-an-account-preferences.png) <br />
 
 
 </center>
@@ -27,7 +27,7 @@ From the Preferences screen, the user can choose Delete Account.
 
 <center>
 
-![Image](../../assets/images/Delete_Account_Prefence_2.png) <br />
+![Image](../../assets/images/myfinxactfreefiaccounts.png) <br />
 
 
 </center>
