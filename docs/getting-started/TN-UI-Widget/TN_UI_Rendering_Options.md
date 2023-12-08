@@ -39,7 +39,7 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 
 <center>
 
-![Image](../../../assets/images/Create-Transfer.png) <br />
+![Image](../../../assets/images/add-an-account-create-transfer.png) <br />
 
 
 </center> 
