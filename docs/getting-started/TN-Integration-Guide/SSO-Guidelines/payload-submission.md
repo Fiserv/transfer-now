@@ -58,7 +58,7 @@ The Client is requesting the following session key expiration period:
                     <td rowspan="2">Payload Session Key Expiration Period</td>
                 </tr>
                 <tr>
-                    <td>For Fiserv ePayments Production Environment
+                    <td>For Fiserv ePayments Production Environment</br>
                     • Client wishes session key to be valid only for 5 minutes (default)</td>
                 </tr>
             </tbody>
