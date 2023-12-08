@@ -46,7 +46,7 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
 
 <center>
 
-![Image](../../../../assets/images/pay-error.png) <br />
+![Image](../../../../assets/images/session-error-code.png) <br />
 
 
 </center>
