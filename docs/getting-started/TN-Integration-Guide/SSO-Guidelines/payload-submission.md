@@ -262,7 +262,7 @@ submit this payload to the Fiserv TN service demonstration servlet and click the
 
 <center>
 
-![Image](../../../../assets/images/TN-QA-servlet.png) <br />
+![Image](../../../../assets/images/payloadsubmission-u1.png) <br />
 
 
 </center>
