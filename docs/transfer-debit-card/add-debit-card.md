@@ -39,19 +39,15 @@
     .debit-card-left-button a,
     .debit-card-right-button a{
         position: absolute;
-        height: 100%;
-        width: 80px;
-        background-color: #f60;
-        color: white;
-        border: none;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
         text-align: center;
         text-decoration: none;
-        display: inline-block;
-        font-size: 15px;
-        font-weight: 500;
-        cursor: pointer;
-        line-height: 35px;
-        border: 2px solid transparent;
         transition: all 0.3s ease;
     }
     .debit-card-left-button a{ 
