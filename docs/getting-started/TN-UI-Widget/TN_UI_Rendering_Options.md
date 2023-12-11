@@ -90,11 +90,73 @@ At the point of exit from TransferNow (which is running within a frame), the fra
  
 **To Know more visit the below Configuration:**
 
-[Page Footer Configuration](?path=docs/getting-started/TN-UI-Widget/Page_Footer_Configuration.md)    
-[Help Link Configuration](?path=docs/getting-started/TN-UI-Widget/Help_Link_Configuration.md)    
-[Session Timeout Configuration](?path=docs/getting-started/TN-UI-Widget/Session_Timeout_Configuration.md)    
-[Session Keep-Alive Configuration ](?path=docs/getting-started/TN-UI-Widget/Session_Keep-Alive_Configuration.md)    
+<div>
+ <input type="checkbox" class="collapsible-checkbox" id="section1">
+    <label class="label-expand" for="section1">Page Footer Configuration</label>
+    <div class="content-expand">
+Most Fiserv-hosted pages display a footer containing Client-defined URLs that link to the Client’s Terms of Service, Security Policy, and Privacy Policy. Each URL, when selected, will result in the content being displayed in a separate pop-up window. 
+</br>
+Also, content that each URL points to is hosted by the Client and not Fiserv, and if the Client does not define a URL for one of the footer links, then that link will not be displayed on any applicable Fiserv hosted page. 
+</br>
+<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+</div>
+</div> </br>
+<div>
+ <input type="checkbox" class="collapsible-checkbox" id="section2">
+    <label class="label-expand" for="section2">Help Link Configuration</label>
+    <div class="content-expand">
+Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.
+</br>
+<center>
 
+<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
+
+</center> 
+</br>
+<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+</div>
+</div> 
+</br>
+<div>
+ <input type="checkbox" class="collapsible-checkbox" id="section3">
+    <label class="label-expand" for="section3">Session Timeout Configuration</label>
+    <div class="content-expand">
+With Full Control or Framed implementations, an end user session timeout on the Fiserv side will result in the browser redirecting the end user to a Client specified URL initially passed to Fiserv by the Client as part of an end user payload post. For the Pop-Up implementation, Fiserv first informs the end user, via a dialog box (see the figure that follows), that their session has expired on the Fiserv side and after the end user clicks OK, the dialog box closes and the pop-up window would then redirect to the Client specified URL. 
+
+
+<center>
+
+<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png"></br>
+
+</center> 
+
+The Client specified return URL is passed in as part of each end user’s payload post; Failure to pass a return URL in the end user’s payload will result in the end user being redirected to the Client’s specified Logout URL.  
+
+Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.
+</br>
+<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+</div>
+</div> </br>
+<div>
+ <input type="checkbox" class="collapsible-checkbox" id="section4">
+    <label class="label-expand" for="section4">Session Keep-Alive Configuration</label>
+    <div class="content-expand">
+To keep an end user’s initiating Client-side session alive, a URL is embedded into all the Fiserv hosted pages that links to a blank 1x1 pixel image hosted on the Client’s web server. Fiserv will retrieve this image from the Client’s web server at periodic intervals via Fiserv hosted page code, or whenever a new Fiserv hosted page is displayed or refreshed. This essentially tricks the Client’s web server into thinking that the request came from the end user’s originating Client-side session. 
+
+For example, assume an end user logs into a Client web server (thus creating a new Client-side session) and that the end user is then presented with a browser page composed of images loaded from that same web server’s image deployment directory called client_app/images. Assume also that this directory contains a blank 1x1 pixel called keepalive.gif. The end user now clicks on a link that allows him/her to access the service. When the Fiserv web server serves up the requested page, that page contains a link to the keepalive.gif image contained in the Client’s client_app/images directory: 
+
+                                 https://www.someclient.com/client_app/images/keepalive.gif 
+
+Thus, to the Client’s web server it looks as if the image is being retrieved via the end user’s initiating session and, therefore, will flag the end user’s session as still being active. 
+
+If a gif is not available on the Client web server responsible for creating the end user’s original session (i.e., a different server is used to manage images), a user’s session can still be kept alive via a URL that returns an empty page as long as the URL points to a resource hosted on that same web server. An example of such a URL might be: 
+
+                                    https://www.someclient.com/client_app/jsp/keepAlive.jsp 
+
+</br>
+<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+</div>
+</div> </br>
 
 **See Also**
 
@@ -172,6 +234,76 @@ toolbar=no, menubar=no'); return false;">Click to open</a>
         display: inline-block;
         width: 1em;
         margin-left: -1em;
+    }
+    .collapsible-container {
+        width: 100%;
+    }
+
+    .collapsible-checkbox {
+        display: none;
+    }
+
+    .label-expand {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        display: inline-block;
+        margin-bottom: 1px;
+    }
+
+    .collapsible-checkbox:checked+.label-expand {
+        background-color: #555;
+    }
+
+    .content-expand {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+
+    .collapsible-checkbox:checked+.label-expand+.content-expand {
+        display: block;
+    }
+
+    .block-quote {
+        padding: 1em;
+        color: #6a737d;
+        border-left: 0.375em solid #40a9ff;
+        background: #e6f7ff;
+        border-radius: 3px;
+    }
+
+    .content-left {
+        width: 50%
+    }
+
+    .image-otp {
+        width: 40%
+    }
+
+    .content-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .image-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
+    
+    .card-body {
+        margin: 20px;
     }
 </style>
 
