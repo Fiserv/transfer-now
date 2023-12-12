@@ -3,14 +3,48 @@
 Successful One-Way and Mutual Server Authentication is dependent upon the use of digital certificates. A digital certificate is a credential issued by a trusted authority that binds a principal (e.g., Fiserv or some Client) to an identity that can be recognized and verified. The most notable fields in a digital certificate structure are as follows: 
 &nbsp;
 
-<div class="card-body">
-<ul>
-<li><b>Subject </b>— the name of the principal that the certificate was issued to  </li>
-<li><b>Issuer </b>— the name of the organization that issued the certificate (typically the CA) </li>
-<li><b>Public Key </b>— the principal’s public key </li>
-<li><b>Signature Algorithm </b>— the algorithm used to produce the certificate’s digital signature  </li>
-<li><b>Valid From/To </b>— when the validity of the certificate will expire. </li>
-</ul>
+<table class="digi-table">
+<tr>
+<td>
+<b>Subject </b>
+</td>
+<td>
+the name of the principal that the certificate was issued to
+</td>
+</tr>
+<tr>
+<td>
+<b>Issuer </b>
+</td>
+<td>
+the name of the organization that issued the certificate (typically the CA) 
+<tr>
+<td>
+<b>Public Key </b>
+</td>
+<td>
+the principal’s public key 
+</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td>
+<b>Signature Algorithm </b>
+</td>
+<td>
+the algorithm used to produce the certificate’s digital signature
+</td>
+</tr>
+<tr>
+<td>
+<b>Valid From/To </b>
+</td>
+<td>
+when the validity of the certificate will expire
+</td>
+</tr>
+</table>
 
 A digital certificate contains the principal’s public key. If you were to sign a digital document with your own personal private key, you would need to provide the recipient of that document with your public key so that the recipient could verify that the document was really signed by you. 
 
@@ -65,3 +99,17 @@ Click here to know more about [Guidelines for Obtaining a CA Issued SSL Digital 
         width: 1em;
         margin-left: -1em;
     }
+    .digi-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.digi-table td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.digi-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.digi-table tr:hover {background-color: #ddd;}
