@@ -84,11 +84,11 @@
 - sections:
   - title: TransferNow UI Widget
     link: docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md
-    sections:
-        - title: TN UI Rendering Options
-          link: docs/getting-started/TN-UI-Widget/TN_UI_Rendering_Options.md
-        - title: TN UI Customization Guide
-          link: docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md
+    # sections:
+    #     - title: TN UI Rendering Options
+    #       link: docs/getting-started/TN-UI-Widget/TN_UI_Rendering_Options.md
+    #     - title: TN UI Customization Guide
+    #       link: docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md
 - sections:
   - title: Release notes
     sections:
