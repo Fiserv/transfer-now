@@ -44,21 +44,6 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 
 </center> 
 
-**To Know more visit the below Configuration:**
-
-[Page Footer Configuration](?path=docs/getting-started/TN-UI-Widget/Page_Footer_Configuration.md)    
-[Help Link Configuration](?path=docs/getting-started/TN-UI-Widget/Help_Link_Configuration.md)    
-[Session Timeout Configuration](?path=docs/getting-started/TN-UI-Widget/Session_Timeout_Configuration.md)    
-[Session Keep-Alive Configuration ](?path=docs/getting-started/TN-UI-Widget/Session_Keep-Alive_Configuration.md)    
-
-
-**See Also**
-
-[First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
-
-
-
-
 
 <!-- type: tab -->
 
@@ -87,7 +72,52 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 
 </center> 
 
+
+
+ <!-- type: tab -->
+
+
+
+
+
+## Pop-up 
+
+A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering within a second single browser pop-up window. when the user clicks on the Fiserv ePayments-provided HTML URL, a new window with the TransferNow application appears. Users work within the new window. 
+
+&nbsp;
+
+<center>
+
+![Image](../../../assets/images/Popup.png) <br />
+
+
+</center> 
+
+The size of the browser pop-up window is controlled by the Client via code that gets added to the access link on the Client side. Below is an example of such code. 
+
  
+
+```
+<a href="#"  
+
+onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel',  
+
+'PopupPage', 'width=700, height=500, scrollbars=yes,resizable=yes, 
+
+toolbar=no, menubar=no'); return false;">Click to open</a>
+```
+ 
+
+<!-- theme: info -->
+
+> :memo: _**Note:** If the Client chooses not to control the size of the pop-up browser window, then the default browser pop-up created will open in full screen mode which will most likely cover the client’s original parent window responsible for spawning the pop-up._
+ 
+<!-- type: tab-end -->
+
+
+
+
+
 **To Know more visit the below Configuration:**
 
 <div>
@@ -163,63 +193,6 @@ If a gif is not available on the Client web server responsible for creating the 
 [First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
 
 
-
-
-
- <!-- type: tab -->
-
-
-
-
-
-## Pop-up 
-
-A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering within a second single browser pop-up window. when the user clicks on the Fiserv ePayments-provided HTML URL, a new window with the TransferNow application appears. Users work within the new window. 
-
-&nbsp;
-
-<center>
-
-![Image](../../../assets/images/Popup.png) <br />
-
-
-</center> 
-
-The size of the browser pop-up window is controlled by the Client via code that gets added to the access link on the Client side. Below is an example of such code. 
-
- 
-
-```
-<a href="#"  
-
-onClick="popup=window.open(https://qa.fundstransfer.cashedge.com/signupGRel',  
-
-'PopupPage', 'width=700, height=500, scrollbars=yes,resizable=yes, 
-
-toolbar=no, menubar=no'); return false;">Click to open</a>
-```
- 
-
-<!-- theme: info -->
-
-> :memo: _**Note:** If the Client chooses not to control the size of the pop-up browser window, then the default browser pop-up created will open in full screen mode which will most likely cover the client’s original parent window responsible for spawning the pop-up._
- 
-
-**To Know more visit the below Configuration:**
- 
-[Page Footer Configuration](?path=docs/getting-started/TN-UI-Widget/Page_Footer_Configuration.md)    
-[Help Link Configuration](?path=docs/getting-started/TN-UI-Widget/Help_Link_Configuration.md)    
-[Session Timeout Configuration](?path=docs/getting-started/TN-UI-Widget/Session_Timeout_Configuration.md)    
-[Session Keep-Alive Configuration ](?path=docs/getting-started/TN-UI-Widget/Session_Keep-Alive_Configuration.md)    
-
-
-## See Also
-
-[First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
-
-
-
-<!-- type: tab-end -->
 
 
 <style>
