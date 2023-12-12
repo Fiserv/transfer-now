@@ -6,7 +6,7 @@
           <p>TransferNow provides the user with access to 23,000 banks, credit unions, and brokerages for which accounts can be added. The user searches for an institution and uses the appropriate data collection screens based on the services available for the selected institution.</p>
           </div>
           <div class="image-otp">
-          <img src="../../assets/images/transfer-main-page.png">
+          <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-main-page.png">
           </div>
         </div>
 
