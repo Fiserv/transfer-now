@@ -72,6 +72,17 @@ The Client is requesting the following session key expiration period:
 Assume that the Client wishes to submit the payload parameters shown in the table below to the Fiserv TN service QA environment. 
 
 <html>
+<style>
+    tbody:nth-child(odd)
+     {
+         background-color: #dddddd;
+    }
+    table
+    {
+        margin-left:auto;
+        margin-right:auto;
+    }
+</style>
   <table style="width: 70%;">
             <thead>
                 <tr>
@@ -305,6 +316,7 @@ Now copy the session key value returned to you into the Session Key text box and
   height:300;
   width:400;
 }
+
 </style>
 &nbsp;
 
