@@ -40,6 +40,7 @@ Fiserv trusts that the Client has pre-authenticated any end user accessing the s
         display: inline-block;
         width: 1em;
         margin-left: -1em;
+        margin-bottom:5px;
     }
 </style>
 
