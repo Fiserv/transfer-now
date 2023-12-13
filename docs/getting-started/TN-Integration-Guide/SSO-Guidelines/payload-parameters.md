@@ -9,12 +9,32 @@ The end user payload that a Client sends to Fiserv is composed of various parame
 
 **See The Below Tables For More Information**
 
-
-[User Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md) - defines the User Profile payload elements. </br>
-
-[Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md) - defines the Account Profile payload elements. </br>
-
-[Card Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md) (only applicable if a client has enabled Simple Business support in TN) - defines the Card Account Profile payload elements that Fiserv processes as part of a client payload secure message post.</br>
+<table class="digi-table">
+<tr>
+<td>
+<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md">User Profile Payload Elements</a>
+</td>
+<td>
+defines the User Profile payload elements.
+</td>
+</tr>
+<tr>
+<td>
+<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md">Account Profile Payload Elements</a>
+</td>
+<td>
+defines the Account Profile payload elements.
+</td>
+</tr>
+<tr>
+<td>
+<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md">Card Account Profile Payload Elements</a>
+</td>
+<td>
+(only applicable if a client has enabled Simple Business support in TN) - defines the Card Account Profile payload elements that Fiserv processes as part of a client payload secure message post.
+</td>
+</tr>
+</table>
 
 Each table provides a description of each payload element, any associated usage restrictions, and the error flow that either the service application takes, or the Client should take if a payload issue is detected. 
 
@@ -66,5 +86,19 @@ Payload elements that are listed in ( [User Profile Payload Elements-Table](?pat
   height:300;
   width:400;
 }
+ .digi-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.digi-table td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.digi-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.digi-table tr:hover {background-color: #ddd;}
 </style>
 
