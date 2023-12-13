@@ -31,7 +31,7 @@ Users provide the information specific to their institution and their desired cu
     <label class="label-expand" for="section1">Email Specifications</label>
     <div class="content-expand">
 
-Many events occur within TransferNow warrants an email to be sent to the user. TransferNow offers many emails to assist with client-to-customer communications. All TransferNow emails are triggered by the occurrence of an event, either automated or manually. These event triggers can be categorized into the following groups: 
+<p>Many events occur within TransferNow warrants an email to be sent to the user. TransferNow offers many emails to assist with client-to-customer communications. All TransferNow emails are triggered by the occurrence of an event, either automated or manually. These event triggers can be categorized into the following groups: </p> 
 
 <div class="card-body">
 <ul>
@@ -54,9 +54,9 @@ Many events occur within TransferNow warrants an email to be sent to the user. T
     <label class="label-expand" for="section2">The Data Gathering Form (DGF)</label>
     <div class="content-expand">
 
-Fiserv ePayments provides a Data Gathering Form (DGF) to TransferNow clients. The DGF guides clients through the configuration and customization of the TransferNow services, and ultimately provides Fiserv with the data necessary to set up the service. 
+<p>Fiserv ePayments provides a Data Gathering Form (DGF) to TransferNow clients. The DGF guides clients through the configuration and customization of the TransferNow services, and ultimately provides Fiserv with the data necessary to set up the service. </p>
 
-A partial list of configurable elements is given below: 
+<p>A partial list of configurable elements is given below: </p>
 
 
 <div class="card-body">
@@ -77,9 +77,9 @@ A partial list of configurable elements is given below:
     <label class="label-expand" for="section3">Cascading Style Sheet (CSS)</label>
     <div class="content-expand">
 
-Clients can manipulate the “look and feel” of the TransferNow front end user interface using a cascading style sheet (CSS). Typical elements on a HTML page that are controlled by a CSS are the font type, font color, size of a table, etc. When a client fills out the DGF, Fiserv provides the client with the default CSS, which the client changes to match their desired design. 
+<p>Clients can manipulate the “look and feel” of the TransferNow front end user interface using a cascading style sheet (CSS). Typical elements on a HTML page that are controlled by a CSS are the font type, font color, size of a table, etc. When a client fills out the DGF, Fiserv provides the client with the default CSS, which the client changes to match their desired design. </p>
 
-Clients may view and update the CSS in the following ways: 
+<p>Clients may view and update the CSS in the following ways: </p>
 
 <div class="card-body">
 <ul>
@@ -97,11 +97,11 @@ Clients may view and update the CSS in the following ways:
     <label class="label-expand" for="section4">Exit URL</label>
     <div class="content-expand">
 
-Using the DGF, an FI provides Fiserv with an exit URL, so that Fiserv knows where to route a user after TransferNow times out. 
+<p>Using the DGF, an FI provides Fiserv with an exit URL, so that Fiserv knows where to route a user after TransferNow times out.</p> 
 
-An FI can also pass an exit URL to Fiserv in the session payload. TransferNow first looks for an exit URL in the session payload details, and if present, then this URL takes precedence over the exit URL defined in the DGF. Otherwise, Fiserv uses the exit URL defined in the DGF. 
+<p>An FI can also pass an exit URL to Fiserv in the session payload. TransferNow first looks for an exit URL in the session payload details, and if present, then this URL takes precedence over the exit URL defined in the DGF. Otherwise, Fiserv uses the exit URL defined in the DGF. </p>
 
-The FI should define the following exit URL: 
+<p>The FI should define the following exit URL: </p>
 
 <div class="card-body">
 <ul>
