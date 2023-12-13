@@ -14,9 +14,7 @@ TransferNow supports the weekly and monthly frequencies.
 
 <center>
 
-![Image](../assets/images/TF-monthly.png) <br/>
-
-&nbsp;
+![Image](../assets/images/Monthly-duration.png)<br/>
 
 </center>
 
@@ -38,34 +36,65 @@ cutoff time (for those clients who offer Next-Day transfer service). Clients may
 settings via the DGF. 
 
 &nbsp;
-
-
-<center>
-
-![image](../assets/images/frequency-duration.png) <br/>
-
-
-</center>
-
+        <style>
+            th,td{
+                text-align: center;
+                border: 1px solid black;
+                border-collapse:collapse;
+                padding: 5px 5px 5px 5px;
+            }
+            table
+            {
+                text-align: center;
+                border: 1px solid black;
+                border-collapse:collapse;
+                margin-right: auto;
+                margin-left: auto ;
+                display: contents;
+            }
+        </style>
+        <div style="text-align: center;">
+            <table >
+                    <tr>
+                        <th colspan="6" style="background-color: orange;"><b>STANDARD CUTOFF TIME</b></th>
+                    </tr>
+                    <tr style="background-color: rgb(251, 214, 133);">
+                        <th><b>ET</b></th>
+                        <th><b>CT</b></th>
+                        <th><b>MT</b></th>
+                        <th><b>PT</b></th>
+                        <th><b>AKT</b></th>
+                        <th><b>HT</b></th>
+                    </tr>
+                    <tr>
+                        <td>01:00 AM</td>
+                        <td>12:00 AM</td>
+                        <td>11:00 PM</td>
+                        <td>10:00 PM</td>
+                        <td>09:00 AM</td>
+                        <td>07:00 PM</td>
+                    </tr>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
 &nbsp;
-
-
-
 <div class="card-body">
-<ul>
-<li>An asterisk is displayed next to the Standard cutoff time. (i.e., 1 AM ET*) </li>
-</ul>
+    <ul>
+        <li> An asterisk is displayed next to the Standard cutoff time. (i.e., 1 AM ET*) </li>
+    </ul>
+</div> 
 
 &nbsp;
 
 <!-- theme: info -->
 
- > :memo: **Note:** If a client has specified the ET time zone for display of the Standard cutoff time, TransferNow includes an asterisk and a footnote on the screen.
+ > :memo:_**Note:** If a client has specified the ET time zone for display of the Standard cutoff time, TransferNow includes an asterisk and a footnote on the screen._
 
  &nbsp;
 <!-- theme: info -->
 
- > :memo: **Note:** There are no cutoff times for Instant Transfers, as Instant Transfers will leverage the NOW network. ACH cutoff times and limitations do not apply to Instant Transfers.
+ > :memo:_**Note:** There are no cutoff times for Instant Transfers, as Instant Transfers will leverage the NOW network. ACH cutoff times and limitations do not apply to Instant Transfers._
 
 &nbsp;
 
@@ -86,6 +115,7 @@ settings via the DGF.
         width: 1em;
         margin-left: -1em;
     }
+</style>
 
 
 
