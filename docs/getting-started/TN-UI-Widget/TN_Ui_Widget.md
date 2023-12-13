@@ -14,7 +14,7 @@ Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/
 [TN UI Customization Guide](?path=docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md) -->
 
 
-<div>Following topics cover additional information that allows a user to know about TN UI Rendenring options and Customization Guide.
+<div>Following topics cover additional information that allows a user to know about TN UI Rendering options and Customization Guide.
     <div class="debit-body">
     <div class="debit-container">
         <input type="radio" name="dot" id="one">
