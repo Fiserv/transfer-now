@@ -12,9 +12,11 @@ TransferNow supports the weekly and monthly frequencies.
 
 &nbsp;
 
-<div>
-    <img src="../assets/images/Monthly-duration.png" style="display:block;width:50%;margin-right:auto;margin-left:auto">
-</div>
+<center>
+
+![Image](../assets/images/Monthly-duration.png)<br/>
+
+</center>
 
 &nbsp;
 
@@ -34,54 +36,49 @@ cutoff time (for those clients who offer Next-Day transfer service). Clients may
 settings via the DGF. 
 
 &nbsp;
-<html>
-<body>
         <style>
-            table,th,td{
+            th,td{
+                text-align: center;
                 border: 1px solid black;
                 border-collapse:collapse;
-                text-align: center;
-            }
-            th,td{
                 padding: 5px 5px 5px 5px;
             }
-            table{
+            table
+            {
+                text-align: center;
+                border: 1px solid black;
+                border-collapse:collapse;
                 margin-right: auto;
-                margin-left:auto ;
+                margin-left: auto ;
+                display: contents;
             }
         </style>
-        <table >
-                <tr>
-                    <th colspan="6" style="background-color: orange;"><b>STANDARD CUTOFF TIME</b></th>
-                </tr>
-                <tr style="background-color: rgb(251, 214, 133);">
-                    <th><b>ET</b></th>
-                    <th><b>CT</b></th>
-                    <th><b>MT</b></th>
-                    <th><b>PT</b></th>
-                    <th><b>AKT</b></th>
-                    <th><b>HT</b></th>
-                </tr>
-                <tr>
-                    <td>01:00 AM</td>
-                    <td>12:00 AM</td>
-                    <td>11:00 PM</td>
-                    <td>10:00 PM</td>
-                    <td>09:00 AM</td>
-                    <td>07:00 PM</td>
-                </tr>
-            <tbody>
-            </tbody>
-        </table>
-    </body>
-</html> 
-
-
-
+        <div style="text-align: center;">
+            <table >
+                    <tr>
+                        <th colspan="6" style="background-color: orange;"><b>STANDARD CUTOFF TIME</b></th>
+                    </tr>
+                    <tr style="background-color: rgb(251, 214, 133);">
+                        <th><b>ET</b></th>
+                        <th><b>CT</b></th>
+                        <th><b>MT</b></th>
+                        <th><b>PT</b></th>
+                        <th><b>AKT</b></th>
+                        <th><b>HT</b></th>
+                    </tr>
+                    <tr>
+                        <td>01:00 AM</td>
+                        <td>12:00 AM</td>
+                        <td>11:00 PM</td>
+                        <td>10:00 PM</td>
+                        <td>09:00 AM</td>
+                        <td>07:00 PM</td>
+                    </tr>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
 &nbsp;
-
-
-
 <div class="card-body">
     <ul>
         <li> An asterisk is displayed next to the Standard cutoff time. (i.e., 1 AM ET*) </li>
@@ -118,6 +115,7 @@ settings via the DGF.
         width: 1em;
         margin-left: -1em;
     }
+</style>
 
 
 
