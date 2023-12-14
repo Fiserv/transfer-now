@@ -63,7 +63,7 @@ TransferNow application enables a FI to offer secure inter-institution funds tra
 
 In addition to that, TransferNow implements Responsive Web Design, which optimizes the user experience by accommodating a range of differently sized screens, such as those used for standard mobile phones, for plus-sized mobile phones, and for laptops, desktops, and tablets.
 <div>
-    <a class="button" href="?path=docs/getting-started/resp-webdesign.md" aria-label="Learn about RWD"><span>Responsive Web Design</span></a>
+    <a class="res-button" href="?path=docs/getting-started/resp-webdesign.md" aria-label="Learn about RWD"><span>Responsive Web Design</span></a>
 </div>
 
 <style>
@@ -79,21 +79,24 @@ In addition to that, TransferNow implements Responsive Web Design, which optimiz
         width: 1em;
         margin-left: -1em;
     }
-      .button {
+      .res-button {
         display: inline-block;
         padding: 10px 20px;
         text-align: center;
         text-decoration: none;
         color: #ffffff;
-        background-color: #3c5d6e;
+        background-color: #ff6600;
         border-radius: 6px;
         outline: none;
         transition: 0.3s;
         border: 2px solid transparent;
+        font-weight:600;
       }
-      .button:hover,
-      .button:focus {
-        background-color: #c2c7c7;
-        border-color: #7aa8b7;
+      .res-button:hover,
+      .res-button:focus {
+        background-color: #f1f1f1;
+        color:#ff6600;
+        border-color: #ff6600;
+        text-decoration:none;
       }
 </style>
