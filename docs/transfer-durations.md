@@ -50,11 +50,10 @@ settings via the DGF.
                 border-collapse:collapse;
                 margin-right: auto;
                 margin-left: auto ;
-                display: contents;
             }
         </style>
         <div style="text-align: center;">
-            <table >
+            <table style="display:inline-table">
                     <tr>
                         <th colspan="6" style="background-color: orange;"><b>STANDARD CUTOFF TIME</b></th>
                     </tr>
