@@ -58,17 +58,6 @@
 - sections:
   - title: Transfer via Bank Accounts
     link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
-    sections:
-    - title: Add an Account
-      link: docs/transfer-via-bank-accounts/add-an-Account.md
-    - title: Account Verfication
-      link: docs/transfer-via-bank-accounts/account_verification.md
-    - title: Add Brokerage Accounts
-      link: docs/transfer-via-bank-accounts/add_brokerage.md
-    - title: Delete Accounts
-      link: docs/transfer-via-bank-accounts/delete_accounts.md
-    - title: Account Restrictions
-      link: docs/transfer-via-bank-accounts/accounts-restrictions.md
 - sections:
   - title: Fund Transfer Services
     link: docs/fund-transfer/Fund-Transfer-Services.md
