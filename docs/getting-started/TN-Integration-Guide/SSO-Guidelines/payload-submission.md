@@ -83,7 +83,7 @@ Assume that the Client wishes to submit the payload parameters shown in the tabl
         margin-right:auto;
     }
 </style>
-  <table style="width: 70%;">
+    <table style="width: 70%;" class="err-table">
             <thead>
                 <tr>
                     <th> Payload Parameter</th>
@@ -95,177 +95,120 @@ Assume that the Client wishes to submit the payload parameters shown in the tabl
                     <td rowspan="1">INSTITUTION_ID </br></td>
                     <td>88850000</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="2">USER_FI_NUMBER </br></td>
+                    <td rowspan="1">USER_FI_NUMBER </br></td>
                     <td>endUser12</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="3">FIRST_NAME </br></td>
+                    <td rowspan="1">FIRST_NAME </br></td>
                     <td>JOE</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="4">LAST_NAME </br></td>
+                    <td rowspan="1">LAST_NAME </br></td>
                     <td>SMITH</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="5">EMAIL </br></td>
+                    <td rowspan="1">EMAIL </br></td>
                     <td>jlettow@cashedge.com</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="6">STREET </br></td>
+                    <td rowspan="1">STREET </br></td>
                     <td>180 ELM COURT</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="7">CITY </br></td>
+                    <td rowspan="1">CITY </br></td>
                     <td>SUNNYVALE</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="8">STATE </br></td>
+                    <td rowspan="1">STATE </br></td>
                     <td>CA</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="9">ZIP </br></td>
+                    <td rowspan="1">ZIP </br></td>
                     <td>19705</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="10">SSN </br></td>
+                    <td rowspan="1">SSN </br></td>
                     <td>123456789</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="11">DOB </br></td>
+                    <td rowspan="1">DOB </br></td>
                     <td>02/23/1970</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="12">PHONE </br></td>
+                    <td rowspan="1">PHONE </br></td>
                     <td>9999999999</td>
                 </tr>
-            </tbody>
-             <tbody>
                 <tr>
-                    <td rowspan="13">DRV_LIC</br></td>
+                    <td rowspan="1">DRV_LIC</br></td>
                     <td>99999999</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="14">DRV_LIC_STATE</br></td>
+                    <td rowspan="1">DRV_LIC_STATE</br></td>
                     <td>CA</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="15">USER_IN_GOOD_STANDING</br></td>
+                    <td rowspan="1">USER_IN_GOOD_STANDING</br></td>
                     <td>1</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="16">ANUM0</br></td>
+                    <td rowspan="1">ANUM0</br></td>
                     <td>5345435</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="17">ASEG0</br></td>
+                    <td rowspan="1">ASEG0</br></td>
                     <td>AA</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="18">ADSC0</br></td>
+                    <td rowspan="1">ADSC0</br></td>
                     <td>HIGH INTEREST SAVINGS</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="19">ATYP0</br></td>
+                    <td rowspan="1">ATYP0</br></td>
                     <td>0</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="20">ASTAT0</br></td>
+                    <td rowspan="1">ASTAT0</br></td>
                     <td>0</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="21">BALANCE0</br></td>
+                    <td rowspan="1">BALANCE0</br></td>
                     <td>193792.99</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="22">RTN0</br></td>
+                    <td rowspan="1">RTN0</br></td>
                     <td>272482391</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="23">ANUM1</br></td>
+                    <td rowspan="1">ANUM1</br></td>
                     <td>5357780</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="24">ASEG1</br></td>
+                    <td rowspan="1">ASEG1</br></td>
                     <td>BB</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="25">ADSC1</br></td>
+                    <td rowspan="1">ADSC1</br></td>
                     <td>FREE CHECKING</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="26">ATYP1</br></td>
+                    <td rowspan="1">ATYP1</br></td>
                     <td>1</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="27">ASTAT1</br></td>
+                    <td rowspan="1">ASTAT1</br></td>
                     <td>0</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="28">BALANCE1</br></td>
+                    <td rowspan="1">BALANCE1</br></td>
                     <td>10000.00</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
-                    <td rowspan="29">RTN1</br></td>
+                    <td rowspan="1">RTN1</br></td>
                     <td>272482391</td>
                 </tr>
-            </tbody> 
-            </table>
-</html> 
+            </tbody>
+        </table>
 
 submit this payload to the Fiserv TN service demonstration servlet and click the Submit Payload button. 
 
@@ -316,6 +259,23 @@ Now copy the session key value returned to you into the Session Key text box and
   height:300;
   width:400;
 }
+.err-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.err-table td, .err-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.err-table th {
+    background-color:#f1f1f1
+}
+
+.err-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.err-table tr:hover {background-color: #ddd;}
 
 </style>
 &nbsp;
