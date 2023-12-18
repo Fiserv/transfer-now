@@ -83,9 +83,9 @@ In addition to that, TransferNow implements Responsive Web Design, which optimiz
         display: inline-block;
         padding: 10px 20px;
         text-align: center;
-        text-decoration: none;
-        color: #ffffff;
-        background-color: #ff6600;
+        color: #ffffff !important;
+        background-color: #ff6600 !important;
+        text-decoration: none !important;
         border-radius: 6px;
         outline: none;
         transition: 0.3s;
@@ -97,6 +97,6 @@ In addition to that, TransferNow implements Responsive Web Design, which optimiz
         background-color: #f1f1f1;
         color:#ff6600;
         border-color: #ff6600;
-        text-decoration:none;
+        text-decoration:none !important;
       }
 </style>
