@@ -25,7 +25,7 @@
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="../assets/images/TN-from-account-via-bank.png"
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-from-account-via-bank.png"
                                 alt="add-debit">
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                 <div class="card-debit-list">
                 <div class="content-debit-list">
                 <div class="img-debit">
-                        <img src="/assets/images/add-account-TN-main.png" alt="add-debit">
+                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/add-account-TN-main.png" alt="add-debit">
                     </div>
                     <div class="details-list">
                         <div class="name-list">Add an Account</div>
@@ -107,7 +107,7 @@
                 <div class="card-debit-list">
                     <div class="content-debit-list">
                     <div class="img-debit">
-                        <img src="/assets/images/verification-TN-main.png" alt="add-debit">
+                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/verification-TN-main.png" alt="add-debit">
                     </div>
                         <div class="details-list">
                             <div class="name-list">Account Verification</div>
@@ -120,7 +120,7 @@
                     <div class="card-debit-list">
                         <div class="content-debit-list">
                         <div class="img-debit">
-                        <img src="/assets/images/delete-TN-main.png" alt="add-debit">
+                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/delete-TN-main.png" alt="add-debit">
                     </div>
                             <div class="details-list">
                                 <div class="name-list">Delete Accounts</div>
@@ -135,7 +135,7 @@
                 <div class="card-debit-list">
                 <div class="content-debit-list">
                 <div class="img-debit">
-                        <img src="/assets/images/brokerage-TN-main.png" alt="add-debit">
+                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/brokerage-TN-main.png" alt="add-debit">
                     </div>
                     <div class="details-list">
                         <div class="name-list">Add Brokerage Accounts</div>
@@ -148,7 +148,7 @@
                 <div class="card-debit-list">
                     <div class="content-debit-list">
                     <div class="img-debit">
-                        <img src="/assets/images/secured-TN-main.png" alt="add-debit">
+                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/secured-TN-main.png" alt="add-debit">
                     </div>
                         <div class="details-list">
                             <div class="name-list">Account Restrictions</div>
