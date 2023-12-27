@@ -186,7 +186,7 @@ TransferNow supports the weekly and monthly frequencies.
             </div>
         </div>
     </div>
-    </br>
+  
 
 ## Transfer Cut-off times 
 &nbsp;
