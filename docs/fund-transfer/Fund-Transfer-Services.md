@@ -300,6 +300,21 @@ A transaction processed via the GFM has less risk associated with it, because TN
         outline: none;
         font-size: 15px;
         display: block;
+        position: relative;
+    }
+    .label-expand::after{
+        content: '+';
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        right: 12px;
+        top: 8px;
+    }
+    input:checked + label::after {
+        content: '-';
+        font-size: 22px;
+        right: 14px;
+        top: 8px;
     }
 
     .collapsible-checkbox:checked+.label-expand {
