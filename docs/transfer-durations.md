@@ -157,7 +157,7 @@ TransferNow supports the weekly and monthly frequencies.
         </div>
         <div class="flowchart-parent2">
             <div class="flowchart-child3">
-                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/duration-transfer-frequencies.png" style="height:300px;width:300px;">
+                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/monthly-transfer-frequencies.png" style="height:300px;width:300px;">
             </div>
             <div class="flowchart-child4">
                 <p><b style="text-align: center">Monthly</b></p>
@@ -173,7 +173,7 @@ TransferNow supports the weekly and monthly frequencies.
         </div>
         <div class="flowchart-parent3">
             <div class="flowchart-child5">
-                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/yearly-transfer-frequencies.png" style="height:300px;width:300px;">
+                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/duration-transfer-frequencies.png" style="height:300px;width:300px;">
             </div>
             <div class="flowchart-child6">
                     <p><b style="text-align: center;">Durations</b></p>
@@ -186,7 +186,7 @@ TransferNow supports the weekly and monthly frequencies.
             </div>
         </div>
     </div>
-    &nbsp;
+    </br>
 
 ## Transfer Cut-off times 
 &nbsp;
