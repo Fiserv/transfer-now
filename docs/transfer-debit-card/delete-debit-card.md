@@ -11,9 +11,33 @@
     <li>Click the <button class="confirm-button">Yes, Delete</button> button to delete the selected debit card.</li>
     </ul>
 </div>
-
+<div class="debit-card-button-container">
+<div class="debit-card-left-button">
+<a href="?path=docs/debit-card-transaction.md">Back</a>
+</div>
+</div>
 
 <style>
+    .debit-card-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .debit-card-left-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
     .confirm-button {
         padding: 2px;
         font-weight:bold;
