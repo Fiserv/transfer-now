@@ -301,9 +301,6 @@
         background: transparent;
     }
     #controls {
-        margin: -180ox 0 0 0;
-        width: 100%;
-        height: 50px;
         z-index: 3;
         position: relative;
     }
@@ -326,7 +323,7 @@
         display: block;
     }
     #bullets {
-        margin: 30px 0;
+        margin: 0 0 30px 0;
         text-align: center;
         /* border-bottom: 1px solid #8080803d; */
     }
