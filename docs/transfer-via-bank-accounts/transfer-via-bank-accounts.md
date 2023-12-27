@@ -239,7 +239,6 @@
         text-align: center;
         height: 80%;
         margin-bottom: 10px;
-        border-bottom: 1px solid #8080803d;
     }
     #slider input[type=radio] {
         display: none;
@@ -323,9 +322,12 @@
         display: block;
     }
     #bullets {
-        margin: 0 0 30px 0;
-        text-align: center;
-        /* border-bottom: 1px solid #8080803d; */
+    margin: 0 0 30px 0;
+    position: relative;
+    bottom: 39px;
+    text-align: center;
+    padding: 17px;
+    border-bottom: 1px solid #8080803d;
     }
     #bullets label {
         display: inline-block;
