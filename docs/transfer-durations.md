@@ -3,30 +3,190 @@
 TransferNow supports the weekly and monthly frequencies.
 &nbsp;
 
-<center>
-
-![Image](../assets/images/TF-weekly-transfer.png) <br/>
-
-
-</center>
-
-&nbsp;
-
-<center>
-
-![Image](../assets/images/Monthly-duration.png)<br/>
-
-</center>
-
-&nbsp;
-
-
-<center>
-
-![Image](../assets/images/TF-durations.png) <br/>
-
-</center>
-
+ <style>
+        .flowchart-parent {
+            height: 350px;
+            border: 2px solid rgb(223, 218, 218);
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 7px;
+            margin-left: 0px;
+            align-items: center;
+            justify-content: space-evenly;
+            box-sizing: border-box;
+            overflow-x: scroll;
+            background-color: rgb(244, 241, 241);
+        }
+        .flowchart-parent::-webkit-scrollbar {
+            display: none;
+        }
+        .flowchart-parent {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .flowchart-parent1
+        {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid rgb(224, 217, 217);
+            border-radius: 10px;
+            width: 335px;
+            height: 335px;
+            gap: 5px;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+        } 
+        .flowchart-parent2
+        {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid rgb(224, 217, 217);
+            border-radius: 10px;
+            width: 335px;
+            height: 335px;
+            gap: 5px;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+        } 
+        .flowchart-parent3
+        {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid rgb(224, 217, 217);
+            border-radius: 10px;
+            width: 335px;
+            height: 335px;
+            gap: 5px;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+        } 
+        .flowchart-child1
+        {
+            flex-direction: row;
+        }
+        .flowchart-child3   
+        {
+            flex-direction: row;
+        }
+        .flowchart-child5  
+        {
+            flex-direction: row;
+        }
+        .flowchart-child2
+        {
+            display: none;
+            flex-direction: column;
+        }
+        .flowchart-child4
+        {
+            display: none;
+            flex-direction: column;
+        }
+        .flowchart-child6
+        {
+            display: none;
+            flex-direction: column;
+        }
+        p{
+            align-self: center;
+        }
+        .flowchart-parent ul li::before 
+        {
+            content: "\2022";
+            font-size: 1em;
+            color: #f60;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .flowchart-parent1:hover
+        {
+            .flowchart-child1
+                {
+                    display: none ;
+                }
+            .flowchart-child2
+                {
+                    display: flex;
+                }
+        }
+        .flowchart-parent2:hover
+        {
+            .flowchart-child3
+                {
+                    display: none ;
+                }
+            .flowchart-child4
+                {
+                    display: flex;
+                }
+        }
+        .flowchart-parent3:hover
+        {
+            .flowchart-child5
+                {
+                    display: none ;
+                }
+            .flowchart-child6
+                {
+                    display: flex;
+                }
+        }
+    </style>
+<div class="flowchart-parent">
+        <div class="flowchart-parent1">                       
+                <div class="flowchart-child1">
+                    <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/weekly-transfer-frequencies.png" style="height:300px;width:300px;">
+                </div>
+                <div class="flowchart-child2">
+                    <p><b style="text-align: center;">Weekly Transfer</b></p>
+                    <ul>
+                        <li>Every Week</li>
+                        <li>Every Two Week</li>
+                        <li>Every Three Week</li>
+                        <li>Every Four Week</li>
+                        <li>Every 15 Days</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="flowchart-parent2">
+            <div class="flowchart-child3">
+                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/duration-transfer-frequencies.png" style="height:300px;width:300px;">
+            </div>
+            <div class="flowchart-child4">
+                <p><b style="text-align: center">Monthly</b></p>
+                <ul>
+                    <li>Every Month.</li>
+                    <li>Every Two Month.</li>
+                    <li>Every Three Week.</li>
+                    <li>Every Six Week.</li>
+                    <li>First Business Day Of The Month.</li>
+                    <li>Last Business Day Of The Month.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flowchart-parent3">
+            <div class="flowchart-child5">
+                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/yearly-transfer-frequencies.png" style="height:300px;width:300px;">
+            </div>
+            <div class="flowchart-child6">
+                    <p><b style="text-align: center;">Durations</b></p>
+                <ul>
+                    <li>Until a specified number of transactions are made.</li>
+                    <li>Until cancelled by the user.</li>
+                    <li>Up to but not after a specified date.</li>
+                    <li>Until a specified dollar amount is transfered.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    &nbsp;
 
 ## Transfer Cut-off times 
 &nbsp;
