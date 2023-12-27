@@ -38,6 +38,14 @@
         text-decoration: none;
         transition: all 0.3s ease;
     }
+    .debit-card-left-button a{
+         left: 0;
+    }
+    .debit-card-left-button a:hover{
+         color: #f60;
+         background-color: white;
+         border: 2px solid #f60;
+    }
     .confirm-button {
         padding: 2px;
         font-weight:bold;
