@@ -25,7 +25,7 @@
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-from-account-via-bank.png"
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/From-account-TN.png"
                                 alt="add-debit">
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile.png" alt="add-debit">
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/To-transfernow.png" alt="add-debit">
                     </div>
                 </div>
                 <div class="slide slide_3">
@@ -52,7 +52,7 @@
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile.png"
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/amount-filling-transfernow.png"
                                 alt="add-debit">
                     </div>
                 </div>
@@ -60,11 +60,11 @@
                     <div class="slide-content">
                         <div class="slide-content-p">
                         <div class="card-body">
-                        <ul><li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies / Durations</a> </li>
+                        <ul><li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies / Durations</a></li>
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile.png"
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/freq-transfernow-bank.png"
                                 alt="add-debit">
                     </div>
                 </div>
