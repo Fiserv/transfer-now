@@ -393,6 +393,23 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
         font-size: 15px;
         display: inline-block;
         margin-bottom: 1px;
+        position: relative;
+    }
+    .label-expand::after{
+        content: '+';
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        padding: 0 20px;
+    }
+    input:checked + label::after {
+        content: '-';
+        font-size: 22px;
+        right: 14px;
+        top: 8px;
+        padding: 0 20px;
     }
 
     .collapsible-checkbox:checked+.label-expand {
