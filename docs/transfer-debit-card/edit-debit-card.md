@@ -15,8 +15,41 @@
 </div>
 <p class="block-quote">Note: If the debit card is expired or a new one, the user can edit the expiry date if the new debit card number is same or if the debit card numbers are different, the user will have to delete and add as a new card.</p>
 
+<div class="debit-card-button-container">
+<div class="debit-card-left-button">
+<a href="?path=docs/debit-card-transaction.md">Back</a>
+</div>
+</div>
 
 <style>
+    .debit-card-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .debit-card-left-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .debit-card-left-button a{ 
+        left: 0;
+    }
+    .debit-card-left-button a:hover{
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
     .block-quote {
         margin-left: 25px;
         padding: 1em;

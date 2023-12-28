@@ -8,12 +8,15 @@
     <li>Select a debit card that the user wants to delete.</li>
     <li>Click the <button class="confirm-button">Delete Card</button> button to remove the debit card from the list.</li>
     <li>Delete Debit Card screen is displayed.</li>
+    <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Delete_Debit_Card.png">
     <li>Click the <button class="confirm-button">Yes, Delete</button> button to delete the selected debit card.</li>
     </ul>
 </div>
 <div class="debit-card-button-container">
 <div class="debit-card-left-button">
 <a href="?path=docs/debit-card-transaction.md">Back</a>
+</div>
+<div class="debit-card-right-button"><a href="?path=docs/transfer-debit-card/debit-card-verification.md">Next</a></div>
 </div>
 </div>
 
@@ -25,7 +28,8 @@
         font-family: sans-serif;
         margin: 0px 15px;
     }
-    .debit-card-left-button a{
+    .debit-card-left-button a,
+    .debit-card-right-button a{
         position: absolute;
         display: inline;
         border: 0px;
@@ -38,19 +42,19 @@
         text-decoration: none;
         transition: all 0.3s ease;
     }
-    .debit-card-left-button a{
-         left: 0;
+    .debit-card-left-button a{ 
+        left: 0;
     }
-    .debit-card-left-button a:hover{
-         color: #f60;
-         background-color: white;
-         border: 2px solid #f60;
+    .debit-card-right-button a{
+        right: 0;
     }
-    .confirm-button {
-        padding: 2px;
-        font-weight:bold;
+    .debit-card-left-button a:hover,
+    .debit-card-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
     }
-    .card-body {
+     .card-body {
         margin: 20px;
     }
     .card-body ul {
