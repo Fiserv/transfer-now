@@ -313,7 +313,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
     input:checked + label::after {
         content: '-';
         font-size: 22px;
-        right: 14px;
+        right: 25px;
         top: 8px;
     }
 
