@@ -41,7 +41,7 @@ TN supports two ACH transaction methods:
 
 A transaction processed via the GFM has less risk associated with it, because TN waits until the debit transaction completes successfully before initiating the credit transaction. On the other hand, for a NDT transaction, TN initiates both the credit and the debit transaction at the same time.
 
-<img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ACH.png"/>
+<img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ACH1.png"/>
 
 </br>
 
