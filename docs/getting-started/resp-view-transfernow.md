@@ -276,11 +276,12 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
       width: 60%;
     }
     .block-quote-resp {
-    padding: 1em;
-    color: #6a737d;
-    border-left: 0.375em solid #40a9ff;
-    background: #e6f7ff;
-    border-radius: 3px;
-    margin: 25px 0;
+        padding: 1em;
+        color: #6a737d;
+        border-left: 0.375em solid #40a9ff;
+        background: #e6f7ff;
+        border-radius: 3px;
+        position: relative;
+        top: 55px;
     }  
    </style>
