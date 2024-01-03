@@ -6,7 +6,7 @@ TransferNow supports the weekly and monthly frequencies.
  <style>
         .flowchart-parent {
             height: 350px;
-            border: 2px solid rgb(223, 218, 218);
+           border: 2px solid rgba(223, 218, 218, 0.002);
             padding: 5px;
             border-radius: 5px;
             display: flex;
@@ -31,7 +31,7 @@ TransferNow supports the weekly and monthly frequencies.
         {
             display: flex;
             flex-direction: column;
-            border: 3px solid rgb(224, 217, 217);
+           border: 3px solid rgba(224, 217, 217, 0);
             border-radius: 10px;
             width: 335px;
             height: 335px;
@@ -44,7 +44,7 @@ TransferNow supports the weekly and monthly frequencies.
         {
             display: flex;
             flex-direction: column;
-            border: 3px solid rgb(224, 217, 217);
+         border: 3px solid rgba(224, 217, 217, 0);
             border-radius: 10px;
             width: 335px;
             height: 335px;
@@ -57,7 +57,7 @@ TransferNow supports the weekly and monthly frequencies.
         {
             display: flex;
             flex-direction: column;
-            border: 3px solid rgb(224, 217, 217);
+          border: 3px solid rgba(224, 217, 217, 0);
             border-radius: 10px;
             width: 335px;
             height: 335px;
