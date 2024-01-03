@@ -8,7 +8,7 @@
                 <div class="card-debit-list">
                 <div class="content-debit-list">
                 <div class="img-debit">
-                        <img src="/assets/images/ssl-auth-transfernow.png" alt="add-debit">
+                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl-auth-transfernow.png" alt="add-debit">
                     </div>
                     <div class="details-list">
                         <div class="name-list">SSL Authentication</div>
@@ -21,7 +21,7 @@
                 <div class="card-debit-list">
                     <div class="content-debit-list">
                     <div class="img-debit" style="margin: 47px 0px;">
-                        <img src="/assets/images/ssl-payload-transfernow.png" alt="add-debit">
+                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl-payload-transfernow.png" alt="add-debit">
                     </div>
                         <div class="details-list">
                             <div class="name-list">SSO Payload</div>
@@ -34,7 +34,7 @@
                     <div class="card-debit-list">
                         <div class="content-debit-list">
                         <div class="img-debit">
-                        <img src="/assets/images/ssl-mobile-transfernow.png" alt="add-debit">
+                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl-mobile-transfernow.png" alt="add-debit">
                     </div>
                             <div class="details-list">
                                 <div class="name-list">SSO for Mobile</div>
