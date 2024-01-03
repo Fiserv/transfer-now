@@ -6,7 +6,7 @@ In this solution, Fiserv manages the entire online application experience.
 
 <object data="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-UI-Widget-Functionality.pdf" type="application/pdf" width="700px" height="700px">
 <embed src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-UI-Widget-Functionality.pdf">
-        <p> <a href="file:///C:/Users/F8LHG2D/TN/feature-2/transfer-now/assets/images/TN-UI-Widget-Functionality.pdf">TN UI Widget Functionality PDF</a>.</p>
+        <p> <a href="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-UI-Widget-Functionality.pdf">TN UI Widget Functionality PDF</a>.</p>
     </embed>
 </object>
 
