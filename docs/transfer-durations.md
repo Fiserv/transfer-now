@@ -147,11 +147,11 @@ TransferNow supports the weekly and monthly frequencies.
 <div class="flowchart-parent">
         <div class="drag">
             <b>DRAG IT ! </b>
-            <img src="../assets/images/arrow-right.png"> 
+            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/arrow-right.png"> 
         </div>
         <div class="flowchart-parent1">                       
                 <div class="flowchart-child1">
-                    <img src="../assets/images/weekly-transfer-updated.png" style="height:300px;width:300px;">
+                    <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/weekly-transfer-updated.png" style="height:300px;width:300px;">
                 </div>
                 <div class="flowchart-child2">
                     <p><b style="text-align: center;">Weekly Transfer</b></p>
@@ -166,7 +166,7 @@ TransferNow supports the weekly and monthly frequencies.
         </div>
         <div class="flowchart-parent2">
             <div class="flowchart-child3">
-                <img src="../assets/images/monthly-transfer-updated.png" style="height:300px;width:300px;">
+                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/monthly-transfer-updated.png" style="height:300px;width:300px;">
             </div>
             <div class="flowchart-child4">
                 <p><b style="text-align: center">Monthly Transfer</b></p>
@@ -182,7 +182,7 @@ TransferNow supports the weekly and monthly frequencies.
         </div>
         <div class="flowchart-parent3">
             <div class="flowchart-child5">
-                <img src="../assets/images/durations-updated.png" style="height:300px;width:300px;">
+                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/durations-updated.png" style="height:300px;width:300px;">
             </div>
             <div class="flowchart-child6">
                     <p><b style="text-align: center;">Durations</b></p>
