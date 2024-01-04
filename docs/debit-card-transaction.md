@@ -27,7 +27,7 @@
     </ul>
                         </div>
                         </div>
-                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile.png" alt="initial-page">
+                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile1.png" alt="initial-page">
                     </div>
                 </div>
                 <div class="slide slide_2">
