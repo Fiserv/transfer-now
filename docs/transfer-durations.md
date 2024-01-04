@@ -3,7 +3,7 @@
 TransferNow supports the weekly and monthly frequencies.
 &nbsp;
 
-  <style>
+<style>
         .flowchart-parent {
             height: 350px;
            border: 2px solid rgba(223, 218, 218, 0.002);
@@ -138,12 +138,6 @@ TransferNow supports the weekly and monthly frequencies.
                     display: flex;
                 }
         }
-        .drag
-        {
-            display:flex;
-            margin-left:40px;
-            gap:10px;
-        }
     </style>
 <div class="flowchart-parent">
         <div class="flowchart-parent1">                       
@@ -192,7 +186,15 @@ TransferNow supports the weekly and monthly frequencies.
             </div>
         </div>
     </div>
-    <div class="drag">
+    <style>
+        .drag-arrow
+        {
+            display:flex;
+            margin-left:40px;
+            gap:10px;
+        }
+    </style>
+<div class="drag-arrow">
             <b  style="font-size:x-small">DRAG IT !</b>
             <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/arrow-right.png" style="width:15px;height:15px;"> 
     </div>
