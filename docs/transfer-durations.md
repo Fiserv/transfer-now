@@ -65,7 +65,7 @@ For each client, Fiserv sets the appropriate time zone for the Standard cutoff t
 cutoff time (for those clients who offer Next-Day transfer service). Clients may alter the time zone 
 settings via the DGF.</p>
 </div>
-        <div style="text-align: center;">
+<div style="text-align: center;">
             <table style="display:inline-table">
                     <tr>
                         <th colspan="6" style="background-color: orange;"><b>STANDARD CUTOFF TIME</b></th>
@@ -86,10 +86,8 @@ settings via the DGF.</p>
                         <td>09:00 AM</td>
                         <td>07:00 PM</td>
                     </tr>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
+     </table>
+</div>
         </br>
 <div class="card-body">
     <ul>
@@ -109,6 +107,20 @@ settings via the DGF.</p>
 &nbsp;
 
 <style>
+    th,td{
+                text-align: center;
+                border: 1px solid black;
+                border-collapse:collapse;
+                padding: 5px 5px 5px 5px;
+            }
+            table
+            {
+                text-align: center;
+                border: 1px solid black;
+                border-collapse:collapse;
+                margin-right: auto;
+                margin-left: auto ;
+            } 
         .flowchart-parent {
             height: 350px;
            border: 2px solid rgba(223, 218, 218, 0.002);
@@ -249,21 +261,7 @@ settings via the DGF.</p>
             margin-left:45px;
             gap:10px;
         }
-        th,td{
-                text-align: center;
-                border: 1px solid black;
-                border-collapse:collapse;
-                padding: 5px 5px 5px 5px;
-            }
-            table
-            {
-                text-align: center;
-                border: 1px solid black;
-                border-collapse:collapse;
-                margin-right: auto;
-                margin-left: auto ;
-            } 
-            .card-body ul {
+    .card-body ul {
         list-style: none;
         padding-left: 20px;
     }
