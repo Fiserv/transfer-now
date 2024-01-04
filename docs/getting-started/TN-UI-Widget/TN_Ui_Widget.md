@@ -5,7 +5,7 @@ User can integrate the TransferNow service via the Fiserv ePayments-hosted UI So
 In this solution, Fiserv manages the entire online application experience. 
 
 <object>
-        <p> <a href="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-UI-Widget-Functionality.pdf">TN UI Widget Functionality PDF</a>.</p>
+        <p>To know more about step by step TransferNow functional guide, click <a href="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-UI-Widget-Functionality.pdf">TN UI Widget Functionality PDF</a>.</p>
     </embed>
 </object>
 
