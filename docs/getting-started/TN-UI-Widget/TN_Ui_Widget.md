@@ -101,7 +101,7 @@ Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/
         min-height: 50vh;
         align-items: center;
         justify-content: center;
-        background: #6a737d;
+        /* background: #6a737d; */
         background-position: center;
         background-size: cover;
         position: relative;
@@ -110,7 +110,7 @@ Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/
         z-index: 777;
         content: '';
         position: absolute;
-        background: #f1f1f1;
+        /* background: ; */
         width: 100%;
         height: 100%;
     }
