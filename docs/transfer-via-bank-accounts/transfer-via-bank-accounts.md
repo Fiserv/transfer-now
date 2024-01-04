@@ -21,51 +21,56 @@
                     <div class="slide-content">
                         <div class="slide-content-p">
                         <div class="card-body">
-                        <ul><li>User selects the bank account from which the amount to be debited under "From" dropdown list.</li>
+                        <ul>
+                        <li>User selects the bank account from which the amount to be debited under "From" dropdown list.</li>
+                        <li>User selects the bank account to which the amount to be credited under "To" dropdown list.</li>
+                        <li>Enter the amount to be transferred.</li><li>Set the date when the user wants to initiate the transaction.
+                        <div class="tooltip-info">
+                        <div class="icon-info">i</div>
+                        <div class="tooltiptext-info">View Limits will display the maximum amount that can be transferred.</div>
+                        </div></li>
+                        <li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies / Durations</a></li>
+                        </ul>
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/From-account-TN.png"
-                                alt="add-debit">
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile1.png" alt="initial-page" alt="add-debit">
                     </div>
                 </div>
                 <div class="slide slide_2">
                     <div class="slide-content">
                         <div class="slide-content-p">
                         <div class="card-body">
-                        <ul><li>User selects the bank account to which the amount to be credited under "To" dropdown list.</li>
+                        <ul>
+                        <li>The transfer detail is displayed on the screen to allow the user to review and confirm.</li>
+                        <li>Click the <strong>Confirm</strong> button to complete the transfer.</li>
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/To-transfernow.png" alt="add-debit">
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Review Transfer.png" alt="add-debit">
                     </div>
                 </div>
                 <div class="slide slide_3">
                     <div class="slide-content">
                         <div class="slide-content-p">
                         <div class="card-body">
-                        <ul><li>Enter the amount to be transferred.</li><li>Set the date when the user wants to initiate the transaction.
-                        <div class="tooltip-info">
-                        <div class="icon-info">i</div>
-                        <div class="tooltiptext-info">View Limits will display the maximum amount that can be transferred.</div>
-                        </div></li>
+                        <ul>
+                        <li><strong>Transfer confirmation</strong> screen is displayed.</li>
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/amount-filling-transfernow.png"
-                                alt="add-debit">
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/confirmation.png" alt="add-debit">
                     </div>
                 </div>
                 <div class="slide slide_4">
                     <div class="slide-content">
                         <div class="slide-content-p">
                         <div class="card-body">
-                        <ul><li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies / Durations</a></li>
+                        <ul><li>All transfers, including debit card transfers are shown on the <strong>Activity</strong> page as shown below.</li>
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/freq-transfernow-bank.png"
-                                alt="add-debit">
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Tranfer-via-bankaccounts-activity copy.png" alt="add-debit">
                     </div>
                 </div>
             </div>
@@ -322,7 +327,7 @@
         display: block;
     }
     #bullets {
-    margin: 0 0 30px 0;
+    margin: 30px 0;
     position: relative;
     bottom: 39px;
     text-align: center;

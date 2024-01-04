@@ -19,11 +19,14 @@
                         <div class="card-body-f">
                         <ul>
     <li>User can select “From” and “To” debit card information from the list that are already added.</li>
-    <li>Enter the amount to be transferred.</li>
-    <p class="block-quote">Note: View Limits will display the maximum amount that can be transferred.</p>
+    <li>Enter the amount to be transferred.</li><li>Set the date when the user wants to initiate the transaction.
+                        <div class="tooltip-info">
+                        <div class="icon-info">i</div>
+                        <div class="tooltiptext-info">View Limits will display the maximum amount that can be transferred.</div>
+                        </div></li>
     <li>Set the date when the user wants to initiate the transaction.</li>
     <li>Select the Frequency. To know more about Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies/Duration.</a></li>
-    <li>Click the <button class="confirm-button">Review</button> button and review the page.</li>
+    <li>Click the <strong>Review</strong> button and review the page.</li>
     </ul>
                         </div>
                         </div>
@@ -36,7 +39,7 @@
                         <div class="card-body-f">
                         <ul>
                         <li>The transfer detail is displayed on the screen to allow the user to review and confirm.</li>
-                        <li>Click the <button class="confirm-button">Confirm</button> button to complete the transfer.</li>
+                        <li>Click the <strong>Confirm</strong> button to complete the transfer.</li>
                         </ul>
                         </div>
                         </div>
@@ -62,8 +65,7 @@
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Tranfer-via-bankaccounts-activity copy.png"
-                                alt="initial-page">
+                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Tranfer-via-bankaccounts-activity copy.png" alt="initial-page">
                     </div>
                 </div>
             </div>
@@ -154,6 +156,52 @@
 </div>
 </div>
 <style>
+    .tooltip-info {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tooltip-info:hover {
+    visibility: visible;
+    opacity: 1;
+}    
+.tooltiptext-info{
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltiptext-info::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left:50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+}
+.tooltip-info .icon-info{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #f60;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
     .content-body-1 {
         display: flex;
         align-items: center;
