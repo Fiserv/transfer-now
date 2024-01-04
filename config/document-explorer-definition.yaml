@@ -36,6 +36,7 @@
       link: docs/getting-started/resp-view-transfernow.md
 - sections: 
   - title: TN Integration Guide
+    link: docs/getting-started/TN-Integration-Guide/transfernow-integration-guide.md
     sections:
     - title: SSL Authentication
       link: docs/getting-started/TN-Integration-Guide/SSL-Authentication.md
