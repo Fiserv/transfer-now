@@ -267,4 +267,7 @@ Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/
         width: 1em;
         margin-left: -1em;
     }
+    .details .name{
+        font-size:16px !important;
+    }
 </style>
