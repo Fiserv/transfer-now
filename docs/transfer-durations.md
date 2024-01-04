@@ -88,7 +88,6 @@ settings via the DGF.</p>
                     </tr>
      </table>
 </div>
-        </br>
 <div class="card-body">
     <ul>
         <li> An asterisk is displayed next to the Standard cutoff time. (i.e., 1 AM ET*) </li>
