@@ -181,7 +181,7 @@
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
-.tooltip-info:hover {
+.tooltip-info:hover .tooltiptext-info{
     visibility: visible;
     opacity: 1;
 }    
