@@ -6,7 +6,7 @@ TransferNow supports the weekly and monthly frequencies.
  <style>
         .flowchart-parent {
             height: 350px;
-            border: 2px solid rgb(223, 218, 218);
+           border: 2px solid rgba(223, 218, 218, 0.002);
             padding: 5px;
             border-radius: 5px;
             display: flex;
@@ -18,7 +18,7 @@ TransferNow supports the weekly and monthly frequencies.
             justify-content: space-evenly;
             box-sizing: border-box;
             overflow-x: scroll;
-            background-color: rgb(244, 241, 241);
+            background-color: rgba(244, 241, 241, 0);
         }
         .flowchart-parent::-webkit-scrollbar {
             display: none;
@@ -31,7 +31,7 @@ TransferNow supports the weekly and monthly frequencies.
         {
             display: flex;
             flex-direction: column;
-            border: 3px solid rgb(224, 217, 217);
+           border: 3px solid rgba(224, 217, 217, 0);
             border-radius: 10px;
             width: 335px;
             height: 335px;
@@ -44,7 +44,7 @@ TransferNow supports the weekly and monthly frequencies.
         {
             display: flex;
             flex-direction: column;
-            border: 3px solid rgb(224, 217, 217);
+         border: 3px solid rgba(224, 217, 217, 0);
             border-radius: 10px;
             width: 335px;
             height: 335px;
@@ -57,7 +57,7 @@ TransferNow supports the weekly and monthly frequencies.
         {
             display: flex;
             flex-direction: column;
-            border: 3px solid rgb(224, 217, 217);
+          border: 3px solid rgba(224, 217, 217, 0);
             border-radius: 10px;
             width: 335px;
             height: 335px;
@@ -138,42 +138,51 @@ TransferNow supports the weekly and monthly frequencies.
                     display: flex;
                 }
         }
+        .drag
+        {
+            display:flex;
+            gap:10px;
+        }
     </style>
 <div class="flowchart-parent">
+        <div class="drag">
+            <b>DRAG IT ! </b>
+            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/arrow-right.png"> 
+        </div>
         <div class="flowchart-parent1">                       
                 <div class="flowchart-child1">
-                    <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/weekly-transfer-frequencies.png" style="height:300px;width:300px;">
+                    <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/weekly-transfer-updated.png" style="height:300px;width:300px;">
                 </div>
                 <div class="flowchart-child2">
                     <p><b style="text-align: center;">Weekly Transfer</b></p>
                     <ul>
-                        <li>Every Week</li>
-                        <li>Every Two Week</li>
-                        <li>Every Three Week</li>
-                        <li>Every Four Week</li>
-                        <li>Every 15 Days</li>
+                        <li>Every week</li>
+                        <li>Every two week</li>
+                        <li>Every three week</li>
+                        <li>Every four week</li>
+                        <li>Every 15 days</li>
                     </ul>
                 </div>
         </div>
         <div class="flowchart-parent2">
             <div class="flowchart-child3">
-                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/monthly-transfer-frequencies.png" style="height:300px;width:300px;">
+                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/monthly-transfer-updated.png" style="height:300px;width:300px;">
             </div>
             <div class="flowchart-child4">
-                <p><b style="text-align: center">Monthly</b></p>
+                <p><b style="text-align: center">Monthly Transfer</b></p>
                 <ul>
-                    <li>Every Month.</li>
-                    <li>Every Two Month.</li>
-                    <li>Every Three Week.</li>
-                    <li>Every Six Week.</li>
-                    <li>First Business Day Of The Month.</li>
-                    <li>Last Business Day Of The Month.</li>
+                    <li>Every month.</li>
+                    <li>Every two month.</li>
+                    <li>Every three week.</li>
+                    <li>Every six week.</li>
+                    <li>First business day of the month.</li>
+                    <li>Last business day of the month.</li>
                 </ul>
             </div>
         </div>
         <div class="flowchart-parent3">
             <div class="flowchart-child5">
-                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/duration-transfer-frequencies.png" style="height:300px;width:300px;">
+                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/durations-updated.png" style="height:300px;width:300px;">
             </div>
             <div class="flowchart-child6">
                     <p><b style="text-align: center;">Durations</b></p>
@@ -186,7 +195,6 @@ TransferNow supports the weekly and monthly frequencies.
             </div>
         </div>
     </div>
-  
 
 ## Transfer Cut-off times 
 &nbsp;
