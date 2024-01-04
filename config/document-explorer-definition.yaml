@@ -37,25 +37,6 @@
 - sections: 
   - title: TN Integration Guide
     link: docs/getting-started/TN-Integration-Guide/transfernow-integration-guide.md
-    sections:
-    - title: SSL Authentication
-      link: docs/getting-started/TN-Integration-Guide/SSL-Authentication.md
-      sections:
-      - title: Digital Certificates
-        link: docs/getting-started/TN-Integration-Guide/Digital-Certificates.md
-      - title: Server Authentication 
-        link: docs/getting-started/TN-Integration-Guide/Server-Authentication.md     
-    - title: SSO-Payload
-      link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md
-      sections:
-        - title: Payload Parameters
-          link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md
-        - title: Error Handling / Error Codes
-          link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md
-        - title: Payload Submission
-          link: docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md   
-    - title: SSO for Mobile
-      link: docs/getting-started/TN-Integration-Guide/SSO-For-Mobile.md    
 - sections:
   - title: Transfer via Bank Accounts
     link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
