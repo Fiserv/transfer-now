@@ -63,7 +63,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
  <input type="checkbox" class="collapsible-checkbox" id="section2">
     <label class="label-expand" for="section2">Help Link Configuration</label>
     <div class="content-expand">
-Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.
+<p>Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.</p>
 </br>
 <center>
 
