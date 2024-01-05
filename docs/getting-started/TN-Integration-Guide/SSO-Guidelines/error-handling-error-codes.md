@@ -59,7 +59,7 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
 
 >:memo:_**Note:** The "1" preceding the two pipe characters ("||") indicates that the payload submission failed, and the SS14 following the two pipe characters represents the SS error code. If the payload submission resulted in multiple error codes being returned in the response, then a comma delimited list of error codes, following the two pipe characters, would be returned._  
 
-[SS Error Codes Returned by Fiser-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will return to the Client in the https response because of the Client submitting an invalid payload; the Client will need to perform the proper error handling for any of the listed returned errors. 
+[SS Error Codes Returned by Fiserv-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will return to the Client in the https response because of the Client submitting an invalid payload; the Client will need to perform the proper error handling for any of the listed returned errors. 
 
   <table style="width: 100%;" class="err-table">
             <thead>
