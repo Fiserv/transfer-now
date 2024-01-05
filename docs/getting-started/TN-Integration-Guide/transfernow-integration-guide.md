@@ -64,14 +64,18 @@
                     <div class="img-debit">
                         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/secured-TN-main.png" alt="add-debit">
                     </div>
-                        <div class="details-list">
-                            <div class="name-list">Account Restrictions</div>
+                    <div class="details-list">
+                        <div class="name-list">
+                            Account Restrictions.
                         </div>
+                    </div>
                         <div class="media-icons-list">
-                            <a href="?path=docs/transfer-via-bank-accounts/accounts-restrictions.md">Click View</a>
+                            <a href="?path=docs/transfer-via-bank-accounts/accounts-restrictions.md">
+                            Click View
+                            </a>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     </div>

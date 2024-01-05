@@ -19,12 +19,74 @@ Assume a client’s end user has logged into the Client’s web page and now att
 [Error Handling / Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md)      
 [Payload Submission](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md)   
 
+<div class="sso-payload-button-container">
+    <br>
+    <div class="sso-payload-left-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/transfernow-integration-guide.md">Back</a>
+    </div>
+    <div class="sso-payload-right-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Next</a>
+    </div>
+</div>
 <style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height:300;
-  width:400;
-}
+    .sso-payload-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .sso-payload-left-button a,
+    .sso-payload-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .sso-payload-left-button a{ 
+        left: 0;
+    }
+    .sso-payload-right-button a{
+        right: 0;
+    }
+    .sso-payload-left-button a:hover,
+    .sso-payload-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
+    .card-body
+    {
+        background:#f1f1f101;
+        padding:1em;
+    }
+    .card-body ul 
+    {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before 
+    {
+        content: "\2022";
+        font-size: 1em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        margin-bottom:10px;
+    }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300;
+    width:400;
+  }
 </style>

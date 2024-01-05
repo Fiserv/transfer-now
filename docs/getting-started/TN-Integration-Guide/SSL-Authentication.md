@@ -32,34 +32,47 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Fo
 
 
 <div class="card-body">
-<ul>
-<li>A Client trusted end user access the service via the Client’s web page.</li>
-
-<li>(OW, MA) The Client Server requests an SSL connection to the Fiserv ePayments Client Integration (CI) Server.</li>
-
-<li>(OW, MA) The Fiserv ePayments CI Server responds by sending its public key using a digital certificate previously signed by a trusted third-party certificate authority (CA).</li>
-
-<li>(OW, MA) The Client Server checks the Fiserv ePayments CI Server’s certificate to determine whether the signing CA’s root certificate (containing the CA’s public key) is contained in its trusted root store. If the digital signature on the Fiserv ePayments CI Server's certificate matches the digital signature on one of the CA root certificates, then the Fiserv ePayments CI Server can be trusted. </li>
-
-<li>(MA) The Fiserv ePayments CI Server now requests that the Client Server send its public key contained within its certificate.</li>
-
-<li>(MA) The Fiserv ePayments CI Server checks Client Server’s certificate to determine whether the signing CA’s root certificate (containing the CA’s public key) is contained in its trusted root store. If the digital signature on the Client Server's certificate matches the digital signature on one of the root certificates, then the Client Server can be trusted. </li>
-
-<li>(OW, MA) Session keys are securely negotiated between the Client Server and the Fiserv ePayments CI Server, the result being that a secure and trusted communication channel has now been established between the servers.</li>
-
-<li>(OW, MA) The Client’s Server generates a pre-master key which is encrypted with the Fiserv ePayments CI Server’s public key and then sends it back to the Fiserv ePayments CI Server.</li>
-
-<li>(OW, MA) Both the Client Server and the Fiserv ePayments CI Server compute a master key and generate a secret symmetric key which will then be used to encrypt all messages between the two servers.</li>
-
-<li>(OW, MA) The Client’s Server then posts the end user’s payload to the Fiserv ePayments CI server.</li>
-
-<li>(OW, MA) The Fiserv ePayments CI Server validates the IP address of the Client’s Server and, if valid, saves the end user’s data on the Fiserv side. The Fiserv ePayments CI Server then generates a temporary application session key that it sends back to the Client’s Server.</li>
-
-<li>The Client’s Server uses this temporary application session key as part of a URL redirect of the end user’s browser to the Fiserv ePayments Application Server. Failure of the Client to redirect the end user’s browser to the Fiserv ePayments Application Server within the transient application session key’s expiration time (typically 5 minutes) will result in the end user being presented with an error page.</li>
-
-<li>The end user’s browser establishes an https session with the Fiserv ePayments Application Server. The Fiserv ePayments Application Server responds by sending back the Client’s TN landing page to the end user’s browser.</li>
-
-</ul>
+    <ul>
+        <li>
+            A Client trusted end user access the service via the Client’s web page.
+        </li>
+        <li>
+            (OW, MA) The Client Server requests an SSL connection to the Fiserv ePayments Client Integration (CI) Server.
+        </li>
+        <li>
+            (OW, MA) The Fiserv ePayments CI Server responds by sending its public key using a digital certificate previously signed by a trusted third-party certificate authority (CA).
+        </li>
+        <li>
+            (OW, MA) The Client Server checks the Fiserv ePayments CI Server’s certificate to determine whether the signing CA’s root certificate (containing the CA’s public key) is contained in its trusted root store. If the digital signature on the Fiserv ePayments CI Server's certificate matches the digital signature on one of the CA root certificates, then the Fiserv ePayments CI Server can be trusted. 
+        </li>
+        <li>
+            (MA) The Fiserv ePayments CI Server now requests that the Client Server send its public key contained within its certificate.
+        </li>
+        <li>
+            (MA) The Fiserv ePayments CI Server checks Client Server’s certificate to determine whether the signing CA’s root certificate (containing the CA’s public key) is contained in its trusted root store. If the digital signature on the Client Server's certificate matches the digital signature on one of the root certificates, then the Client Server can be trusted. 
+        </li>
+        <li>
+            (OW, MA) Session keys are securely negotiated between the Client Server and the Fiserv ePayments CI Server, the result being that a secure and trusted communication channel has now been established between the servers.
+        </li>
+        <li>
+            (OW, MA) The Client’s Server generates a pre-master key which is encrypted with the Fiserv ePayments CI Server’s public key and then sends it back to the Fiserv ePayments CI Server.
+        </li>
+        <li>
+            (OW, MA) Both the Client Server and the Fiserv ePayments CI Server compute a master key and generate a secret symmetric key which will then be used to encrypt all messages between the two servers.
+        </li>
+        <li>
+            (OW, MA) The Client’s Server then posts the end user’s payload to the Fiserv ePayments CI server.
+        </li>
+        <li>
+            (OW, MA) The Fiserv ePayments CI Server validates the IP address of the Client’s Server and, if valid, saves the end user’s data on the Fiserv side. The Fiserv ePayments CI Server then generates a temporary application session key that it sends back to the Client’s Server.
+        </li>
+        <li>
+            The Client’s Server uses this temporary application session key as part of a URL redirect of the end user’s browser to the Fiserv ePayments Application Server. Failure of the Client to redirect the end user’s browser to the Fiserv ePayments Application Server within the transient application session key’s expiration time (typically 5 minutes) will result in the end user being presented with an error page.
+        </li>
+        <li>
+            The end user’s browser establishes an https session with the Fiserv ePayments Application Server. The Fiserv ePayments Application Server responds by sending back the Client’s TN landing page to the end user’s browser.
+        </li>
+    </ul>
 </div>
 
  &nbsp;
@@ -92,18 +105,61 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
 [Server Authentication](?path=docs/getting-started/TN-Integration-Guide/Server-Authentication.md)    
 
  
-
- <style>
- .card-body{
-    
-        background:#f1f1f1;
+<div class="ssl-authentication-button-container">
+    <br>
+    <div class="ssl-authentication-left-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/transfernow-integration-guide.md">Back</a>
+    </div>
+    <div class="ssl-authentication-right-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Next</a>
+    </div>
+</div>
+<style>
+    .ssl-authentication-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .ssl-authentication-left-button a,
+    .ssl-authentication-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .ssl-authentication-left-button a{ 
+        left: 0;
+    }
+    .ssl-authentication-right-button a{
+        right: 0;
+    }
+    .ssl-authentication-left-button a:hover,
+    .ssl-authentication-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
+    .card-body
+    {
+        background:#f1f1f101;
         padding:1em;
- }
-    .card-body ul {
+    }
+    .card-body ul 
+    {
         list-style: none;
         padding-left: 20px;
     }
-    .card-body ul li::before {
+    .card-body ul li::before 
+    {
         content: "\2022";
         font-size: 1em;
         color: #f60;
@@ -112,7 +168,8 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
         margin-left: -1em;
         margin-bottom:10px;
     }
-    .card-body ul li:hover{
+    /* .card-body ul li:hover
+    {
         background:#f7861b;
         color:#ffffff;
         cursor:pointer;
@@ -120,7 +177,7 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
         font-weight:3px;
         padding:0.5em;
         border:2px solid #ffffff;
-    }
+    } */
 </style>
 
 
