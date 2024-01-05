@@ -54,7 +54,7 @@ The detailed information about account verification and the process flow can be 
         left: 0;
     }
     .account-verification-right-button a{
-        right: 0;
+        right: 12px;
     }
     .account-verification-left-button a:hover,
     .account-verification-right-button a:hover {

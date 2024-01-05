@@ -79,7 +79,7 @@ From the Preferences screen, the user can choose Delete Account.
         left: 0;
     }
     .delete-accounts-right-button a{
-        right: 0;
+        right: 12px;
     }
     .delete-accounts-left-button a:hover,
     .delete-accounts-right-button a:hover {

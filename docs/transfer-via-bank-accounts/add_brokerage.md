@@ -78,7 +78,7 @@ To add a brokerage institution, the user selects from the following list of supp
         left: 0;
     }
     .add-brokerage-right-button a{
-        right: 0;
+        right: 12px;
     }
     .add-brokerage-left-button a:hover,
     .add-brokerage-right-button a:hover {

@@ -114,7 +114,7 @@ The list of accounts added under any user can be viewed under the Preferences Sc
         left: 0;
     }
     .add-an-account-right-button a{
-        right: 0;
+        right: 12px;
     }
     .add-an-account-left-button a:hover,
     .add-an-account-right-button a:hover {
