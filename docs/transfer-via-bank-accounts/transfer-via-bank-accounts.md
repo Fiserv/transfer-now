@@ -178,6 +178,8 @@
 .tooltip-info {
     position: relative;
     display: inline-block;
+    bottom: 1px;
+    right: 2px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -187,8 +189,8 @@
 }    
 .tooltiptext-info{
     visibility: hidden;
-    width: 200px;
-    background-color: #333;
+    width: 350px;
+    background-color: #ff6600;
     color: #fff;
     text-align: center;
     border-radius: 5px;
@@ -213,13 +215,15 @@
 }
 .tooltip-info .icon-info{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
     background-color: #f60;
     color: #fff;
     border-radius: 50%;
+    font-weight: bold;
+    font-size: xx-small;
     text-align: center;
-    line-height: 20px;
+    line-height: 15px;
 
 }
 .content-left {
