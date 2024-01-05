@@ -43,19 +43,50 @@ From the Preferences screen, the user can choose Delete Account.
 
 > :memo: _**Note:** An account with a pending transfer cannot be deleted. The user can either wait until all pending transfers have completed or cancel all pending transfers that have not been released to ACH before attempting to delete the account again._ 
 
- 
 
-
- **See Also**
-
-[Add An Account](?path=docs/transfer-via-bank-accounts/add-an-Account.md)   
-[Account Verification](?path=docs/transfer-via-bank-accounts/account_verification.md)      
-[Add Brokerage Accounts ](?path=docs/transfer-via-bank-accounts/add_brokerage.md)   
-
-
-
-
- <style>
+<div class="delete-accounts-button-container">
+    <br>
+    <div class="delete-accounts-left-button">
+        <a href="?path=docs/transfer-via-bank-accounts.md">Back</a>
+    </div>
+    <div class="delete-accounts-right-button">
+        <a href="?path=docs/transfer-via-bank-accounts/add_brokerage.md">Next</a>
+    </div>
+</div>
+<style>
+    .delete-accounts-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .delete-accounts-left-button a,
+    .delete-accounts-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .delete-accounts-left-button a{ 
+        left: 0;
+    }
+    .delete-accounts-right-button a{
+        right: 0;
+    }
+    .delete-accounts-left-button a:hover,
+    .delete-accounts-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;

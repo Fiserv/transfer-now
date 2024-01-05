@@ -34,12 +34,21 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 
 
 <div class="card-body">
-<ul>
-<li>The user adds one account at a time, specifying the account type, account number, and ABA routing number.</li>
-<li>Click Next.</li>
-<li>Verify your external bank account screen appears. See <a href="https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method.md&branch=develop">VerifyNow - Account Verification Methods </a> for more information on the account verification. </li>
-
-</ul>
+    <ul>
+        <li>
+            The user adds one account at a time, specifying the account type, account number, and ABA routing number.
+        </li>
+        <li>
+            Click Next.
+        </li>
+        <li>
+            Verify your external bank account screen appears. See 
+            <a href="https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method.md&branch=develop">
+            VerifyNow - Account Verification Methods 
+            </a> 
+            for more information on the account verification. 
+        </li>
+    </ul>
 </div> 
 
 
@@ -70,15 +79,49 @@ The list of accounts added under any user can be viewed under the Preferences Sc
 > :memo: _**Note:** To know more about adding a brokerage accounts,_ see [Adding Brokerage Accounts](?path=docs/transfer-via-bank-accounts/add_brokerage.md)
 
 
-## See Also
-
-[Account Verification](?path=docs/transfer-via-bank-accounts/account_verification.md)      
-[Add Brokerage Accounts ](?path=docs/transfer-via-bank-accounts/add_brokerage.md)   
-[Delete Accounts ](?path=docs/transfer-via-bank-accounts/delete_accounts.md)  
-
-
-
+<div class="add-an-account-button-container">
+    <br>
+    <div class="add-an-account-left-button">
+        <a href="?path=docs/transfer-via-bank-accounts.md">Back</a>
+    </div>
+    <div class="add-an-account-right-button">
+        <a href="?path=docs/transfer-via-bank-accounts/account_verification.md">Next</a>
+    </div>
+</div>
 <style>
+    .add-an-account-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .add-an-account-left-button a,
+    .add-an-account-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .add-an-account-left-button a{ 
+        left: 0;
+    }
+    .add-an-account-right-button a{
+        right: 0;
+    }
+    .add-an-account-left-button a:hover,
+    .add-an-account-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;
@@ -92,4 +135,3 @@ The list of accounts added under any user can be viewed under the Preferences Sc
         margin-left: -1em;
     }
 </style>
-
