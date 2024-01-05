@@ -186,7 +186,7 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
 
 As mentioned in [SSO - Payload Secure Message Exchange](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md) , the Fiserv ePayments Client Integration Server will display, to the end user, an application error page containing one or more SS error codes if an application error is thrown. 
 
-Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md) , application error codes do not require the Client to perform any additional error handling because an application error page will only be displayed after the end user has been granted access to the service. 
+Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md) , application error codes do not require the Client to perform any additional error handling because an application error page will only be displayed after the end user has been granted access to the service. 
 
 &nbsp;
 <p style="color:red;padding:10px;border:1px solid red"><i>&#9888;</i>  SS24 Your Profile is already registered.</p>

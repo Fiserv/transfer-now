@@ -25,7 +25,7 @@ Assume a client’s end user has logged into the Client’s web page and now att
         <a href="?path=docs/getting-started/TN-Integration-Guide/transfernow-integration-guide.md">Back</a>
     </div>
     <div class="sso-payload-right-button">
-        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Next</a>
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-For-Mobile.md">Next</a>
     </div>
 </div>
 <style>
@@ -54,7 +54,7 @@ Assume a client’s end user has logged into the Client’s web page and now att
         left: 0;
     }
     .sso-payload-right-button a{
-        right: 0;
+        right: 12px;
     }
     .sso-payload-left-button a:hover,
     .sso-payload-right-button a:hover {

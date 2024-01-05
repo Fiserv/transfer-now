@@ -140,7 +140,7 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
         left: 0;
     }
     .ssl-authentication-right-button a{
-        right: 0;
+        right: 12px;
     }
     .ssl-authentication-left-button a:hover,
     .ssl-authentication-right-button a:hover {
