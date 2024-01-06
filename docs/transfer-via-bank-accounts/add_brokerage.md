@@ -46,7 +46,7 @@ To add a brokerage institution, the user selects from the following list of supp
 <div class="add-brokerage-button-container">
     <br>
     <div class="add-brokerage-left-button">
-        <a href="?path=docs/transfer-via-bank-accounts.md">Back</a>
+      <a href="?path=docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md">Back</a>
     </div>
     <div class="add-brokerage-right-button">
         <a href="?path=docs/transfer-via-bank-accounts/accounts-restrictions.md">Next</a>

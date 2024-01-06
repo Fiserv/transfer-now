@@ -22,7 +22,7 @@ The detailed information about account verification and the process flow can be 
 <div class="account-verification-button-container">
     <br>
     <div class="account-verification-left-button">
-        <a href="?path=docs/transfer-via-bank-accounts.md">Back</a>
+      <a href="?path=docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md">Back</a>
     </div>
     <div class="account-verification-right-button">
         <a href="?path=docs/transfer-via-bank-accounts/delete_accounts.md">Next</a>

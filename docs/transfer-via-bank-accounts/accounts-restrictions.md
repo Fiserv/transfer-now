@@ -33,7 +33,7 @@ TransferNow enables a client to enforce several restrictions on added accounts. 
 <div class="accounts-restrictions-button-container">
 <br>
     <div class="accounts-restrictions-left-button">
-         <a href="?path=docs/transfer-via-bank-accounts.md">Back</a>
+       <a href="?path=docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md">Back</a>
     </div>
 </div>
 <style>

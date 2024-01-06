@@ -82,7 +82,7 @@ The list of accounts added under any user can be viewed under the Preferences Sc
 <div class="add-an-account-button-container">
     <br>
     <div class="add-an-account-left-button">
-        <a href="?path=docs/transfer-via-bank-accounts.md">Back</a>
+        <a href="?path=docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md">Back</a>
     </div>
     <div class="add-an-account-right-button">
         <a href="?path=docs/transfer-via-bank-accounts/account_verification.md">Next</a>

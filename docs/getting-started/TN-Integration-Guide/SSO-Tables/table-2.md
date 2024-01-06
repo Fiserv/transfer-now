@@ -134,7 +134,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="2">BUSINESS_ STATE0 </br>Client will pass to Fiserv? ? YES</td>
+                    <td rowspan="2">BUSINESS_ STATE0 </br>Client will pass to Fiserv? YES</td>
                     <td>Business entity state</br>Usage Restrictions   </br>Is an optional payload parameter Associated value must be alphabetic letters, and the max length is 2.</td>
                 </tr>
                 <tr>
