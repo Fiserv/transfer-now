@@ -3,7 +3,7 @@
             <thead>
                 <tr>
                     <th> Card Account Profile Parameter</th>
-                    <th> Description, Usage Restriction, and error flow </th>
+                    <th> Description, Usage Restriction, and Error Flow </th>
                 </tr>
             </thead>
             <tbody>
