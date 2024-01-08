@@ -189,7 +189,7 @@ As mentioned in [SSO - Payload Secure Message Exchange](?path=docs/getting-start
 Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md) , application error codes do not require the Client to perform any additional error handling because an application error page will only be displayed after the end user has been granted access to the service. 
 
 &nbsp;
-<p style="color:red;padding:10px;border:1px solid red"><i>&#9888;</i>  SS24 Your Profile is already registered.</p>
+<div class="ssl-error"><img  class="ssl-error-img" src="/assets/images/alert1.png"><span>  SS24 Your Profile is already registered.</span></div>
 &nbsp;
 
 [SS Error Codes Returned by Fiserv-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will display in an application error page to the service end user. The Client does not need to perform additional error handling for any of the listed error codes. 
@@ -279,6 +279,19 @@ Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=d
 .err-table tr:nth-child(even){background-color: #f2f2f2;}
 
 .err-table tr:hover {background-color: #ddd;}
+
+.ssl-error{
+    color: red;
+    padding: 5px;
+    border: 2px solid red;
+}
+
+.ssl-error-img{
+    color: red;
+    position: relative;
+    top: 5px;
+}
+
 </style>
 
 
