@@ -42,8 +42,12 @@ Users provide the information specific to their institution and their desired cu
 </ul>
 </div>
 
-<p class="block-quote">Note:<i> All TransferNow emails are sent at the client’s discretion. Clients can turn each email on or off based on their business needs.</i> </p> 
-<p class="block-quote">Note:<i> An email is ON or OFF for either all or no users.</i> </p>
+<blockquote class="block-quote">
+
+:memo: _**Note:** <i> All TransferNow emails are sent at the client’s discretion. Clients can turn each email on or off based on their business needs._</i> </blockquote> 
+<blockquote class="block-quote">
+
+:memo: _**Note:** <i> An email is ON or OFF for either all or no users._</i> </p>
 
 </div>
 </div>
@@ -87,7 +91,9 @@ Users provide the information specific to their institution and their desired cu
 <li>Manually, Fiserv sends the client a composite HTML sample and a CSS that controls the elements on that HTML. Clients use the HTML sample to identify the controlling elements in the CSS. Then, clients can make and save changes in the CSS and view the outcome in the HTML sample.</li>
 </ul>
 </div>
-<p class="block-quote">Note:<i> Once Fiserv receives the CSS from the client, Fiserv applies these elements to the TransferNow UI.</i> </p>
+<blockquote class="block-quote">
+
+:memo: _**Note:** <i> Once Fiserv receives the CSS from the client, Fiserv applies these elements to the TransferNow UI.</i> </blockquote>
 </div>
 </div>
 </br>

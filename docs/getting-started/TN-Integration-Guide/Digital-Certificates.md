@@ -75,8 +75,7 @@ GeoTrust is the signing CA for the businessonline.huntington.com certificate, an
 
 <!-- theme: info -->
 
-> :memo: 
-_**Note:** Verisign uses an intermediate certificate to sign a certificate issued to some principal.  
+> :memo: _**Note:** Verisign uses an intermediate certificate to sign a certificate issued to some principal.  
 An intermediate certificate is a subordinate certificate issued by the trusted root specifically used to issue SSL server certificates._
 
 &nbsp;
