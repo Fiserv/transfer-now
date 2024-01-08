@@ -348,7 +348,7 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
 ```
 
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221 <i>Note: The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 
