@@ -47,7 +47,7 @@ Users provide the information specific to their institution and their desired cu
 :memo: _**Note:** <i> All TransferNow emails are sent at the client’s discretion. Clients can turn each email on or off based on their business needs._</i> </blockquote> 
 <blockquote class="block-quote">
 
-:memo: _**Note:** <i> An email is ON or OFF for either all or no users._</i> </p>
+:memo: _**Note:** <i> An email is ON or OFF for either all or no users._</i> </blockquote>
 
 </div>
 </div>
@@ -93,7 +93,7 @@ Users provide the information specific to their institution and their desired cu
 </div>
 <blockquote class="block-quote">
 
-:memo: _**Note:** <i> Once Fiserv receives the CSS from the client, Fiserv applies these elements to the TransferNow UI.</i> </blockquote>
+:memo: _**Note:** <i> Once Fiserv receives the CSS from the client, Fiserv applies these elements to the TransferNow UI._</i> </blockquote>
 </div>
 </div>
 </br>
