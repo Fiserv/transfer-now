@@ -69,9 +69,7 @@
     </div>
 </div>
 </div>
-<blockquote class="block-quote">
-
-:memo: _**Note:** View Limits will display the maximum amount that can be transferred._</blockquote>
+<p class="block-quote">Note: View Limits will display the maximum amount that can be transferred.</p>
 
 <style>
 .content-left {
