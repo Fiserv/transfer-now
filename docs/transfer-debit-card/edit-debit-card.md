@@ -13,9 +13,7 @@
     <li>Click the <button class="confirm-button">Save</button> button to view the edited information.</li>
     </ul>
 </div>
-<blockquote class="block-quote">
-
-:memo: _**Note:** If the debit card is expired or a new one, the user can edit the expiry date if the new debit card number is same or if the debit card numbers are different, the user will have to delete and add as a new card._</blockquote>
+<p class="block-quote">Note: If the debit card is expired or a new one, the user can edit the expiry date if the new debit card number is same or if the debit card numbers are different, the user will have to delete and add as a new card.</p>
 
 <div class="debit-card-button-container">
 <div class="debit-card-left-button">

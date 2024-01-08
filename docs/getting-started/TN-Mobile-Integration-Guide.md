@@ -18,7 +18,7 @@ URL’s would be confirmed during the implementation , clients continue to invok
 
 &nbsp;
 
-> :memo: _**Note:** Home id and a flag to indicate that the UI is being launched from within an app will also be passed in._
+> :memo: **Note:** Home id and a flag to indicate that the UI is being launched from within an app will also be passed in.
 
 
 &nbsp;

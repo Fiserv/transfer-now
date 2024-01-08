@@ -48,7 +48,7 @@ Select the file to edit, make changes, preview it & then push the changes to Git
 
 ![developer studio Preview]
 
-> :memo: _**Note:** Developer Studio Publish environment is still work in progress. So, Publish environment link will be updated later._
+**Note:** Developer Studio Publish environment is still work in progress. So, Publish environment link will be updated later.
 
 ___
 

@@ -7,7 +7,7 @@ titles: Instant Verification, RealTime Verification, Trail Deposite Verification
 
 <!-- theme: info -->
 
-> :memo: _**Note:** Instant account verification requires the financial institution client to have a contractual relationship established with Early Warning (EWS) for the Account Ownership Authentication service. Additional data sources will be added to the service in the future._
+> _**Note:** Instant account verification requires the financial institution client to have a contractual relationship established with Early Warning (EWS) for the Account Ownership Authentication service. Additional data sources will be added to the service in the future._
 
 EWS houses data contributed by financial institutions with data elements including account holder names, address, tax ID, and additional elements leveraged to determine ownership of the account. Additionally, EWS provides a status of the account such as open/close, ability to accept debits, type of account, and risk indicators. Fiserv uses this response data to instantly decision the account as Approved, Denied, or Inconclusive. Inconclusive accounts are eligible for other verification methods.
 
@@ -59,7 +59,7 @@ TransferNow then matches the added name and account numbers against the name of 
 
 <!-- theme: info -->
 
-> :memo: _**Note:** For security and privacy considerations, Fiserv never stores user ID and password data._
+> _**Note:** For security and privacy considerations, Fiserv never stores user ID and password data._
 
  &nbsp;
 
@@ -84,7 +84,7 @@ If real-time account verification fails, the user is prompted to use the trial d
 
 <!-- theme: info -->
 
-> :memo: _**Note:** Clients can choose not to use real-time account verification to verify the user's ownership of the external account._
+> _**Note:** Clients can choose not to use real-time account verification to verify the user's ownership of the external account._
 
  &nbsp;
 
@@ -143,11 +143,11 @@ TN makes two small trial deposits and one trial debit (the debit is equal to the
 
 <!-- theme: info -->
 
-> :memo: _**Note:** For brokerage accounts, two deposits and one debit (as applicable for some brokerages) will be sent for trial deposit verification._
+> _**Note:** For brokerage accounts, two deposits and one debit (as applicable for some brokerages) will be sent for trial deposit verification._
 
 <!-- theme: info -->
 
-> :memo: _**Note:** The account cannot be verified if the trial deposit fails._
+> _**Note:** The account cannot be verified if the trial deposit fails._
 
  &nbsp;
 
