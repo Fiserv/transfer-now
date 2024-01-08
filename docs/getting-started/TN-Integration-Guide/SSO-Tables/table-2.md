@@ -3,7 +3,7 @@
             <thead>
                 <tr>
                     <th> Account Profile Parameter</th>
-                    <th> Description, Usage Restriction, and error flow </th>
+                    <th> Description, Usage Restriction, and Error Flow </th>
                 </tr>
             </thead>
             <tbody>
@@ -125,7 +125,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="2">BUSINESS_ CITY0 </br>Client will pass to Fiserv? YES</td>
+                    <td rowspan="2">BUSINESS_CITY0 </br>Client will pass to Fiserv? YES</td>
                     <td>Business entity city </br>Usage Restrictions   </br>Is an optional payload parameter with restrictions Associated value must be alphabetic, 1 to 25 characters in length.</td>
                 </tr>
                 <tr>
@@ -134,7 +134,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="2">BUSINESS_ STATE0 </br>Client will pass to Fiserv? YES</td>
+                    <td rowspan="2">BUSINESS_STATE0 </br>Client will pass to Fiserv? YES</td>
                     <td>Business entity state</br>Usage Restrictions   </br>Is an optional payload parameter Associated value must be alphabetic letters, and the max length is 2.</td>
                 </tr>
                 <tr>
@@ -161,7 +161,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="2">BUSINESS_ PHONE0 </br>Client will pass to Fiserv? YES</td>
+                    <td rowspan="2">BUSINESS_PHONE0 </br>Client will pass to Fiserv? YES</td>
                     <td>Business entity phone number</br>Usage Restrictions</br>Is an optional payload parameter Associated value is numeric, minimum 10 digits in length. Can include spaces or dashes. </td>
                 </tr>
                 <tr>
@@ -170,3 +170,47 @@
             </tbody>
         </table>
 </html>
+<div class="table-2-button-container">
+    <br>
+    <div class="table-2-left-button">
+         <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md">Back</a>
+    </div>
+    <div class="table-2-right-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md">Next</a>
+    </div>
+</div>
+<style>
+    .table-2-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .table-2-left-button a,
+    .table-2-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .table-2-left-button a{ 
+        left: 0;
+    }
+    .table-2-right-button a{
+        right: 12px;
+    }
+    .table-2-left-button a:hover,
+    .table-2-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
+    </style>

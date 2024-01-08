@@ -75,3 +75,39 @@
             </tbody>
         </table>
 </html>
+<div class="table-3-button-container">
+    <br>
+    <div class="table-3-left-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md">Back</a>
+    </div>
+</div>
+<style>
+    .table-3-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .table-3-left-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .table-3-left-button a{ 
+        left: 0;
+    }
+    .table-3-left-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
+    </style>

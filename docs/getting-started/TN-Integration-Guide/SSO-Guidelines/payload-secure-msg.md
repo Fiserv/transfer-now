@@ -62,26 +62,6 @@ Assume a client’s end user has logged into the Client’s web page and now att
         background-color: white;
         border: 2px solid #f60;
     }
-    .card-body
-    {
-        background:#f1f1f101;
-        padding:1em;
-    }
-    .card-body ul 
-    {
-        list-style: none;
-        padding-left: 20px;
-    }
-    .card-body ul li::before 
-    {
-        content: "\2022";
-        font-size: 1em;
-        color: #f60;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-        margin-bottom:10px;
-    }
   .center {
     display: block;
     margin-left: auto;
