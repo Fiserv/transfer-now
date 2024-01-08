@@ -54,7 +54,7 @@
             <tbody>
                 <tr>
                     <td rowspan="2">BALANCE0 </br>Client will pass to Fiserv? YES</td>
-                    <td>End user’s available account balance.</br> Used as a Client representation of funds available for transfer at the time of user sign-on. This account balance is checked before executing a non-recurring transfer request</br>Usage Restriction      </br>Is a required payload parameter</br>Associated value must be numeric, can only have two digits to the right of a single decimal, and can be preceded by an optional minus sign: [-]####.## (e.g., 1234.56)</br>Multiple BALANCE values can be passed in the payload by incrementing the parameter suffix (i.e., the ‘0’ in BALANCE0) by one for each additional BALANCE value</td>
+                    <td>End user’s available account balance.</br> Used as a Client representation of funds available for transfer at the time of user sign-on. This account balance is checked before executing a non-recurring transfer request</br>Usage Restriction</br>Is a required payload parameter</br>Associated value must be numeric, can only have two digits to the right of a single decimal, and can be preceded by an optional minus sign: [-]####.## (e.g., 1234.56)</br>Multiple BALANCE values can be passed in the payload by incrementing the parameter suffix (i.e., the ‘0’ in BALANCE0) by one for each additional BALANCE value</td>
                 </tr>
                 <tr>
                     <td>Error Flow </br>Fiserv does not return any payload error code nor display an application error page if the parameter is not present in the payload. However, failure to pass the parameter will result in the associated account being displayed as suspended, thus making it ineligible for transfers</td>
@@ -125,7 +125,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="2">BUSINESS_ CITY0 </br>Client will pass to Fiserv? YES</td>
+                    <td rowspan="2">BUSINESS_CITY0 </br>Client will pass to Fiserv? YES</td>
                     <td>Business entity city </br>Usage Restrictions   </br>Is an optional payload parameter with restrictions Associated value must be alphabetic, 1 to 25 characters in length.</td>
                 </tr>
                 <tr>
@@ -134,7 +134,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="2">BUSINESS_ STATE0 </br>Client will pass to Fiserv? YES</td>
+                    <td rowspan="2">BUSINESS_STATE0 </br>Client will pass to Fiserv? YES</td>
                     <td>Business entity state</br>Usage Restrictions   </br>Is an optional payload parameter Associated value must be alphabetic letters, and the max length is 2.</td>
                 </tr>
                 <tr>
@@ -161,7 +161,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="2">BUSINESS_ PHONE0 </br>Client will pass to Fiserv? YES</td>
+                    <td rowspan="2">BUSINESS_PHONE0 </br>Client will pass to Fiserv? YES</td>
                     <td>Business entity phone number</br>Usage Restrictions</br>Is an optional payload parameter Associated value is numeric, minimum 10 digits in length. Can include spaces or dashes. </td>
                 </tr>
                 <tr>

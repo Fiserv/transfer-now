@@ -136,7 +136,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="14">PHONE_USAGE,PHONE2_USAGE, etc. </br>Client will pass to Fiserv?_____</td>
+                    <td rowspan="14">PHONE_USAGE, PHONE2_USAGE, etc. </br>Client will pass to Fiserv?_____</td>
                     <td>Describes the usage of phone that was sent. Number should match the phone that this value is describing. Number system starts with no number, then 2, 3, 4… N. 
                     </br>Usage Restrictions</br>Recognized phone usages are: E for Evening, W for Work, D for daytime and H for Home. Any other value sent would be stored as is. </br> Maximum 1 character. If more than 1 character, then we discard the value.If PHONE is not sent, but PHONE_USAGE is sent, then we discard the value.</td>
                 </tr>
