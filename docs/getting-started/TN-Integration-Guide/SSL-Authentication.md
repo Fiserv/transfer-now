@@ -42,8 +42,8 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Fo
         <li>
             (OW, MA) The Fiserv ePayments CI Server responds by sending its public key using a digital certificate previously signed by a trusted third-party certificate authority (CA).
         </li>
-        <li>
-            (OW, MA) The Client Server checks the Fiserv ePayments CI Server’s certificate to determine whether the signing CA’s root certificate (containing the CA’s public key) is contained in its trusted root store. If the digital signature on the Fiserv ePayments CI Server's certificate matches the digital signature on one of the CA root certificates, then the Fiserv ePayments CI Server can be trusted. 
+        <li> 
+            (OW, MA) The Client Server checks the Fiserv ePayments CI Server’s certificate to determine whether the signing CA’s root certificate (containing the CA’s public key) is contained in its trusted root store. If the digital signature on the Fiserv ePayments CI Server's certificate matches the digital signature on one of the CA root certificates, then the Fiserv ePayments CI Server can be trusted.
         </li>
         <li>
             (MA) The Fiserv ePayments CI Server now requests that the Client Server send its public key contained within its certificate.
@@ -55,7 +55,7 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Fo
             (OW, MA) Session keys are securely negotiated between the Client Server and the Fiserv ePayments CI Server, the result being that a secure and trusted communication channel has now been established between the servers.
         </li>
         <li>
-            (OW, MA) The Client’s Server generates a pre-master key which is encrypted with the Fiserv ePayments CI Server’s public key and then sends it back to the Fiserv ePayments CI Server.
+           (OW, MA) The Client’s Server generates a pre-master key which is encrypted with the Fiserv ePayments CI Server’s public key and then sends it back to the Fiserv ePayments CI Server.
         </li>
         <li>
             (OW, MA) Both the Client Server and the Fiserv ePayments CI Server compute a master key and generate a secret symmetric key which will then be used to encrypt all messages between the two servers.
@@ -64,13 +64,13 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Fo
             (OW, MA) The Client’s Server then posts the end user’s payload to the Fiserv ePayments CI server.
         </li>
         <li>
-            (OW, MA) The Fiserv ePayments CI Server validates the IP address of the Client’s Server and, if valid, saves the end user’s data on the Fiserv side. The Fiserv ePayments CI Server then generates a temporary application session key that it sends back to the Client’s Server.
+          (OW, MA) The Fiserv ePayments CI Server validates the IP address of the Client’s Server and, if valid, saves the end user’s data on the Fiserv side. The Fiserv ePayments CI Server then generates a temporary application session key that it sends back to the Client’s Server.
         </li>
         <li>
-            The Client’s Server uses this temporary application session key as part of a URL redirect of the end user’s browser to the Fiserv ePayments Application Server. Failure of the Client to redirect the end user’s browser to the Fiserv ePayments Application Server within the transient application session key’s expiration time (typically 5 minutes) will result in the end user being presented with an error page.
+           The Client’s Server uses this temporary application session key as part of a URL redirect of the end user’s browser to the Fiserv ePayments Application Server. Failure of the Client to redirect the end user’s browser to the Fiserv ePayments Application Server within the transient application session key’s expiration time (typically 5 minutes) will result in the end user being presented with an error page.
         </li>
         <li>
-            The end user’s browser establishes an https session with the Fiserv ePayments Application Server. The Fiserv ePayments Application Server responds by sending back the Client’s TN landing page to the end user’s browser.
+           The end user’s browser establishes an https session with the Fiserv ePayments Application Server. The Fiserv ePayments Application Server responds by sending back the Client’s TN landing page to the end user’s browser.
         </li>
     </ul>
 </div>
@@ -166,18 +166,7 @@ When a user is passed to Fiserv with an identifier that already exists in the Fi
         display: inline-block;
         width: 1em;
         margin-left: -1em;
-        margin-bottom:10px;
     }
-    /* .card-body ul li:hover
-    {
-        background:#f7861b;
-        color:#ffffff;
-        cursor:pointer;
-        font-size:1.1em;
-        font-weight:3px;
-        padding:0.5em;
-        border:2px solid #ffffff;
-    } */
 </style>
 
 

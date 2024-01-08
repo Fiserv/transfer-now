@@ -59,7 +59,12 @@ The Client is requesting the following session key expiration period:
                 </tr>
                 <tr>
                     <td>For Fiserv ePayments Production Environment</br>
-                    • Client wishes session key to be valid only for 5 minutes (default)</td>
+                    <div class="card-body">
+                        <ul>
+                            <li>Client wishes session key to be valid only for 5 minutes (default)
+                            </li>
+                        </ul>
+                        </div></td>
                 </tr>
             </tbody>
         </table>
@@ -239,37 +244,7 @@ Now copy the session key value returned to you into the Session Key text box and
 </center>
 
 
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height:300;
-  width:400;
-}
-.err-table {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
 
-.err-table td, .err-table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-.err-table th {
-    background-color:#f1f1f1
-}
-table{
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.err-table tr:nth-child(even){background-color: #f2f2f2;}
-
-.err-table tr:hover {background-color: #ddd;}
-
-</style>
 &nbsp;
 
 When the Submit Session Key button is clicked, the session key value is being submitted to a URL. If the session key you submitted is verified as being valid, the end user will be logged into the Fiserv TN service demonstration application. 
@@ -277,3 +252,79 @@ When the Submit Session Key button is clicked, the session key value is being su
 Alternatively, you can enter the URL directly into your browser’s address bar and then press enter. 
 
 ` https://certtransfers.fta.cashedge.com/popmmp/faces/loginServlet?INSTITUTION_ID=&KEY=9f407d86d636c32145dd7f05062230ae `
+
+<div class="payload-submission-button-container">
+    <br>
+    <div class="payload-submission-left-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Back</a>
+    </div>
+</div>
+<style>
+    .payload-submission-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .payload-submission-left-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .payload-submission-left-button a{ 
+        left: 0;
+    }
+    .payload-submission-left-button a:hover{
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
+    .center {
+        display: block;
+         margin-left: auto;
+        margin-right: auto;
+        height:300;
+        width:400;
+    }
+    .err-table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .err-table td, .err-table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .err-table th {
+        background-color:#f1f1f1
+    }
+    .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    .card-body ul li::before {
+        content: "\2022";
+        font-size: 1em;
+        color: #f60;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+    table{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .err-table tr:nth-child(even)
+    {
+        background-color: #f2f2f2;
+    }
+</style>

@@ -77,8 +77,49 @@ Payload elements that are listed in ( [User Profile Payload Elements-Table](?pat
 [Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md)     
 [Card Account Profile Payload Elements](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md)     
 
-
+<div class="payload-parameters-button-container">
+    <br>
+    <div class="payload-parameters-left-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Back</a>
+    </div>
+    <div class="payload-parameters-right-button">
+        <a href="path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md">Next</a>
+    </div>
+</div>
 <style>
+    .payload-parameters-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .payload-parameters-left-button a,
+    .payload-parameters-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .payload-parameters-left-button a{ 
+        left: 0;
+    }
+    .payload-parameters-right-button a{
+        right: 12px;
+    }
+    .payload-parameters-left-button a:hover,
+    .payload-parameters-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
 .center {
   display: block;
   margin-left: auto;
@@ -91,14 +132,11 @@ Payload elements that are listed in ( [User Profile Payload Elements-Table](?pat
   border-collapse: collapse;
   width: 100%;
 }
-
 .digi-table td, #customers th {
   border: 1px solid #ddd;
   padding: 8px;
 }
-
 .digi-table tr:nth-child(even){background-color: #f2f2f2;}
-
-.digi-table tr:hover {background-color: #ddd;}
+/* .digi-table tr:hover {background-color: #ddd;} */
 </style>
 

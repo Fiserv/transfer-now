@@ -86,7 +86,49 @@ Click here to know more about [Guidelines for Obtaining a CA Issued SSL Digital 
 
 &nbsp;
 
+<div class="digital-certificates-button-container">
+    <br>
+    <div class="digital-certificates-left-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSL-Authentication.md">Back</a>
+    </div>
+    <div class="digital-certificates-right-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/Server-Authentication.md">Next</a>
+    </div>
+</div>
 <style>
+    .digital-certificates-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .digital-certificates-left-button a,
+    .digital-certificates-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .digital-certificates-left-button a{ 
+        left: 0;
+    }
+    .digital-certificates-right-button a{
+        right: 12px;
+    }
+    .digital-certificates-left-button a:hover,
+    .digital-certificates-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;
@@ -104,12 +146,9 @@ Click here to know more about [Guidelines for Obtaining a CA Issued SSL Digital 
   border-collapse: collapse;
   width: 100%;
 }
-
 .digi-table td, #customers th {
   border: 1px solid #ddd;
   padding: 8px;
 }
-
 .digi-table tr:nth-child(even){background-color: #f2f2f2;}
-
-.digi-table tr:hover {background-color: #ddd;}
+</style>

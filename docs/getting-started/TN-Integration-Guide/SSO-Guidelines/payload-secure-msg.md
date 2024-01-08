@@ -80,9 +80,8 @@ Assume a client’s end user has logged into the Client’s web page and now att
         display: inline-block;
         width: 1em;
         margin-left: -1em;
-        margin-bottom:10px;
     }
-  .center {
+    .center {
     display: block;
     margin-left: auto;
     margin-right: auto;

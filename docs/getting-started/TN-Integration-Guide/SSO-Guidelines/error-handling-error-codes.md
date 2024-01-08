@@ -124,8 +124,14 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
                     <td rowspan="1">SS19</td>
                     <td>Fiserv will return this error code if any of the following are true: </br><div class="card-body">
                         <ul>
-                            <li> The STREET parameter is not present in the payload</li><li> The associated value has a length of 0 or is > than 60 characters</li>,</ul>
-                            </div></td>
+                            <li>
+                             The STREET parameter is not present in the payload
+                            </li>
+                            <li> The associated value has a length of 0 or is > than 60 characters
+                            </li>
+                        </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS20</td>
@@ -170,7 +176,10 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
                     <td rowspan="1">SS31</td>
                     <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
                         <ul>
-                            <li> The ANUM0 parameter is not present in the payload</li><li> The associated value has a length of 0</li></ul></div></td>
+                            <li> The ANUM0 parameter is not present in the payload</li><li> The associated value has a length of 0
+                            </li>
+                        </ul>
+                        </div></td>
                 </tr>
                 <tr>
                     <td rowspan="1">SSB14</td>
@@ -241,15 +250,49 @@ Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=d
             </tbody>
         </table>
 
-
-
-
-
-
-
-
-
+<div class="error-handling-button-container">
+    <br>
+    <div class="error-handling-left-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Back</a>
+    </div>
+    <div class="error-handling-right-button">
+        <a href="path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md">Next</a>
+    </div>
+</div>
 <style>
+    .error-handling-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .error-handling-left-button a,
+    .error-handling-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .error-handling-left-button a{ 
+        left: 0;
+    }
+    .error-handling-right-button a{
+        right: 12px;
+    }
+    .error-handling-left-button a:hover,
+    .error-handling-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;
@@ -267,7 +310,6 @@ Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=d
   border-collapse: collapse;
   width: 100%;
 }
-
 .err-table td, .err-table th {
   border: 1px solid #ddd;
   padding: 8px;
@@ -275,10 +317,7 @@ Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=d
 .err-table th {
     background-color:#f1f1f1
 }
-
 .err-table tr:nth-child(even){background-color: #f2f2f2;}
-
-.err-table tr:hover {background-color: #ddd;}
 </style>
 
 
