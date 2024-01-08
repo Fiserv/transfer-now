@@ -209,9 +209,6 @@
     top: -10px;
     left:50%;
     margin-left: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent #333 transparent;
 }
 .tooltip-info .icon-info{
     display: inline-block;
