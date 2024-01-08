@@ -2,8 +2,8 @@
   <table style="width: 100%;">
             <thead>
                 <tr>
-                    <th> User profile parameter</th>
-                    <th> Description, Usage Restriction, and error flow </th>
+                    <th> User Profile Parameter</th>
+                    <th> Description, Usage Restriction, and Error Flow </th>
                 </tr>
             </thead>
             <tbody>
@@ -136,7 +136,7 @@
             </tbody>
             <tbody>
                 <tr>
-                    <td rowspan="14">PHONE_USAGE,PHONE2_USAGE, etc. </br>Client will pass to Fiserv?_____</td>
+                    <td rowspan="14">PHONE_USAGE, PHONE2_USAGE, etc. </br>Client will pass to Fiserv?_____</td>
                     <td>Describes the usage of phone that was sent. Number should match the phone that this value is describing. Number system starts with no number, then 2, 3, 4… N. 
                     </br>Usage Restrictions</br>Recognized phone usages are: E for Evening, W for Work, D for daytime and H for Home. Any other value sent would be stored as is. </br> Maximum 1 character. If more than 1 character, then we discard the value.If PHONE is not sent, but PHONE_USAGE is sent, then we discard the value.</td>
                 </tr>
@@ -285,6 +285,50 @@
 </html>
 
 
-
+<div class="table-1-button-container">
+    <br>
+    <div class="table-1-left-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md">Back</a>
+    </div>
+    <div class="table-1-right-button">
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md">
+        Next</a>
+    </div>
+</div>
+<style>
+    .table-1-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .table-1-left-button a,
+    .table-1-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .table-1-left-button a{ 
+        left: 0;
+    }
+    .table-1-right-button a{
+        right: 12px;
+    }
+    .table-1-left-button a:hover,
+    .table-1-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
+    </style>
 
 
