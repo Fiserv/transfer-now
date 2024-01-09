@@ -56,7 +56,7 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
 Also, content that each URL points to is hosted by the Client and not Fiserv, and if the Client does not define a URL for one of the footer links, then that link will not be displayed on any applicable Fiserv hosted page. 
 </p>
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 <div>
@@ -71,7 +71,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 
 </center> 
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> 
 </br>
@@ -92,7 +92,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 
 <p>Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.</p>
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 <div>
@@ -119,7 +119,7 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
 ```
 
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 
@@ -165,7 +165,7 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 Also, content that each URL points to is hosted by the Client and not Fiserv, and if the Client does not define a URL for one of the footer links, then that link will not be displayed on any applicable Fiserv hosted page. 
 </p>
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 <div>
@@ -180,7 +180,7 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 
 </center> 
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> 
 </br>
@@ -201,7 +201,7 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 
 <p>Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.</p>
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 <div>
@@ -227,7 +227,7 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp
 
 ```
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 
@@ -285,7 +285,7 @@ toolbar=no, menubar=no'); return false;">Click to open</a>
 Also, content that each URL points to is hosted by the Client and not Fiserv, and if the Client does not define a URL for one of the footer links, then that link will not be displayed on any applicable Fiserv hosted page. 
 </p>
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 <div>
@@ -300,7 +300,7 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 
 </center> 
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> 
 </br>
@@ -321,7 +321,7 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 
 <p>Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.</p>
 </br>
-<p class = "block-quote">Note:<i>The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 <div>
@@ -348,7 +348,7 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
 ```
 
 </br>
-<p class = "block-quote"> &#128221 <i>Note: The Client preference for this option is to be indicated in the DGF.</i></p>
+<p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
 
