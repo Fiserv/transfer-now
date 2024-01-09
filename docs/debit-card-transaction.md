@@ -1,8 +1,6 @@
 ## Transfer Via Debit Cards
 
-<div class="content-body-1">
-          <p>In addition to adding user's bank account, TransferNow allows users to add their debit cards to transfer money.</p>
-</div>
+In addition to adding user's bank account, TransferNow allows users to add their debit cards to transfer money.
 
 <div id="slider">
     <input type="radio" name="slider" id="slide1" checked>

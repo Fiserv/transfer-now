@@ -8,7 +8,6 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 </ul>
 </div> 
 
-&nbsp;
 
 <center>
 
@@ -23,7 +22,6 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 </ul>
 </div> 
 
-&nbsp;
 
 <center>
 
@@ -52,8 +50,6 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 </div> 
 
 
-&nbsp;
-
 <center>
 
 ![Image](../../assets/images/verify-external-account.png) <br />
@@ -64,7 +60,6 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
 
 The list of accounts added under any user can be viewed under the Preferences Screen. 
 
-&nbsp;
 
 <center>
 
