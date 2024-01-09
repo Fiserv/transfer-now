@@ -1,6 +1,6 @@
 ## TransferNow Integration Guide
 
-<div style="margin:25px">The following topics cover information that allows a user to secure transaction from one account to another.
+<div style="margin:25px; margin-left:0px;">The following topics cover information that allows a user to secure transaction from one account to another.
     <div class="debit-body-list">
     <div class="debit-container-list">
         <div class="main-card-debit-list">
