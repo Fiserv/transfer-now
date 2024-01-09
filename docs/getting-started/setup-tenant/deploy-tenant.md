@@ -87,7 +87,7 @@ Developer needs to provide repository URL to add into application. For example w
 
 Now add the Git URL in **Git Repo URL** option on Import from Dockerfile page. Click **Show Advance Git Options**. 
 
-> Note: Developer can configure with custom settings, as these configuration are setup for sample project. 
+> :memo: _**Note:** Developer can configure with custom settings, as these configuration are setup for sample project._ 
 
 ![Bitbucket Repo import] 
 

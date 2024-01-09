@@ -5,7 +5,7 @@
     <li>User can select Add an account or debit card option to add a new debit card.</li>
     <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile.png">
     <li>If RTVA is enabled, then the user is navigated to RTVA FI Search Page.</li>
-    <p class="block-quote">Note: If RTVA is not enabled, then the user is navigated to Add Account or Debit Card screen.</p>
+    <p class="block-quote"> &#128221<i><strong>Note:</strong> If RTVA is not enabled, then the user is navigated to Add Account or Debit Card screen.</i></p>
     </ul>
 </div>
 <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/search-debit-tile.png">
@@ -15,10 +15,10 @@
     <li><strong>Add Account or Debit Card</strong> screen is displayed.</li>
     <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/add-debit-card.png">
     <li>Select Debit Card from the drop-down list under Account Type option.</li>
-    <p class="block-quote">Note: Account Nickname is optional.</p>
+    <p class="block-quote"> &#128221<i><strong>Note:</strong> Account Nickname is optional.</i></p>
     <li>Select the debit card expiration month and year from the drop-down list under Expiration option.</li>
     <li>Add the CVV.</li>
-    <p class="block-quote">Note: Your Address will be displayed by default using the address sent in the SSO, and is used for validation and the user will not be allowed to edit the address in TN. The user will have to change the address in the financial institution’s online banking.</p>
+    <p class="block-quote"> &#128221<i><strong>Note:</strong> Your Address will be displayed by default using the address sent in the SSO, and is used for validation and the user will not be allowed to edit the address in TN. The user will have to change the address in the financial institution’s online banking.</i></p>
     <li>Click the <b class="confirm-button">Next</b> button to finish adding a debit card.</li>
     </ul>
 </div>
