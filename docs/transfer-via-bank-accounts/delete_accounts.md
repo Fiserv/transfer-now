@@ -11,9 +11,6 @@ From the Preferences screen, the user can choose Delete Account.
 </div> 
 
 
-&nbsp;
-
-
 <center>
 
 ![Image](../../assets/images/add-an-account-preferences.png) <br />
