@@ -19,7 +19,7 @@
     <li>Select the debit card expiration month and year from the drop-down list under Expiration option.</li>
     <li>Add the CVV.</li>
     <p class="block-quote">Note: Your Address will be displayed by default using the address sent in the SSO, and is used for validation and the user will not be allowed to edit the address in TN. The user will have to change the address in the financial institution’s online banking.</p>
-    <li>Click the <button class="confirm-button">Next</button> button to finish adding a debit card.</li>
+    <li>Click the <b class="confirm-button">Next</b> button to finish adding a debit card.</li>
     </ul>
 </div>
 <div class="debit-card-button-container">
