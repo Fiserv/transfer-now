@@ -67,6 +67,7 @@ In addition to that, TransferNow implements Responsive Web Design, which optimiz
     .card-body ul {
         list-style: none;
         padding-left: 20px;
+        margin: 10px;
     }
     .card-body ul li::before {
         content: "\2022";
