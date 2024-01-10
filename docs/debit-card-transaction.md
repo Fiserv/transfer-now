@@ -83,7 +83,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
     </div>
 </div>
 
-<div>Following topics cover additional information that allows a user to manage and transfer money from debit cards.
+<div class="header-slide">Following topics cover additional information that allows a user to manage and transfer money from debit cards.
     <div class="debit-body">
     <div class="debit-container">
         <input type="radio" name="dot" id="one">
@@ -154,6 +154,12 @@ In addition to adding user's bank account, TransferNow allows users to add their
 </div>
 </div>
 <style>
+.header-slide{
+    color:#666;
+}
+.details{
+    margin-top: 10px;
+}
     .tooltip-info {
     position: relative;
     display: inline-block;
@@ -446,7 +452,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
         object-fit: cover;
     }
     .card-debit .content-debit .name {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
     }
     .card-debit .content-debit .desc {
