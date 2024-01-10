@@ -21,7 +21,7 @@ Fiserv trusts that the Client has pre-authenticated any end user accessing the s
 <div class="server-authentication-button-container">
     <br>
     <div class="server-authentication-left-button">
-        <a href="?path=docs/getting-started/TN-Integration-Guide/SSL-Authentication.md">Back</a>
+        <a href="?path=docs/getting-started/TN-Integration-Guide/Digital-Certificates.md">Back</a>
     </div>
 </div>
 <style>
