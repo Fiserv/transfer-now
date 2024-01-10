@@ -24,11 +24,13 @@
                         <ul>
                         <li>User selects the bank account from which the amount to be debited under "From" dropdown list.</li>
                         <li>User selects the bank account to which the amount to be credited under "To" dropdown list.</li>
-                        <li>Enter the amount to be transferred.</li><li>Set the date when the user wants to initiate the transaction.
+                        <li>Enter the amount to be transferred.
                         <div class="tooltip-info">
                         <div class="icon-info">i</div>
                         <div class="tooltiptext-info">View Limits will display the maximum amount that can be transferred.</div>
                         </div></li>
+                        </li>
+                        <li>Set the date when the user wants to initiate the transaction.</li>
                         <li>Select the Frequency. To know more about Transfer Funds Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies / Durations</a></li>
                         </ul>
                         </ul>
