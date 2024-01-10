@@ -111,8 +111,43 @@ Users provide the information specific to their institution and their desired cu
 </div>
 </div>
 
+<div class="TN-UI-customization-guide-button-container">
+    <br>
+    <div class="TN-UI-customization-guide-left-button">
+        <a href="?path=docs/getting-started/TN-UI-Widget/TN_UI_Rendering_Options.md">Back</a>
+    </div>
+</div>
 
  <style>
+ .TN-UI-customization-guide-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .TN-UI-customization-guide-left-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .TN-UI-Customization-guide-left-button a{ 
+        left: 0;
+    }
+    .TN-UI-Customization-guide-left-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
+
     .card-body ul {
         list-style: none;
         padding-left: 20px;
