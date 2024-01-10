@@ -256,7 +256,7 @@ Alternatively, you can enter the URL directly into your browser’s address bar 
 <div class="payload-submission-button-container">
     <br>
     <div class="payload-submission-left-button">
-        <a href="path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md">Back</a>
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md">Back</a>
     </div>
 </div>
 <style>

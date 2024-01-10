@@ -11,8 +11,6 @@
                     <td rowspan="1">QA </br></td>
                     <td>https://certsso.ft.cashedge.com/signupGRel?<Payload> </br>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
                     <td rowspan="2">Production </br></td>
                     <td>https://sso.fta.cashedge.com/signupGRel?<Payload> </br>

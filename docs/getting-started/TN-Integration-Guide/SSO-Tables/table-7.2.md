@@ -3,12 +3,12 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th colspan="1"> Description </th>
+                    <th > Description </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="1">Payload Session Key Expiration Period </br></td>
+                    <td rowspan="1">Payload Session Key Expiration Period </br></td>
                     <td>For Fiserv ePayments QA Environment </br>
                         <div class="card-body">
                         <ul>
