@@ -6,7 +6,7 @@ Each new end user accessing the service for the very first time will be presente
 
 <center>
 
-![Image](../../../assets/images/AgreeDisAgree.png) <br />
+![Image](../../../assets/images/term-condition.png) <br />
 
 
 </center>
