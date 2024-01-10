@@ -380,7 +380,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
         min-height: 50vh;
         align-items: center;
         justify-content: center;
-        background: #6a737d;
+        background: #6a737d7a;
         background-position: center;
         background-size: cover;
         position: relative;
@@ -401,7 +401,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
         max-width: 950px;
         width: 100%;
         overflow: hidden;
-        padding: 80px 0;
+        padding: 70px 0 10px;
         z-index: 999;
     }
     .debit-container .main-card-debit {
@@ -424,7 +424,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
         width: calc(100% / 3 - 10px);
         background: white;
         border-radius: 12px;
-        padding: 30px;
+        padding: 10px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
         transition: all 0.4s ease;
     }
