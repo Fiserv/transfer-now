@@ -4,7 +4,7 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 <div>
 <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/responsive-view-transfernow.png"
                                 alt="mobile view">
-<p class="block-quote-resp"> &#128221 <i> <strong>Note:</strong> The Instant Transfer option is not applicable for recurring transfers.</i></p>                                
+<p class="block-quote-resp"> &#128221 <i> <strong>Note:</strong> There are differences between the mobile-focused and desktop user interfaces. Most of the screenshot samples in this document are desktop-focused, unless otherwise specified.</i></p>                                
 </div>
 <div id="slider">
     <input type="radio" name="slider" id="slide1" checked>
