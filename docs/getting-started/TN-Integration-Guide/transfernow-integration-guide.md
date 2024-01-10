@@ -10,7 +10,7 @@
                 <div class="img-debit">
                         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl-auth-transfernow.png" alt="add-debit">
                     </div>
-                    <div>
+                    <div class="ssl-auth-main-page">
                     <div class="details-list">
                         <div class="name-list">SSL Authentication</div>
                     </div>
@@ -25,11 +25,13 @@
                     <div class="img-debit">
                         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl_auth.png" alt="add-debit">
                     </div>
+                    <div class="ssl-auth-main-page">
                         <div class="details-list">
                             <div class="name-list">SSO Payload</div>
                         </div>
                         <div class="media-icons-list">
                             <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Click View</a>
+                        </div>
                         </div>
                     </div>
                     </div>
@@ -38,11 +40,13 @@
                         <div class="img-debit">
                         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl-mobile-transfernow.png" alt="add-debit">
                     </div>
+                    <div class="ssl-auth-main-page">
                             <div class="details-list">
                                 <div class="name-list">SSO for Mobile</div>
                             </div>
                             <div class="media-icons-list">
                             <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-For-Mobile.md">Click View</a>
+                            </div>
                             </div>
                         </div>
                         </div>
@@ -85,6 +89,10 @@
 </div>
 
 <style>
+    .ssl-auth-main-page{
+        margin-top: 10px;
+        padding: 8px;
+    }
     #bullets {
     margin: 0 0 30px 0;
     position: relative;
@@ -277,7 +285,7 @@
         object-fit: cover;
     }
     .card-debit-list .content-debit-list .name-list {
-        font-size: 20px;
+        font-size: 18px;
     }
     .card-debit-list .content-debit-list .desc-list {
         font-size: 20px;
@@ -286,6 +294,7 @@
     .card-debit-list .content-debit-list .media-icons-list {
         margin-top: 10px;
         display: flex;
+        justify-content: center;
     }
     .media-icons-list a {
         text-align: center;
