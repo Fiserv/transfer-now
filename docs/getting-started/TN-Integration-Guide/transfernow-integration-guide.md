@@ -288,7 +288,7 @@
         object-fit: cover;
     }
     .card-debit-list .content-debit-list .name-list {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .card-debit-list .content-debit-list .desc-list {
         font-size: 20px;
