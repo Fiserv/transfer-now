@@ -17,11 +17,12 @@ In addition to adding user's bank account, TransferNow allows users to add their
                         <div class="card-body-f">
                         <ul>
     <li>User can select “From” and “To” debit card information from the list that are already added.</li>
-    <li>Enter the amount to be transferred.</li><li>Set the date when the user wants to initiate the transaction.
-                        <div class="tooltip-info">
+    <li>Enter the amount to be transferred.
+    <div class="tooltip-info">
                         <div class="icon-info">i</div>
                         <div class="tooltiptext-info">View Limits will display the maximum amount that can be transferred.</div>
                         </div></li>
+    <li>Set the date when the user wants to initiate the transaction.</li>
     <li>Set the date when the user wants to initiate the transaction.</li>
     <li>Select the Frequency. To know more about Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies/Duration.</a></li>
     <li>Click the <strong>Review</strong> button and review the page.</li>
