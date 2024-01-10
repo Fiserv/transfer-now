@@ -91,7 +91,7 @@
 <style>
     .ssl-auth-main-page{
         margin-top: 10px;
-        padding: 8px;
+        padding: 8px !important;
     }
     .sso-payload-content{
         margin-top: 10px;
