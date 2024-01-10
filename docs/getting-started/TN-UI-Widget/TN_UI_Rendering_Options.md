@@ -127,16 +127,6 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
 
 [First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
 
-<div class="TN-UI-Rendering-options-button-container">
-    <br>
-    <div class="TN-UI-Rendering-options-left-button">
-        <a href="?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md">Back</a>
-    </div>
-    <div class="TN-UI-Rendering-options-right-button">
-        <a href="?path=docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md">Next</a>
-    </div>
-</div>
-
 <!-- type: tab -->
 
 
@@ -246,16 +236,6 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp
 **See Also**
 
 [First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
-
-<div class="TN-UI-Rendering-options-button-container">
-    <br>
-    <div class="TN-UI-Rendering-options-left-button">
-        <a href="?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md">Back</a>
-    </div>
-    <div class="TN-UI-Rendering-options-right-button">
-        <a href="?path=docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md">Next</a>
-    </div>
-</div>
 
  <!-- type: tab -->
 
