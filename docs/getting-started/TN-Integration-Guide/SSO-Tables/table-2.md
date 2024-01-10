@@ -3,7 +3,7 @@
             <thead>
                 <tr>
                     <th> Account Profile Parameter</th>
-                    <th> Description, Usage Restriction, and Error Flow </th>
+                    <th> Description, Usage Restrictions, and Error Flow </th>
                 </tr>
             </thead>
             <tbody>
@@ -173,7 +173,7 @@
 <div class="table-2-button-container">
     <br>
     <div class="table-2-left-button">
-         <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md">Back</a>
+         <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md">Back</a>
     </div>
     <div class="table-2-right-button">
         <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md">Next</a>

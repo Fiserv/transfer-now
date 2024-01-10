@@ -40,7 +40,7 @@ If the Fiserv  TN Application Server becomes unexpectedly unavailable as part of
 
 As mentioned in [SSO - Payload Secure Message Exchange](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md) , the Fiserv ePayments Client Integration Server will return to the Client, one or more SS error codes in the https response if a problem with a client submitted payload is detected.  
 
-For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Parameters](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md), one of the required elements that must be submitted to Fiserv in the payload is the end user’s Social Security number. Failure to include this required name/value pair element in the payload would result in the Fiserv Client Integration Server returning an SS14 error code rather than a valid session key. 
+For example, as noted in [Payload Submission](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md), one of the required elements that must be submitted to Fiserv in the payload is the end user’s Social Security number. Failure to include this required name/value pair element in the payload would result in the Fiserv Client Integration Server returning an SS14 error code rather than a valid session key. 
 
 &nbsp;
 
@@ -64,8 +64,8 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
   <table style="width: 100%;" class="err-table">
             <thead>
                 <tr>
-                    <th> Card Account Profile Parameter</th>
-                    <th> Description, Usage Restriction, and Error Flow </th>
+                    <th>Payload Error Code</th>
+                    <th>Meaning</th>
                 </tr>
             </thead>
             <tbody>
@@ -74,8 +74,8 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
                     <td>Fiserv will return this error code if any of the following are true:</br>
                     <div class="card-body">
                         <ul>
-                            <li> The SSN parameter is not present in the payload</li>
-                            <li> The associated value has a length of 0 characters</li>
+                            <li>The SSN parameter is not present in the payload</li>
+                            <li>The associated value has a length of 0 characters</li>
                         </ul>
                     </div>
                     </td>
@@ -85,8 +85,7 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
                     <td>Fiserv will return this error code if any of the following are true:</br>
                     <div class="card-body">
                         <ul>
-                            <li> The FIRST_NAME parameter is not present in the payload</li><li> The associated value has a length of 0 or is > than 30 characters.
-                            </li>
+                            <li>The FIRST_NAME parameter is not present in the payload</li><li> The associated value has a length of 0 or is > than 30 characters.</li>
                         </ul>
                     </div>
                     </td>
@@ -96,7 +95,8 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
                     <td>Fiserv will return this error code if any of the following are true:</br>
                     <div class="card-body">
                         <ul>
-                            <li> The LAST_NAME parameter is not present in the payload</li><li> The associated value has a length of 0 or is > than 30 characters</li>
+                            <li>The LAST_NAME parameter is not present in the payload</li>
+                            <li>The associated value has a length of 0 or is > than 30 characters</li>
                         </ul>
                     </div>
                     </td>
@@ -106,19 +106,21 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
                     <td>Fiserv will return this error code if any of the following are true:</br>
                     <div class="card-body">
                         <ul>
-                            <li> The CITY parameter is not present in the payload</li><li>The associated value has a length of 0 or is > than 25 characters
-                            </li>
+                            <li>The CITY parameter is not present in the payload</li><li>The associated value has a length of 0 or is > than 25 characters</li>
                         </ul>
                     </div>
                     </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS18</td>
-                    <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
+                    <td>Fiserv will return this error code if any of the following are true:</br>
+                    <div class="card-body">
                         <ul>
-                            <li> The STATE parameter is not present in the payload</li><li> The associated value is not a valid state or US territory</li><li> The associated value has length of 0, 1 or > 25 characters</li>
-                            </ul>
-                            </div></td>
+                            <li>The STATE parameter is not present in the payload</li>
+                            <li>The associated value is not a valid state or US territory</li>
+                            <li>The associated value has length of 0, 1 or > 25 characters</li>
+                        </ul>
+                    </div></td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS19</td>
@@ -129,48 +131,84 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
                 </tr>
                 <tr>
                     <td rowspan="1">SS20</td>
-                    <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
-                        <ul>
-                            <li> The ZIP parameter is not present in the payload</li><li> The associated value has a length of < than 5 characters</li><li> The associated value contains one or more non-numeric characters within the first five digit positions</li></ul>
-                            </div></td>
+                    <td>Fiserv will return this error code if any of the following are true:</br>
+                        <div class="card-body">
+                            <ul>
+                                <li>The ZIP parameter is not present in the payload</li>
+                                <li>The associated value has a length of < than 5 characters</li>
+                                <li>The associated value contains one or more non-numeric characters within the first five digit positions</li>
+                            </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS21</td>
-                    <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
-                        <ul>
-                            <li> The DOB parameter is not present in the payload</li><li> The associated value has a length of 0</li><li> The end user’s calculated age is < 18 or > 110</li><li> The associated MM/DD/YYYY value is equal to 01/01/1901 or YYYY equals 1900</li>
-                        </ul>
-                    </div></td>
+                    <td>Fiserv will return this error code if any of the following are true:</br>
+                        <div class="card-body">
+                            <ul>
+                                <li>The DOB parameter is not present in the payload</li>
+                                <li>The associated value has a length of 0</li>
+                                <li>The end user’s calculated age is < 18 or > 110</li>
+                                <li>The associated MM/DD/YYYY value is equal to 01/01/1901 or YYYY equals 1900</li>
+                            </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS22</td>
-                    <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
-                        <ul>
-                            <li> The PHONE parameter is not present in the payload</li><li> The associated value has a length of 0</li></ul></div></td>
+                    <td>Fiserv will return this error code if any of the following are true:</br>
+                        <div class="card-body">
+                            <ul>
+                                <li> The PHONE parameter is not present in the payload</li>
+                                <li> The associated value has a length of 0</li>
+                            </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS28</td>
-                    <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
-                        <ul>
-                            <li> The INSTITUTION_ID parameter is not present in the payload</li><li> The associated value has a length of 0</li></ul></div></td>
+                    <td>Fiserv will return this error code if any of the following are true:</br>
+                        <div class="card-body">
+                                <ul>
+                                    <li>The INSTITUTION_ID parameter is not present in the payload</li>
+                                    <li>The associated value has a length of 0</li>
+                                </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS29</td>
-                    <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
-                        <ul>
-                            <li> The RTN0 parameter is not present in the payload</li><li> The associated value has a length of 0</li><li> The associated value is not a valid ABA/routing number</li></ul></div></td>
+                    <td>Fiserv will return this error code if any of the following are true:</br>
+                        <div class="card-body">
+                            <ul>
+                                <li>The RTN0 parameter is not present in the payload</li>
+                                <li>The associated value has a length of 0</li>
+                                <li>The associated value is not a valid ABA/routing number</li>
+                            </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS30</td>
-                    <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
-                        <ul>
-                            <li> The USER_FI_NUMBER parameter is not present in the payload</li><li> The associated value has a length of 0</li></ul></div></td>
+                    <td>Fiserv will return this error code if any of the following are true:</br>
+                        <div class="card-body">
+                            <ul>
+                                <li>The USER_FI_NUMBER parameter is not present in the payload</li>
+                                <li> The associated value has a length of 0</li>
+                            </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SS31</td>
-                    <td>Fiserv will return this error code if any of the following are true:</br><div class="card-body">
-                        <ul>
-                            <li> The ANUM0 parameter is not present in the payload</li><li> The associated value has a length of 0</li></ul></div></td>
+                    <td>Fiserv will return this error code if any of the following are true:</br>
+                        <div class="card-body">
+                            <ul>
+                                <li>The ANUM0 parameter is not present in the payload</li>
+                                <li>The associated value has a length of 0</li>
+                            </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="1">SSB14</td>
@@ -186,7 +224,7 @@ For example, as noted in [ Client/Fiserv Secure Message Exchange Payload Paramet
 
 As mentioned in [SSO - Payload Secure Message Exchange](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md) , the Fiserv ePayments Client Integration Server will display, to the end user, an application error page containing one or more SS error codes if an application error is thrown. 
 
-Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md) , application error codes do not require the Client to perform any additional error handling because an application error page will only be displayed after the end user has been granted access to the service. 
+Unlike the error codes listed in [Payload Submission](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md) , application error codes do not require the Client to perform any additional error handling because an application error page will only be displayed after the end user has been granted access to the service. 
 
 &nbsp;
 <div class="ssl-error"><img class="ssl-error-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/alert1.png"><span>  SS24 Your Profile is already registered.</span></div>
@@ -297,8 +335,7 @@ Unlike the error codes listed in [Fiserv Payload Submission Error Codes](?path=d
         width: 1em;
         margin-left: -1em;
     }
-            .err-table {
-        font-family: Arial, Helvetica, sans-serif;
+        .err-table {
         border-collapse: collapse;
         width: 100%;
         }
