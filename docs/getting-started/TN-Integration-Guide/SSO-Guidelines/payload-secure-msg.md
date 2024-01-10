@@ -22,7 +22,7 @@ Assume a client’s end user has logged into the Client’s web page and now att
 <div class="sso-payload-button-container">
     <br>
     <div class="sso-payload-left-button">
-        <a href="?path=docs/getting-started/TN-Integration-Guide/transfernow-integration-guide.md">Back</a>
+         <a href="?path=docs/getting-started/TN-Integration-Guide/SSL-Authentication.md">Back</a>
     </div>
     <div class="sso-payload-right-button">
         <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-For-Mobile.md">Next</a>
