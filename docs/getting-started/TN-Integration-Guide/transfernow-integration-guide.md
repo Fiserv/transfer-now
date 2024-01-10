@@ -10,11 +10,13 @@
                 <div class="img-debit">
                         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl-auth-transfernow.png" alt="add-debit">
                     </div>
+                    <div>
                     <div class="details-list">
                         <div class="name-list">SSL Authentication</div>
                     </div>
                     <div class="media-icons-list">
                         <a href="?path=docs/getting-started/TN-Integration-Guide/SSL-Authentication.md">Click View</a>
+                    </div>
                     </div>
                 </div>
                 </div>
@@ -207,7 +209,7 @@
         max-width: 950px;
         width: 100%;
         overflow: hidden;
-        padding: 80px 0;
+        padding: 80px 0 20px 0;
         z-index: 999;
     }
     .debit-container-list .main-card-debit-list {
@@ -247,6 +249,7 @@
         background: white;
         border-radius: 12px;
         padding: 30px;
+        height: 90%;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
         transition: all 0.4s ease;
     }
