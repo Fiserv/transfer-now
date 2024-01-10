@@ -126,9 +126,18 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
 **See Also**
 
 [First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
+
 <!-- type: tab -->
 
-
+<div class="TN-UI-Rendering-options-button-container">
+    <br>
+    <div class="TN-UI-Rendering-options-left-button">
+        <a href="?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md">Back</a>
+    </div>
+    <div class="TN-UI-Rendering-options-right-button">
+        <a href="?path=docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md">Next</a>
+    </div>
+</div>
 
 
 
@@ -154,6 +163,7 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 </center> 
 
 </br>
+
 **To Know more visit the below Configuration:**
 
 <div>
@@ -236,6 +246,16 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp
 [First-Time Agreement Page Configuration](?path=docs/getting-started/TN-UI-Widget/First-Time_Agreement_Page_Configuration.md)
 
  <!-- type: tab -->
+
+ <div class="TN-UI-Rendering-options-button-container">
+    <br>
+    <div class="TN-UI-Rendering-options-left-button">
+        <a href="?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md">Back</a>
+    </div>
+    <div class="TN-UI-Rendering-options-right-button">
+        <a href="?path=docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md">Next</a>
+    </div>
+</div>
 
 
 
@@ -358,9 +378,50 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
  
 <!-- type: tab-end -->
 
-
+<div class="TN-UI-Rendering-options-button-container">
+    <br>
+    <div class="TN-UI-Rendering-options-left-button">
+        <a href="?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md">Back</a>
+    </div>
+    <div class="TN-UI-Rendering-options-right-button">
+        <a href="?path=docs/getting-started/TN-UI-Widget/TN_UI_Customization_Guide.md">Next</a>
+    </div>
+</div>
 
 <style>
+     .TN-UI-Rendering-options-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .TN-UI-Rendering-options-left-button a,
+    .TN-UI-Rendering-options-right-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .TN-UI-Rendering-options-left-button a{ 
+        left: 0;
+    }
+    .TN-UI-Rendering-options-right-button a{
+        right: 12px;
+    }
+    .TN-UI-Rendering-options-left-button a:hover,
+    .TN-UI-Rendering-options-right-button a:hover {
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;

@@ -27,9 +27,41 @@ There are three configuration options available to the Client regarding the beha
 <!-- theme: info -->
 
 > :memo: _**Note:** The Client preference for this option is to be indicated in the DGF._
-
-
+<div class="first-time-agreement-button-container">
+    <br>
+    <div class="first-time-agreement-left-button">
+        <a href="?path=docs/getting-started/TN-UI-Widget/TN_UI_Rendering_Options.md">Back</a>
+    </div>
+</div>
 <style>
+    .first-time-agreement-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .first-time-agreement-left-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .first-time-agreement-left-button a{ 
+        left: 0;
+    }
+    .digital-certificates-left-button a:hover{
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;
