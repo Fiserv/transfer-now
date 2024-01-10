@@ -92,6 +92,8 @@
     .ssl-auth-main-page{
         margin-top: 10px;
         padding: 8px;
+        position: relative;
+        top: 48px;
     }
     #bullets {
     margin: 0 0 30px 0;
