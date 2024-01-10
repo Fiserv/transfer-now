@@ -1,5 +1,5 @@
 <html>
-  <table style="width: 100%;">
+  <table style="width: 100%;" class="err-table">
             <thead>
                 <tr>
                     <th> Account Profile Parameter</th>
@@ -180,6 +180,18 @@
     </div>
 </div>
 <style>
+.err-table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        .err-table td, .err-table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+        .err-table th {
+            background-color:#f1f1f1
+        }
+        .err-table tr:nth-child(even){background-color: #f2f2f2;}
     .table-2-button-container {
         position: relative;
         width: 100%;

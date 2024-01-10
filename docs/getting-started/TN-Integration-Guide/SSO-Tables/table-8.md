@@ -1,5 +1,5 @@
 <html>
-  <table style="width: 50%;">
+  <table style="width: 50%;" class="err-table">
             <thead>
                 <tr>
                     <th> Payload Parameter</th>
@@ -11,8 +11,6 @@
                     <td rowspan="1">INSTITUTION_ID </br></td>
                     <td>88850000</td>
                 </tr>
-            </tbody>
-            <tbody>
                 <tr>
                     <td rowspan="2">USER_FI_NUMBER </br></td>
                     <td>endUser12</td>
@@ -182,3 +180,21 @@
             </tbody> 
             </table>
 </html>
+<style>
+.err-table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        .err-table td, .err-table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+        .err-table th {
+            background-color:#f1f1f1
+        }
+        .err-table tr:nth-child(even){background-color: #f2f2f2;}
+         .card-body ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+   </style> 

@@ -84,7 +84,7 @@ Payload elements that are listed in ( [User Profile Payload Elements-Table](?pat
         <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Back</a>
     </div>
     <div class="payload-parameters-right-button">
-        <a href="path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md">Next</a>
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md">Next</a>
     </div>
 </div>
 <style>

@@ -286,7 +286,7 @@ Unlike the error codes listed in [Payload Submission](?path=docs/getting-started
         <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Back</a>
     </div>
     <div class="error-handling-right-button">
-        <a href="path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md">Next</a>
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-submission.md">Next</a>
     </div>
 </div>
 <style>

@@ -1,9 +1,9 @@
 <html>
-  <table style="width: 100%;">
+  <table style="width: 100%;" class="err-table">
             <thead>
                 <tr>
-                    <th> User Profile Parameter</th>
-                    <th> Description, Usage Restrictions, and Error Flow </th>
+                    <th > User Profile Parameter</th>
+                    <th > Description, Usage Restrictions, and Error Flow </th>
                 </tr>
             </thead>
             <tbody>
@@ -296,6 +296,18 @@
     </div>
 </div>
 <style>
+.err-table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        .err-table td, .err-table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+        .err-table th {
+            background-color:#f1f1f1
+        }
+        .err-table tr:nth-child(even){background-color: #f2f2f2;}
     .table-1-button-container {
         position: relative;
         width: 100%;
