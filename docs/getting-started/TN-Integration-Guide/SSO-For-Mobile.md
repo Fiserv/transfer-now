@@ -127,7 +127,7 @@ Controller will extend UIWebViewDelegate and have the following delegate method 
 <div class="sso-for-mobile-button-container">
     <br>
     <div class="sso-for-mobile-left-button">
-        <a href="?path=docs/getting-started/TN-Integration-Guide/transfernow-integration-guide.md">Back</a>
+        <a href="?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md">Back</a>
     </div>
 </div>
 <style>

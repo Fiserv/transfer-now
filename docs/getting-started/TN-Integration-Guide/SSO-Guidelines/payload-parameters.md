@@ -12,7 +12,7 @@ The end user payload that a Client sends to Fiserv is composed of various parame
 <table class="digi-table">
 <tr>
 <td>
-<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md">User Profile Payload Elements-Table</a>
+<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-1.md">User Profile Payload Elements</a>
 </td>
 <td>
 defines the User Profile payload elements.
@@ -20,7 +20,7 @@ defines the User Profile payload elements.
 </tr>
 <tr>
 <td>
-<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md">Account Profile Payload Elements-Table</a>
+<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-2.md">Account Profile Payload Elements</a>
 </td>
 <td>
 defines the Account Profile payload elements.
@@ -28,7 +28,7 @@ defines the Account Profile payload elements.
 </tr>
 <tr>
 <td>
-<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md">Card Account Profile Payload Elements-Table</a>
+<a href="../docs/?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-3.md">Card Account Profile Payload Elements</a>
 </td>
 <td>
 (only applicable if a client has enabled Simple Business support in TN) - defines the Card Account Profile payload elements that Fiserv processes as part of a client payload secure message post.

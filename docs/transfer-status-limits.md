@@ -83,6 +83,9 @@ A user can avail a minimum number of free inbound transactions and free outbound
 &nbsp;
 
 <style>
+     .card-body {
+        margin: 20px;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;
