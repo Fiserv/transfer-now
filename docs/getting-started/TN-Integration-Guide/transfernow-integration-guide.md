@@ -25,7 +25,7 @@
                     <div class="img-debit">
                         <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl_auth.png" alt="add-debit">
                     </div>
-                    <div class="ssl-auth-main-page">
+                    <div class="sso-payload-content">
                         <div class="details-list">
                             <div class="name-list">SSO Payload</div>
                         </div>
@@ -90,6 +90,10 @@
 
 <style>
     .ssl-auth-main-page{
+        margin-top: 10px;
+        padding: 8px;
+    }
+    .sso-payload-content{
         margin-top: 10px;
         padding: 8px;
         position: relative;
