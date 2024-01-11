@@ -72,7 +72,7 @@
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Tranfer-via-bankaccounts-activity copy.png" alt="add-debit">
+                        <img class="slide-content-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/activity-transfernow.png" alt="add-debit">
                     </div>
                 </div>
             </div>
