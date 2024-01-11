@@ -10,7 +10,7 @@ TransferNow verifies a user’s ownership of an external debit card using two be
 </div>
 <div class="debit-card-button-container">
 <div class="debit-card-left-button">
-<a href="?path=docs/debit-card-transaction.md">Back</a>
+<a href="?path=docs/transfer-debit-card/add-debit-card.md">Back</a>
 </div>
 <div class="debit-card-right-button"><a href="?path=docs/transfer-debit-card/delete-debit-card.md">Next</a></div>
 </div>

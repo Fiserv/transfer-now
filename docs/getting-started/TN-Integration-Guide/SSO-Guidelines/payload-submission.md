@@ -41,7 +41,7 @@ When the Fiserv Client Integration Server returns a session key in response to a
 
 <!-- theme: info -->
 
->:memo:_**Note:**  If the Client performs the redirect after the session key has expired, the service will display an SS41 error page. See [Fiserv ePayments TN Application Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md)._ 
+>:memo:_**Note:**  If the Client performs the redirect after the session key has expired, the service will display an SS41 error page. See [Error Handling / Error Codes](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/error-handling-error-codes.md)._ 
 
 The Client is requesting the following session key expiration period: 
 
