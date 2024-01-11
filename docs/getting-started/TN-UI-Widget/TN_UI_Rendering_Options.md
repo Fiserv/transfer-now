@@ -373,6 +373,18 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
 </div>
 
 <style>
+    [data-tab-id="full_control"] {
+    width: 33%;
+    text-align: center;
+}
+[data-tab-id="framed"] {
+    width: 33%;
+    text-align: center;
+}
+ [data-tab-id="pop-up"] {
+    width: 33%;
+    text-align: center;
+}
      .TN-UI-Rendering-options-button-container {
         position: relative;
         width: 100%;
