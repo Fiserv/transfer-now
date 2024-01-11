@@ -40,7 +40,7 @@ If the Fiserv  TN Application Server becomes unexpectedly unavailable as part of
 
 As mentioned in [SSO - Payload Secure Message Exchange](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-secure-msg.md) , the Fiserv ePayments Client Integration Server will return to the Client, one or more SS error codes in the https response if a problem with a client submitted payload is detected.  
 
-For example, as noted in [Payload Submission](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md), one of the required elements that must be submitted to Fiserv in the payload is the end user’s Social Security number. Failure to include this required name/value pair element in the payload would result in the Fiserv Client Integration Server returning an SS14 error code rather than a valid session key. 
+For example, as noted in [Payload Parameters](?path=docs/getting-started/TN-Integration-Guide/SSO-Guidelines/payload-parameters.md), one of the required elements that must be submitted to Fiserv in the payload is the end user’s Social Security number. Failure to include this required name/value pair element in the payload would result in the Fiserv Client Integration Server returning an SS14 error code rather than a valid session key. 
 
 &nbsp;
 
