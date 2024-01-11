@@ -322,7 +322,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
     }
 
     .content-expand {
-        padding: 0 18px;
+        padding: 18px;
         display: none;
         overflow: hidden;
         background-color: #f1f1f1;
@@ -345,7 +345,7 @@ A transaction processed via the GFM has less risk associated with it, because TN
     }
 
     .image-otp {
-        width: 40%
+        width: 50%
     }
 
     .content-body {
