@@ -46,25 +46,26 @@ When the Fiserv Client Integration Server returns a session key in response to a
 The Client is requesting the following session key expiration period: 
 
 <html>
-  <table style="width: 100%;">
+  <table style="width: 100%;" class="err-table">
             <thead>
                 <tr>
-                    <th>Session Key Expiration</th>
-                    <th> Description</th>
+                <th><b>Session Key Expiration</b></th>
+                    <th><b>Description</b></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="2">Payload Session Key Expiration Period</td>
+                    <td rowspan="2"><b>Payload Session Key Expiration Period</b></td>
                 </tr>
                 <tr>
-                    <td>For Fiserv ePayments Production Environment</br>
+                    <td><b>For Fiserv ePayments Production Environment</b></br>
                     <div class="card-body">
                         <ul>
                             <li>Client wishes session key to be valid only for 5 minutes (default)
                             </li>
                         </ul>
-                        </div></td>
+                    </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
