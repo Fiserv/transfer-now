@@ -63,7 +63,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Tranfer-via-bankaccounts-activity copy.png" alt="initial-page">
+                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/activity-transfernow.png" alt="initial-page">
                     </div>
                 </div>
             </div>
