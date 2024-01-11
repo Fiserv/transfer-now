@@ -2,18 +2,22 @@
   <table style="width: 70%;" class="err-table">
             <thead>
                 <tr>
-                    <th></th>
-                    <th > Description </th>
+                    <th><b>Session Key Expiration</b></th>
+                    <th><b>Description</b></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="1">Payload Session Key Expiration Period </br></td>
-                    <td>For Fiserv ePayments QA Environment </br>
+                    <td rowspan="2"><b>Payload Session Key Expiration Period</b></br></td>
+                    <td><b>For Fiserv ePayments QA Environment</b> </br>
                         <div class="card-body">
                         <ul>
                             <li>Client wishes session key to be valid only for 5 minutes (default) </li>
-                            <li>For Fiserv ePayments Production Environment</li>
+                        </ul>
+                        </div></br>
+                        <b>For Fiserv ePayments Production Environment</b></br>
+                        <div class="card-body">
+                        <ul>
                         <li>Client wishes session key to be valid only for 5 minutes (default)</li>
                         </ul>
                         </div></td>

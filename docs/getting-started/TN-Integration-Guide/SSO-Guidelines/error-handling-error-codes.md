@@ -230,7 +230,7 @@ Unlike the error codes listed in [Payload Submission](?path=docs/getting-started
 <div class="ssl-error"><img class="ssl-error-img" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/alert1.png"><span>  SS24 Your Profile is already registered.</span></div>
 &nbsp;
 
-[SS Error Codes Returned by Fiserv-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-4.md) lists all the SS error codes that Fiserv will display in an application error page to the service end user. The Client does not need to perform additional error handling for any of the listed error codes. 
+[SS Error Codes Returned by Fiserv-Table](?path=docs/getting-started/TN-Integration-Guide/SSO-Tables/table-5.md) lists all the SS error codes that Fiserv will display in an application error page to the service end user. The Client does not need to perform additional error handling for any of the listed error codes. 
 
   <table style="width: 100%;" class="err-table">
             <thead>
