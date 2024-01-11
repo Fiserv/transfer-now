@@ -44,7 +44,7 @@ From the Preferences screen, the user can choose Delete Account.
 <div class="delete-accounts-button-container">
     <br>
     <div class="delete-accounts-left-button">
-       <a href="?path=docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md">Back</a>
+       <a href="?path=docs/transfer-via-bank-accounts/account_verification.md">Back</a>
     </div>
     <div class="delete-accounts-right-button">
         <a href="?path=docs/transfer-via-bank-accounts/add_brokerage.md">Next</a>

@@ -14,7 +14,7 @@
 </div>
 <div class="debit-card-button-container">
 <div class="debit-card-left-button">
-<a href="?path=docs/debit-card-transaction.md">Back</a>
+<a href="?path=docs/transfer-debit-card/debit-card-verification.md">Back</a>
 </div>
 <div class="debit-card-right-button"><a href="?path=docs/transfer-debit-card/edit-debit-card.md">Next</a></div>
 </div>

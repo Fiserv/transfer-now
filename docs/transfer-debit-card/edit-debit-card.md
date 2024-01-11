@@ -17,7 +17,7 @@
 
 <div class="debit-card-button-container">
 <div class="debit-card-left-button">
-<a href="?path=docs/debit-card-transaction.md">Back</a>
+<a href="?path=docs/transfer-debit-card/delete-debit-card.md">Back</a>
 </div>
 </div>
 
