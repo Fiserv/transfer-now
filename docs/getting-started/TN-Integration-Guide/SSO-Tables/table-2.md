@@ -81,7 +81,7 @@
             <tbody>
                 <tr>
                     <td rowspan="2">ASEG0 </br>Client will pass to Fiserv? ____</td>
-                    <td>Used to identify user/account groups for purposes of enabling, by group, different limits, user transaction fees, qualification rule settings, and/or service options. Values are validated against segment codes setup in the Fiserv ePayments Global Risk Administration (GRA) application</br>Usage Restrictions</br>Is an optional payload parameter with restrictions; see Error FlowAssociated value is alphabetic, minimum of 2 characters in length</td>
+                    <td>Used to identify user/account groups for purposes of enabling, by group, different limits, user transaction fees, qualification rule settings, and/or service options. Values are validated against segment codes setup in the Fiserv ePayments Global Risk Administration (GRA) application</br>Usage Restrictions</br>Is an optional payload parameter with restrictions; see Error Flow</br>Associated value is alphabetic, minimum of 2 characters in length</td>
                 </tr>
                 <tr>
                     <td>Error Flow </br>Fiserv does not return any payload error code nor display an application error page if the parameter is not present in the payload. If the parameter is not included in the payload or the associated value is blank, Fiserv will always use a default value of ‘AA’ when processing the end user payload submission. Rather than relying on Fiserv to set the default value, Fiserv strongly suggests that the Client always include this parameter and the associated default value in the payload submission. After the Client has a clear understanding of the GRA application, the Client can then change the default value.</td>
@@ -153,7 +153,7 @@
             <tbody>
                 <tr>
                     <td rowspan="2">BUSINESS_EIN0</br>Client will pass to Fiserv? YES</td>
-                    <td>Business entity identifier.</br>Usage Restrictions </br>Is an optional payload parameter Associated value must be 9 digits in length </td>
+                    <td>Business entity identifier.</br>Usage Restrictions </br>Is an optional payload parameter </br>Associated value must be 9 digits in length </td>
                 </tr>
                 <tr>
                     <td>Error Flow </br>If there is any validation error, it will not throw an SSO error. It will be ignored.</td>
@@ -162,7 +162,7 @@
             <tbody>
                 <tr>
                     <td rowspan="2">BUSINESS_PHONE0 </br>Client will pass to Fiserv? YES</td>
-                    <td>Business entity phone number</br>Usage Restrictions</br>Is an optional payload parameter Associated value is numeric, minimum 10 digits in length. Can include spaces or dashes. </td>
+                    <td>Business entity phone number</br>Usage Restrictions</br>Is an optional payload parameter</br> Associated value is numeric, minimum 10 digits in length. Can include spaces or dashes. </td>
                 </tr>
                 <tr>
                     <td>Error Flow </br>If there is any validation error, it will not throw an SSO error. It will be ignored.</td>

@@ -149,7 +149,7 @@
                 <tr>
                     <td rowspan="15">MIDDLE_NAME </br>Client will pass to Fiserv? _____</td>
                     <td>User’s middle initial or name Format: 
-                    </br>Usage Restrictions </br>Is an optional payload parameter </br> Associated value must be alphabetic letters, 1 to 30 characters in length. If 1 character in length, character must be a letter. If more than 1 character in length, characters can include letters, periods, a single space, apostrophe and/or a hyphen</td>
+                    </br>Usage Restrictions </br>Is an optional payload parameter</br> Associated value must be alphabetic letters, 1 to 30 characters in length. If 1 character in length, character must be a letter. If more than 1 character in length, characters can include letters, periods, a single space, apostrophe and/or a hyphen</td>
                 </tr>
                 <tr>
                     <td>Error Flow </br>
@@ -256,7 +256,7 @@
             <tbody>
                 <tr>
                     <td rowspan="18">LANDING_PAGE </br>Client will pass to Fiserv? _____</td>
-                    <td>TN Call Center specific element</br>Specifies the landing page where the CSR will land, upon signing in to the Call Center. This will work only if the CSR has access to the page they are expected to land on. </br>Usage Restrictions</br>Is an optional payload parameterAssociated value must be a valid alphanumeric and cannot exceed 2 characters Possible values are “CT” and “VA”, where CT will land the CSR on the Create Transfer Page and VA will land the CSR on the Verify Accounts Page, respectively.</td>
+                    <td>TN Call Center specific element</br>Specifies the landing page where the CSR will land, upon signing in to the Call Center. This will work only if the CSR has access to the page they are expected to land on. </br>Usage Restrictions</br>Is an optional payload parameter</br>Associated value must be a valid alphanumeric and cannot exceed 2 characters Possible values are “CT” and “VA”, where CT will land the CSR on the Create Transfer Page and VA will land the CSR on the Verify Accounts Page, respectively.</td>
                 </tr>
                 <tr>
                     <td>Error Flow </br>Fiserv does not return any payload error code nor display an application error page if the parameter is not present in the payload Fiserv will use the default landing pages when this element is not populated.
