@@ -1,10 +1,6 @@
 
 ## Guidelines for Obtaining a CA Issued SSL Digital Server Certificate 
 
-
-
-
-
 <!-- theme: info -->
 
 > :memo: _**Note:** All well-known CAs allow a client to apply for an SSL Digital Server Certificate online. Typically, this process begins with the Client filling out information about the company the certificate will be purchased for, contact information, and providing proof of valid company documentation._ 
@@ -44,6 +40,11 @@ The actual installation of the server certificate is web server vendor dependent
 
 </ul>
 </div>
+<div class="debit-card-button-container">
+<div class="debit-card-left-button">
+<a href="?path=docs/getting-started/TN-Integration-Guide/Digital-Certificates.md">Back</a>
+</div>
+</div>
 
 &nbsp;
 
@@ -61,5 +62,35 @@ The actual installation of the server certificate is web server vendor dependent
         width: 1em;
         margin-left: -1em;
     }
+    .debit-card-button-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        font-family: sans-serif;
+        margin: 0px 15px;
+    }
+    .debit-card-left-button a{
+        position: absolute;
+        display: inline;
+        border: 0px;
+        background: rgb(255, 102, 0);
+        color: rgb(255, 255, 255);
+        padding: 8px 22px;
+        cursor: pointer;
+        border-radius: 4px;                                
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .debit-card-left-button a{ 
+        left: 0;
+    }
+    .debit-card-left-button a:hover{
+        color: #f60;
+        background-color: white;
+        border: 2px solid #f60;
+    }
+
+    </style>
 
     
