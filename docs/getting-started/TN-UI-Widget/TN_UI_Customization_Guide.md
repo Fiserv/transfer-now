@@ -214,7 +214,7 @@ Users provide the information specific to their institution and their desired cu
     }
 
     .content-expand {
-        padding: 0 18px;
+        padding: 18px;
         display: none;
         overflow: hidden;
         background-color: #f1f1f1;
@@ -237,7 +237,7 @@ Users provide the information specific to their institution and their desired cu
     }
 
     .image-otp {
-        width: 40%
+        width: 50%
     }
 
     .content-body {

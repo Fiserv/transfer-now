@@ -474,7 +474,7 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
     }
 
     .content-expand {
-        padding: 0 18px;
+        padding: 18px;
         display: none;
         overflow: hidden;
         background-color: #f1f1f1;
@@ -497,7 +497,7 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp`
     }
 
     .image-otp {
-        width: 40%
+        width: 50%
     }
 
     .content-body {
