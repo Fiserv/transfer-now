@@ -17,19 +17,16 @@ The following figure shows the SSL steps taken for certificate authentication; (
 
 
 
-&nbsp;
  
  <center>
+ <br/>
   
 ![image](../../../assets/images/SSL-Authentication.png) <br/>
 
 
 </center>
  
-&nbsp;
-
 An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Following steps help the user understand how an FI passes users to Fiserv via SSL Secure Messaging and routes them to the TN landing page, which is the Transfer Funds Overview screen. 
-
 
 <div class="card-body">
     <ul>
@@ -75,17 +72,13 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Fo
     </ul>
 </div>
 
- &nbsp;
  
  <center>
   
 ![image](../../../assets/images/transfer-via-bank-trasfer-funds-account.png) <br/>
 
-
 </center>
  
-&nbsp;
-
 Whenever Fiserv receives a user via SSL Secure Messaging, the user’s profile is registered in the Fiserv ePayments database (See [AllData® Aggregation](https://qa-developerstudio.fiserv.com/product/AllDataAggregation?branch=develop) / EWS,[Instant (Risk Database) Verification](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method/instant-verification.md&branch=develop)). The profile establishes a unique identifier called <>.
 
 
