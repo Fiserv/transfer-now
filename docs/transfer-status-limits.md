@@ -43,13 +43,10 @@ Limits are set for the account. The following types of limits are applicable:
 </ul>
 </div>
 
-&nbsp;
-
 <center>
 
 ![image](../assets/images/Individual_limits.png) <br/>
 
-&nbsp;
 
 </center>
 
@@ -57,15 +54,12 @@ Limits are set for the account. The following types of limits are applicable:
 
 Debit card limits and services have different Individual account limits. 
 
-&nbsp;
 
 <center>
 
 ![image](../assets/images/Debit_card_limits.png) <br/>
 
 </center>
-
-&nbsp;
 
 
 ## Transfer Fees
@@ -74,7 +68,6 @@ Fees can be a flat rate, a percent of transaction, or a combination of flat rate
 
 A user can avail a minimum number of free inbound transactions and free outbound transactions per calendar month. Free services are provided for each service, independently. 
 
-&nbsp;
 
 <!-- theme: info -->
 

@@ -4,11 +4,15 @@
     <ul>
     <li>To delete an existing debit card, go to the Preferences screen.</li>
     <li>Under <strong>My Debit Cards</strong> menu, user can see all the debit cards added.</li>
+    <br/>
     <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/my-debit-card.png">
+    <br/>
     <li>Select a debit card that the user wants to delete.</li>
     <li>Click the <b class="confirm-button">Delete Card</b> button to remove the debit card from the list.</li>
     <li>Delete Debit Card screen is displayed.</li>
+    <br/>
     <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Delete_Debit_Card.png">
+    &nbsp;
     <li>Click the <b class="confirm-button">Yes, Delete</b> button to delete the selected debit card.</li>
     </ul>
 </div>
