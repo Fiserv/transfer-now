@@ -2,8 +2,7 @@
 
 Each new end user accessing the service for the very first time will be presented with a First Time Agreement page, as shown in the following figure. 
 
-&nbsp;
-
+</br>
 <center>
 
 ![Image](../../../assets/images/term-condition.png) <br />

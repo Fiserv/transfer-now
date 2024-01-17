@@ -18,8 +18,6 @@ With the Fiserv ePayments-hosted UI solution, clients control how they launch th
 
 > :memo: _**Note:** Almost all clients who choose the Fiserv ePayments-hosted UI solution opt for the full-control implementation_
 
-
-
 <!--
 
 type: tab
@@ -35,15 +33,12 @@ titles: Full Control , Framed, Pop-up
 
 A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering in a window initially used to display the Client web page. Therefore, the user is directed to TransferNow screens that use the same window as the FI’s web page. 
 
-&nbsp;
-
 <center>
 
 ![Image](../../../assets/images/add-an-account-create-transfer.png) <br />
 
 
 </center> 
-</br>
 
 **To Know more visit the below Configuration:**
 
@@ -52,10 +47,10 @@ A Client-initiated end user session will result in all respective Fiserv-hosted 
     <label class="label-expand" for="section1">Page Footer Configuration</label>
     <div class="content-expand">
 <p>Most Fiserv-hosted pages display a footer containing Client-defined URLs that link to the Client’s Terms of Service, Security Policy, and Privacy Policy. Each URL, when selected, will result in the content being displayed in a separate pop-up window. 
-</br></br>
+</p>
+<p>
 Also, content that each URL points to is hosted by the Client and not Fiserv, and if the Client does not define a URL for one of the footer links, then that link will not be displayed on any applicable Fiserv hosted page. 
 </p>
-</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
@@ -64,13 +59,14 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
     <label class="label-expand" for="section2">Help Link Configuration</label>
     <div class="content-expand">
 <p>Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.</p>
-</br>
 <center>
 
 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
 
 </center> 
+
 </br>
+
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> 
@@ -91,7 +87,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 <p>The Client specified return URL is passed in as part of each end user’s payload post; Failure to pass a return URL in the end user’s payload will result in the end user being redirected to the Client’s specified Logout URL. </p>
 
 <p>Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.</p>
-</br>
+
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
@@ -100,7 +96,6 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
     <label class="label-expand" for="section4">Session Keep-Alive Configuration</label>
     <div class="content-expand">
 <p>To keep an end user’s initiating Client-side session alive, a URL is embedded into all the Fiserv hosted pages that links to a blank 1x1 pixel image hosted on the Client’s web server. Fiserv will retrieve this image from the Client’s web server at periodic intervals via Fiserv hosted page code, or whenever a new Fiserv hosted page is displayed or refreshed. This essentially tricks the Client’s web server into thinking that the request came from the end user’s originating Client-side session. </p>
-</br>
 <p>For example, assume an end user logs into a Client web server (thus creating a new Client-side session) and that the end user is then presented with a browser page composed of images loaded from that same web server’s image deployment directory called client_app/images. Assume also that this directory contains a blank 1x1 pixel called keepalive.gif. The end user now clicks on a link that allows him/her to access the service. When the Fiserv web server serves up the requested page, that page contains a link to the keepalive.gif image contained in the Client’s client_app/images directory: </p>
 
 ``` 
@@ -108,17 +103,14 @@ https://www.someclient.com/client_app/images/keepalive.gif
 
 ```
 
-</br>
 <p>Thus, to the Client’s web server it looks as if the image is being retrieved via the end user’s initiating session and, therefore, will flag the end user’s session as still being active. </p>
-</br>
 <p>If a gif is not available on the Client web server responsible for creating the end user’s original session (i.e., a different server is used to manage images), a user’s session can still be kept alive via a URL that returns an empty page as long as the URL points to a resource hosted on that same web server. An example of such a URL might be: </p>
 
 ```
-https://www.someclient.com/client_app/jsp/keepAlive.jsp` 
+https://www.someclient.com/client_app/jsp/keepAlive.jsp 
 
 ```
 
-</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
@@ -145,7 +137,6 @@ The navigation in the frame links only to screens within TransferNow. In this im
 
 At the point of exit from TransferNow (which is running within a frame), the frame will disappear, and the full screen FI web page will be visible. 
 
-&nbsp;
 
 <center>
 
@@ -154,8 +145,6 @@ At the point of exit from TransferNow (which is running within a frame), the fra
 
 </center> 
 
-</br>
-
 **To Know more visit the below Configuration:**
 
 <div>
@@ -163,10 +152,10 @@ At the point of exit from TransferNow (which is running within a frame), the fra
     <label class="label-expand" for="section5">Page Footer Configuration</label>
     <div class="content-expand">
 <p>Most Fiserv-hosted pages display a footer containing Client-defined URLs that link to the Client’s Terms of Service, Security Policy, and Privacy Policy. Each URL, when selected, will result in the content being displayed in a separate pop-up window. 
-</br></br>
+</p>
+<p>
 Also, content that each URL points to is hosted by the Client and not Fiserv, and if the Client does not define a URL for one of the footer links, then that link will not be displayed on any applicable Fiserv hosted page. 
 </p>
-</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
@@ -175,13 +164,16 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
     <label class="label-expand" for="section6">Help Link Configuration</label>
     <div class="content-expand">
 Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.
+
 </br>
 <center>
 
 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
 
 </center> 
+
 </br>
+
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> 
@@ -199,10 +191,8 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 
 </center> 
 
-<p>The Client specified return URL is passed in as part of each end user’s payload post; Failure to pass a return URL in the end user’s payload will result in the end user being redirected to the Client’s specified Logout URL. </p>
-
+<p>The Client specified return URL is passed in as part of each end user’s payload post; Failure to pass a return URL in the end user’s payload will result in the end user being redirected to the Client’s specified Logout URL.</p>
 <p>Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.</p>
-</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
@@ -211,7 +201,6 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
     <label class="label-expand" for="section8">Session Keep-Alive Configuration</label>
     <div class="content-expand">
 <p>To keep an end user’s initiating Client-side session alive, a URL is embedded into all the Fiserv hosted pages that links to a blank 1x1 pixel image hosted on the Client’s web server. Fiserv will retrieve this image from the Client’s web server at periodic intervals via Fiserv hosted page code, or whenever a new Fiserv hosted page is displayed or refreshed. This essentially tricks the Client’s web server into thinking that the request came from the end user’s originating Client-side session. </p>
-</br>
 <p>For example, assume an end user logs into a Client web server (thus creating a new Client-side session) and that the end user is then presented with a browser page composed of images loaded from that same web server’s image deployment directory called client_app/images. Assume also that this directory contains a blank 1x1 pixel called keepalive.gif. The end user now clicks on a link that allows him/her to access the service. When the Fiserv web server serves up the requested page, that page contains a link to the keepalive.gif image contained in the Client’s client_app/images directory: </p>
 
 ```
@@ -219,16 +208,14 @@ https://www.someclient.com/client_app/images/keepalive.gif
 
 ```
 
-</br>
+
 <p>Thus, to the Client’s web server it looks as if the image is being retrieved via the end user’s initiating session and, therefore, will flag the end user’s session as still being active. </p>
-</br>
 <p>If a gif is not available on the Client web server responsible for creating the end user’s original session (i.e., a different server is used to manage images), a user’s session can still be kept alive via a URL that returns an empty page as long as the URL points to a resource hosted on that same web server. An example of such a URL might be: </p>
 
 ```
 https://www.someclient.com/client_app/jsp/keepAlive.jsp
 
 ```
-</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
@@ -248,9 +235,7 @@ https://www.someclient.com/client_app/jsp/keepAlive.jsp
 ## Pop-up 
 
 A Client-initiated end user session will result in all respective Fiserv-hosted web pages rendering within a second single browser pop-up window. when the user clicks on the Fiserv ePayments-provided HTML URL, a new window with the TransferNow application appears. Users work within the new window. 
-
-&nbsp;
-
+</br>
 <center>
 
 ![Image](../../../assets/images/Popup.png) <br />
@@ -285,10 +270,10 @@ toolbar=no, menubar=no'); return false;">Click to open</a>
     <label class="label-expand" for="section9">Page Footer Configuration</label>
     <div class="content-expand">
 <p>Most Fiserv-hosted pages display a footer containing Client-defined URLs that link to the Client’s Terms of Service, Security Policy, and Privacy Policy. Each URL, when selected, will result in the content being displayed in a separate pop-up window. 
-</br></br>
+</p>
+<p>
 Also, content that each URL points to is hosted by the Client and not Fiserv, and if the Client does not define a URL for one of the footer links, then that link will not be displayed on any applicable Fiserv hosted page. 
 </p>
-</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
@@ -297,6 +282,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
     <label class="label-expand" for="section10">Help Link Configuration</label>
     <div class="content-expand">
 Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.
+
 </br>
 <center>
 
@@ -324,7 +310,6 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 <p>The Client specified return URL is passed in as part of each end user’s payload post; Failure to pass a return URL in the end user’s payload will result in the end user being redirected to the Client’s specified Logout URL. </p>
 
 <p>Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.</p>
-</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
@@ -333,7 +318,6 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
     <label class="label-expand" for="section12">Session Keep-Alive Configuration</label>
     <div class="content-expand">
 <p>To keep an end user’s initiating Client-side session alive, a URL is embedded into all the Fiserv hosted pages that links to a blank 1x1 pixel image hosted on the Client’s web server. Fiserv will retrieve this image from the Client’s web server at periodic intervals via Fiserv hosted page code, or whenever a new Fiserv hosted page is displayed or refreshed. This essentially tricks the Client’s web server into thinking that the request came from the end user’s originating Client-side session. </p>
-</br>
 <p>For example, assume an end user logs into a Client web server (thus creating a new Client-side session) and that the end user is then presented with a browser page composed of images loaded from that same web server’s image deployment directory called client_app/images. Assume also that this directory contains a blank 1x1 pixel called keepalive.gif. The end user now clicks on a link that allows him/her to access the service. When the Fiserv web server serves up the requested page, that page contains a link to the keepalive.gif image contained in the Client’s client_app/images directory: </p>
 
 ```
@@ -341,17 +325,14 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 
 ```
 
-</br>
 <p>Thus, to the Client’s web server it looks as if the image is being retrieved via the end user’s initiating session and, therefore, will flag the end user’s session as still being active. </p>
-</br>
 <p>If a gif is not available on the Client web server responsible for creating the end user’s original session (i.e., a different server is used to manage images), a user’s session can still be kept alive via a URL that returns an empty page as long as the URL points to a resource hosted on that same web server. An example of such a URL might be: </p>
 
 ```
-https://www.someclient.com/client_app/jsp/keepAlive.jsp` 
+https://www.someclient.com/client_app/jsp/keepAlive.jsp 
 
 ```
 
-</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> </br>
