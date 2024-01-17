@@ -67,6 +67,9 @@ TransferNow enables a client to enforce several restrictions on added accounts. 
         background-color: white;
         border: 2px solid #f60;
     }
+    .card-body {
+        margin: 20px;
+    }
     .card-body ul {
         list-style: none;
         padding-left: 20px;
