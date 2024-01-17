@@ -236,7 +236,7 @@
             <tbody>
                 <tr>
                     <td rowspan="18">CSR_ID </br>Client will pass to Fiserv? _____</td>
-                    <td>TN Call Center specific element</br>Specifies the user ID of the client representative who is signing in to the Transfer Now Call Center. This is the user ID that the Client would have assigned when they created the Compass User </br>Usage Restrictions</br> Is an optional payload parameter Associated value must be a valid alphanumeric with a maximum length of 20</td>
+                    <td>TN Call Center specific element</br>Specifies the user ID of the client representative who is signing in to the TransferNow Call Center. This is the user ID that the Client would have assigned when they created the Compass User </br>Usage Restrictions</br> Is an optional payload parameter Associated value must be a valid alphanumeric with a maximum length of 20</td>
                 </tr>
                 <tr>
                     <td>Error Flow </br>Fiserv does not return any payload error code nor display an application error page if the parameter is not present in the payload If the parameter is not present or the associate value is blank and the application code is TNCC, Fiserv will display error SS122 If the parameter is present, but the csr_id passed cannot be located within Fiserv’s Access Management, Fiserv will display error SS123 If the parameter is present, the csr_id was located, but the CSR’s role does not have adequate privileges within the Call Center, Fiserv will display SS124
@@ -278,7 +278,7 @@
             <tbody>
                 <tr>
                     <td rowspan="18">LANDING_PAGE</td>
-                    <td>Transfer Now</br>CEAddAccounts – Navigate to Manage Accounts Page.</br>CETranferAccounts – Navigate to Make Tranfers Page.</br>CEActivity – Navigate to Activity page.</br>CELogOut – Navigate to Logout page.</br>Following values are deprecated: TH, PT, CESeeSummary, CETransferHistory, CEFutureTransfers</td>
+                    <td>TransferNow</br>CEAddAccounts – Navigate to Manage Accounts Page.</br>CETranferAccounts – Navigate to Make Tranfers Page.</br>CEActivity – Navigate to Activity page.</br>CELogOut – Navigate to Logout page.</br>Following values are deprecated: TH, PT, CESeeSummary, CETransferHistory, CEFutureTransfers</td>
                 </tr>
             </tbody>
         </table>
