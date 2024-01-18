@@ -77,12 +77,13 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
     <div class="content-expand">
 <p>With Full Control or Framed implementations, an end user session timeout on the Fiserv side will result in the browser redirecting the end user to a Client specified URL initially passed to Fiserv by the Client as part of an end user payload post. For the Pop-Up implementation, Fiserv first informs the end user, via a dialog box (see the figure that follows), that their session has expired on the Fiserv side and after the end user clicks OK, the dialog box closes and the pop-up window would then redirect to the Client specified URL. </p>
 
-
+<br/>
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png"></br>
+<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png">
 
 </center> 
+<br/>
 
 <p>The Client specified return URL is passed in as part of each end user’s payload post; Failure to pass a return URL in the end user’s payload will result in the end user being redirected to the Client’s specified Logout URL. </p>
 
@@ -165,14 +166,14 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
     <div class="content-expand">
 Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.
 
-</br>
+<br/>
 <center>
 
 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
 
 </center> 
 
-</br>
+<br/>
 
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
@@ -184,12 +185,13 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
     <div class="content-expand">
 <p>With Full Control or Framed implementations, an end user session timeout on the Fiserv side will result in the browser redirecting the end user to a Client specified URL initially passed to Fiserv by the Client as part of an end user payload post. For the Pop-Up implementation, Fiserv first informs the end user, via a dialog box (see the figure that follows), that their session has expired on the Fiserv side and after the end user clicks OK, the dialog box closes and the pop-up window would then redirect to the Client specified URL. </p>
 
-
+<br/>
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png"></br>
+<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png">
 
 </center> 
+<br/>
 
 <p>The Client specified return URL is passed in as part of each end user’s payload post; Failure to pass a return URL in the end user’s payload will result in the end user being redirected to the Client’s specified Logout URL.</p>
 <p>Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.</p>
@@ -283,13 +285,13 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
     <div class="content-expand">
 Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.
 
-</br>
+<br/>
 <center>
 
 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
 
 </center> 
-</br>
+<br/>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> 
@@ -300,13 +302,13 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
     <div class="content-expand">
 <p>With Full Control or Framed implementations, an end user session timeout on the Fiserv side will result in the browser redirecting the end user to a Client specified URL initially passed to Fiserv by the Client as part of an end user payload post. For the Pop-Up implementation, Fiserv first informs the end user, via a dialog box (see the figure that follows), that their session has expired on the Fiserv side and after the end user clicks OK, the dialog box closes and the pop-up window would then redirect to the Client specified URL. </p>
 
-
+<br/>
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png"></br>
+<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png">
 
 </center> 
-
+<br/>
 <p>The Client specified return URL is passed in as part of each end user’s payload post; Failure to pass a return URL in the end user’s payload will result in the end user being redirected to the Client’s specified Logout URL. </p>
 
 <p>Finally, Fiserv suggests that the Client configure a session timeout expiration period to be less than that used as the session timeout period on the client’s side.</p>

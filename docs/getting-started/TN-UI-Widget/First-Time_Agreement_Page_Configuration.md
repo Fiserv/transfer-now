@@ -9,6 +9,7 @@ Each new end user accessing the service for the very first time will be presente
 
 
 </center>
+<br/>
 
 The end user must agree to the terms and conditions detailed in the text of the agreement before being allowed access to the service. The language used in the agreement is always defined by the Client and the actual agreement text page itself can be hosted either on the Fiserv side or on the Client side.  
 
