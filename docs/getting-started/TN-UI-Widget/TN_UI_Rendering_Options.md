@@ -164,16 +164,15 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
  <input type="checkbox" class="collapsible-checkbox" id="section6">
     <label class="label-expand" for="section6">Help Link Configuration</label>
     <div class="content-expand">
-Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.
+<p>Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.</p>
 
-<br/>
 <center>
 
 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
 
 </center> 
 
-<br/>
+</br>
 
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
@@ -283,15 +282,14 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
  <input type="checkbox" class="collapsible-checkbox" id="section10">
     <label class="label-expand" for="section10">Help Link Configuration</label>
     <div class="content-expand">
-Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.
-
-<br/>
+<p>
+Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.</p>
 <center>
 
 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
 
 </center> 
-<br/>
+</br>
 <p class = "block-quote"> &#128221<i><strong>Note:</strong> The Client preference for this option is to be indicated in the DGF.</i></p>
 </div>
 </div> 
