@@ -19,7 +19,6 @@ The following figure shows the SSL steps taken for certificate authentication; (
 
  
  <center>
- <br/>
   
 ![image](../../../assets/images/SSL-Authentication.png) <br/>
 
