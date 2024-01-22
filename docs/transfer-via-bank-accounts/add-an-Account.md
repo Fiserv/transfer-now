@@ -41,7 +41,7 @@ A TransferNow user may add a bank/credit union account or brokerage account as a
         </li>
         <li>
             Verify your external bank account screen appears. See 
-            <a href="https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method.md&branch=develop">
+            <a href="/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method.md&branch=develop">
             VerifyNow - Account Verification Methods 
             </a> 
             for more information on the account verification. 

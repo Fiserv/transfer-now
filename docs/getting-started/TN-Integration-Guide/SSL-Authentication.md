@@ -78,7 +78,7 @@ An FI passes users to Fiserv via Secure Sockets Layer (SSL) Secure Messaging. Fo
 
 </center>
  
-Whenever Fiserv receives a user via SSL Secure Messaging, the user’s profile is registered in the Fiserv ePayments database (See [AllData® Aggregation](https://qa-developerstudio.fiserv.com/product/AllDataAggregation?branch=develop) / EWS,[Instant (Risk Database) Verification](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method/instant-verification.md&branch=develop)). The profile establishes a unique identifier called <>.
+Whenever Fiserv receives a user via SSL Secure Messaging, the user’s profile is registered in the Fiserv ePayments database (See [AllData® Aggregation](/product/AllDataAggregation?branch=develop) / EWS,[Instant (Risk Database) Verification](/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method/instant-verification.md&branch=develop)). The profile establishes a unique identifier called <>.
 
 
 <!-- theme: info -->
@@ -87,7 +87,7 @@ Whenever Fiserv receives a user via SSL Secure Messaging, the user’s profile i
 
 
 
-When a user is passed to Fiserv with an identifier that already exists in the Fiserv ePayments database, Fiserv treats them as a returning user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/user-workflow.md&branch=develop#tab-returning_user)). If the identifier does not exist, then Fiserv treats them as a new user (See [User WorkFlow](https://qa-developerstudio.fiserv.com/product/VerifyNow/docs/?path=docs/user-workflow.md&branch=develop)) and registers the profile in the Fiserv ePayments database.
+When a user is passed to Fiserv with an identifier that already exists in the Fiserv ePayments database, Fiserv treats them as a returning user (See [User WorkFlow](/product/VerifyNow/docs/?path=docs/user-workflow.md&branch=develop#tab-returning_user)). If the identifier does not exist, then Fiserv treats them as a new user (See [User WorkFlow](/product/VerifyNow/docs/?path=docs/user-workflow.md&branch=develop)) and registers the profile in the Fiserv ePayments database.
 
  
 
