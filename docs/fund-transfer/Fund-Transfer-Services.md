@@ -80,12 +80,12 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>If a user sets up a Scheduled Recurring Transfer with a transfer date that falls on a weekend or a holiday, they are informed that:</p> 
         <p>“A send date of one or more transfers may fall on a weekend, bank holiday or at the end of a month with less than 31 days. We will reschedule these transfers for the business day”. 
         </p>
-        <p class="block-quote"> &#128221 <i> <strong>Note:</strong> The previous/next day transfer will be adjusted based on the Financial Institutions choice to prepone or postpone transfers.</i></p>
+        <p class="block-quote"> &#128221 <i> <strong>Note:</strong> The previous/next day transfer will be adjusted based on the Financial Institutions choice to schedule transfer.</i></p>
         </br>
         <p>If a user attempts to schedule a one-time transfer on a weekend or holiday, the user is informed as follows: </p>
         <p><strong>Weekend transfer:</strong> As the date selected is a weekend, this transfer will start to be processed on the next/prior business day.</p>
         <p><strong>Holiday transfer:</strong> As the date selected is a holiday, this transfer will start to be processed on the next/prior business day.</p>
-        <p class="block-quote"> &#128221 <i> <strong>Note:</strong> The previous/next day transfer will be adjusted based on the Financial Institutions choice to prepone or postpone transfers.</i></p>
+        <p class="block-quote"> &#128221 <i> <strong>Note:</strong> The previous/next day transfer will be adjusted based on the Financial Institutions choice to schedule transfer.</i></p>
     </div>
     </div>
     </br>
@@ -142,8 +142,8 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>For an outbound one-time immediate transfer, TransferNow performs a check to determine if the amount of the transfer is greater than the host from-account’s available balance. The host account balance is passed from the client to Fiserv in the Single Sign-On.</p>
         <p>TransferNow can perform either a hard fail or soft fail of the transfer if the available balance is less than the transfer amount.</p>
         <p class="block-quote"> &#128221 <i> <strong>Note:</strong> Clients specify whether they want hard fail or soft fail in the Data Gathering Form (DGF).</i></p>
-        <p><strong>Hard Fail:</strong> As the date selected is a weekend, this transfer will start to be processed on the next/prior business day.</p>
-        <p><strong>Soft Fail:</strong> As the date selected is a holiday, this transfer will start to be processed on the next/prior business day.</p>
+        <p><strong>Hard Fail:</strong> user is required to modify the transfer amount before they can schedule the transfer if the transfer amount is greater than the available balance.</p>
+        <p><strong>Soft Fail:</strong> user will still be able to schedule the transfer even though the transfer amount is greater than the available balance.</p>
     </div>
     </div>
     </br>
