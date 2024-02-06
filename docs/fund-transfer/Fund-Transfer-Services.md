@@ -30,16 +30,9 @@ TN uses the Automated Clearing House (ACH) network to process electronic transac
 
 A complete money transfer comprises two transactions: a debit transaction to withdraw money from the source account and a credit transaction to deposit money into the destination account. The transfer is complete when both transactions have processed successfully. When an RDFI cannot process a transaction, due to various reasons, the RDFI issues a return to the ODFI.
 
-TN supports two ACH transaction methods:
+TN supports ACH transaction methods:
 
-<div class="card-body">
-    <ul>
-    <li>Good Funds Model (GFM)</li>
-    <li>Next Day Transfers (NDT)</li>
-    </ul>
-</div>
-
-A transaction processed via the GFM has less risk associated with it, because TN waits until the debit transaction completes successfully before initiating the credit transaction. On the other hand, for a NDT transaction, TN initiates both the credit and the debit transaction at the same time.
+A transaction processed via the Good Funds Model (GFM) has less risks when compared to transactions processed via the Next Day Transfers (NDT).
 
 <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ACH1.png"/>
 
@@ -142,8 +135,8 @@ A transaction processed via the GFM has less risk associated with it, because TN
         <p>For an outbound one-time immediate transfer, TransferNow performs a check to determine if the amount of the transfer is greater than the host from-account’s available balance. The host account balance is passed from the client to Fiserv in the Single Sign-On.</p>
         <p>TransferNow can perform either a hard fail or soft fail of the transfer if the available balance is less than the transfer amount.</p>
         <p class="block-quote"> &#128221 <i> <strong>Note:</strong> Clients specify whether they want hard fail or soft fail in the Data Gathering Form (DGF).</i></p>
-        <p><strong>Hard Fail:</strong> user is required to modify the transfer amount before they can schedule the transfer if the transfer amount is greater than the available balance.</p>
-        <p><strong>Soft Fail:</strong> user will still be able to schedule the transfer even though the transfer amount is greater than the available balance.</p>
+        <p><strong>Hard Fail:</strong> TransferNow displays a message to the user informing them that the transfer amount exceeds the available balance. The user is prevented from submitting the transfer until adjusting the transfer amount less than or equal to the available balance.</p>
+        <p><strong>Soft Fail:</strong> TransferNow displays a warning message to the user informing them that the transfer amount exceeds the available balance. The user is permitted to submit the transfer even though the transfer amount is greater than the available balance.</p>
     </div>
     </div>
     </br>
