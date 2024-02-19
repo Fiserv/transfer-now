@@ -37,8 +37,8 @@ In addition to adding user's bank account, TransferNow allows users to add their
                         <div class="slide-content-d">
                         <div class="card-body-f">
                         <ul>
-                        <li>The transfer detail is displayed on the screen to allow the user to review and confirm.</li>
-                        <li>Click the <strong>Confirm</strong> button to complete the transfer.</li>
+                        <li>The user can edit, cancel, and confirm the current transaction activity.</li>
+                        <li>Click the <strong>Confirm</strong> button to complete the transaction.</li>
                         </ul>
                         </div>
                         </div>
