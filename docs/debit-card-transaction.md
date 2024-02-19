@@ -16,7 +16,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                         <div class="slide-content-d">
                         <div class="card-body-f">
                         <ul>
-    <li>User can select the debit card under “From and to” account information from the list of accounts/debit cards shown.</li>
+    <li>User can select the debit card under "From and to" account information from the list of accounts/debit cards shown.</li>
     <li>Enter the amount to be transferred.
     <div class="tooltip-info">
                         <div class="icon-info">i</div>
@@ -49,7 +49,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                     <div class="slide-content">
                         <div class="slide-content-d">
                         <div class="card-body-f">
-                        <ul><li><strong>Transfer confirmation</strong> screen is displayed.</li>
+                        <ul><li><strong>Transfer Confirmed</strong> screen is displayed.</li>
                         </ul>
                         </div>
                         </div>
@@ -60,7 +60,11 @@ In addition to adding user's bank account, TransferNow allows users to add their
                     <div class="slide-content">
                         <div class="slide-content-d">
                         <div class="card-body-f">
-                        <ul><li>All transfers, including debit card transfers are shown on the <strong>Activity</strong> page as shown below.</li>
+                        <ul><li>Click Activity to see the all the transaction activity information.
+                        <div class="tooltip-info">
+                        <div class="icon-info">i</div>
+                        <div class="tooltiptext-info">The user can select New Transfer which in turn navigates to the Create Transfer Page.</div>
+                        </div></li>
                         </ul>
                         </div>
                         </div>
