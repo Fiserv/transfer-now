@@ -22,7 +22,6 @@ TransferNow verifies a user’s ownership of an external debit card using two be
     <li>Click OK to complete the Debit Card Verification.</li>
     </ul>
     </div>
-</div>
 <div class="debit-card-button-container">
 <div class="debit-card-left-button">
 <a href="?path=docs/transfer-debit-card/add-debit-card.md">Back</a>
