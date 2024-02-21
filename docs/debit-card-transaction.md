@@ -49,7 +49,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                     <div class="slide-content">
                         <div class="slide-content-d">
                         <div class="card-body-f">
-                        <ul><li><strong>Transfer Confirmed</strong> screen is displayed.</li>
+                        <ul><li><strong>Transfer Confirmed</strong> screen is displayed</li>
                         </ul>
                         </div>
                         </div>
@@ -60,10 +60,10 @@ In addition to adding user's bank account, TransferNow allows users to add their
                     <div class="slide-content">
                         <div class="slide-content-d">
                         <div class="card-body-f">
-                        <ul><li>Click Activity to see the all the transaction activity information.
+                        <ul><li>Click Activity to see the all the transaction activity information
                         <div class="tooltip-info">
                         <div class="icon-info">i</div>
-                        <div class="tooltiptext-info">The user can select New Transfer which in turn navigates to the Create Transfer Page.</div>
+                        <div class="tooltiptext-info">The user can select New Transfer which in turn navigates to the Create Transfer Page</div>
                         </div></li>
                         </ul>
                         </div>
