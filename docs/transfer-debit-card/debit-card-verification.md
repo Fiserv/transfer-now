@@ -3,16 +3,13 @@
 TransferNow verifies a user’s ownership of an external debit card using two below methods: 
 
 <div class="card-body">
-    <ul>
-    <li>Address Verification and CVV validation</li>
-    <li>Real-time Trial Deposits on the Debit card</li>
-    </ul>
-    </div>
-    <div class="card-body">Follow the user instructions shown in the Verify Debit Card screen
+<ul>
+    <li>Address Verification and CVV validation.</li>
+    <li>Real-time Trial Deposits on the Debit card.</li>
+    <div style="margin-left:-20px" class="card-body">Follow the user instructions shown in the Verify Debit Card screen</div>
     </br>
     <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Debit-card-verify-depo.png">
-     <ul>
-     </br>
+    </br>
     <li>Enter two small deposits and click Verify Now.</li>
     </br>
     <p class="block-quote"> &#128221<i><strong>Note:</strong> Once the debit card is verified, it gets added to the list.</i></p>
