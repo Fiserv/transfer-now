@@ -16,7 +16,6 @@
     <li>Click the <b class="confirm-button">Delete</b> button to delete the selected debit card.</li>
     </br>
     <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Delete-success-msg.png">
-    <li></li>
     </ul>
 </div>
 <div class="debit-card-button-container">
