@@ -2,8 +2,8 @@
 
 <div class="card-body">
     <ul>
-    <li>In the Create Transfer screen, click Add an account or debit card.</li>
-    <li>Add Account or Debit Card screen is displayed.</li>
+    <li>In the Create Transfer screen, click Add an account or debit card</li>
+    <li>Add Account or Debit Card screen is displayed</li>
     <br/>
     <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Add-an-account-debit-link.png">
     <br/>
