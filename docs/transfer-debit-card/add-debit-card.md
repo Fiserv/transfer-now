@@ -10,7 +10,7 @@
     <li>Select Debit Card from the list of options under Account Type.</li>
     </ul>
 </div>
-<img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Add-Acc-Debit-Card.png">
+<img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Debit-card-form.png">
 <div class="card-body">
     <ul>
     <li>Enter the debit card number.</li>
