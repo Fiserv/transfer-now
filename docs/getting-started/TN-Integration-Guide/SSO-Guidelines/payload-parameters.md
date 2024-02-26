@@ -2,8 +2,6 @@
 
 The end user payload that a Client sends to Fiserv is composed of various parameter name/value pairs, transmitted to the Fiserv ePayments Client Integration Server in the form of an https POST (and NOT an https GET).
 
-&nbsp; 
-
 Those payload elements being a required payload parameter must be present in every Client submitted payload. In most cases, the absence of a required payload element or its associated allowed value will result in one of the following behaviors: 
 
 <div class="card-body">
