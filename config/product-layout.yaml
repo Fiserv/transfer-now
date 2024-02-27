@@ -29,7 +29,7 @@
 ################################################################################
 
 header:
-  productionDescription: Enhance your digital payment and transfer offerings, drive revenue and strengthen relationships by enabling the movement of funds to or from own and Known Third Party (KTP) accounts at another financial institution.  The Fiserv ePayments TransferNow product enables a FI to offer secure inter-institution funds transfer services. With TransferNow, customers can transfer money between accounts and debit cards.
+  productionDescription: The optional Instant Transfers feature adds real-time speed to TransferNow. Through use of real-time connectivity offered by the NOWSM Network, Instant Transfers enables consumers to move money instantly between their bank accounts at different financial institutions and between their account at host institution and Debit Card.
   getStarted: docs/getting-started.md
 benefits:
   - title: NOW® Network
