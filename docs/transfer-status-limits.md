@@ -3,6 +3,7 @@
 <div class="card-body">
 <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN GRA_Image for Transfer Status Limits.png">
 </br>
+</br>
 <ul>
 <li><b>Pending</b> - A transfer is Pending from the time the user submits the transfer until the transfer is released to the ACH process.  </li>
 
