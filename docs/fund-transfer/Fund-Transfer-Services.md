@@ -190,7 +190,7 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
 </table>
         <p>Accounts must qualify for Next-Day transfer service. If an account does not qualify for Next-Day, the Next-Day option is not made available to the user.</p>
         <p>Next-Day service is an optional service. If a client chooses not to offer Next-Day, the Next Day does not appear in the user interface.</p>
-        <h4>Qualification Rules for a TransferNow services includes but not limited to the following:</h4>
+        <p>Qualification Rules for a TransferNow services includes but not limited to the following:</p>
         <div class="card-body">
             <ul>
             <li>Good Transaction History with NO negative activity Maintains a minimum account balance for both inbound and outbound transactions</li>
@@ -235,13 +235,12 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
     <label class="label-expand" for="section6">High Limit Transfers</label>
     <div class="content-expand">
             <p>A client can offer high-limit funds transfers beyond the transaction limits that apply to standard service processing.</p>
-            <p>The default qualification rules for high-limit transfers are listed below:</p>
+            <p>Qualification Rules for a TransferNow services includes but not limited to the following:</p>
             <div class="card-body">
             <ul>
-            <li>The user has been a customer in good standing for at least three months.</li>
-            <li>The user has not caused any negative activity or result via Fiserv ePayments software where such negative activity or result includes but is not limited to: Non-Sufficient Funds (NSF); Account Closed; Authorization Revoked by End User Payment Stopped; End User Advises Not Authorized; Account Holder deceased; Beneficiary Deceased; or Account Frozen.</li>
-            <li>For each external account from which a high limit funds transfer is initiated, the user has completed at least one successful inbound funds transfer of at least $1,000 from the external account to a client-hosted account no sooner than sixty (60) days prior to initiating the first inbound high-limit funds transfer.</li>
+            <li>Good Transaction History with NO negative activity Maintains a minimum account balance for both inbound and outbound transactions.</li>
             </ul>
+            <p class="block-quote"> &#128221 <i> <strong>Note:</strong> User transaction limits can be configured using Compass, Global Risk Administration (GRA).</i></p>
         </div>
         <h2>Cancelling and Editing Transfers</h2>
         <p>Users can edit scheduled or recurring transfers in the Activity screen.</p>
