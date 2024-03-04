@@ -29,7 +29,7 @@
 ################################################################################
 
 header:
-  productionDescription: Enhance your digital payment and transfer offerings, drive revenue and strengthen relationships by enabling the movement of funds to or from own and Known Third Party (KTP) accounts at another financial institution.  The Fiserv ePayments TransferNow product enables a FI to offer secure inter-institution funds transfer services. With TransferNow, customers can transfer money between accounts and debit cards.
+  productionDescription: Enhance your digital payment and transfer offerings, drive revenue and strengthen relationships by enabling the movement of funds to or from own (Me2Me) and Known Third Party (KTP) accounts at another financial institution.  The Fiserv ePayments TransferNow product enables a FI to offer secure inter-institution funds transfer services. With TransferNow, customers can transfer money between accounts and debit cards.
   getStarted: docs/getting-started.md
 benefits:
   - title: NOW® Network
