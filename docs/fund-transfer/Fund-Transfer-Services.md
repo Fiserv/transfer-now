@@ -190,17 +190,13 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
 </table>
         <p>Accounts must qualify for Next-Day transfer service. If an account does not qualify for Next-Day, the Next-Day option is not made available to the user.</p>
         <p>Next-Day service is an optional service. If a client chooses not to offer Next-Day, the Next Day does not appear in the user interface.</p>
-        <h2>Qualification Rules for Next-Day Transfers</h2>
+        <h4>Qualification Rules for a TransferNow services includes but not limited to the following:</h4>
         <div class="card-body">
             <ul>
-            <li>The user has been a customer in good standing for at least three months.</li>
-            <li>The user has not caused any negative activity or result via Fiserv ePayments software where such negative activity or result includes but is not limited to: Non-Sufficient Funds (NSF); Account Closed; Authorization Revoked by End User Payment Stopped; End User Advises Not Authorized; Account Holder deceased; Beneficiary Deceased; or Account Frozen.</li>
-            <li>For each external account from which a Next-Day processing funds transfer is initiated, the user has completed at least one (1) successful inbound funds transfer of at least $500 from the external account to a client hosted account no sooner than sixty (60) days prior to initiating the first inbound Next-Day processing funds transfer.</li>
-            <li>For an inbound transaction, the user maintains an available account balance of at least $750 in the client-hosted account receiving the funds transfer.</li>
-            <li>For an outbound transaction, the user maintains an available account balance of at least $750 (excluding the transaction amount) in the client-hosted account.</li>
+            <li>Good Transaction History with NO negative activity Maintains a minimum account balance for both inbound and outbound transactions</li>
             </ul>
         </div>
-        <p class="block-quote"> &#128221 <i> <strong>Note:</strong> If a client chooses not to offer an optional transfer type, it does not appear in the user interface.</i></p>
+        <p class="block-quote"> &#128221 <i> <strong>Note:</strong> User transaction limits can be configured using Compass, Global Risk Administration (GRA).</i></p>
     </div>
     </div>
     </br>
