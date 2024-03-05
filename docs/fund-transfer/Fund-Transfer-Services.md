@@ -193,7 +193,8 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
         <p>Qualification Rules for a TransferNow services includes but not limited to the following:</p>
         <div class="card-body">
             <ul>
-            <li>Good Transaction History with NO negative activity Maintains a minimum account balance for both inbound and outbound transactions</li>
+            <li>Good Transaction History with NO negative activity.</li>
+            <li>Maintains a minimum account balance for both inbound and outbound transactions</li>
             </ul>
         </div>
         <p class="block-quote"> &#128221 <i> <strong>Note:</strong> User transaction limits can be configured using Compass, Global Risk Administration (GRA).</i></p>
@@ -238,7 +239,8 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
             <p>Qualification Rules for a TransferNow services includes but not limited to the following:</p>
             <div class="card-body">
             <ul>
-            <li>Good Transaction History with NO negative activity Maintains a minimum account balance for both inbound and outbound transactions.</li>
+            <li>Good Transaction History with NO negative activity.</li>
+            <li>Maintains a minimum account balance for both inbound and outbound transactions.</li>
             </ul>
             <p class="block-quote"> &#128221 <i> <strong>Note:</strong> User transaction limits can be configured using Compass, Global Risk Administration (GRA).</i></p>
         </div>
