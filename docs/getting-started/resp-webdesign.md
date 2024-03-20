@@ -6,7 +6,7 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 
 <center>
 
-![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/responsiveUIScreens.jpg)
+![image](../../assets/images/responsiveUIScreens.jpg)
 
 </center>
 
@@ -20,7 +20,7 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 
 <center>
 
-![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/320MobileViewpng.png)</br>320*479 Pixel Breakpoint for Mobile Phones</br>
+![image](../../assets/images/320MobileViewpng.png)</br>320*479 Pixel Breakpoint for Mobile Phones</br>
 
 </center>
 
@@ -28,7 +28,7 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 
 <center>
 
-![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/480MobileView.png) </br>480*767 Pixel Breakpoint For Plus-Sized Mobile Phones</br>
+![image](../../assets/images/480MobileView.png) </br>480*767 Pixel Breakpoint For Plus-Sized Mobile Phones</br>
 
 </center>
 
@@ -36,7 +36,7 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
 
 <center>
 
-![image](https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/desktopview.png)    </br>700 Plus Pixel Breakpoint for Larger Screens</br>
+![image](../../assets/images/desktopview.png)    </br>700 Plus Pixel Breakpoint for Larger Screens</br>
 
 </center>
 
