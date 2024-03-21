@@ -1,5 +1,5 @@
 ---
-tags: [TN UI Widget, Home ID, Automated Clearing House, Accounts, Debit Cards, Money Transfer, Validation, Limits]
+tags: [ Home ID, Automated Clearing House, Accounts, Debit Cards, Money Transfer, Validation, Limits]
 ---
 
  
@@ -8,13 +8,11 @@ tags: [TN UI Widget, Home ID, Automated Clearing House, Accounts, Debit Cards, M
 
 ### Introduction
 
-The purpose of this document is to advise Fiserv partners that plan to use the TransferNow widget for easy money transfer between accounts. 
+The purpose of this document is to advise Fiserv partners that plan to use the TransferNow for easy money transfer between accounts. 
 
 ### Overview
 
-Before utilizing TransferNow UI widget, you must follow the steps to get an access to the Developer Studio. 
-
-You will be assigned a unique partner ID and a home ID (or multiple home IDs, depending on your needs). You may provision multiple customers (users) under a home ID. A user may have more than one Financial Institution (FI), or any other accounts and connection types offered by AllData / Early Warning System (EWS) under their profile. See [AllData® Aggregation](/product/AllDataAggregation?branch=develop) for more information.  
+To use the TransferNow services, the user will be assigned a unique partner ID and a home ID (or multiple home IDs, depending on your needs). You may provision multiple customers (users) under a home ID. A user may have more than one Financial Institution (FI), or any other accounts and connection types offered by AllData / Early Warning System (EWS) under their profile. See [AllData® Aggregation](/product/AllDataAggregation?branch=develop) for more information.  
 
 To know more about EWS, see [Instant (Risk Database) Verification](/product/VerifyNow/docs/?path=docs/verifynow-account-verification-method/instant-verification.md&branch=develop).
  
@@ -32,7 +30,7 @@ To create an account in Developer Studio, you will need the following:
 </div>
 
 
-**Step 1: Sign up for Developer Studio**
+**Sign up for Developer Studio**
 
 Request and create a developer account in the Developer Studio. 
 
@@ -40,13 +38,9 @@ After registration, the developer will have an instant access to the shared sand
 
  
 
-**Step 2: Using TransferNow UI Widget**
-
-To use and explore TransferNow UI Widget, navigate to [TransferNow UI Widget](?path=docs/getting-started/TN-UI-Widget/TN_Ui_Widget.md) and use the default (Shared) Home ID or create a dedicated sandbox Home ID. 
-
 ### TransferNow and Its Use Cases 
 
-TransferNow application enables a FI to offer secure inter-institution funds transfer services by automating the authentication of external accounts and debit cards, provides a comprehensive risk management system, and moves fund using the Automated Clearing House (ACH), and other payment networks. Common use cases include: 
+TransferNow application enables a FI to offer secure inter-institution funds transfer services by automating the authentication of external accounts and debit cards, provides a comprehensive risk management system, and moves fund using the Automated Clearing House (ACH), and other payment networks. Common use cases include:  
 
 
 
