@@ -4,7 +4,7 @@ tags: [ Home ID, Automated Clearing House, Accounts, Debit Cards, Money Transfer
 
  
 
-## How to Sign-In to Developer Studio Portal to Access TransferNow Widget 
+## How to Sign-In to Developer Studio Portal
 
 ### Introduction
 
@@ -34,13 +34,13 @@ To create an account in Developer Studio, you will need the following:
 
 Request and create a developer account in the Developer Studio. 
 
-After registration, the developer will have an instant access to the shared sandbox Home ID and TransferNow UI Widget. An assigned sandbox Home ID can be requested for dedicated testing purposes. 
+After registration, the developer will have an instant access to the shared sandbox Home. An assigned sandbox Home ID can be requested for dedicated testing purposes. 
 
  
 
 ### TransferNow and Its Use Cases 
 
-TransferNow application enables a FI to offer secure inter-institution funds transfer services by automating the authentication of external accounts and debit cards, provides a comprehensive risk management system, and moves fund using the Automated Clearing House (ACH), and other payment networks. Common use cases include:  
+TransferNow application enables a FI to offer secure inter-institution funds transfer services by automating the authentication of external accounts and debit cards, provides a comprehensive risk management system, and moves fund using the Automated Clearing House (ACH), and other payment networks. Common use cases include: 
 
 
 
