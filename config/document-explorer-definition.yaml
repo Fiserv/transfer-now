@@ -43,7 +43,7 @@
     sections:
     - title: Transfer via Bank Accounts
       link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
-    - title: Transfer Via Debit Cards
+    - title: Transfer via Debit Cards
       link: docs/debit-card-transaction.md       
 - sections:
   - title: Transfer Frequencies/Duration
