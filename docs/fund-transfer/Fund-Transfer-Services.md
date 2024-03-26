@@ -269,9 +269,9 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
 
 ### See Also
 
-[Transfer via Bank Accounts](/product/VerifyNow/docs/?path=docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md&branch=develop)      
-[Transfer Via Debit Cards](/product/VerifyNow/docs/?path=docs/debit-card-transaction.md&branch=develop)     
-
+[Transfer via Bank Accounts](?path=docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md&branch=develop)     
+[Transfer via Debit Cards](?path=docs/debit-card-transaction.md&branch=develop)     
+[Transfer Frequencies/Duration](?path=docs/transfer-durations.md&branch=develop)
 
 <style>
 
