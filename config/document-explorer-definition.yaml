@@ -44,10 +44,9 @@
     - title: Transfer via Bank Accounts
       link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
     - title: Transfer via Debit Cards
-      link: docs/debit-card-transaction.md       
-- sections:
-  - title: Transfer Frequencies/Duration
-    link: docs/transfer-durations.md
+      link: docs/debit-card-transaction.md
+    - title: Transfer Frequencies/Duration
+      link: docs/transfer-durations.md
 - sections:
   - title: Transfer Status/Limits
     link: docs/transfer-status-limits.md
