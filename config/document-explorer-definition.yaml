@@ -31,8 +31,27 @@
 - sections:
   - title: Getting Started
     link: docs/getting-started.md
+    sections:
+    - title: Responsive Web Design
+      link: docs/getting-started/resp-view-transfernow.md
+- sections: 
+  - title: TN Integration Guide
+    link: docs/getting-started/TN-Integration-Guide/transfernow-integration-guide.md
+- sections:
+  - title: Fund Transfer Services
+    link: docs/fund-transfer/Fund-Transfer-Services.md
+    sections:
+    - title: Transfer via Bank Accounts
+      link: docs/transfer-via-bank-accounts/transfer-via-bank-accounts.md
+    - title: Transfer via Debit Cards
+      link: docs/debit-card-transaction.md
+    - title: Transfer Frequencies/Duration
+      link: docs/transfer-durations.md
+- sections:
+  - title: Transfer Status/Limits
+    link: docs/transfer-status-limits.md
 - sections:
   - title: Release notes
     sections:
-    - title: March 2022
+    - title: March 2024
       link: docs/release-notes/2022/march.md
