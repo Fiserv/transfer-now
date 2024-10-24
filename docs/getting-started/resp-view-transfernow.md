@@ -2,7 +2,7 @@
 
 Responsive Web Design detects and adapts to the screen size of the user’s device, presenting a display format that best matches the device’s screen size. This is achieved in part through breakpoints (or breakpoint ranges)-sizes or size ranges, measured in pixels, that are specified as the points at which the display changes, depending on and adapting to the size of the device’s screen.
 <div>
-<img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/responsive-view-transfernow.png"
+<img class="image-center" src="/assets/images/responsive-view-transfernow.png"
                                 alt="mobile view">
 <p class="block-quote-resp"> &#128221 <i> <strong>Note:</strong> There are differences between the mobile-focused and desktop user interfaces. Most of the screenshot samples in this document are desktop-focused, unless otherwise specified. </i></p>                                
 </div>
@@ -18,13 +18,13 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
                         <div class="slide-content-p">
                         <div class="card-body">
                          <img style="width: 30%;
-    float: left;" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/mobile-view-transfernow-img.png"
+    float: left;" src="/assets/images/mobile-view-transfernow-img.png"
                                 alt="mobile view">
                         <ul><li>320*479 Pixel Breakpoint for Mobile Phones</li>
                         </ul>
                         </div>
                         </div>
-                        <img style="width:30%" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/mobile-view-resp.png"
+                        <img style="width:30%" src="/assets/images/mobile-view-resp.png"
                                 alt="mobile view">
                     </div>
                 </div>
@@ -33,13 +33,13 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
                         <div class="slide-content-p">
                         <div class="card-body">
                         <img style="width: 30%;
-    float: left;" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/mobile-view-transfernow-img.png"
+    float: left;" src="/assets/images/mobile-view-transfernow-img.png"
                                 alt="mobile view">
                         <ul><li>480*767 Pixel Breakpoint For Plus-Sized Mobile Phones</li>
                         </ul>
                         </div>
                         </div>
-                        <img style="width:33%" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/tab-view.png" alt="tab view">
+                        <img style="width:33%" src="/assets/images/tab-view.png" alt="tab view">
                     </div>
                 </div>
                 <div class="slide slide_3">
@@ -47,13 +47,13 @@ Responsive Web Design detects and adapts to the screen size of the user’s devi
                         <div class="slide-content-p">
                         <div class="card-body">
                         <img style="width: 50%;
-    float: left;" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/mobile-view-transfernow-img.png"
+    float: left;" src="/assets/images/mobile-view-transfernow-img.png"
                                 alt="mobile view">
                         <ul><li>700 Plus Pixel Breakpoint for Larger Screens</li>
                         </ul>
                         </div>
                         </div>
-                        <img style="width: 50%;" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/desktop-view.png"
+                        <img style="width: 50%;" src="/assets/images/desktop-view.png"
                                 alt="desktop view">
                     </div>
                 </div>
