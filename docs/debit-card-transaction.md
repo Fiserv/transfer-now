@@ -29,7 +29,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
     </ul>
                         </div>
                         </div>
-                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile1.png" alt="initial-page">
+                        <img class="slide-content-pic" src="/assets/images/create-transfer-mobile1.png" alt="initial-page">
                     </div>
                 </div>
                 <div class="slide slide_2">
@@ -42,7 +42,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Review Transfer.png" alt="initial-page">
+                        <img class="slide-content-pic" src="/assets/images/Review Transfer.png" alt="initial-page">
                     </div>
                 </div>
                 <div class="slide slide_3">
@@ -53,7 +53,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/confirmation.png" alt="initial-page">
+                        <img class="slide-content-pic" src="/assets/images/confirmation.png" alt="initial-page">
                     </div>
                 </div>
                 <div class="slide slide_4">
@@ -68,7 +68,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                         </ul>
                         </div>
                         </div>
-                        <img class="slide-content-pic" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/activity-transfernow.png" alt="initial-page">
+                        <img class="slide-content-pic" src="/assets/images/activity-transfernow.png" alt="initial-page">
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                 <div class="card-debit">
                 <div class="content-debit">
                     <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/add-debit.png" alt="add-debit">
+                        <img src="/assets/images/add-debit.png" alt="add-debit">
                     </div>
                     <div class="details">
                         <div class="name">Add Debit Cards</div>
@@ -111,7 +111,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                 <div class="card-debit">
                     <div class="content-debit">
                         <div class="img-debit">
-                            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/verify.png">
+                            <img src="/assets/images/verify.png">
                         </div>
                         <div class="details">
                             <div class="name">Debit Card Verification</div>
@@ -124,7 +124,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                     <div class="card-debit">
                         <div class="content-debit">
                             <div class="img-debit">
-                                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Delete-debit.png">
+                                <img src="/assets/images/Delete-debit.png">
                             </div>
                             <div class="details">
                                 <div class="name">Delete Debit Cards</div>
@@ -139,7 +139,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                 <div class="card-debit">
                 <div class="content-debit">
                     <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/edit-debit.png">
+                        <img src="/assets/images/edit-debit.png">
                     </div>
                     <div class="details">
                         <div class="name">Edit Debit Cards</div>
