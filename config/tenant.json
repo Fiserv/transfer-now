@@ -22,7 +22,7 @@
     "docsCount": "/v2/docs/count/TransferNow",
     "sandbox": "/v1/sandboxrun/TransferNow",
     "accessConfig": "/v1/fileAccess/TransferNow",
-    "assets": "/v1/assets/TransferNow",   
+    "assets": "/v1/assets/TransferNow",
     "feature":[
       {
         "name": "sandBox",
