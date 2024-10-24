@@ -5,7 +5,7 @@
           <p>TransferNow provides the user with access to 23,000 banks, credit unions, and brokerages for which accounts can be added. The user searches for an institution and uses the appropriate data collection screens based on the services available for the selected institution.</p>
           </div>
           <div class="image-otp">
-          <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-main-page.png">
+          <img src="/assets/images/transfer-main-page.png">
           </div>
 </div>
 <div class="content-body-steps">
@@ -20,7 +20,7 @@
                 <div class="card-debit">
                     <div class="content-debit">
                         <div class="img-debit">
-                            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-trasfer-funds-account.png"
+                            <img src="/assets/images/transfer-via-bank-trasfer-funds-account.png"
                                 alt="add-debit">
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                 <div class="content-debit">
                     <div class="img-debit">
                         <img
-                            src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-from-account.png">
+                            src="/assets/images/transfer-via-bank-from-account.png">
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                 <div class="content-debit">
                     <div class="img-debit">
                         <img
-                            src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-to-account.png">
+                            src="/assets/images/transfer-via-bank-to-account.png">
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                     <div class="content-debit">
                         <div class="img-debit">
                             <img
-                                src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-account-frequency.png">
+                                src="/assets/images/transfer-via-bank-account-frequency.png">
                         </div>
                     </div>
                 </div>

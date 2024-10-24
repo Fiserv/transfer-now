@@ -8,7 +8,7 @@
                 <div class="card-debit-list">
                 <div class="content-debit-list">
                 <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl-auth-transfernow.png" alt="add-debit">
+                        <img src="/assets/images/ssl-auth-transfernow.png" alt="add-debit">
                     </div>
                     <div class="ssl-auth-main-page">
                     <div class="details-list">
@@ -23,7 +23,7 @@
                 <div class="card-debit-list">
                     <div class="content-debit-list">
                     <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl_auth.png" alt="add-debit">
+                        <img src="/assets/images/ssl_auth.png" alt="add-debit">
                     </div>
                     <div class="sso-payload-content">
                         <div class="details-list">
@@ -38,7 +38,7 @@
                     <div class="card-debit-list">
                         <div class="content-debit-list">
                         <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ssl-mobile-transfernow.png" alt="add-debit">
+                        <img src="/assets/images/ssl-mobile-transfernow.png" alt="add-debit">
                     </div>
                     <div class="ssl-auth-main-page">
                             <div class="details-list">
@@ -55,7 +55,7 @@
                 <div class="card-debit-list">
                 <div class="content-debit-list">
                 <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/brokerage-TN-main.png" alt="add-debit">
+                        <img src="/assets/images/brokerage-TN-main.png" alt="add-debit">
                     </div>
                     <div class="details-list">
                         <div class="name-list">Add Brokerage Accounts</div>
@@ -68,7 +68,7 @@
                 <div class="card-debit-list">
                     <div class="content-debit-list">
                     <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/secured-TN-main.png" alt="add-debit">
+                        <img src="/assets/images/secured-TN-main.png" alt="add-debit">
                     </div>
                     <div class="details-list">
                         <div class="name-list">
