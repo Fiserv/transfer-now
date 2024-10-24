@@ -3,7 +3,7 @@
   "name": "TransferNow",
   "brand": "Fiserv",
   "brandLogoURL": "/assets/images/Fiserv_Logo.jpg",
- "solution": [
+  "solution": [
 		"financial-institutions",
 		"fintech"
 	],
