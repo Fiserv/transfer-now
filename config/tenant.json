@@ -2,27 +2,7 @@
   "title": "TransferNow®",
   "name": "TransferNow",
   "brand": "Fiserv",
-  "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Fiserv_Logo.jpg",
- "solution": [
-		"financial-institutions",
-		"fintech"
-	],
-  "brandDescription": "TransferNow brand description",
-  "getStartedFilePath": "/docs/getting-started.md",
-  "product": {
-    "featured": true,
-    "logoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Portal_Logo.png",
-    "description": "Enhance your digital payment and transfer offerings, drive revenue and strengthen relationships by enabling the movement of funds to or from an account you own to or from your account at another financial institution.",
-    "longDescription": "transfernow long description",
-    "apiSpecification": "/v1/apis/TransferNow",
-    "layout": "/v1/layouts/TransferNow",
-    "documentation": "/v1/docs/TransferNow",
-    "documenttree": "/v1/docs/TransferNow",
-    "documenttreeV2": "/v2/docs/TransferNow",
-    "docsCount": "/v2/docs/count/TransferNow",
-    "sandbox": "/v1/sandboxrun/TransferNow",
-    "accessConfig": "/v1/fileAccess/TransferNow",
-    "assets": "/v1/assets/TransferNow",    
+  "brandLogoURL": "/assets/TransferNow",    
     "feature":[
       {
         "name": "sandBox",
