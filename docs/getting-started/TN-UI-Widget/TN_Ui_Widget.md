@@ -5,7 +5,7 @@ User can integrate the TransferNow service via the Fiserv ePayments-hosted UI So
 In this solution, Fiserv manages the entire online application experience. 
 
 <object>
-        <p>To know more about step by step TransferNow functional guide, click <a href="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN-UI-Widget-Functionality.pdf">TN UI Widget Functionality PDF</a>.</p>
+        <p>To know more about step by step TransferNow functional guide, click <a href="download/assets/images/TN-UI-Widget-Functionality.pdf">TN UI Widget Functionality PDF</a>.</p>
     </embed>
 </object>
 
@@ -29,7 +29,7 @@ Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/
                 <div class="card-debit">
                 <div class="content-debit">
                     <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN_UI_RenderingOptions.png">
+                        <img src="/assets/images/TN_UI_RenderingOptions.png">
                     </div>
                     <div class="details">
                         <div class="name">TN UI Rendering Options</div>
@@ -42,7 +42,7 @@ Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/
                 <div class="card-debit">
                     <div class="content-debit">
                         <div class="img-debit">
-                            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN_UI_CustomizationGuide.png">
+                            <img src="/assets/images/TN_UI_CustomizationGuide.png">
                         </div>
                         <div class="details">
                             <div class="name">TN UI Customization Guide</div>
@@ -55,7 +55,7 @@ Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/
                     <!-- <div class="card-debit">
                         <div class="content-debit">
                             <div class="img-debit">
-                                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Delete-debit.png">
+                                <img src="/assets/images/Delete-debit.png">
                             </div>
                             <div class="details">
                                 <div class="name">Delete Debit Cards</div>
@@ -70,7 +70,7 @@ Click here to use our [TN UI widget](https://qa-ft.onefiserv.net/jsp/backoffice/
                 <div class="card-debit">
                 <div class="content-debit">
                     <!-- <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/edit-debit.png">
+                        <img src="/assets/images/edit-debit.png">
                     </div> -->
                     <!-- <div class="details">
                         <div class="name">Edit Debit Cards</div>
