@@ -5,7 +5,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
 <div class="card-body">
     <ul>
     <li>User can select “From” and “To” debit card information from the list that are already added.</li>
-    <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/create-transfer-mobile.png">
+    <img class="image-center" src="/assets/images/create-transfer-mobile.png">
     <li>Enter the amount to be transferred.</li>
     <p class="block-quote"> &#128221 <i> <strong>Note:</strong> View Limits will display the maximum amount that can be transferred.</i></p>
     </ul>
@@ -15,10 +15,10 @@ In addition to adding user's bank account, TransferNow allows users to add their
     <li>Set the date when the user wants to initiate the transaction.</li>
     <li>Select the Frequency. To know more about Frequency, see <a href="?path=docs/transfer-durations.md">Transfer Frequencies/Duration.</a></li>
     <li>Click the <button class="confirm-button">Review</button> button and review the page.</li>
-    <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/review.png">
+    <img class="image-center" src="/assets/images/review.png">
     <li>The transfer detail is displayed on the screen to allow the user to review and confirm.</li>
     <li>Click the <button class="confirm-button">Confirm</button> button to complete the transfer.</li>
-    <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/confirmation.png">
+    <img class="image-center" src="/assets/images/confirmation.png">
     <li>Transfer confirmation screen is displayed.</li>
     <li>All transfers, including debit card transfers are shown on the <strong>Activity</strong> page as shown below.</li>
     </ul>
@@ -33,7 +33,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                 <div class="card-debit">
                 <div class="content-debit">
                     <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/add-debit.png" alt="add-debit">
+                        <img src="/assets/images/add-debit.png" alt="add-debit">
                     </div>
                     <div class="details">
                         <div class="name">Add Debit Cards</div>
@@ -46,7 +46,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                 <div class="card-debit">
                     <div class="content-debit">
                         <div class="img-debit">
-                            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/verify.png">
+                            <img src="/assets/images/verify.png">
                         </div>
                         <div class="details">
                             <div class="name">Debit Card Verification</div>
@@ -59,7 +59,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                     <div class="card-debit">
                         <div class="content-debit">
                             <div class="img-debit">
-                                <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Delete-debit.png">
+                                <img src="/assets/images/Delete-debit.png">
                             </div>
                             <div class="details">
                                 <div class="name">Delete Debit Cards</div>
@@ -74,7 +74,7 @@ In addition to adding user's bank account, TransferNow allows users to add their
                 <div class="card-debit">
                 <div class="content-debit">
                     <div class="img-debit">
-                        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/edit-debit.png">
+                        <img src="/assets/images/edit-debit.png">
                     </div>
                     <div class="details">
                         <div class="name">Edit Debit Cards</div>
