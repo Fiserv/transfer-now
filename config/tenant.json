@@ -4,9 +4,9 @@
   "brand": "Fiserv",
   "brandLogoURL": "/assets/images/Fiserv_Logo.jpg",
   "solution": [
-		"financial-institutions",
-		"fintech"
-	],
+    "financial-institutions",
+    "fintech"
+  ],
   "brandDescription": "TransferNow brand description",
   "getStartedFilePath": "/docs/getting-started.md",
   "product": {
