@@ -12,7 +12,7 @@
   "product": {
     "featured": true,
     "logoURL": "/assets/images/Portal_Logo.png",
-    "description": "Enhance your digital payment and transfer offerings, drive revenue and strengthen relationships by enabling the movement of funds to or from an account you own to or from your account at another financial institution.",
+    "description": "Safely transfer funds between members worldwide.",
     "longDescription": "transfernow long description",
     "apiSpecification": "/v1/apis/TransferNow",
     "layout": "/v1/layouts/TransferNow",
