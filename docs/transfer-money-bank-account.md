@@ -5,14 +5,14 @@
           <p>TransferNow provides the user with access to 23,000 banks, credit unions, and brokerages for which accounts can be added. The user searches for an institution and uses the appropriate data collection screens based on the services available for the selected institution.</p>
           </div>
           <div class="image-otp">
-          <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-main-page.png">
+          <img src="/assets/images/transfer-main-page.png">
           </div>
         </div>
         <div class="transfer-body">
 <div class="transfer-container">
     <div class="transfer-card">
         <div class="transfer-img">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-trasfer-funds-account.png">
+            <img src="/assets/images/transfer-via-bank-trasfer-funds-account.png">
         </div>
         <div class="transfer-content">
             <p>User selects the bank account from which the amount to be debited under “From” dropdown list.</p>
@@ -20,7 +20,7 @@
     </div>
     <div class="transfer-card">
         <div class="transfer-img">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-from-account.png">
+            <img src="/assets/images/transfer-via-bank-from-account.png">
         </div>
         <div class="transfer-content">
             <p>User selects the bank account to which the amount to be credited under “To” dropdown list.</p>
@@ -28,7 +28,7 @@
     </div>
     <div class="transfer-card">
         <div class="transfer-img">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-to-account.png">
+            <img src="/assets/images/transfer-via-bank-to-account.png">
         </div>
         <div class="transfer-content">
             <p>Enter the amount to be transferred.</p>
@@ -36,7 +36,7 @@
     </div>
     <div class="transfer-card">
         <div class="transfer-img">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-account-frequency.png">
+            <img src="/assets/images/transfer-via-bank-account-frequency.png">
         </div>
         <div class="transfer-content">
             <p style="margin-bottom: 10px;">Set the date when the user wants to initiate the transaction.</p>
@@ -45,7 +45,7 @@
     </div>
     <div class="transfer-card">
         <div class="transfer-img">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-account-edit-confirm.png">
+            <img src="/assets/images/transfer-via-bank-account-edit-confirm.png">
         </div>
         <div class="transfer-content">
             <p style="margin-bottom: 10px;">Click Confirm to complete the transfer.</p>
@@ -53,7 +53,7 @@
     </div>
     <div class="transfer-card">
         <div class="transfer-img">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-confirmed-account.png">
+            <img src="/assets/images/transfer-via-bank-confirmed-account.png">
         </div>
         <div class="transfer-content">
             <p>Transfer confirmation screen is displayed.</p>
@@ -61,7 +61,7 @@
     </div>
     <div class="transfer-card">
         <div class="transfer-img">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/transfer-via-bank-confirmed-account.png">
+            <img src="/assets/images/transfer-via-bank-confirmed-account.png">
         </div>
         <div class="transfer-content">
             <p>All transfers, including debit card transfers are shown on the “Activity” page as shown below.</p>
