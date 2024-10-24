@@ -34,7 +34,7 @@ TN supports ACH transaction methods:
 
 A transaction processed via the Good Funds Model (GFM) has less risks when compared to transactions processed via the Next Day Transfers (NDT).
 
-<img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/ACH1.png"/>
+<img class="image-center" src="/assets/images/ACH1.png"/>
 
 </br>
 
@@ -54,7 +54,7 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
           <p>A one-time transfer, provide the necessary details to ensure a smooth and secure transcation.</p>
           </div>
           <div class="image-otp">
-          <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/one-time-transfer.png">
+          <img src="/assets/images/one-time-transfer.png">
           </div>
         </div>
           <h2>Recurring Transfers</h2>
@@ -65,7 +65,7 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
         </p>
           </div>
           <div class="image-otp">
-          <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/rec-time-transfer.png">
+          <img src="/assets/images/rec-time-transfer.png">
           </div>
         </div>
         <p class="block-quote"> &#128221 <i> <strong>Note:</strong> The Instant Transfer option is not applicable for recurring transfers.</i></p>
@@ -215,7 +215,7 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
         <p>
             The below Figure explains the differences in process flow between ACH, Next Day Good Funds, and Instant Transfers.
         </p>
-        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/fund-transfer-flow.png"/>
+        <img src="/assets/images/fund-transfer-flow.png"/>
     </div>
     </div>
     </br>
@@ -246,7 +246,7 @@ A transaction processed via the Good Funds Model (GFM) has less risks when compa
         </div>
         <h2>Cancelling and Editing Transfers</h2>
         <p>Users can edit scheduled or recurring transfers in the Activity screen.</p>
-        <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/activity.png"/>
+        <img src="/assets/images/activity.png"/>
     </div>
     </div>
     </br>
