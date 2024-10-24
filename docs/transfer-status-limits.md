@@ -1,7 +1,7 @@
 ## Transfer Status / Limits
 
 <div class="card-body">
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TN GRA_Image for Transfer Status Limits.png">
+<img src="/assets/images/TN GRA_Image for Transfer Status Limits.png">
 </br>
 </br>
 <ul>
