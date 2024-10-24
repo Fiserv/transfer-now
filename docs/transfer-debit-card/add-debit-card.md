@@ -5,12 +5,12 @@
     <li>In the Create Transfer screen, click Add an account or debit card</li>
     <li>Add Account or Debit Card screen is displayed</li>
     <br/>
-    <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Add-an-account-debit-link.png">
+    <img class="image-center" src="/assets/images/Add-an-account-debit-link.png">
     <br/>
     <li>Select Debit Card from the list of options under Account Type.</li>
     </ul>
 </div>
-<img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Debit-card-form.png">
+<img class="image-center" src="/assets/images/Debit-card-form.png">
 <div class="card-body">
     <ul>
     <li>Enter the debit card number.</li>
@@ -23,7 +23,7 @@
     <p class="block-quote"> &#128221<i><strong>Note:</strong> Once the debit card is verified, it gets added to the list.</i></p>
     </ul>
     <ul>
-    <img class="image-center" src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Debit-card-verify-depo.png">
+    <img class="image-center" src="/assets/images/Debit-card-verify-depo.png">
     <br/>
     <li>To know more about Debit card verification, see Debit Card Verification.</li>
     </ul>

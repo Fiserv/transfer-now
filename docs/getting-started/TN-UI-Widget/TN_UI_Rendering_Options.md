@@ -61,7 +61,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 <p>Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.</p>
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
+<img src="/assets/images/help.png">
 
 </center> 
 
@@ -80,7 +80,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 <br/>
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png">
+<img src="/assets/images/Session-timeout-config.png">
 
 </center> 
 <br/>
@@ -168,7 +168,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
+<img src="/assets/images/help.png">
 
 </center> 
 
@@ -187,7 +187,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 <br/>
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png">
+<img src="/assets/images/Session-timeout-config.png">
 
 </center> 
 <br/>
@@ -286,7 +286,7 @@ Also, content that each URL points to is hosted by the Client and not Fiserv, an
 Fiserv-hosted TN pages contain an optional Help link that, when clicked, will display a Fiserv specific help page, as shown in the following figure.</p>
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/help.png">
+<img src="/assets/images/help.png">
 
 </center> 
 </br>
@@ -303,7 +303,7 @@ Fiserv-hosted TN pages contain an optional Help link that, when clicked, will di
 <br/>
 <center>
 
-<img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/Session-timeout-config.png">
+<img src="/assets/images/Session-timeout-config.png">
 
 </center> 
 <br/>

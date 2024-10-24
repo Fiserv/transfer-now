@@ -5,40 +5,40 @@ To add a brokerage institution, the user selects from the following list of supp
 <div class="container-card">
     <div class="row-card">
         <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/amer.png"/>
+            <img src="/assets/images/amer.png"/>
         </div>
         <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/charles.png"/>
+            <img src="/assets/images/charles.png"/>
         </div>
         <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/extrade.png"/>
-        </div>
-    </div>
-    <div class="row-card">
-        <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/fied.png"/>
-        </div>
-        <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/mer.png"/>
-        </div>
-        <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/morgan.png"/>
+            <img src="/assets/images/extrade.png"/>
         </div>
     </div>
     <div class="row-card">
         <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/principle.png"/>
+            <img src="/assets/images/fied.png"/>
         </div>
         <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/scot.png"/>
+            <img src="/assets/images/mer.png"/>
         </div>
         <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/smith.png"/>
+            <img src="/assets/images/morgan.png"/>
+        </div>
+    </div>
+    <div class="row-card">
+        <div class="card-account">
+            <img src="/assets/images/principle.png"/>
+        </div>
+        <div class="card-account">
+            <img src="/assets/images/scot.png"/>
+        </div>
+        <div class="card-account">
+            <img src="/assets/images/smith.png"/>
         </div>
     </div>
     <div class="single-column">
         <div class="card-account">
-            <img src="https://raw.githubusercontent.com/Fiserv/transfer-now/develop/assets/images/TD.png"/>
+            <img src="/assets/images/TD.png"/>
         </div>
     </div>
 </div>
